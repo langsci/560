@@ -1,0 +1,68 @@
+\documentclass[output=paper]{langscibook}
+\author{Authorname\orcid{}\affiliation{}}
+\title{Title}
+\abstract{Abstract}
+\IfFileExists{../localcommands.tex}{
+  \addbibresource{../localbibliography.bib}
+  \input{../localpackages}
+  \input{../localcommands} 
+  \input{../localhyphenation} 
+  \togglepaper[1]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle 
+%\shorttitlerunninghead{}%%use this for an abridged title in the page headers
+
+%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{Appearance of various kinds of uninflectable nouns in the corpus}
+\label{tab:key:9}
+\end{table}
+
+
+\begin{tabularx}{\textwidth}{XXXXXXXXXXXX}
+
+\lsptoprule
+
+{\raggedleft Time period}
+
+Kind of noun & I
+
+1211–1300 & II
+
+1301–1375 & III
+
+1376–1525 & IV
+
+1526–1612 & V
+
+1613–1691 & VI
+
+1692–1800 & VII
+
+1801–1900 & VIII
+
+1901–1945 & IX
+
+1946–1968 & X
+
+1969–2000 & XI
+
+2001–2022\\
+stressed final V & ✓ & ✓ & ✓ & ✓ & ✓ & ✓ & ✓ & ✓ & ✓ & ✓ & ✓\\
+\textsc{masculine} in \nobreakdash-\textit{e} &  & ~✓ &  & ~ & ~ & ~ & ~ & ~ & ~ & ✓ & ~\\
+\textsc{feminine} in \nobreakdash-\textit{e} &  & ~ & ✓ & ✓ & ~ & ~ & ~ & ~ &  &  & ~\\
+\textsc{feminine} in \nobreakdash-\textit{i} & ~ & ~ & ~ & ~ & ✓ & ~ & ~ & ✓ & ~ & ✓ & ✓\\
+\textsc{masculine} in \nobreakdash-\textit{i} & ~ & ~ & ~ & ~ & ✓ & ~ & ~ & ~ & ~ & ✓ & ~\\
+\textsc{feminine} in <\textit{ie>} & ~ & ~ & ~ & ~ & ~ & ✓ & ✓ & ~ & ~✓ & ~ & ✓\\
+final C & ? & ~ & ~ & ~ & ~ & ~ & ~ & ✓ & ✓ & ✓ & ✓\\
+\textsc{masculine} in \nobreakdash-\textit{a} & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ✓ & ~ & ~\\
+\textsc{feminine} in \nobreakdash-\textit{o} & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ & ✓ & ✓ & ~\\
+\lspbottomrule
+\end{tabularx}
+
+\begin{verbatim}%%move bib entries to  localbibliography.bib
+\end{verbatim}
+\sloppy\printbibliography[heading=subbibliography,notkeyword=this]
+\end{document}

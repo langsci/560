@@ -1,0 +1,66 @@
+\documentclass[output=paper]{langscibook}
+\author{Authorname\orcid{}\affiliation{}}
+\title{Title}
+\abstract{Abstract}
+\IfFileExists{../localcommands.tex}{
+  \addbibresource{../localbibliography.bib}
+  \input{../localpackages}
+  \input{../localcommands} 
+  \input{../localhyphenation} 
+  \togglepaper[1]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle 
+%\shorttitlerunninghead{}%%use this for an abridged title in the page headers
+
+
+\tabref{tab:key:16} Percentage of tokens of adjectives in each class in the corpus
+
+
+\begin{tabularx}{\textwidth}{XXXXXXXXXXXX}
+
+\lsptoprule
+
+{\raggedleft Period}
+
+Class & I
+
+1211-1300 & II
+
+1301-1375 & III
+
+1376-1525 & IV
+
+1526-1612 & V
+
+1613-1691 & VI
+
+1692-1800 & VII
+
+1801-1900 & VIII
+
+1901-
+
+1945 & IX
+
+1946-1968 & X
+
+1969-2000 & XI
+
+2001-2022\\
+1 & 78,6 & 81,4 & 83,0 & 78,8 & 79,0 & 79,4 & 77,0 & 81,8 & 73,2 & 71,4 & 72,8\\
+2 & 11,8 & 14,2 & 11,2 & 17,0 & 18,6 & 17,6 & 19,6 & 16,6 & 25,2 & 26,4 & 25,4\\
+3 & 0 & 0,2 & 0 & 0 & 0 & 0 & 1,2 & 0,6 & 0,6 & 1,0 & 0,6\\
+4 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0,2 & 0\\
+5 & 9,6 & 4,2 & 2,4 & 4,0 & 2,4 & 3,0 & 2,2 & 1,0 & 1,0 & 1,0 & 1,2\\
+6 & 0 & 0 & 0,6 & 0,2 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+7 & 0 & 0 & 2,8 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+Total & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100\\
+\lspbottomrule
+\end{tabularx}
+
+\begin{verbatim}%%move bib entries to  localbibliography.bib
+\end{verbatim}
+\sloppy\printbibliography[heading=subbibliography,notkeyword=this]
+\end{document}

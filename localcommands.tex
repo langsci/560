@@ -1,0 +1,80 @@
+%\newcommand*{\orcid}{}
+
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\makeatother
+
+\newcommand{\togglepaper}[1][0]{
+   \bibliography{../localbibliography}
+   \papernote{\scriptsize\normalfont
+     \theauthor.
+     \titleTemp.
+     To appear in:
+     E. Di Tor \& Herr Rausgeberin (ed.).
+     Booktitle in localcommands.tex.
+     Berlin: Language Science Press. [preliminary page numbering]
+   }
+   \pagenumbering{roman}
+   \setcounter{chapter}{#1}
+   \addtocounter{chapter}{-1}
+}
+
+\newbool{bookcompile}
+\booltrue{bookcompile}
+\newcommand{\bookorchapter}[2]{\ifbool{bookcompile}{#1}{#2}}
+
+
+
+\renewcommand{\thempfootnote}{\fnsymbol{mpfootnote}} % use * for footnotes in float env
+
+% \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} %left-aligned (non-justified) text in tables
+% \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % right-aligned (non-justified) text in tables
+
+\definecolor{customgreen}{RGB}{27,158,119}
+\definecolor{custompink}{RGB}{231,42,138}
+\definecolor{customblue}{RGB}{117,112,179}
+\definecolor{customlightblue}{RGB}{143,170,220}
+\definecolor{customdarkblue}{RGB}{68,114,196}
+\definecolor{customyellow}{RGB}{225,192,0}
+\definecolor{customorange}{RGB}{233,137,21}
+\definecolor{customgray}{RGB}{229,229,229}
+
+
+% Left-aligned indexes
+% % \makeatletter
+% % \patchcmd{\theindex}{\twocolumn}{\raggedright\twocolumn}{}{}
+% % \makeatother
+
+%to make Japanese scripts in the bibliography smaller
+\newcommand{\japbib}[1]{{\japanesefont\small #1}}
+
+%%%%%%%%%%%%%%%%%%%	MACROS for 02	%%%%%%%%%%%%%%%%
+
+%%% Formatting	%%%%%
+
+\newcommand{\textex}[1]{\textit{#1}} 		 %for formatting linguistic examples in-text%
+%command-shift X
+
+\newcommand{\lxm}[1]{\textsc{#1}}  		%for formatting names of lexemes
+%command-option-shift L
+
+%%%%%%%%% Abbreviations	%%%%%%
+
+\newcommand{\featname}[1]{\textsc{#1}}
+\newcommand{\featspec}[2]{\featname{#1}:{#2}}
+\newcommand{\feat}[2]{\textsc{#1}:{#2}}  				% \feat{FEATURE}{value}  sc's
+\newcommand{\featnameonly}[1]{\textsc{#1}} 			% \featnameonly{featurename}  sc's
+
+\newcommand{\pr}{$^{\prime}$}
+
+\newcommand{\Corr}{\textit{Corr}}
+\newcommand{\propm}{\textit{pm}}
+
+\newcommand{\PC}{Π$_{C}$}
+
+\newcommand{\PF}{Π$_{F}$}
+\newcommand{\PR}{Π$_{R}$}
+
+\newcommand{\lex}{$\mathcal{L}$}

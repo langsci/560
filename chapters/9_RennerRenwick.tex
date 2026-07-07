@@ -1,0 +1,895 @@
+\documentclass[output=paper]{langscibook}
+\author{Authorname\orcid{}\affiliation{}}
+\title{Title}
+\abstract{Abstract}
+\IfFileExists{../localcommands.tex}{
+  \addbibresource{../localbibliography.bib}
+  \input{../localpackages}
+  \input{../localcommands} 
+  \input{../localhyphenation} 
+  \togglepaper[1]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle 
+%\shorttitlerunninghead{}%%use this for an abridged title in the page headers
+% ATTENTION: Diacritics on the following phonetic characters might have been lost during conversion: {'ɔ', 'ɪ'}
+
+\title{Inflection dropping in the English-origin verbs of present-day French: A Twitter-wide exploration}
+
+Vincent Renner
+
+Adam Renwick
+
+\begin{stylelsAbstract}
+Fifty frequent English-origin verbs extracted from a corpus of 100 million French tweets from 2020-2022 were analyzed for uninflectedness in two composite verb forms — the \textup{passé composé} construction and the periphrastic future construction. It was found that a majority of these verbs show a substantial preference for the nonstandard practice of dropping inflectional marking on the past participle (for the \textup{passé composé}) and the infinitive (for the periphrastic future). This salient feature of written social media discourse is unexpected as it violates a presumably categorical norm but it is not truly exceptional in light of other underreported phenomena of verbal uninflectedness, especially when French is in contact with other languages. It is also suggested that unadapted forms are not only a marked choice flagging foreignness and peripherality, but also, in some cases, markers of in-group membership.
+\end{stylelsAbstract}
+
+\section{Introduction}
+
+The literature on the morphological adaptation of anglicisms in present-day French has so far largely focused on nouns and adjectives and Saugera (2012a, 2012b) has convincingly argued that the specific classes of items that resist plural inflection marking generally do so in accordance with subrules that originate within the French morphological system. Verbs are generally less frequently borrowed than nouns \citep{Tadmor2009} and less attention has been paid to verbal anglicisms in the literature. Their adaptive behavior is generally appraised as follows: while the adaptation of foreign-origin nouns and adjectives to the French inflectional system is variable, that of borrowed verbs is obligatory (\citealt{Anastassiadis-SyméonidisNikolaou2011}, \citealt{Poplack2017}) and contact with English has had no significant impact on the grammatical core of the language as French verbs continue to be conjugated \citep{Saulière2014}. These general statements may, however, need to be partially reevaluated in light of the recent emergence of uninflected English-origin verbal forms, as illustrated by the following tweet excerpts, in (1-3), and news magazine article title, in \REF{ex:key:4}:
+
+\ea%1
+    \label{ex:key:1}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{j'ai crush sur une meuf avec qui je travaillais}
+
+  {}'I had a crush on a chick I was working with'
+
+  (the inflected past participle form \textit{crushé} is expected)
+
+\ea%2
+    \label{ex:key:2}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{je vais spoil donc lisez pas le thread si vous êtes pas à jour sur   le manga}
+
+  {}'I'm going to spoil things so don't read the thread if you're not up   to date on the manga'
+
+  (the inflected infinitive form \textit{spoiler} is expected)
+
+\ea%3
+    \label{ex:key:3}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{je viens de play cette vidéo en salle de pause à fond}
+
+  {}'I've just played this video in the break room with the volume full   on'
+
+  (the inflected infinitive form \textit{player} is expected)
+
+\ea%4
+    \label{ex:key:4}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{Esclavage : l'Écosse s'apprête-t-elle à "cancel" son patrimoine   historique ?} (\textit{Marianne}, 22 Dec. 2021)\footnote{https://www.marianne.net/monde/europe/esclavage-lecosse-sapprete-t-elle-a-cancel-son-patrimoine-historique (last accessed on 13 \citealt{June2024})}
+
+  {}'Slavery: Is Scotland about to "cancel" its historical heritage?'
+
+  (the inflected infinitive form \textit{canceler} is expected)
+
+Such occurrences could be brushed aside as individual ungrammatical oddities but their recurring presence in random searches on the social network Twitter\footnote{This research was conducted before \textit{Twitter} became known as \textit{X}, which is why only \textit{Twitter} is used in this chapter.} acted as a spur to take this incipient phenomenon as seriously as it deserves and to attempt to measure the extent to which it is widespread in contemporary written social media discourse, in the broader context of keyboard-to-screen communication (KSC) (\citealt{JuckerDürscheid2012}).
+
+The remainder of this chapter is organized as follows: \sectref{sec:key:2} describes the different steps taken to obtain a representative sample of 50 frequent English-origin verbs in a large corpus of French tweets. \sectref{sec:key:3} presents the distribution of the inflected and uninflected forms in the \textit{passé composé} and periphrastic future constructions found in the corpus. \sectref{sec:key:4} discusses the various findings in the light of other phenomena of verbal uninflectedness, particularly when French is in contact with other languages, and concludes.
+
+\section{Methods}
+
+Uninflected verbal forms in present-day French are hypothesized to be a morphological feature more typical of colloquial discourse and the difficulty of accessing vast corpora of spoken data led to relying on written social media data, which are known to epitomize register hybridity, mixing informal spoken features with more formal written ones, and to exhibit the same heterogeneity and patterns of linguistic change as non-KSC speech (\citealt{TagliamonteDenis2008}, \citealt{Bohmann2020}). Building an ad hoc corpus from Twitter data was opportunistic as the Academic Research Access API allowed for easy collection of millions of French tweets. Starting from the premise that verbal uninflectedness was an exceptional behavior and in order to keep the task of data processing manageable, only two constructions intuitively identified as more likely to contain instances of audible inflection dropping were selected for this exploratory study: the \textit{passé composé} construction, which is formed with the auxiliary verb \textit{avoir} ('to have') followed by a past participle and encodes either primary or secondary past tense (Mosegaard \citealt{Hansen2016}), and the periphrastic future construction, which is formed with the auxiliary verb \textit{aller} ('to go') followed by an infinitive and encodes secondary future tense (\textit{ibid}.). This choice was in part motivated by the fact that several highly frequent verbal inflectional markers are inaudible in French (by default, the three singular forms of the present indicative are, for instance, homophonous with the verbal root) and that spelling alone is not a reliable cue for inflectional (non-)marking in written social media discourse (in spontaneous written production, i.e. a situation in which spelling is not controlled, or standardized, it is not possible to determine whether inaudible deviations from the orthographic norm are deliberate, reflect the imposition of time or practical constraints on the act of typing, or indicate defective mastery of the standard written code).
+
+Our corpus was assembled using the TAGS application \citep{Hawksey2016} to automate weekly queries for the two target constructions over a 15-month period, from \citealt{November2020} to \citealt{February2022}, in pools of tweets automatically tagged as being in French (without any geographical specification) by Twitter. For each construction, the search pattern consisted of any string of characters containing a subject pronoun immediately followed by an inflected form of the target auxiliary (\textit{avoir} or \textit{aller}) in the present indicative. Inaudible uncontrolled spelling variants — e.g. "\textit{tu a}" (/ty a/, you.ꜱɢ have.3ꜱɢ) instead of standard "\textit{tu as}" (/ty a/, you.ꜱɢ have.2ꜱɢ) — were included in the queries. The collected data were then processed as follows:
+
+(i) duplicates and retweets were automatically removed, which led to retaining approximately 220,000 tweets per day, for a total of approximately 100 million tweets over the sampling period;
+
+(ii) the entire corpus was processed with TXM \citep{Heiden2010} to identify and rank in a decreasing order of frequency the variety of word tokens appearing immediately to the right of the searched patterns;
+
+(iii) the top tokens were manually examined, non-verbs and non-English\footnote{Cognate verbs for which it is unclear which lexical item (the French or the English one) appeared first and which one was borrowed — e.g. \textit{contrôler} ('to control'; cf. OED, s.v. \textit{control}\textsubscript{V}) — were also discarded.} verbs were discarded, and the review was stopped once 50 verb types were identified;
+
+(iv) homophonous uncontrolled spelling variants for all 50 past participles and infinitives — e.g. "\textit{dropé}" (/dʀɔpe/, give.up-ᴘꜱᴛ.ᴘᴛᴄᴘ) in an infinitive context when standard "\textit{droper}" (/dʀɔpe/, give.up-ɪɴꜰ) is expected — were included;
+
+(v) uncontrolled forms ending in a diacriticless <e> — e.g. "\textit{drope}" — were considered ambiguous (deaccented graphemes are quite common in French KSC \citep{Cougnon2010} and a form like "\textit{drope}" could correspond to either uninflected /dʀɔp/ or inflected /dʀɔpe/) and they were therefore excluded from the final token counts.
+
+\section{Results}
+
+Our sample of 50 frequent English-origin verbs of present-day French is presented in the list below in descending order of frequency (verbs are given in their uninflected forms, along with their primary senses in French and their total number of \textit{passé composé} and periphrastic future tokens):
+
+\begin{itemize}
+\item \begin{styleListParagraph}
+\textit{dead (ça)} 'to kill it' (37,522)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{test} 'to put to test' (31,451)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{stream} 'to watch via streaming' (17,895)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{flop} 'to fail' (13,328)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{bug} 'to be baffled' (12,283)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{drop} {}'to give up' (11,339)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{follow} 'to subscribe to someone's tweets' (10,999)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{check} 'to verify' (9,035)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{stop} 'to cease' (7,589)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{screen} 'to screenshot' (6,894)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{win} 'to achieve victory' (6,814)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{spam} 'to post spam' (4,970)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{boycott} {}'to refuse to deal with' (4,719)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{spoil} {}'to reveal carelessly' (4,680)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{pull} 'to draw' (4,422)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{stan} 'to be an obsessive fan' (3,894)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{leak} 'to reveal inadvertently' (3,791)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{skip} 'to pass over' (3,382)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{pop} 'to appear' (3,069)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{perform} 'to give a performance' (2,971)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{crush} 'to have a crush' (2,784)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{carry} 'to lead a team's success' (2,662)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{switch} 'to change' (2,382)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{pack} 'to obtain as part of a pack' (2,344)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{tryhard} 'to put a lot of effort' (2,303)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{farm} 'to repeat an in-game action' (2,240)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{flex} 'to show off' (2,210)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{troll} 'to act as a troll' (1,850)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{play} 'to entertain oneself' (1,825)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{tag} {}'to add a tag' (1,792)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{grind} 'to repeat an in-game action' (1,618)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{feat} 'to appear on a song' (1,578)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{boost} 'to give a boost' (1,541)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{rush} 'to do quickly' (1,513)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{tilt} {}'to get mad' (1,304)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{clip} 'to record videogame clips' (1,298)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{shoot} {}'to take a picture' (1,274)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{spawn} 'to appear (in a videogame)' (1,258)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{stonk} 'to gain' (1,244)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{cancel} {}'to put an end' (1,215)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{ragequit} 'to quit in anger' (1,123)
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{disband} 'to dissolve a group' \REF{ex:key:898}
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{buy} 'to purchase' \REF{ex:key:888}
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{pick} 'to choose' \REF{ex:key:831}
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{kick} 'to remove forcibly' \REF{ex:key:777}
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{stalk} 'to track online' \REF{ex:key:764}
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{raid} 'to attack; to send viewers to another stream' \REF{ex:key:760}
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{reset} 'to start again from zero' \REF{ex:key:742}
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{bully} 'to harass' \REF{ex:key:664}
+\end{styleListParagraph}
+\item \begin{styleListParagraph}
+\textit{back} {}'to come/go back' \REF{ex:key:561}.
+\end{styleListParagraph}
+\end{itemize}
+
+The verbal meanings attested for French above are almost all attested in English. Two apparent exceptions are \textit{screen}, a neologism presumably obtained by right-clipping the English verb \textit{screenshot}, and \textit{back}, which is apparently an output of deadverbial conversion. The French meanings often correspond to the general meaning of the English verb (e.g. \textit{boost}, \textit{check}, \textit{test}), but there are also cases where borrowing leads to semantic reduction (\citealt{Alexieva2008}, \citealt{Winter-Froemel2019}) — only one domain-specific (and possibly marginal) meaning of the English verb is adopted in French (e.g. \textit{clip}, \textit{farm}, \textit{pack}). 
+
+Beyond the wide attestation of these 50 verbs in French written social media discourse, the exact distribution of their various inflected and uninflected forms is of primary interest to assess the spread of uninflectedness. This distribution is presented separately for the two constructions in order to see if they exhibit different behaviors. \tabref{tab:key:1} provides the percentages of uninflectedness for each individual verb.
+
+
+\begin{tabularx}{\textwidth}{XXXXXX}
+
+\lsptoprule
+Verb & PC & PF & Verb & PC & PF\\
+\textit{dead (ça)} & 100\% & 99\% & \textit{farm} & 64\% & 72\%\\
+\textit{test} & 8\% & 15\% & \textit{flex} & 98\% & 97\%\\
+\textit{stream} & 82\% & 78\% & \textit{troll} & 81\% & 41\%\\
+\textit{flop} & 77\% & 87\% & \textit{play} & 99\% & 99\%\\
+\textit{bug} & 33\% & 20\% & \textit{tag} & 40\% & 34\%\\
+\textit{drop} & 97\% & 97\% & \textit{grind} & 97\% & 98\%\\
+\textit{follow} & 99\% & 99\% & \textit{feat} & 94\% & 85\%\\
+\textit{check} & 59\% & 54\% & \textit{boost} & 19\% & 12\%\\
+\textit{stop} & 33\% & 30\% & \textit{rush} & 82\% & 85\%\\
+\textit{screen} & 95\% & 91\% & \textit{tilt} & 31\% & 36\%\\
+\textit{win} & 99\% & 98\% & \textit{clip} & 34\% & 30\%\\
+\textit{spam} & 85\% & 79\% & \textit{shoot} & 20\% & 25\%\\
+\textit{boycott} & 25\% & 30\% & \textit{spawn} & 99\% & 99\%\\
+\textit{spoil} & 76\% & 70\% & \textit{stonk} & 98\% & 98\%\\
+\textit{pull} & 99\% & 99\% & \textit{cancel} & 93\% & 92\%\\
+\textit{stan} & 100\% & 98\% & \textit{ragequit} & 94\% & 95\%\\
+\textit{leak} & 94\% & 92\% & \textit{disband} & 99\% & 99\%\\
+\textit{skip} & 96\% & 96\% & \textit{buy} & 99\% & 99\%\\
+\textit{pop} & 96\% & 95\% & \textit{pick} & 99\% & 99\%\\
+\textit{perform} & 42\% & 50\% & \textit{kick} & 61\% & 38\%\\
+\textit{crush} & 91\% & 66\% & \textit{stalk} & 64\% & 58\%\\
+\textit{carry} & 98\% & 100\% & \textit{raid} & 99\% & 97\%\\
+\textit{switch} & 81\% & 66\% & \textit{reset} & 99\% & 98\%\\
+\textit{pack} & 67\% & 54\% & \textit{bully} & 100\% & 100\%\\
+\textit{tryhard} & 98\% & 99\% & \textit{back} & 83\% & 95\%\\
+\lspbottomrule
+\end{tabularx}
+\begin{stylelsTableHeading}
+Table1: Percentages of uninflected tokens in the \textit{passé composé} (= PC) and periphrastic future (= PF) constructions of the corpus
+\end{stylelsTableHeading}
+
+In Figures 1 and 2, the percentages of uninflected tokens for each individual verb are clustered into deciles to gauge relative prevalence from an overall perspective. Looking at \figref{fig:key:1}, this means that for 27 of the 50 verbs, uninflected past participle forms account for at least 90\% of all tokens. Looking at \figref{fig:key:2}, this means that for 26 of the 50 verbs, uninflected infinitive forms account for at least 90\% of all tokens. 
+
+  
+%%please move the includegraphics inside the {figure} environment
+%%\includegraphics[width=\textwidth]{figures/a9RennerRenwickrevisedversion-img001.svm}
+ 
+
+\begin{stylelsTableHeading}\begin{figure}
+\caption{Decile distribution of the percentage of uninflected tokens of the past participle in the \textit{passé composé} construction for the 50 verbs of the sample}
+\label{fig:key:1}
+\end{figure}\end{stylelsTableHeading}
+
+  
+%%please move the includegraphics inside the {figure} environment
+%%\includegraphics[width=\textwidth]{figures/a9RennerRenwickrevisedversion-img002.svm}
+ 
+
+\begin{stylelsTableHeading}\begin{figure}
+\caption{Decile distribution of the percentage of uninflected tokens of the infinitive in the periphrastic future construction for the 50 verbs of the sample}
+\label{fig:key:2}
+\end{figure}\end{stylelsTableHeading}
+
+The overall distribution trends are strikingly similar in the two datasets: the extreme lopsidedness to the right is highly remarkable and means that not only do the overwhelming majority of English-origin verbs preferably appear in their uninflected guise in the two constructions, but more than half of them massively favor uninflectedness to the point that their inflected occurrences are almost negligible. This is a rather unexpected result given the extreme paucity of uninflected verbal forms in controlled written French. At the individual level, almost all verbs are distributed in the same decile or in adjacent ones when comparing behavior in the two constructions, indicating that the ratio of uninflectedness is generally quite stable. The only exceptions are the verbs \textit{crush(er)}, \textit{switch(er)}, \textit{troll(er)}, and \textit{kick(er)}, and in all four cases it is the past participle form that is markedly less inflected, suggesting that the dominance of uninflectedness may be slightly more advanced for the \textit{passé composé} construction.
+
+The minority of verbs that are predominantly inflected are (in decreasing order of inflectedness): \textit{test(er)}, \textit{boost(er)}, \textit{shoot(er)}, \textit{bug(ger)}, \textit{boycott(er)}, \textit{clip(per)}, \textit{stop(per)}, \textit{tilt(er)}, \textit{tag(uer)}, \textit{perform(er)}, and \textit{kick(er)}. The main linguistic parameter which is hypothesized to markedly affect the distribution of uninflectedness is the relative establishment of the sampled verbs in the French language. This parameter is operationalized here by the presence or absence of the English-origin verb in a large recent French dictionary of anglicisms, the \textit{Dictionnaire étymologique et critique des anglicismes} \citep{Weisman2020}. Examination of the data is partially conclusive as the two overall distribution trends in Figures 3 and 4 are in stark contrast to each other. The dispersion of the dictionary-sanctioned verbs is quite high, indicating that the presence of a verb in the dictionary of Anglicisms is not a reliable predictor of the ratio of uninflectedness, while the distribution of neologisms is extremely lopsided to the right, suggesting that novelty is correlated to a fairly large extent with massive uninflectedness. Among dictionary-sanctioned anglicisms, relative anteriority is not found to be a significant factor. In the set of nine English-origin verbs that, according to \citet{Weisman2020}, have been attested in French for more than half a century, five — \textit{test(er)}, \textit{boost(er)}, \textit{boycott(er)}, \textit{shoot(er)}, \textit{stop(per)} — are predominantly inflected, but four — \textit{drop(er)}, \textit{rush(er)}, \textit{switch(er)}, \textit{check(er)} — are predominantly uninflected.
+
+  
+%%please move the includegraphics inside the {figure} environment
+%%\includegraphics[width=\textwidth]{figures/a9RennerRenwickrevisedversion-img003.svm}
+ 
+
+\begin{stylelsTableHeading}\begin{figure}
+\caption{Decile distribution of the average percentage of uninflected tokens in the two constructions for the 16 dictionary-sanctioned verbs of the sample}
+\label{fig:key:3}
+\end{figure}\end{stylelsTableHeading}
+
+  
+%%please move the includegraphics inside the {figure} environment
+%%\includegraphics[width=\textwidth]{figures/./ObjectReplacements/Object 5}
+ 
+
+\begin{stylelsTableHeading}\begin{figure}
+\caption{Decile distribution of the average percentage of uninflected tokens in the two constructions for the 34 neologisms of the sample}
+\label{fig:key:4}
+\end{figure}\end{stylelsTableHeading}
+
+\section{Discussion and conclusion}
+
+The main finding of this exploratory study is that two verbal constructions of present-day French massively display the nonstandard practice of dropping inflectional marking on the past participle and the infinitive in the context of written social media discourse and when the lexical verb is of English origin. The choice of examining the \textit{passé composé} and the periphrastic future was initially guided by the intuition that inflection dropping seems to occur more frequently in these two constructions. This can be related to the fact that they correspond to doubly inflected composite verb forms (consisting of a lexical verb premodified by an auxiliary) while the other frequent finite forms of the French verb (the \textit{présent}, the \textit{imparfait}, and the \textit{futur simple}) are simple verb forms which are singly inflected. Inflection dropping in simple verb forms is a less likely choice as it would lead to the loss of all morphological tense-aspect-mood (TAM) information. In contrast, in composite verb forms, dropping the inflectional marking on the lexical verb is not detrimental to the correct identification of the whole form and its TAM meaning. Inflection dropping should therefore be seen here as an unexpected and marked choice rather than an inconceivable one.
+
+This view is also supported by the fact that verbal uninflectedness has been documented elsewhere in the periphery of the French language. In their analysis of the outstanding grammatical features of the \textit{Multicultural Paris French} (MPF) corpus, \citet{CappeauMoreno2017} point out that some groups of French verbs appear under only one — uninflected — form. This notably applies to verbs originating from \textit{verlan} (a French argot based on syllable and phoneme reversal; cf. \citealt{Méla1997}), as in (5-7), and from Romani, as in (8-9):
+
+\ea%5
+    \label{ex:key:5}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{J'ai envie d'sèpe !} \citep{Tengour2024}
+
+  {}'I need to piss!'
+
+  (the inflected infinitive form \textit{séper} is expected; \textit{sèpe} is a   verlanized form of \textit{pisser})
+
+\ea%6
+    \label{ex:key:6}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{j'ai vesqui l'service militaire} \citep{Tengour2024}
+
+  {}'I've skirted military service'
+
+  (the inflected past participle form \textit{vesquié} is expected; \textit{vesqui} is   a verlanized form of \textit{esquiver})
+
+\ea%7
+    \label{ex:key:7}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{C'est dead, Auxerre, ils m'ont tèj}. (Frantext)
+
+  {}'It's over, Auxerre have thrown me out.'
+
+  (the inflected past participle form \textit{téjé} is expected; \textit{tèj} is a   verlanized form of \textit{jeter})
+
+\ea%8
+    \label{ex:key:8}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{comme dans les films qui collent des crampes au bide même   quand on n'a rien bédave} (Frantext)
+
+  {}'like in the movies that give you stomach cramps even if you   didn't smoke anything'
+
+  (the inflected past participle form \textit{bédavé} is expected)
+
+\ea%9
+    \label{ex:key:9}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{Peur ! Peur ! Quand tu dois poucave ton pote...} (Frantext)
+
+  {}'Fear! Fear! When you have to snitch on your buddy...'
+
+  (the inflected infinitive form \textit{poucaver} is expected)
+
+Verbal uninflectedness has also been documented to appear when French has been in intense contact with English. \citet{DuboisSankoff1997} report that, in Louisiana French, English-origin verbs are typically adapted to the French morphological system, except for the past participle and infinitive forms, for which the bare stem is used, as illustrated in (10-11), and they conclude that such verbs can be seen as belonging to a distinct conjugation class:
+
+\ea%10
+    \label{ex:key:10}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{Tu crois que noncle Pierre a enjoy sa visite ?}
+
+  {}'Do you think that Uncle Pierre enjoyed his visit?'
+
+  (the inflected past participle form \textit{enjoyé} is expected)
+
+\ea%11
+    \label{ex:key:11}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{Je crois ici là on peut mieux discipline notre enfant}.\footnote{It is unclear why the form "\textit{discipline}" (which is the only infinitive form given by the authors as an illustrative example) is considered to be an English-origin verb. In a form of circular reasoning, it may be that its uninflectedness is seen as a justification for its status as an anglicism. Other illustrative evidence can be adduced, such as \textit{ça va flood cette section là} 'they're going to flood this section', or \textit{je vas le back sûr} 'I'll definitely back him' (\citealt{Root2018}: 19, 26).}
+
+  {}'I think that here we can better discipline our kid.'
+
+  (the inflected infinitive form \textit{discipliner} is expected)
+
+In an experimental study of the conditions influencing morphological (non-)integration, \citet{Root2018} offers a nuanced and quantitatively driven examination of the phenomenon, positing the existence of a class of loan-verbs characterized by variable integration, for which some slots of the verbal paradigm are preferentially filled with bare forms and others with morphologically integrated ones. This hypothesis is partially supported by his data since inflected forms account for 50\% of the tokens for the conditional, for 32\% for the \textit{imparfait}, for 17\% for the past participle, and for 13\% for the infinitive.
+
+A similar situation is found in some French-based hybrid urban vernaculars of western Africa. In Nouchi, a hybrid language of Côte d'Ivoire mixing French with other European languages and several Niger-Congo languages (\citealt{Sande2015}, \citealt{Boutin2021}), French-origin verbs in \textit{passé composé} and periphrastic future constructions are inflected in the same way as in Standard French while verbs of other origins (e.g. Dyula, Malinke, or English) remain uninflected (\citealt{Ahua2008}, Atsé N'\citealt{Cho2014}). Similarly, in Camfranglais, a hybrid language of Cameroon mixing French, English, Cameroonian Pidgin English, and a number of Cameroonian languages (Kießling 2022), verbs of non-French origin are uninflected in the \textit{passé composé} and periphrastic future constructions, as in Bogni's (2018: 185) examples in (12-13):
+
+\ea%12
+    \label{ex:key:12}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{J'ai begin à play les cartes frons}.
+
+  {}'I've been playing cards for a long time.'
+
+  (the inflected past participle form \textit{beginé} and the inflected   infinitive form \textit{player} are expected)
+
+\ea%13
+    \label{ex:key:13}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{Nous allons back autour de 17 heures}. 
+
+  {}'We'll get back around 5~p.m.'
+
+  (the inflected infinitive form \textit{backer} is expected)
+
+Like Dubois and Sankoff for Louisiana French, \citet{Bogni2018} concludes that verbs of non-French origin form a distinct ("fourth group") class of conjugation in Camfranglais. In line with Root's quantitative approach for Louisiana French, \citegen{Nchare2010} analysis of a large dataset of online Camfranglais interactions provides a slightly nuanced picture of language in use and confirms a particularly pronounced tendency towards uninflectedness, with 98\% of bare past participles, 91\% of bare infinitives, and a morphological class of exceptions that reportedly comprises all denominal verbs.
+
+This brief overview of similar phenomena in a variety of language-contact settings demonstrates that the massive Twitter-wide uninflectedness of many French verb forms of English origin, while unexpected because it violates a presumably categorical norm, may not, after informed consideration, be truly exceptional. It also suggests that unadapted forms are not only a marked choice flagging foreignness and peripherality, but also, in some cases, markers of in-group membership that may contribute to the characterization of a sociolect — here, that of (young) tweeters and, more generally, that of (young) KSC users.
+
+An obvious limitation of this exploratory investigation is that the analysis is blind to\textstyleannotationreference{ the} geographic and demographic distribution of the collected data. Regarding the former dimension, it can be hypothesized that European, North American, and African varieties of French accommodate uninflectedness in fairly similar ways, but this assumption will need to be empirically confirmed in future research. Regarding the latter dimension, \citet{Bouchard2023} has found a highly significant correlation between age and the reported use of morphologically unintegrated English-origin verbs in Quebec French, with younger people much more likely to use such forms, and her findings are likely to generalize across varieties of present-day French. It also remains to be seen whether uninflectedness is becoming more prevalent, or will soon extend, in a quantitatively significant way beyond English-origin verbs, i.e. to the native lexicon. Cappeau and \citet[79]{Moreno2017} and Gadet and \citet[737]{Hamblye2018} report various cases of inflection dropping in non-English and cognate verbs in the MPF corpus, as illustrated in (14-17):
+
+\ea%14
+    \label{ex:key:14}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{on s'est fait carotte en fait}
+
+  {}'we've actually been screwed'
+
+  (the inflected infinitive form \textit{carotter} is expected)
+
+\ea%15
+    \label{ex:key:15}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{les gens quand ils sont asthmatiques ils leur donnent de l'air pas   à graille}
+
+  {}'when people have asthma, they're given some air, not something   to eat'
+
+  (the inflected infinitive form \textit{grailler} is expected)
+
+\ea%16
+    \label{ex:key:16}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{je vais pas te mytho}
+
+  {}'I'm not gonna lie to you'
+
+  (the inflected infinitive form \textit{mythonner} is expected)
+
+\ea%17
+    \label{ex:key:17}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textit{je me fais contrôle}
+
+  {}'I had my ticket checked'
+
+  (the inflected infinitive form \textit{contrôler} is expected)
+
+It therefore cannot be ruled out that, in the course of a generation, uninflectedness in a number of verbal constructions will have become a hallmark feature of colloquial French.
+
+\textbf{Acknowledgments}
+
+Earlier versions of this research have been presented to several academic audiences and we are grateful for the many comments and suggestions we have received. We also duly thank Bruno Courbon, Sophie Kraeber, and two anonymous reviewers for their very valuable feedback on the first draft of this article. The usual disclaimers apply.
+\begin{verbatim}%%move bib entries to  localbibliography.bib
+@article{Ahua2008,
+	author = {Ahua, Blaise Mouchi},
+	journal = {\textit{Le Français en Afrique}},
+	note = {.},
+	pages = {135--150},
+	title = {Mots, phrases et syntaxe du nouchi},
+	url = {http://www.unice.fr/bcl/ofcaf/23/23.html},
+	volume = {23},
+	year = {2008}
+}
+
+
+Alexieva, Nevena. 2008. How and why are anglicisms often lexically different from their English etymons? In Roswitha Fischer \& Hanna Pułaczewska (eds.), \textit{Anglicisms in Europe: Linguistic diversity in a global context}, 42-51. Newcastle upon Tyne: Cambridge Scholars Publishing.
+
+@article{Anastassiadis-SyméonidisAnastassiadis-Syméonidis2011,
+	author = {Anastassiadis-Syméonidis, Anna and Georgia Nikolaou},
+	journal = {L'adaptation morphologique des emprunts néologiques : en quoi est-elle précieuse ? \textit{Langages}},
+	note = {. https://doi.org/10.3917/lang.183.0119},
+	pages = {119--132},
+	sortname = {Anastassiadis-Symeonidis, Anna and Georgia Nikolaou},
+	volume = {183},
+	year = {2011}
+}
+
+
+@article{AtséN’Cho2014,
+	author = {Atsé N’Cho, Jean-Baptiste},
+	journal = {\textit{Revue du Laboratoire des Théories et Modèles Linguistiques}},
+	note = {. https://ltml-ufhb.org/revue-n10-du-ltml-issn-1997-4256},
+	pages = {1--16},
+	sortname = {Atse N'Cho, Jean-Baptiste},
+	title = {Les verbes du nouchi (parler argotique ivoirien) : {{P}}our une analyse morphosyntaxique},
+	volume = {10},
+	year = {2014}
+}
+
+
+@article{Bogni2018,
+	author = {Bogni, Téguia},
+	journal = {\textit{Argotica}},
+	note = {. https://litere.ucv.ro/litere/ro/content/argotica-arhiva},
+	pages = {171--196},
+	sortname = {Bogni, Teguia},
+	title = {Verbes et conjugaison en camfranglais},
+	volume = {7},
+	year = {2018}
+}
+
+
+@article{Bohmann2020,
+	author = {Bohmann, Axel},
+	journal = {\textit{Zeitschrift für Dialektologie und Linguistik}},
+	note = {. https://doi.org/10.25162/zdl-2020-0009},
+	number = {2},
+	pages = {250--284},
+	title = {Situating Twitter discourse in relation to spoken and written texts: {{A}} lectometric analysis},
+	volume = {87},
+	year = {2020}
+}
+
+
+@article{Bouchard2023,
+	author = {Bouchard, Marie-Eve},
+	journal = {\textit{Journal of French Language Studies}},
+	note = {. https://doi.org/10.1017/S23000054},
+	number = {2},
+	pages = {168--196},
+	title = {\textit{J'va share mon étude sur les anglicismes avec vous autres !} : {{A}} sociolinguistic approach to the use of morphologically unintegrated {English}-origin verbs in Quebec {French}},
+	urldate = {09592695},
+	volume = {33},
+	year = {2023}
+}
+
+
+@incollection{Boutin2021,
+	address = {Cambridge},
+	author = {Boutin, Akissi Béatrice},
+	booktitle = {\textit{Youth language practices and urban language contact in {Africa}}},
+	editor = {Rajend Mesthrie, Ellen Hurst-Harosh and Heather Brookes},
+	note = { https://doi.org/10.1017/99769.010},
+	pages = {159--181},
+	publisher = {Cambridge University Press},
+	sortname = {Boutin, Akissi Beatrice},
+	title = {Exploring hybridity in Ivorian {French} and Nouchi},
+	urldate = {78131675},
+	year = {2021}
+}
+
+
+@incollection{CappeauCappeau2017,
+	address = {Paris},
+	author = {Cappeau, Paul and Anaïs Moreno},
+	booktitle = {\textit{Les parlers jeunes dans l'Île-de-{France} multiculturelle}},
+	editor = {Françoise Gadet},
+	pages = {73--99},
+	publisher = {Ophrys},
+	sortname = {Cappeau, Paul and Anais Moreno},
+	title = {Les tendances grammaticales},
+	year = {2017}
+}
+
+
+@article{Cougnon2010,
+	author = {Cougnon, Louise-Amélie},
+	journal = {\textit{Études de Linguistique Appliquée}},
+	note = {. https://doi.org/10.3917/ela.160.0397},
+	pages = {397--410},
+	sortname = {Cougnon, Louise-Amelie},
+	title = {Orthographe et langue dans les {SMS} : {{C}}onclusions à partir de quatre corpus francophones},
+	volume = {160},
+	year = {2010}
+}
+
+
+@incollection{DuboisDubois1997,
+	address = {Québec},
+	author = {Dubois, Sylvie and David Sankoff},
+	booktitle = {\textit{Explorations du lexique}},
+	editor = {Julie Auger and Yvan Rose},
+	pages = {163--176},
+	publisher = {CIRAL},
+	title = {L'absence de flexion sur les emprunts à l'anglais dans le français cadjin},
+	year = {1997}
+}
+
+
+@book{\textit{Frantext}corpus2023,
+	address = {Nancy},
+	author = {\textit{Frantext} corpus},
+	publisher = {ATILF},
+	sortname = {\textit{Frantext} corpus},
+	url = {https://www.frantext.fr},
+	year = {2023}
+}
+
+
+@incollection{GadetGadet2018,
+	address = {Berlin},
+	author = {Gadet, Françoise and Philippe Hambye},
+	booktitle = {\textit{Manual of {Romance} linguistics}},
+	editor = {Wendy Ayres-Bennett and Janice Carruthers},
+	note = { https://doi.org/10.1515/65955-028},
+	pages = {724--744},
+	publisher = {De Gruyter},
+	sortname = {Gadet, Francoise and Philippe Hambye},
+	title = {The metropolization of {French} worldwide},
+	urldate = {97831103},
+	year = {2018}
+}
+
+
+@misc{Hawksey2016,
+	author = {Hawksey, Martin},
+	note = {6.1. https://tags.hawksey.info},
+	title = {{TAGS} v},
+	year = {2016}
+}
+
+
+@incollection{Heiden2010,
+	address = {Sendai},
+	author = {Heiden, Serge},
+	booktitle = {\textit{Proceedings of the 24th {Pacific} {Asia} conference on language, information and computation}},
+	editor = {Ryo Otoguro, Kiyoshi Ishikawa, Hiroshi Umemoto, Kei Yoshimoto and Yasunari Harada},
+	note = { https://aclanthology.org/Y10-1044},
+	pages = {389--398},
+	publisher = {Tohoku University},
+	title = {The {TXM} platform: {{B}}uilding open-source textual analysis software compatible with the {TEI} encoding scheme},
+	year = {2010}
+}
+
+
+@article{JuckerJucker2012,
+	author = {Jucker, Andreas H. and Christa Dürscheid},
+	journal = {\textit{Linguistik Online}},
+	note = {. https://bop.unibe.ch/linguistik-online/issue/view/1024},
+	pages = {39--64},
+	sortname = {Jucker, Andreas H. and Christa Durscheid},
+	title = {The linguistics of keyboard-to-screen communication: {{A}} new terminological framework},
+	volume = {56},
+	year = {2012}
+}
+
+
+@incollection{Kießling2022,
+	address = {New York},
+	author = {Kießling, Roland},
+	booktitle = {\textit{Urban contact dialects and language change: {{I}}nsights from the Global {North} and {South}}},
+	editor = {Paul Kerswill and Heike Wiese},
+	note = { https://doi.org/10.4324/97958-3},
+	pages = {11--27},
+	publisher = {Routledge},
+	sortname = {Kiessling, Roland},
+	title = {{Cameroon}: {{C}}amfranglais},
+	urldate = {78042948},
+	year = {2022}
+}
+
+
+@article{Méla1997,
+	author = {Méla, Vivienne},
+	journal = {\textit{Langue Française}},
+	note = {. https://doi.org/10.3406/lfr.1997.5381},
+	pages = {16--34},
+	sortname = {Mela, Vivienne},
+	title = {\citealt{Verlan2000}},
+	volume = {114},
+	year = {1997}
+}
+
+
+@book{MosegaardHansen2016,
+	address = {Oxford},
+	author = {Mosegaard Hansen, Maj-Britt},
+	publisher = {Oxford University Press},
+	title = {\textit{The structure of Modern {Standard} {French}: {{A}} student grammar}},
+	year = {2016}
+}
+
+
+@misc{Nchare2010,
+	author = {Nchare, Abdoulaye Laziz},
+	note = {Ms. https://ling.auf.net/lingbuzz/001448},
+	title = {\textit{The morphosyntax of Camfranglais and the 4-M Model}},
+	year = {2010}
+}
+
+
+OED = \textit{Oxford English Dictionary}, online edition. https://www.oed.com
+
+@book{Poplack2017,
+	address = {In \textit{Les anglicismes : des emprunts à intérêt variable ? (Recueil des actes du colloque \citealt{OPALE2016})}, 375-403. Montréal},
+	author = {Poplack, Shana},
+	note = {https://numerique.banq.qc.ca/patrimoine/details/5238},
+	publisher = {Office québécois de la langue française},
+	title = {L'anglicisme chez nous : {{{U}}}ne perspective sociolinguistique},
+	urldate = {27/321075},
+	year = {2017}
+}
+
+
+@phdthesis{Root2018,
+	author = {Root, Jamie M.},
+	school = {\textit{On the variable morphosyntactic integration of English-origin lexical verbs in Louisiana French},
+	year = {2018}
+}
+
+
+@incollection{Sande2015,
+	address = {Somerville, MA},
+	author = {Sande, Hannah},
+	booktitle = {\textit{Selected proceedings of the 44th annual conference on {African} linguistics}},
+	editor = {Ruth Kramer, Elizabeth C. Zsiga and One Tlate Boyer},
+	pages = {243--253},
+	publisher = {Cascadilla Proceedings Project},
+	title = {Nouchi as a distinct language: {{T}}he morphological evidence},
+	url = {http://www.lingref.com/cpp/acal/44/abstract3142.html},
+	year = {2015}
+}
+
+
+@article{Saugera2012a,
+	author = {Saugera, Valérie},
+	journal = {\textit{Lingvisticæ Investigationes}},
+	note = {. https://doi.org/10.1075/li.35.1.05sau},
+	number = {1},
+	pages = {120--142},
+	sortname = {Saugera, Valerie},
+	title = {How {English}-origin nouns (do not) pluralize in {French}},
+	volume = {35},
+	year = {2012}
+}
+
+
+@article{Saugera2012b,
+	author = {Saugera, Valérie},
+	journal = {\textit{Journal of French Language Studies}},
+	note = {. https://doi.org/10.1017/S11000032},
+	number = {2},
+	pages = {225--250},
+	sortname = {Saugera, Valerie},
+	title = {The inflectional behavior of {English}-origin adjectives in {French}},
+	urldate = {09592695},
+	volume = {22},
+	year = {2012}
+}
+
+
+@phdthesis{Saulière2014,
+	author = {Saulière, Jérôme},
+	school = {dynamiques et enjeux de l'anglicisation dans les entreprises françaises}},
+	year = {2014}
+}
+
+
+@incollection{Tadmor2009,
+	address = {Berlin},
+	author = {Tadmor, Uri},
+	booktitle = {\textit{Loanwords in the world's languages: {{A}} comparative handbook}},
+	editor = {Martin Haspelmath and Uri Tadmor},
+	note = { https://doi.org/10.1515/18442.55},
+	pages = {55--75},
+	publisher = {De Gruyter Mouton},
+	title = {Loanwords in the world's languages: {{F}}indings and results},
+	urldate = {97831102},
+	year = {2009}
+}
+
+
+@article{TagliamonteTagliamonte2008,
+	author = {Tagliamonte, Sali A. and Derek Denis},
+	journal = {\textit{American Speech}},
+	note = {. https://doi.org/10.1215/-2008-001},
+	number = {1},
+	pages = {3--34},
+	title = {Linguistic ruin? {{L}}{OL}! {{I}}nstant messaging and teen language},
+	urldate = {00031283},
+	volume = {83},
+	year = {2008}
+}
+
+
+@misc{Tengour2024,
+	author = {Tengour, Abdelkarim},
+	title = {\textit{Dictionnaire de la zone}},
+	url = {https://www.dictionnairedelazone.fr},
+	year = {2024}
+}
+
+
+@book{Weisman2020,
+	address = {Genève},
+	author = {Weisman, Peter},
+	publisher = {Droz},
+	title = {\textit{Dictionnaire étymologique et critique des anglicismes}},
+	year = {2020}
+}
+
+
+@incollection{Winter-Froemel2019,
+	address = {Berlin},
+	author = {Winter-Froemel, Esme},
+	booktitle = {\textit{Cognitive contact linguistics: {{P}}lacing usage, meaning and mind at the core of contact-induced variation and change}},
+	editor = {Eline Zenner, Ad Backus and Esme Winter-Froemel},
+	note = { https://doi.org/10.1515/19430-004},
+	pages = {81--126},
+	publisher = {Walter de Gruyter},
+	title = {Reanalysis in language contact: {{P}}erceptive ambiguity, salience, and catachrestic reinterpretation},
+	urldate = {97831106},
+	year = {2019}
+}
+
+
+\end{verbatim}
+\sloppy\printbibliography[heading=subbibliography,notkeyword=this]
+\end{document}

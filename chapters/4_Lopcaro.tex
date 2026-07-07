@@ -1,0 +1,1271 @@
+\documentclass[output=paper]{langscibook}
+\author{Authorname\orcid{}\affiliation{}}
+\title{Title}
+\abstract{Abstract}
+\IfFileExists{../localcommands.tex}{
+  \addbibresource{../localbibliography.bib}
+  \input{../localpackages}
+  \input{../localcommands} 
+  \input{../localhyphenation} 
+  \togglepaper[1]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle 
+%\shorttitlerunninghead{}%%use this for an abridged title in the page headers
+% ATTENTION: Diacritics on the following phonetic characters might have been lost during conversion: {'ɛ', 'ɔ', 'ɪ', 'ə', 'ɑ', 'ʊ'}
+
+\begin{styleTit}
+Uninflectedness as a factor in agreement loss 
+\end{styleTit}
+
+\begin{styleTit}
+(with a taxonomy of partial uninflectability)\footnote{Thanks to Anna Thornton and two anonymous reviewers for comments on a previous draft. Usual disclaimers apply.}
+\end{styleTit}
+
+Michele Loporcaro
+
+\begin{styleTabellaFitta}
+ \textit{In some weakly inflecting-fusional Romance languages, there has been a significant shift towards an isolating word structure, where uninflectedness has become more common, especially in certain areas of grammar. French nominal morphology is a well-known example, but many Italo-Romance varieties, both in the north and south of Tuscany, have similarly reduced inflection distinctions. This has led to a less systematic expression of agreement compared to Latin or standard Italian. In this paper, I expand on previous research to examine how uninflectedness emerges in these Romance varieties and how it interacts with agreement. The primary focus is on verb agreement with direct objects, particularly through participles. Most Romance languages exhibit four-cell paradigms in this area, which can show syncretisms or uninflectability due to regular sound change. The notion of uninflectability can also be extended to cases where one feature, usually expressed cumulatively in inflected words, fails to be expressed, or where there is asymmetrical marking of features, as seen in some Italo-Romance dialects with uninflecting roots and inflecting endings in the same participle. This paper explores the implications of these phenomena for agreement.}
+\end{styleTabellaFitta}
+
+\begin{styleBiblio}
+1. \textit{Introduction}
+\end{styleBiblio}
+
+Among the (weakly) inflecting-fusional Romance languages, some have gone a long way towards generalizing an isolating word structure, making uninflectedness the rule rather than the exception, at least in some areas of grammar. The best-known case is French nominal morphology, but a large subset of the Italo-Romance varieties – both north and south of Tuscany, whose dialects provided the basis for the standard language – parallels French in having reduced distinctions in inflection in general, in such a way that agreement has come to be signalled much less systematically than it used to be in Latin and still is in standard Italian.
+
+In the present paper, elaborating on previous work (see e.g. \citealt{Loporcaro2010a}-b; \citealt{LoporcaroPaciaroni2021}), I show in which ways uninflectedness makes its way into these Romance varieties and in which ways it comes to variously interact with agreement. Among the evidence considered, special attention will be paid to verb agreement with the direct object, whose target is a participle within a periphrastic verb form. In such participles, most Romance languages display four-cell paradigms which may show syncretisms (along patterns classified in \citealt{Loporcaro2011}) or uninflectability, usually as a product of regular sound change (the case exemplified above with French). \citet[143]{Spencer2020} stretches the notion uninflectability a little bit, to cover also cases in which just one feature among those otherwise expressed cumulatively in the inflection of words from a given part of speech (its “inflectional signature”) fails to be expressed. Another way in which the notion can be extended is to cover asymmetrical marking of distinct features in multiple exponence: in Italo-Romance dialects, thus, one most often encounters uninflecting roots combined with inflecting endings in the same participle, but one can also observe inflecting roots co-occurring with either uninflecting or inflecting endings and, in case both the root and the suffix inflect, they need not encode exactly the same feature-value combinations. I will explore the consequences of these different distributions for agreement.
+
+To pave the way for this, after a quick prologue (\sectref{sec:key:2}), I will first sketch (in \sectref{sec:key:3}) an inventory of the different kinds of uninflectability, elaborating on \citet{Spencer2020} and focusing in particular on the types of partial uninflectability. Among these types, I will finally concentrate on one, which I will call “sublexemic partial uninflectability”, showing (in \sectref{sec:key:4}) how this is involved in the cases of agreement loss mentioned above. As a by-product, the present discussion also reads as a plea for the investigation of dialect variation in Romance, which provides language typologists with exciting and at times unparalleled data.
+
+\begin{styleBiblio}
+2. \textit{Prologue: inflecting the uninflecting in Italo-Romance}
+\end{styleBiblio}
+
+Given what has been said in \sectref{sec:key:1}, it is clear that, adopting Spencer’s (2020: 143) distinction between \textit{uninflecting} and \textit{uninflectable} lexemes, the present paper is about the latter, which belong to parts of speech which do otherwise inflect in the relevant language. However, for a contribution focusing on Romance in a volume on uninflectedness, it is appropriate to at least quickly mention the Indo-European variety which probably goes the farthest in inflecting the uninflecting (or what is usually uninflecting cross-linguistically), that is Ripano. In this Italo-Romance dialect, spoken in Ripatransone (in the Marches, central-eastern Italy), through the vagaries of sound change even adverbs (of manner, as in \REF{ex:key:1}, but others too) or wh-words (as in \REF{ex:key:2}) have come to agree with the clause subject inflecting for gender and number (examples from \citealt{PaciaroniLoporcaro2018}):
+
+\begin{styleTabellaLUNGA}
+\ea%1
+    \label{ex:key:1}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.  ˈva     a  l-a     ˈʃkɔːle    \textbf{ˈntsjeːm-i}      Ripano
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    go.\textsc{prs.3}  to  \textsc{def-f.sg}   school(\textsc{f)}.\textsc{sg}  together\textsc{{}-m.pl}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘they go to school together’ (male referents)  
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  b.  ˈva     a  l-a     ˈʃkɔːle    \textbf{ˈntsjeːm-a}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    go.\textsc{prs.3}  to  \textsc{def-f.sg}   school(\textsc{f)}.\textsc{sg}  together\textsc{{}-f.pl}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘they go to school together’ (female referents)
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+\ea%2
+    \label{ex:key:2}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          \textbf{ˈkɔmː-u}    /   \textbf{ˈkɔmː-e}    ˈʃtje   /\textbf{/}  \textbf{ˈkɔmː-i}   ˈʃteːni  /\textbf{/}  \textbf{ˈkɔmː-a}   ˈʃteːma
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  how-\textsc{m.sg}   \textsc{/}  how-\textsc{f.sg}   be.\textsc{2sg}  /\textbf{/}  how-\textsc{m.pl}  be.\textsc{3pl}   how-\textsc{f.pl}  be.\textsc{1pl}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  ‘how are you(\textsc{sg.f/m})?’        ‘how are they(\textsc{m})?’  ‘how are we(\textsc{f})?’
+\end{styleTabellaLUNGA}
+
+The reader is referred to \citet{Paciaroni2023} for a discussion of unusual agreement targets in Ripano (including parts of speech that are generally uninflecting elsewhere) and for earlier references on this fascinating variety, which, however, will not detain us any further here.
+
+\begin{styleBiblio}
+3. \textit{Types of partial uninflectability}
+\end{styleBiblio}
+
+Well-known examples such as Russian \textit{pal’to} ‘coat’ or Polish \textit{muzeum} instance total (or whole) vs. partial uninflectability (\citealt{BaermanEtAl2005}: 30; 2017: 28; \citealt{Spencer2020}: 143).\footnote{While Spencer (this volume) uses “total uninflectability”, some native English speakers I consulted (who are also distinguished morphologists) opine that the adjective \textit{total} sounds slightly awkward when used to modify a noun with the negative prefix \textit{un}{}-. However, as an anonymous reviewer kindly points out to me, data from the enTenTen21 corpus show that \textit{totally un*ble} occurs more often than \textit{wholly un*ble}.} With a variation on the theme of Anna Karenina’s principle, while wholly uninflectable lexemes are all alike, once one admits of partial uninflectability, it follows that each partially uninflectable lexeme (or class thereof) can be such in its own way. A tentative taxonomy of these different ways, elaborating on \citet{Spencer2020}, is provided in \REF{ex:key:3}: 
+
+\begin{styleTabellaLUNGA}
+\ea%3
+    \label{ex:key:3}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          An inventory of the types of partial uninflectability:
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  a.  constructional uninflectability/non-inflectedness \citep[144]{Spencer2020}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  b.  featural
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    i.  context-free; categorical
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ii.  context-free; optional
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    iii.  contextual
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  c.  sublexemic (paradigmatic: subset of the paradigm cells)
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  d.  sublexemic (syntagmatic: morpheme-related)
+\end{styleTabellaLUNGA}
+
+In the rest of this section, I will briefly comment on constructional and featural uninflectability (3a-b), to then move on to sublexemic uninflectability in \sectref{sec:key:4}, which is the type involved in the cases of agreement loss to be discussed in \sectref{sec:key:4}. Before proceding further, a preliminary remark is in order here. Many of the examples of partial uninflectability to be reviewed in what follows will turn out to involve syncretism, as defined in \REF{ex:key:4a}, from \citet{BaermanEtAl2005}, where it is contrasted with neutralization and uninflectedness \REF{ex:key:4b}:
+
+\begin{styleTabellaLUNGA}
+\ea%4
+    \label{ex:key:4}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.  \citet[2]{BaermanEtAl2005}: «\textit{syncretism} is the failure to make a morphosyntactically relevant distinction […] under particular (morphological) conditions».
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  b.  \citet[32]{BaermanEtAl2005}: «\textit{neutralization} is about syntactical irrelevance as reflected in morphology, \textit{uninflectedness} is about morphology being unresponsive to a feature that is syntactically relevant». [emphasis added]
+\end{styleTabellaLUNGA}
+
+Thus, one might wonder whether positing a notion “partial uninflectability” runs counter to Occam’s razor, multiplying entities beyond necessity. A tentative answer could be that, while there is indeed some overlapping, a) framing (what are in part) the same data in terms of partial uninflectability helps us to see them in a new perspective; and, b) at least some instances of partial uninflectability cannot fall under the scope of the notion syncretism.
+
+The first subtype distinguished by Spencer is constructional uninflectability \REF{ex:key:3a}, as observed e.g. in English nouns used as modifiers (\textit{cat food}) or in the German predicative adjective \REF{ex:key:5a}, contrasted with agreeing attributive adjectives in (5b-d):
+
+\begin{styleTabellaLUNGA}
+\ea%5
+    \label{ex:key:5}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.   d-er    Mann      /d-ie    Wohnung  /
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    \textsc{def-m.sg}  man(\textsc{m)[sg]}  /\textsc{def-f.sg}  flat(\textsc{f)[sg]}  /
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    d-as    Haus        ist      schön
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    \textsc{def-n.sg}  house(\textsc{n)[sg]}  be.\textsc{prs.}3\textsc{sg}  beautiful
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘the man is handsome//the flat/the house is beautiful’
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  b.  ein    schön-er  Mann  
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    \textsc{indf[m.sg]}  nice-\textsc{m.sg}  man(\textsc{m)[sg]}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  c.  ein-e    schön-e    Wohnung          
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    \textsc{indf}{}-\textsc{f.sg}  nice-\textsc{f.sg}  flat(\textsc{f})[\textsc{sg}]      
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  d.  ein    schön-es  Haus
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    \textsc{indf}[\textsc{n.sg}]  nice-\textsc{n.sg}  house(\textsc{n})[\textsc{sg}]  
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘a handsome man//a nice flat/house’
+\end{styleTabellaLUNGA}
+
+The \textit{muzeum}{}-type of uninflectability can be termed featural \REF{ex:key:3b}, whose first subtype (3b.i), context-free or categorical, is illustrated by Italian or Spanish class 2 adjectives such as \textit{verde} ‘green’ \REF{ex:key:6b}/(7b) which depart from what \citet[146]{Spencer2020} calls the “inflectional expectation” or “inflectional signature” for that part of speech in the relevant language, in that they only signal number, not gender, contrary to Class 1 adjectives like \textit{alto} in \REF{ex:key:6a}/(7a) where both feature values are expressed cumulatively.
+
+Two different analyses are discussed in \citet{Bond2018} and \citet{Thornton2019}, that regard this lack of inflectional distinction as either syncretism \REF{ex:key:7b} (given an exhaustive paradigm, some of whose cells host forms that are ambiguous), or featural inconsistency, if the paradigm is taken to be non-exhaustive \REF{ex:key:6b}:\footnote{The relevant definitions and criteria for \REF{ex:key:6}-(7) are the following (from \citealt{Thornton2019}: 91, elaborating on \citealt{Corbett2005}: 33, 2007: 9, 2015: 157, \citealt{Spencer2003}: 252, \citealt{Stump2012}: 255, and \citealt{Bond2018}: 413-414):“exhaustiveness (there is a cell for every possible feature combination, within a given part of speech), completeness (all cells are filled by a form) and non-ambiguity (each cell contains a form that is different from all the forms contained in the other cells of the same paradigm).”}
+
+
+\begin{tabularx}{\textwidth}{XXXXXXXXXXX}
+ & \REF{ex:key:6} & a. & \multicolumn{5}{c}{A paradigm with forms distinguished by two intersecting features} & \multicolumn{1}{c}{b.} & \multicolumn{2}{c}{A paradigm with forms distinguished by a single feature}\\
+\lsptoprule
+%\hhline%%replace by cmidrule{~~~~~--~~--}
+\multicolumn{4}{c}{} &  & \multicolumn{2}{c}{Italian/Spanish \textsc{alto} \textsc{‘}tall’} & \multicolumn{2}{c}{} & \multicolumn{2}{c}{Italian/Spanish \textsc{verde} \textsc{‘}green’}\\
+%\hhline%%replace by cmidrule{~~~~~--~~--}
+\multicolumn{4}{c}{Class 1} &  & \textsc{sg} & \textsc{pl} & \multicolumn{2}{c}{ Class 2} & \multicolumn{1}{c}{ \textsc{sg}} & \textsc{pl}\\
+%\hhline%%replace by cmidrule{~~~~---~~--}
+\multicolumn{4}{c}{} & \textsc{m} & alto & alti (altos) & \multicolumn{2}{c}{} & \multicolumn{1}{c}{verde} & verdi (verdes)\\
+%\hhline%%replace by cmidrule{~~~~---~~--}
+\multicolumn{4}{c}{} & \textsc{f} & alta & alte (altas) & \multicolumn{4}{c}{}\\
+%\hhline%%replace by cmidrule{~~~~---~~~~}
+\lspbottomrule
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{XXXXXXXXXXXX}
+
+\lsptoprule
+\ea%7
+    \label{ex:key:7}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+         & a. & \multicolumn{5}{c}{A paradigm with forms distinguished by two intersecting features} & \multicolumn{2}{c}{b.} & \multicolumn{3}{c}{A paradigm with same forms for one of two intersecting features}\\
+%\hhline%%replace by cmidrule{~~~~--~~~~--} &  &  &  & \multicolumn{2}{c}{Italian/Spanish \textsc{alto} \textsc{‘}tall’} & \multicolumn{4}{c}{} & \multicolumn{2}{c}{Italian/Spanish \textsc{verde} \textsc{‘}green’}\\
+%\hhline%%replace by cmidrule{~~~~--~~~~--} &  &  &  & \textsc{sg} & \textsc{pl} & \multicolumn{4}{c}{ Class 2} & \textsc{sg} & \textsc{pl}\\
+%\hhline%%replace by cmidrule{~~~---~~----} &  & \multicolumn{1}{c}{} & \textsc{m} & alto & alti (altos) & \multicolumn{2}{c}{} & \multicolumn{2}{c}{\textsc{m}} & verde & verdi (verdes)\\
+%\hhline%%replace by cmidrule{~~~---~~--~~} &  & \multicolumn{1}{c}{} & \textsc{f} & alta & alte (altas) & \multicolumn{2}{c}{} & \multicolumn{2}{c}{\textsc{f}} &  & \\
+%\hhline%%replace by cmidrule{~~~---~~----}
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandardoE}
+Whatever analysis one chooses for Spanish/Italian class 2 adjectives such as \textit{verde}, the partial uninflectability (for one feature) is categorical. However, featural uninflectability can be also optional (3b.ii), as illustrated by noun inflection in Wolof (Atlantic, Niger-Congo; \citealt{BabouLoporcaro2016}: 10):\footnote{In each example, the noun is followed by the form of the proximal definite article, which is included in \REF{ex:key:8} because it marks number (in addition to noun class/gender).}
+\end{styleStandardoE}
+
+
+\begin{tabularx}{\textwidth}{XXXXXXX}
+
+\lsptoprule
+%\hhline%%replace by cmidrule{~~~---~}
+\multicolumn{2}{c}{(8)} &  & \textsc{sg} & \multicolumn{2}{c}{ \textsc{pl}} & Wolof\\
+%\hhline%%replace by cmidrule{~~~~--~} & \multicolumn{2}{c}{} &  & \textsc{=} \textsc{sg} & \textsc{${\neq}$ sg} & gloss\\
+%\hhline%%replace by cmidrule{~~~---~} & \multicolumn{2}{c}{a.} & këf ki & *këf yi & yëf yi & ‘the thing/-s’\\
+%\hhline%%replace by cmidrule{~~~---~} & \multicolumn{2}{c}{b.} & bët bi & bët yi & gët yi & ‘the eye/-s’\\
+%\hhline%%replace by cmidrule{~~~---~} & \multicolumn{2}{c}{c.} & mbagg mi & mbagg yi & \textsuperscript{\%}wagg yi & ‘the shoulder/-s’\\
+%\hhline%%replace by cmidrule{~~~---~} & \multicolumn{2}{c}{d.} & bant bi & bant yi & \textsuperscript{†}want yi & ‘the bit/-s of wood’\\
+%\hhline%%replace by cmidrule{~~~---~} & \multicolumn{2}{c}{e.} & góor gi & góor ñi & {}-{}- & ‘the man/men’\\
+%\hhline%%replace by cmidrule{~~~---~}
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandardoE}
+Most Wolof nouns are of type \REF{ex:key:8e}, as a distinct plural form is never attested along the documented history of the language. For some other, a distinct plural form is attested in the past but has now become ungrammatical \REF{ex:key:8d} or is not (anymore) acceptable for all speakers \REF{ex:key:8c}.\footnote{As an anonymous reviewer aptly remarked, \REF{ex:key:8d} and \REF{ex:key:8e} are synchronically identical, yet information about the documentation of a distinct plural form in past stages of the language for nouns such as the one in \REF{ex:key:8d} is not irrelevant in describing the drift towards generalized uninflectability of Wolof nouns, some of which have been uninflectable since the beginning of documentation \REF{ex:key:8e}, while others had a distinct plural form which has now fallen into disuse for all speakers \REF{ex:key:8d}, and still others have a distinct plural form that is acceptable to at least some speakers, as indicated by the \% sign in \REF{ex:key:8c}.} At the other extreme, just a handful of nouns (exemplified with \textit{këf} ‘thing’ in \REF{ex:key:8a}) still have a plural form that must be employed categorically when the syntax requires it. Yet another group of nouns \REF{ex:key:8b} still displays a plural form but this is not selected categorically in plural contexts and, as a matter of fact, those nouns are more likely to occur in such contexts, too, in the same form as used in the singular. Obviously, this is a way in which in a language an entire part of speech can become uninflecting, a process now approaching its final stage in the case of Wolof nouns. As long as the change, whose stages are mirrored in (8a-e), is not completed, nouns such as those exemplified in (8b-c) display overabundance (see \citealt{Thornton2011}) – that is, variation between two cell-mates (in the sense of \citealt{LoporcaroPaciaroni2011}: 420) – in the plural cell and thus provide an example of optional featural uninflectability. This optionality is an instance of free variation and thus differs from the next subtype of partial featural uninflectability (3b.iii), which is context-dependent. Consider the forms of the Italian definite article in \REF{ex:key:9}:
+\end{styleStandardoE}
+
+
+\begin{tabularx}{\textwidth}{XXXXXXXXXXX}
+
+\lsptoprule
+\ea%9
+    \label{ex:key:9}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+         & \multicolumn{1}{c}{a.} & \multicolumn{2}{c}{\_\_\#C-} &  & \multicolumn{1}{c}{b.} & \multicolumn{2}{c}{\_\_\#V-} & \multicolumn{3}{c}{Italian definite article}\\
+%\hhline%%replace by cmidrule{~~--~~--~~~} &  & \textsc{sg} & \textsc{pl} &  &  & \textsc{sg} & \textsc{pl} &  &  & \\
+%\hhline%%replace by cmidrule{~---~---~~~}
+\multicolumn{1}{c}{} & \textsc{m} & il & i & \multicolumn{1}{c}{} & \textsc{m} & l & ʎ & \multicolumn{3}{c}{\textit{l’ultimo/-a} ‘the last.\textsc{m/f.sg}’}\\
+%\hhline%%replace by cmidrule{~---~---~~~}
+\multicolumn{1}{c}{} & \textsc{f} & la & le & \multicolumn{1}{c}{} & \textsc{f} &  & le &  &  & \\
+%\hhline%%replace by cmidrule{~---~---~~~}
+\lspbottomrule
+\end{tabularx}
+Before consonant-initial nouns \REF{ex:key:9a}, the article has a complete paradigm (see note 2), with four cells filled with four distinct forms.\footnote{For completeness, it may be mentioned (as an anonymous reviewer reminds me) that the \textsc{m.sg} cell shows an allomorph \textit{lo}, selected before consonants/consonant clusters that are not exhaustively syllabified in the onset. However, this allomorph is omitted for simplicity in \REF{ex:key:9a}, as it is not relevant to the present argument.} Before vowel-initial nouns, however \REF{ex:key:9b}, the singular masculine/feminine forms are syncretic or, once partial uninflectability is admitted, uninflectable for gender, whereas the number contrast is preserved. Compare Romanesco in \REF{ex:key:10}, where the prevocalic allomorph \REF{ex:key:10b} has become unresponsive to both gender and number and reduced to just one form:
+
+
+\begin{tabularx}{\textwidth}{XXXXXXXXXXXX}
+
+\lsptoprule
+\ea%10
+    \label{ex:key:10}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+         & \multicolumn{1}{c}{a.} & \multicolumn{2}{c}{\_\_\#C-} &  & \multicolumn{1}{c}{b.} & \multicolumn{2}{c}{\_\_\#V-} & \multicolumn{2}{c}{Romanesco definite article} &  & \\
+%\hhline%%replace by cmidrule{~~--~~--~~~~} &  & \textsc{sg} & \textsc{pl} &  &  & \multicolumn{1}{c}{ \textsc{sg}} & \textsc{pl} &  &  &  & \\
+%\hhline%%replace by cmidrule{~---~---~~~~}
+\multicolumn{1}{c}{} & \textsc{m} & er & (l)i & \multicolumn{1}{c}{} & \textsc{m} & \multicolumn{2}{c}{ l} & \multicolumn{4}{c}{\textit{l’urtimo/-a/-i/-e} ‘the last.\textsc{m/f.sg}//\textsc{m/f.pl}’}\\
+%\hhline%%replace by cmidrule{~---~---~~~~}
+\multicolumn{1}{c}{} & \textsc{f} & (l)a & (l)e & \multicolumn{1}{c}{} & \textsc{f} &  &  & \multicolumn{4}{c}{}\\
+%\hhline%%replace by cmidrule{~---~--~~~~~}
+\lspbottomrule
+\end{tabularx}
+\begin{styleBiblio}
+4. \textit{Sublexemic uninflectability and loss of object agreement in Romance}
+\end{styleBiblio}
+
+Having paved the ground, we now finally come to the last two in the tentative inventory of types of partial uninflectability in \REF{ex:key:3}, which I propose could be called “sublexemic” (3c-d) and which are those involved in the cases of agreement loss to be discussed in this section.
+
+The first type \REF{ex:key:3c} is sublexemic in a paradigmatic sense, since uninflectability concerns a subset of the paradigm cells of the given lexeme. This the usual case of participles in languages such as French, where affixal inflection (and hence agreement) has been heavily impacted by regular sound change: this resulted in a complete loss of suffixal nominal inflection (apart from \textit{liaison} contexts) and a strong reduction of verb inflection as well. From now on, we will focus on past participles since these are the target of direct object agreement across Romance. As seen in \REF{ex:key:11a}, erosion of all affixal inflection through sound change resulted in uninflectability for all regular participles, exemplified with class 1 \textit{chanté} ‘sang’ in \REF{ex:key:11b}:
+
+
+\begin{tabularx}{\textwidth}{XXXXXXXXXXXXXXXX}
+
+\lsptoprule
+\ea%11
+    \label{ex:key:11}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+         & \multicolumn{15}{c}{Past participle inflection in French        weak             strong} \\
+\multicolumn{2}{c}{affixal:} & \multicolumn{3}{c}{a.} &  & \multicolumn{2}{c}{     b.} & \multicolumn{2}{c}{\textit{ʃɑt{}-e} ‘to sing’} &  & \multicolumn{3}{c}{c.} & \multicolumn{2}{c}{\textit{pʁɑd{}-ʁ} ‘to take’}\\
+%\hhline%%replace by cmidrule{~~~~~-~~-~~~~~--}
+\multicolumn{4}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textsc{m} \textsc{=} \textsc{f}} &  & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textsc{m} \textsc{=} \textsc{f}} & \multicolumn{4}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{ \textsc{m}} & \multicolumn{1}{c}{ \textsc{f}}\\
+%\hhline%%replace by cmidrule{~~~---~--~~~----}
+\multicolumn{3}{c}{} & \multicolumn{2}{c}{\textsc{sg} \textsc{=} \textsc{pl} } & \multicolumn{1}{c}{\textit{{}-}Ø} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textsc{sg} \textsc{=} \textsc{pl} } & \multicolumn{1}{c}{ʃɑt-e} & \multicolumn{3}{c}{} & \multicolumn{2}{c}{\textsc{sg} \textsc{=} \textsc{pl}} & \multicolumn{1}{c}{pʁi} & \multicolumn{1}{c}{pʁiz}\\
+%\hhline%%replace by cmidrule{~~~---~--~~~----}
+\lspbottomrule
+\end{tabularx}
+This is an instance of partial uninflectability, since the verb itself still inflects, if only weakly so, while it is just a subset of the paradigm cells, those of the participle, which have become unresponsive to the features gender and number. Since participles are the target of object agreement, the latter cannot be signalled anymore with regular participles. There are just two groups of root-stressed participles, exemplified with \textit{pris/prise} in \REF{ex:key:11c} and \textit{fait/faite} in \REF{ex:key:12},\footnote{See Kilani-Schoch \& \citet[145-146]{Dressler2005}:“Dans une minorité de paradigmes et microclasses (14 sur 57), le genre féminin est marqué sur le participe passé par les consonnes /z/ et /t/, lorsque la base n’est pas longue.”As seen in \REF{ex:key:12}, the consonant /t/, which has become the exponent of feminine agreement in the Modern French paradigms exemplified there, stems from the original (inherent) inflection of the participle, which, by contrast, was deleted in the masculine forms after the following final vowel had already been deleted by the Old French stage \REF{ex:key:12b}. Conversely, final -/ə/ < Lat. -\textsc{a} in the feminine endings prevented final consonant deletion from applying, thereby preserving the contrast with masculine.} which still inflect, just for gender, never for number, resulting in the mirror image of Italian and Spanish class 2 adjectives, which inflect for number, not for gender:
+
+
+\begin{tabularx}{\textwidth}{XXXXXXXXXXX}
+
+\lsptoprule
+\multicolumn{1}{c}{(12)} & \multicolumn{1}{c}{a. Proto-Romance} &  & \multicolumn{2}{c}{b. Old French} &  & \multicolumn{3}{c}{c. Modern French} &  & \\
+%\hhline%%replace by cmidrule{~-~~-~~-~~~} & \textsc{fac-t-u} & \multicolumn{2}{c}{>} & ˈfai-t & \multicolumn{2}{c}{>} & fɛ & \multicolumn{2}{c}{\textsc{m.sg}} & ‘done’\\
+%\hhline%%replace by cmidrule{~-~~-~~-~~~} & \textsc{fac-t-os} & \multicolumn{2}{c}{} & ˈfai-t-s & \multicolumn{2}{c}{} &  & \multicolumn{2}{c}{\textsc{m.pl}} & \\
+%\hhline%%replace by cmidrule{~-~~-~~-~~~} & \textsc{fac-}\textbf{\textsc{t}}\textsc{{}-a} & \multicolumn{2}{c}{} & ˈfai-\textbf{t}{}-ə & \multicolumn{2}{c}{} & fɛ\textbf{t} & \multicolumn{2}{c}{\textsc{f.sg}} & \\
+%\hhline%%replace by cmidrule{~-~~-~~-~~~} & \textsc{fac-}\textbf{\textsc{t}}\textsc{{}-as} & \multicolumn{2}{c}{} & ˈfai-\textbf{t}{}-əs & \multicolumn{2}{c}{} &  & \multicolumn{2}{c}{\textsc{f.pl}} & \\
+%\hhline%%replace by cmidrule{~-~~-~~-~~~}
+\lspbottomrule
+\end{tabularx}
+Even though with regular participles \REF{ex:key:11b} agreement is trivially gone, the object agreement rule is still functioning in French, as can be ascertained whenever the participle has feminine forms ending in /z/ or /t/ (see note 6), as exemplified in \REF{ex:key:13b}, a context where the conditions for participle agreement are met, though here, too, some variation is reported for the spoken language so that the default masculine form of the participle, which occurs categorically in syntactic contexts where agreement is ungrammatical \REF{ex:key:13a}, can be selected optionally:
+
+\begin{styleTabellaLUNGA}
+\ea%13
+    \label{ex:key:13}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          French (\citealt{GuastiRizzi2002})
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  a.  il  a     mis/  *mise  la     voiture  dans   le     garage    
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    he   have.3\textsc{sg}  put.\textsc{m/}put.\textsc{f}   \textsc{def.f.sg}  car(\textsc{f})    into     \textsc{def.m.sg}  garage(\textsc{m})
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘He put the car in the garage’
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  b.  la     voiture,    il  l’=a           mise/\textsuperscript{\%}mis  
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    \textsc{def.f.sg}  car(\textsc{f})    he   \textsc{do.3f.sg}=have.3\textsc{sg}  put.\textsc{f/}  put.\textsc{m}    
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    dans   le       garage 
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    into   \textsc{def.m.sg}    garage(\textsc{m})
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘The car, he put it in the garage’
+\end{styleTabellaLUNGA}
+
+Crucially, the syntactic agreement rule is itself independent from the morphology, as shown by cases such as the Walloon dialect of Liège (North-Eastern Gallo-Romance; see \citealt{Remacle1956}: 148), where the gender contrast is still marked on all participles, including weak ones such as those in \REF{ex:key:14}, yet object agreement in perfective periphrastics is completely gone (just as in Spanish or Portuguese), even in the last syntactic context which resists the gradual demise of participle agreement in other Romance varieties, viz. initially transitive clauses with direct object clitics, as shown in \REF{ex:key:15}:
+
+
+\begin{tabularx}{\textwidth}{XXXXXXXX}
+
+\lsptoprule
+%\hhline%%replace by cmidrule{~--~--~~}
+\ea%14
+    \label{ex:key:14}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+         & \textsc{m} & \textsc{f} &  & \textsc{m} & \textsc{f} & \multicolumn{2}{c}{  Liégeois}\\
+%\hhline%%replace by cmidrule{~--~--~~} & trompé & trompêye &  & vèyou & vèyowe & \multicolumn{2}{c}{}\\
+%\hhline%%replace by cmidrule{~--~--~~}
+\multicolumn{1}{c}{} & \multicolumn{2}{c}{‘deceived’} & \multicolumn{1}{c}{} & \multicolumn{2}{c}{‘seen’} &  & \\
+\lspbottomrule
+\end{tabularx}
+\begin{styleTabellaLUNGA}
+\ea%15
+    \label{ex:key:15}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          (èle)  dji  l’=a             vèyou /*vèyouwe 
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  (her)  I  \textsc{do.3f.sg}=have.1\textsc{sg}  seen.\textsc{m} \textsc{/} seen.\textsc{f} 
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  ‘I’ve seen her’
+\end{styleTabellaLUNGA}
+
+Of course, if phonetic erosion is complete and no single inflecting participle is left, then the language acquirer loses all evidence for a syntactic rule of object agreement. This has not happened so far in French (see \REF{ex:key:13b}) but has in Gardiol/Guardiolo, the dialect spoken in the Occitan enclave of Guardia Piemontese, Northern Calabria (\citealt{Loporcaro1998}: 183f.). On the model of the neighbouring Italo-Romance dialects, Gardiol has merged all final unstressed vowels into schwa, which now occurs only variably. Consequently, for all participles there is now just one form in all syntactic contexts and no inflection for gender or number, even in initially transitive clauses with direct object clitics (as exemplified for French in \REF{ex:key:13b} and Liégeois in \REF{ex:key:15}):
+
+\begin{styleTabellaLUNGA}
+\ea%16
+    \label{ex:key:16}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.  tə l a saˈrː\"{æ}/dəˈvɛrtə (la ˈpːɔrtə/ʊ kːanˈtʃɛɖːʐ\textsuperscript{ə})\textsuperscript{} Gardiol/Guardiolo (Occitan)
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+      ‘you closed/opened it (the door(\textsc{f})/the gate(\textsc{m}))’
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  b.  ˈiʃta ˈkːoːz/iˈkːe ˈdːʒiə̯k ɔ β\textsuperscript{w} ɛ pa ˈmːai̯ ˈfɑi̯t
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+      ‘this thing(\textsc{f}) I never did/that game(\textsc{m}) I never played’
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  c.  ˈiʃtə ˈdːʊtːərə z ɛ pa ˈʃkrɪtːə ˈmːɪ
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+      ‘these letters(\textsc{f}) I did not write’
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  d.  kːe ˈfɵɟːə l ɛ pa ˈʃkrɪtːə ˈmːɪ
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+      ‘I didn’t write that leaflet(\textsc{m})’
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  e.  la ˈpːɑʃt\textsuperscript{ə}/ʊ tːʃaˈbːrɛ tə l a ˈcːeu̯t
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+      ‘the pasta(\textsc{f}), did you cook it?’/’the kid(\textsc{m}), did you cook it?’
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  f.  ɟi  mːakːaˈrːʊn iɟ ɛ ˈcːeu̯t
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+      ‘the maccheroni(\textsc{m}), I cooked them’
+\end{styleTabellaLUNGA}
+
+Many dialects of a large area of Central-Southern Italy in which final unstressed vowels merge into schwa show a situation comparable with standard French, in the sense that all regular non-root-stressed participles have become uninflectable, as exemplified with Altamurano (an Apulian dialect) in \REF{ex:key:17b} (\citealt{Loporcaro1998}: 66):
+
+
+\begin{tabularx}{\textwidth}{XXXXXXXXXXXXXXXXX}
+
+\lsptoprule
+\ea%17
+    \label{ex:key:17}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+         & \multicolumn{16}{c}{Past participle inflection in Altamurano        weak           strong} \\
+\multicolumn{2}{c}{affixal:} & \multicolumn{3}{c}{a.} & \multicolumn{3}{c}{} & \multicolumn{2}{c}{           b.} & \multicolumn{3}{c}{\textit{laˈvɛ} ‘to wash’} &  & \multicolumn{1}{c}{c.} & \multicolumn{2}{c}{\textit{ˈsːœlvə} ‘to untie’}\\
+%\hhline%%replace by cmidrule{~~~~~--~~~--~~~--}
+\multicolumn{4}{c}{} &  & \multicolumn{1}{c}{ \textsc{m}} & \textsc{f} & \multicolumn{2}{c}{} &  & \multicolumn{1}{c}{ \textsc{m}} & \textsc{f} & \multicolumn{2}{c}{} &  & \textsc{m} & \textsc{f}\\
+%\hhline%%replace by cmidrule{~~~----~~---~~---}
+\multicolumn{3}{c}{} & \multicolumn{2}{c}{\textsc{sg}} & \multicolumn{2}{c}{ {}-ə} & \multicolumn{2}{c}{} & \textsc{sg} & \multicolumn{2}{c}{laˈvɛtə} & \multicolumn{2}{c}{} & \textsc{sg} & ˈsːeltə & ˈsːœltə\\
+%\hhline%%replace by cmidrule{~~~----~~---~~---} &  &  & \multicolumn{2}{c}{\textsc{pl}} &  &  & \multicolumn{2}{c}{} & \textsc{pl} &  &  & \multicolumn{2}{c}{} & \textsc{pl} &  & \\
+%\hhline%%replace by cmidrule{~~~---~~~--~~~---}
+\lspbottomrule
+\end{tabularx}
+Yet, here the few strong (i.e., root-stressed) participles that still inflect, such as \REF{ex:key:17c}, show agreement even in the very first context from which direct object agreement has disappeared elsewhere, namely transitive clauses with lexical (i.e., non-clitic) direct object, demonstrating that it is still possible to detect crucial syntactic differences (in our case, between this Apulian dialect and French) despite most of the morphological evidence having dissolved because of sound change: 
+
+\begin{styleTabellaLUNGA}
+\ea%18
+    \label{ex:key:18}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.  ˈaɟːə     ˈsːœltə /*ˈsːeltə        la     ʃʊˈmːwɛnd    Altamurano
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    have.1\textsc{sg}  unfastened.\textsc{f}/unfastened.\textsc{m}  \textsc{def.f.sg}  mare(\textsc{f)}   
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘I have unfastened the mare’              
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  b.  ˈaɟːə     laˈvɛtə/ˈnːʏtːə    la     ʃʊˈmːwɛnd      
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    have.1\textsc{sg}  washed/brought    \textsc{def.f.sg}   mare(\textsc{f)}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘I have washed/brought the mare’
+\end{styleTabellaLUNGA}
+
+As the glosses in \REF{ex:key:18} show – which are morphological, rather than morphosyntactic – only gender agreement is signalled, as in French, albeit by different means, namely stem vowel alternations that arose via metaphony. As seen in \REF{ex:key:19a}, the original masculine singular and plural endings, consisting of final high vowels, caused metaphony, resulting in either raising, as in Maceratese \REF{ex:key:19b}, or diphthongization, as in Leccese \REF{ex:key:19b}, Altamurano and Neapolitan \REF{ex:key:19c}:
+
+
+\begin{tabularx}{\textwidth}{XXXXXXXXXXXXXXXXX}
+
+\lsptoprule
+\ea%19
+    \label{ex:key:19}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+         a. & \multicolumn{3}{c}{ProtoRom.} &  & \multicolumn{1}{c}{b.} & \multicolumn{2}{c}{Maceratese} & \multicolumn{1}{c}{=} & \multicolumn{2}{c}{Leccese} &  & \multicolumn{1}{c}{c.} & \multicolumn{2}{c}{Altamurano     =} & \multicolumn{2}{c}{Neapolitan}\\
+%\hhline%%replace by cmidrule{~~-~~~--~--~~-~-~}
+\multicolumn{2}{c}{\textsc{m.sg}} & \textsc{coc-t-u} & \multicolumn{2}{c}{>} &  & ˈkotː- & {}-u &  & ˈkwetː- & {}-u & > &  & ˈkwetːə &  & ˈkwotːə & \\
+%\hhline%%replace by cmidrule{~~-~~~~-~~-~~-~~~}
+\multicolumn{2}{c}{\textsc{m.pl}} & \textsc{coc-t-i} & \multicolumn{2}{c}{} &  & ˈkotː- & {}-i &  & ˈkwetː- & {}-i & > &  &  &  &  & \\
+%\hhline%%replace by cmidrule{~~-~~~--~--~~-~-~}
+\multicolumn{2}{c}{\textsc{f.pl} } & \textsc{*coc-t-e} & \multicolumn{2}{c}{} &  & ˈkɔtː- & {}-e &  & ˈkɔtː- & {}-e & > &  & ˈkœtːə &  & ˈkɔtːə & \\
+%\hhline%%replace by cmidrule{~~-~~~~-~~-~~-~-~}
+\multicolumn{2}{c}{\textsc{f.sg}} & \textsc{coc-t-a} & \multicolumn{2}{c}{} &  & ˈkɔtː- & {}-a &  & ˈkɔtː- & {}-a & > &  &  &  &  & \\
+%\hhline%%replace by cmidrule{~~-~~~--~--~~-~-~}
+\lspbottomrule
+\end{tabularx}
+\begin{styleTabellaLUNGA}
+    ‘cooked’
+\end{styleTabellaLUNGA}
+
+A more articulate, synchronic display of the Maceratese data is in \REF{ex:key:20} (from \citealt{Paciaroni2017}: 54):
+
+
+\begin{tabularx}{\textwidth}{XXXXXXXXXXXXXXXX}
+
+\lsptoprule
+\ea%20
+    \label{ex:key:20}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+         & \multicolumn{15}{c}{Participle inflection in Maceratese \citep[54]{Paciaroni2017}}\\
+%\hhline%%replace by cmidrule{~~~--~~~--~~~~--} & a. &  & \textsc{sg} & \textsc{pl} &  & \multicolumn{2}{c}{b.} & \textsc{sg} & \textsc{pl} & \multicolumn{3}{c}{ c.} &  & \textsc{sg} & \textsc{pl}\\
+%\hhline%%replace by cmidrule{~----~----~-----}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{\textsc{n}} &  & {}-o & – & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textsc{n}} & ˈkotː- & {}-o & – & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textsc{n}} & \multicolumn{2}{c}{ˈrutː-} & {}-o & –\\
+%\hhline%%replace by cmidrule{~-~--~----~-----}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{\textsc{m}} & laˈat- & {}-u & {}-i & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textsc{m}} &  & {}-u & {}-i & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textsc{m}} &  &  & {}-u & {}-i\\
+%\hhline%%replace by cmidrule{~-~--~----~-----}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{\textsc{f}} &  & {}-a & {}-e & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textsc{f}} & ˈkɔtː- & {}-a & {}-e & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textsc{f}} & \multicolumn{2}{c}{ˈrotː-} & {}-a & {}-e\\
+%\hhline%%replace by cmidrule{~----~----~-----} &  & \multicolumn{3}{c}{‘washed’} & \multicolumn{2}{c}{} & \multicolumn{3}{c}{‘cooked’} & \multicolumn{2}{c}{} & \multicolumn{4}{c}{‘broken’}\\
+\lspbottomrule
+\end{tabularx}
+Regular (i.e. non-root-stressed) participles in Maceratese inflect only affixally \REF{ex:key:20a} for number (a two-valued feature like elsewhere in Romance) and gender, which has a third value, the neuter, occurring only in the singular alongside masculine and feminine. The paradigms of strong metaphonic participles, exemplified in (20b-c), are more complex, since alongside affixal inflection, root allomorphy also co-signals morphosyntactic feature values.\footnote{The data in \REF{ex:key:20}-(27) are slightly simplified, in that in these dialects there are also root-stressed strong participles which do not show any root alternation, depending on the quality of the (etymological) stressed vowel: all over the area considered here, only stressed mid vowels underwent metaphony, which resulted in the morphonological alternations discussed.} Here, the neuter form shares the root alternant with the masculine, contrasting with the feminine. In other words, number is signalled just on the ending, while there is double exponence of gender. Thus, it is fair to say that the participle stem in (20b-c) inflects for gender, in a way that synchronically does not just replicate the contrasts marked affixally.\footnote{Both an anonymous reviewer and Anna M. Thornton (p.c., May 1, 2024) objected to the terminology adopted here, since they “would not say that roots / stems directly inflect or do not inflect, but rather than roots / stems can be, or contain, exponents of inflectional feature values” (Reviewer 2’s report). I fully realize that this criticism is in line with an orthodox application of a word-and-paradigm approach to morphology. However, I believe that the wording adopted here is descriptively adequate, once a) it is admitted that morphemes can be segmented and have a status in morphological theory and b) one observes that the root allomorphy in (19b-c) and (20b-c) – as well as in (21b-c) below – covaries with contrasts in feature-value specifications (here, gender). This wording is also in line with the terminology used in Italian dialectology, where alternations such as those just mentioned are defined as “flessione interna metafonetica” (cf. e.g. D’\citealt{Elia1975}-76; \citealt{PaciaroniEtAl2013}: 98; \citealt{Maturi2023}: 60-61; \citealt{Mileti2022}-23: 55).} Contrary to the affixal contrasts, that are always there whatever the class of the participle, inflectional marking on the root may occur or not, depending on the class of the participle.
+
+A possible way of framing the inflection class difference between weak \REF{ex:key:20a} and strong participles (20b-c) consists in saying that the stem is uninflectable in the former while inflecting for gender in the latter. Thus, weak participles are an instance of partial sublexemic uninflectability, not in the sense that uninflectability concerns a subset of the paradigm cells, as in \REF{ex:key:3c}, but rather because it is seen just on the stem, independently of inflectional endings: in other words, this could be termed syntagmatic (i.e. morpheme-related) sublexemic uninflectability \REF{ex:key:3d}.
+
+It would probably not be sensible to claim that the stem of weak participles in \REF{ex:key:20a} is syncretic for gender: after all, we usually talk of syncretism for affixal morphology or, in inferential-realizational models, for whole word forms occupying paradigm cells, not just for stems which, consequently, have no “inflectional expectation/signature” \citep[146]{Spencer2020} by themselves.
+
+In previous work of mine (see \citealt{Loporcaro2015}: 119-123), I argued that among dialects showing multiple exponence of gender along the lines in (20b-c), a few, spoken in an area straddling Northern Calabria and Southern Basilicata, display a puzzling situation, which results in a violation of the morphology-free syntax principle (see \citealt{ZwickyPullum1983}), according to which
+
+\begin{stylecitazione}
+“syntax can be sensitive to abstract properties realized in morphology, but not to specific inflectional marks for these properties (to dative case, say, but not to a particular dative case marking, or to a declension class for nouns)” \citep[301]{Zwicky1996}.
+\end{stylecitazione}
+
+The violation consists in the fact that in this dialect area, the syntax of direct object agreement is sensitive to the class of the participle. This is illustrated in the following, where the data from one such dialect, Castrovillarese, spoken in the province of Cosenza, Northern Calabria (see \citealt{Pace1993}-94: 128-147; \citealt{Loporcaro2010b}: 167-171, 2015: 119-123),\footnote{In addition to the dialect of Castrovillari, a similar situation has been described (\citealt{LoporcaroSilvestri2011}: 350-353) for those of Verbicaro, San Biase (also in the province of Cosenza), and Viggianello (in the province of Potenza, Basilicata).} are compared with parallel data from Maceratese, a dialect in which the morphology of participles is similar but that does not show this syntactic peculiarity. The Castrovillarese past participle paradigms, displayed in \REF{ex:key:21}, appear less complex than in Maceratese \REF{ex:key:20}:
+
+
+\begin{tabularx}{\textwidth}{XXXXXXXXXXXXXXXXXXX}
+ & \REF{ex:key:21} & \multicolumn{17}{c}{Participle inflection in Castrovillarese (refs. in \REF{ex:key:26})}\\
+\lsptoprule
+%\hhline%%replace by cmidrule{~~~~~--~~~--~~~~--~}
+\multicolumn{3}{c}{} & a. &  & \textsc{sg} & \textsc{pl} &  & \multicolumn{2}{c}{b.} & \textsc{sg} & \textsc{pl} & \multicolumn{2}{c}{\raggedleft c.} & \multicolumn{2}{c}{} & \textsc{sg} & \textsc{pl} & \\
+%\hhline%%replace by cmidrule{~~~----~----~-----~}
+\multicolumn{3}{c}{} & \multicolumn{1}{c}{\textsc{m}} & laˈvat- & {}-ʊ & {}-ɪ & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textsc{m}} & ˈkutː- & {}-ʊ & {}-ɪ & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\textsc{m}} & aˈpɛrt- & {}-ʊ & {}-ɪ & \\
+%\hhline%%replace by cmidrule{~~~----~----~-----~}
+\multicolumn{3}{c}{} & \multicolumn{1}{c}{\textsc{f}} &  & {}-a &  & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textsc{f}} & ˈkɔtː- & {}-a &  & \multicolumn{1}{c}{} & \multicolumn{2}{c}{\textsc{f}} & aˈpɪrt- & {}-a &  & \\
+%\hhline%%replace by cmidrule{~~~----~----~-----~}
+\multicolumn{3}{c}{} &  & \multicolumn{3}{c}{‘washed’} & \multicolumn{2}{c}{} & \multicolumn{3}{c}{‘cooked’} & \multicolumn{3}{c}{} & \multicolumn{3}{c}{‘open’} & \\
+\lspbottomrule
+\end{tabularx}
+First, there are just two gender values and, second, all inflectional suffixes converge into -/ɪ/ in the plural as a product of regular sound change. If we compare weak and strong participles, we can say that the former \REF{ex:key:21a} have a syncretic plural. Another way of putting it, once partial sublexemic uninflectability is assumed, is that weak past participle stems are uninflectable whereas those of strong metaphonic participles inflect for gender, regardless of number. By contrast, on endings gender is neutralized (rather than syncretized), according to the definition in \REF{ex:key:4b}, since affixal endings just mark number, never gender.
+
+Now, given Zwicky’s principle, we expect the morphological difference between weak and strong participles – the latter with a complete four-cell/four-form paradigm (21b-c), contrary to the former \REF{ex:key:21a} – not to play any role in agreement rules. This is indeed what usually happens in language after language, as illustrated for Maceratese \citep{Paciaroni2017} with the three syntactic constructions in \REF{ex:key:22}-(24) containing compound perfects:
+
+\begin{styleTabellaLUNGA}
+\ea%22
+    \label{ex:key:22}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.  rɔsa   ɛ     rvinʊt-a  /*-o   jeri            Maceratese
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    Rose   be.3\textsc{sg}   come-\textsc{f.sg}/-\textsc{n.sg}  yesterday          
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘Rose has come yesterday’               unaccusative, weak PtP
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  b.  rɔsa   ɛ   mmɔrt-a  /  *mmort-o         
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    Rose   be.3\textsc{sg}   died{\textbackslash}\textsc{f}{}-\textsc{f.sg}/  died{\textbackslash}\textsc{n}{}-\textsc{n.sg}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘Rose has died’                     unaccusative, strong PtP
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+\ea%23
+    \label{ex:key:23}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.  (l     ú-a)       rɔsa     l=a         rlaat-a/*-o 
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    \textsc{def.f.sg}  grapes(\textsc{f}).\textsc{sg}   Rose  \textsc{do3f.sg}=have.3\textsc{sg}    washed-\textsc{f.sg}/-\textsc{n.sg}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘(The grapes) Rose has washed them’         DO clitic, weak PtP
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  b.  (l     ú-a)       rɔsa    l=a         rkɔrd-a    /*rkord-o 
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    \textsc{def.f.sg}  grapes(\textsc{f}).\textsc{sg}   Rose   \textsc{do3f.sg}=have.3\textsc{sg}   picked{\textbackslash}\textsc{f}{}-\textsc{f.sg}  / picked{\textbackslash}\textsc{n-n.sg}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘(The grapes) Rose has picked them’           DO clitic, strong PtP
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+\ea%24
+    \label{ex:key:24}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.  rɔsa   a     rlaat-o/*-a       l       ú-a
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    Rosa   have.3\textsc{sg}   washed-\textsc{n.sg}/-\textsc{f.sg}  \textsc{def.f.sg}   grapes(\textsc{f}).\textsc{sg}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘Rose has washed the grapes’               lexical DO, weak PtP
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  b.  rɔsa   a     rkord-o    /*rkɔrd-a      l     ú-a  
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    Rosa  have.3\textsc{sg}   piced{\textbackslash}\textsc{n-n.sg}  \textsc{/} picked{\textbackslash}\textsc{f}{}-\textsc{f.sg}    \textsc{def.f.sg}   grapes(\textsc{f}).\textsc{sg}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘Rose has picked the grapes’               lexical DO, strong PtP
+\end{styleTabellaLUNGA}
+
+The (a) vs. (b) examples contain weak vs. strong participles, a morphological difference which, as expected, does not impact on the agreement rule, which prescribes agreement in \REF{ex:key:22}-(23) but excludes it in \REF{ex:key:24}, much as in Standard Italian.
+
+Compare now the Castrovillarese counterparts in \REF{ex:key:25}-(27): 
+
+\begin{styleTabellaLUNGA}
+\ea%25
+    \label{ex:key:25}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.  rɔsa   jɛ     vvinʊt{}-a/*-ʊ                 Castrovillarese
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    Rose   be.3\textsc{sg}   come-\textsc{f.sg}/-\textsc{m.sg}            
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘Rose has come’                     unaccusative, weak PtP
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  b.  rɔsa   jɛ     mmɔrt-a    /  *mmurt-ʊ         
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    Rose   be.3\textsc{sg}   died{\textbackslash}\textsc{f}{}-\textsc{f.sg}   /   died{\textbackslash}\textsc{m}{}-\textsc{m.sg}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘Rose has died’                     unaccusative, strong PtP
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+\ea%26
+    \label{ex:key:26}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.  (l átʃin-a)         rɔsa     a           llavat-a/*-ʊ 
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    \textsc{def.f.sg} grapes(\textsc{f}).\textsc{sg}   Rose   \textsc{do3f.sg}=have.3\textsc{sg}   washed-\textsc{f.sg}/-\textsc{m.sg}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘(The grapes) Rose has washed them’         DO clitic, weak PtP
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  b.  (l átʃin-a)         rɔsa     a           kkɔt-a    /  *kkut-ʊ 
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    \textsc{def.f.sg} grapes(\textsc{f}).\textsc{sg}   Rose   \textsc{do3f.sg}=have.3\textsc{sg}   picked{\textbackslash}\textsc{f}{}-\textsc{f.sg}  /  picked{\textbackslash}\textsc{m-m.sg}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘(The grapes) Rose has picked them’           DO clitic, strong PtP
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+\ea%27
+    \label{ex:key:27}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.  rɔsa   a     llavat-ʊ/*-a       l       átʃin-a
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    Rose have.3\textsc{sg}   washed-\textsc{m.sg}/-\textsc{f.sg}  \textsc{def.f.sg}   grapes(\textsc{f}).\textsc{sg}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘Rose has washed the grapes’               lexical DO, weak PtP
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  b.  rɔsa   a     kkɔt-a    /  *kkut-ʊ      l     átʃin-a  
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    Rose   have.3\textsc{sg}   picked{\textbackslash}\textsc{f}{}-\textsc{f.sg}  /   picked{\textbackslash}\textsc{m-m.sg}  \textsc{def.f.sg}   grapes(\textsc{f}).\textsc{sg}
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    ‘Rose has picked the grapes’               lexical DO, strong PtP
+\end{styleTabellaLUNGA}
+
+In Castrovillarese, the expected irrelevance of morphology for the operation of the agreement rules is observed in all syntactic constructions – exemplified in \REF{ex:key:25} with unaccusative clauses and in \REF{ex:key:26} with transitive clauses with a clitic direct object – except for the first one from which agreement started to retreat across Romance, viz. transitive clauses with lexical direct objects \REF{ex:key:27}. Here, the occurrence of a participle stem that inflects for gender \REF{ex:key:27b} correlates with the application of a less restrictive rule \REF{ex:key:28a} which provides for direct object agreement, while the occurrence of an uninflectable participle stem \REF{ex:key:27a} correlates with the application of a more restrictive rule \REF{ex:key:28b} (cf. \citealt{Loporcaro2010b}: 171 for a formal statement of the syntactic rule(s)):
+
+\begin{styleTabella}
+\ea%28
+    \label{ex:key:28}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          Participle agreement sensitive to morphology in Castrovillarese, Verbicarese, ecc.:
+\end{styleTabella}
+
+\begin{styleTabellaLUNGA}
+  a.  participles with double exponence of gender (on both the root and the suffix)
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    $\Rightarrow $ agreement rule 1 (including agreement with lexical direct objects)
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+  b.  participles with an uninflectable root, only marking gender on the ending
+\end{styleTabellaLUNGA}
+
+\begin{styleTabellaLUNGA}
+    $\Rightarrow $ agreement rule 2 (more restrictive, excluding agreement with lexical direct objects)
+\end{styleTabellaLUNGA}
+
+Within the framework of the present discussion, we can conclude that, in this highly unexpected case of interaction of morphology with syntax, the stem uninflectability for gender correlates with the selective demise of agreement and can thus be conceived – as the title goes – as a factor in agreement loss.
+
+5. \textit{Conclusion}
+
+To conclude, looking at the Romance data from the point of view of uninflectability leads in part to alternative labelling of some phenomena that are usually defined otherwise, mostly as syncretism. However, the discussion in \sectref{sec:key:4} of the interplay between partial uninflectability and agreement loss has revealed some phenomena for which this definitional optionality does not seem to hold. In several Romance dialect areas, just a minority of irregular participle stems – those of strong metaphonic participles – inflect for gender while the overwhelming majority of participles (all regular and several irregular too) do not, as was the case in Latin and still is in the major Romance languages (with French a special case, as seen in \REF{ex:key:11}-(12)). In this case, following \citet[146]{Spencer2020}, it seems hard to argue that gender marking belongs in the “inflectional expectation” or the “inflectional signature” of just the participle stem, which in turn implies that it would be inappropriate to say that non-metaphonic participle stems show gender syncretism.
+
+Finally, the relevance of this kind of sublexemic partial uninflectability has been shown to play a role in the case of the highly surprising morphosyntactic change in the working of direct object agreement that, in a small area of Southern Italy, has resulted in a violation of the morphology-free syntax principle.
+
+\begin{styleBiblio}
+\begin{verbatim}%%move bib entries to  localbibliography.bib
+\end{styleBiblio}
+
+\begin{styleAReferenzenListe}
+@article{BabouBabou2016,
+	author = {Babou, Cheikh Anta and Michele Loporcaro},
+	journal = {\textit{Journal of African Languages and Linguistics}},
+	pages = {1--57},
+	title = {Noun classes and grammatical gender in {Wolof}},
+	volume = {37},
+	year = {2016}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@book{BaermanBaerman2005,
+	address = {A Study of Syncretism}. Cambridge},
+	author = {Baerman, Matthew, Dunstan Brown and Greville G. Corbett},
+	publisher = {Cambridge University Press},
+	title = {\textit{The Syntax-Morphology Interface},
+	year = {2005}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@book{BaermanBaerman2017,
+	address = {Cambridge},
+	author = {Baerman, Matthew, Dunstan Brown and Greville G. Corbett},
+	publisher = {Cambridge University Press},
+	title = {\textit{Morphological Complexity}},
+	year = {2017}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@incollection{Bond2018,
+	address = {Oxford},
+	author = {Bond, Oliver},
+	booktitle = {\textit{The {Oxford} Handbook of Morphological Theory}},
+	editor = {Jenny Audring and Francesca Masini},
+	pages = {409--431},
+	publisher = {Oxford University Press},
+	title = {Canonical Typology},
+	year = {2018}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@incollection{Corbett2005,
+	address = {Amsterdam \& Philadelphia},
+	author = {Corbett, Greville G.},
+	booktitle = {\textit{Linguistic diversity and language theories}},
+	editor = {Zygmunt Frajzyngier, Adam Hodges and David S. Rood},
+	pages = {25--49},
+	publisher = {John Benjamins},
+	title = {The canonical approach in typology},
+	year = {2005}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@article{Corbett2007,
+	author = {Corbett, Greville G.},
+	journal = {\textit{Language}},
+	pages = {8--42},
+	title = {Canonical typology, suppletion and possible words},
+	volume = {83},
+	year = {2007}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@article{Corbett2015,
+	author = {Corbett, Greville G.},
+	journal = {\textit{Language}},
+	pages = {145--193},
+	title = {Morphosyntactic complexity: {{A}} typology of lexical splits},
+	volume = {91},
+	year = {2015}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@article{D’Elia1975,
+	author = {D’Elia, Mario},
+	journal = {Sulla “\emph{flessione interna}” dei sostantivi nei dialetti pugliesi. \textit{Atti dell'Istituto Veneto di Scienze, Lettere e Arti}},
+	pages = {647--661},
+	sortname = {D'Elia, Mario},
+	title = {-76},
+	volume = {134},
+	year = {1975}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@incollection{GuastiGuasti2002,
+	address = {Oxford},
+	author = {Guasti, M. Teresa and Luigi Rizzi},
+	booktitle = {\textit{Functional Structure in {DP} and {IP}. {{T}}he Cartography of Syntactic Structures}},
+	editor = {Guglielmo Cinque},
+	pages = {167--192},
+	publisher = {Oxford University Press},
+	title = {Agreement and Tense as Distinct Syntactic Positions},
+	volume = {1},
+	year = {2002}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@book{Guérin2011,
+	address = {Une approche typologique}. Paris},
+	author = {Guérin, Maximilien},
+	publisher = {Université Sorbonne Nouvelle—Paris 3 MA thesis},
+	sortname = {Guerin, Maximilien},
+	title = {\textit{{Le} syntagme nominal en wolof},
+	year = {2011}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@book{Kilani-SchochKilani-Schoch2005,
+	address = {Tübingen},
+	author = {Kilani-Schoch, Marianne and Wolfgang U. Dressler},
+	publisher = {Narr},
+	title = {\textit{Morphologie naturelle et flexion du verbe français}},
+	year = {2005}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@book{Loporcaro1998,
+	address = {Turin},
+	author = {Loporcaro, Michele},
+	publisher = {Rosenberg \& Sellier},
+	title = {\textit{Sintassi comparata dell’accordo participiale romanzo}},
+	year = {1998}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@incollection{Loporcaro2010a,
+	address = {Cambridge},
+	author = {Loporcaro, Michele},
+	booktitle = {\textit{Syntactic Variation}. \textit{The Dialects of {Italy}}},
+	editor = {Roberta D’Alessandro, Adam Ledgeway and Ian Roberts},
+	pages = {225--243},
+	publisher = {Cambridge University Press},
+	title = {The logic of {Romance} past participle agreement},
+	year = {2010}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@incollection{Loporcaro2010b,
+	address = {Amsterdam/Philadelphia},
+	author = {Loporcaro, Michele},
+	booktitle = {\textit{Variation and Change in Morphology. {{S}}elected papers from the 13th International Morphology Meeting, Vienna, \citealt{February2008}}},
+	editor = {Franz Rainer, Wolfgang U. Dressler, Dieter Kastovsky and Hans Christian Luschützky},
+	pages = {149--175},
+	publisher = {John Benjamins},
+	title = {Variation and change in morphology and syntax. {{R}}omance object agreement},
+	year = {2010}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@incollection{Loporcaro2011,
+	address = {Oxford},
+	author = {Loporcaro, Michele},
+	booktitle = {\textit{Morphological Autonomy: {{P}}erspectives from {Romance} Inflectional Morphology}},
+	editor = {Martin Maiden, John Charles Smith, Maria Goldbach and Marc-Olivier Hinzelin},
+	pages = {327--357},
+	publisher = {Oxford University Press},
+	title = {Syncretism and neutralization in the marking of {Romance} object agreement},
+	year = {2011}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@incollection{Loporcaro2011,
+	address = {Berlin},
+	author = {Loporcaro, Michele},
+	booktitle = {\textit{Agree\-ment from a diachronic perspective}},
+	editor = {Jürg Fleischer, Elisabeth Rieken and Paul Widmer},
+	pages = {104--126},
+	publisher = {deGruyter},
+	title = {The impact of morphology on change in agreement systems},
+	year = {2011}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@article{LoporcaroLoporcaro2011,
+	author = {Loporcaro, Michele and Tania Paciaroni},
+	journal = {\textit{Folia Linguistica}},
+	pages = {389--434},
+	title = {Four gender-systems in {Indo}-{European}},
+	volume = {45},
+	year = {2011}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@incollection{LoporcaroLoporcaro2021,
+	address = {Amsterdam/Philadelphia},
+	author = {Loporcaro, Michele and Tania Paciaroni},
+	booktitle = {\textit{All Things Morphology. {{I}}ts independence and its interfaces} ({CILT} 353)},
+	editor = {Sedigheh Moradi, Marcia Haag, Janie Rees-Miller and Andrija Petrovic},
+	pages = {215--236},
+	publisher = {Benjamins},
+	title = {Multi-layered default in Ripano},
+	year = {2021}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@book{Maturi2023,
+	address = {Bologna},
+	author = {Maturi, Pietro},
+	publisher = {Il Mulino},
+	title = {\textit{Napoli e la Campania}},
+	year = {2023}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@misc{Mileti2022,
+	author = {Mileti, Donato},
+	note = {\textit{Il dialetto di Fasano. Una descrizione fono-morfologica}. Master’s thesis, University of Venice, Ca’ Foscari.},
+	title = {-23},
+	year = {2022}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@misc{Pace1993,
+	author = {Pace, Anna},
+	note = {\textit{Ricerche di morfosintassi sui dialetti di Trebisacce e Castrovillari}. Master’s thesis, Università della Calabria},
+	title = {-94},
+	year = {1993}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@book{Paciaroni2017,
+	address = {\textit{I dialetti del Maceratese},
+	author = {Paciaroni, Tania},
+	note = {Habilitation thesis, University of Zurich.},
+	publisher = {fonetica e morfologia}},
+	year = {2017}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+Paciaroni, Tania. 2023. Unusual agreement targets in Ripano. In Marina Chumakina, Oliver Bond, \& Steven Kaye (eds.), \textit{Agreement beyond the Verb}, 157-197. Oxford: Oxford University Press
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@incollection{PaciaroniPaciaroni2018,
+	address = {Oxford},
+	author = {Paciaroni, Tania and Michele Loporcaro},
+	booktitle = {\textit{Non-canonical gender systems}},
+	editor = {Sebastian Fedden, Jenny Audring and Greville G. Corbett},
+	pages = {147--175},
+	publisher = {Oxford University Press},
+	title = {Overt gender marking depending on syntactic context in Ripano},
+	year = {2018}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@article{PaciaroniPaciaroni2013,
+	author = {Paciaroni, Tania, Graziella Nolè and Michele Loporcaro},
+	journal = {\textit{Vox Romanica}},
+	pages = {88--137},
+	sortname = {Paciaroni, Tania, Graziella Nole and Michele Loporcaro},
+	title = {Persistenza del neutro nell’italo-romanzo centro-meridionale},
+	volume = {72},
+	year = {2013}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@book{Remacle1956,
+	address = {2. Paris},
+	author = {Remacle, Louis},
+	publisher = {Les Belles Lettres},
+	title = {\textit{Syntaxe du parler wallon de la Gleize}, vol},
+	year = {1956}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@incollection{Spencer2003,
+	address = {Berlin},
+	author = {Spencer, Andrew},
+	booktitle = {\textit{Syntactic structures and morphological information} (Interface Explorations 7)},
+	editor = {Uwe Junghanns and Luka Szucsich},
+	pages = {249--282},
+	publisher = {Mouton de Gruyter},
+	title = {Periphrastic paradigms in {Bulgarian}},
+	year = {2003}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@incollection{Spencer2020,
+	address = {Cambridge},
+	author = {Spencer, Andrew},
+	booktitle = {\textit{Complex words: {{A}}dvances in morphology}},
+	editor = {Lívia Körtvélyessy and Pavol Štekauer},
+	pages = {142--158},
+	publisher = {Cambridge University Press},
+	title = {{U}ninflectedness: {{{U}}}ninflecting, uninflectable and uninflected words, or the complexity of the simplex},
+	year = {2020}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+Stump, Gregory T. 2012. The formal and functional architecture of inflectional morphology. In Angela Ralli, Geert Booij, Sergio Scalise \& Athanasios Karasimos (eds.), \textit{On-line Proceedings of the Eighth Mediterranean Morphology Meeting (MMM8)}, 255-271 [https://geertbooij.files.wordpress.com/2014/02/mmm8\_procee\-dings.pdf].
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@incollection{Thornton2011,
+	address = {Oxford},
+	author = {Thornton, Anna M.},
+	booktitle = {\textit{Morphological Autonomy: {{P}}erspectives from {Romance} Inflectional Morphology}},
+	editor = {Martin Maiden, John Charles Smith, Maria Goldbach and Marc-Olivier Hinzelin},
+	pages = {358--381},
+	publisher = {Oxford University Press},
+	title = {Overabundance (multiple forms realizing the same cell): {{A}} non-canonical phenomenon in {Italian} verb morphology},
+	year = {2011}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+Thornton, Anna M. 2019. How (non-)canonical is Italian morphology? In Matthew Baerman, Oliver Bond \& Andrew Hippisley (eds.), \textit{Morphological perspectives. Papers in honour of Greville G. Corbett}, 65-99. Edinburgh: Edinburgh University Press.
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@article{ZwickyZwicky1983,
+	author = {Zwicky, Arnold M. and Geoffrey K. Pullum},
+	journal = {\textit{Natural Language and Linguistic Theory}},
+	pages = {385--402},
+	title = {Phonology in syntax: {{T}}he {Somali} optional agreement rule},
+	volume = {1},
+	year = {1983}
+}
+
+\end{styleAReferenzenListe}
+
+\begin{styleAReferenzenListe}
+@incollection{Zwicky1996,
+	address = {Oxford},
+	author = {Zwicky, Arnold M.},
+	booktitle = {\textit{Concise Encyclopedia of Syntactic Theories}},
+	editor = {Keith Brown and Jim Miller},
+	pages = {300--305},
+	publisher = {Elsevier},
+	title = {“Syntax and phonology”},
+	year = {1996}
+}
+
+\end{styleAReferenzenListe}
+
+\end{verbatim}
+\sloppy\printbibliography[heading=subbibliography,notkeyword=this]
+\end{document}

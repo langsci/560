@@ -1,0 +1,1057 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook}
+\ChapterDOI{10.5281/zenodo.20611883}
+
+\author{Andrew Spencer\orcid{}\affiliation{University of Essex}}
+\title{Uninflectability: Concepts and consequences} 
+\abstract{Uninflectable lexemes are to be distinguished from  simply uninflecting lexemes (e.g. English prepositions) or defective lexemes. Uninflectability can be an inherent lexical property or a contextually/constructionally defined phenomenon exhibited by otherwise normally inflecting lexemes. Uninflectability can also be  total (Russian nouns such as \emph{kenguru} `kangaroo') or partial (Polish \emph{muzeum}-nouns, Nakh-Dagestanian ``sporadic agreement''). This implies a four-way typology, of which three types are attested in the literature. I argue that the missing type, contextual partial uninflectability, is instantiated by infinitive phrases in Hungarian and genitive plural based compounds in Latvian. I explore which types of inflectional processes are subject to uninflectability, providing evidence that it applies solely to the ``core'' synthetic inflection of a language, and not, say, to affix-clitics, periphrasis, evaluative morphology. I sketch a formal account of uninflectability within the framework of Paradigm Function Morphology, Version 2 \citep{stump2016}: an uninflectable lexeme is associated with the expected complete content paradigm for lexemes of its class, but lacks the form/realized paradigms, in whole or in part. I define lexical insertion as the insertion of the most highly specified value of the (multivalued) FORM attribute in the lexical representation (following \citeauthor{spencer2013}'s \citeyear{spencer2013}  model of lexical relatedness). Uninflecting lexemes such as English prepositions lack both content and form/realized paradigms and so lexical insertion is defined over the (sole) value of  FORM, the lexeme's root. In effect, an uninflectable lexeme likewise defaults to the root form, since this is the only form available in the absence of a form/realized paradigm. This account raises open questions about the architecture of morphology, for instance, the nature of `core' synthetic inflection as opposed to other types of lexical relatedness, and the way that defectiveness should be treated in a formal model.}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[23]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+In inflecting languages, some (classes of) lexemes are \textit{uninflecting}, i.e. are not associated with any inflectional \isi{paradigm}: \textit{of, the, almost, \ldots}, but some members of otherwise inflecting  classes may (unexpectedly) fail to inflect, i.e. they show \textit{(lexical) uninflectability}. \citet{spencer2020} outlines three types of uninflectability, distinguishing lexical from constructional\is{uninflectability!constructional}/contextual\is{uninflectability!contextual} uninflectability, and total\is{uninflectability!total} uninflectability from partial uninflectability\is{uninflectability!partial}. In this paper I argue that the two parameters of uninflectability define a four-way typology. Cases of total\is{uninflectability!total} and partial lexical uninflectability are well-known, and it is not difficult to identify cases of total\is{uninflectability!total} constructional\is{uninflectability!constructional}/contextual\is{uninflectability!contextual} uninflectability. In Section \ref{sec:typology} I suggest that \ili{Hungarian} and \ili{Latvian} may provide instances of the fourth type, thus establishing the phenomenon of uninflectability as typologically robust.  
+
+An account of uninflectability owes an account of what it means for a lexeme to be inflected in the first place. In Section \ref{sec:whatcounts} I cite data suggesting that otherwise  uninflectable lexemes nonetheless permit affix-like clitics\is{clitic}, periphrastic\is{periphrasis} exponence and evaluative morphology\is{morphology!evaluative (\emph{see also} diminutive, augmentative)} (as well as straightforward derivational morphology\is{derivation (\emph{see also} word formation)}). I propose that what the uninflectable lexeme is unable to inflect for is some kind of ``core'' synthetic inflectional morphology, closer to the canonical ideal (see \citeauthor{corbett2025}, this volume, on \isi{Canonical Typology}).
+
+In Section \ref{sec:solution} I propose a formal account based on the distinction drawn in Paradigm Function Morphology, Version 2 (PFM2)\is{Paradigm Function Morphology (PFM)!PFM2} \citep{stump2016} between the content paradigm\is{paradigm!content} on the one hand, and the form\is{paradigm!form}/realized\is{paradigm!realized} paradigms on the other. The leading idea is very simple.  An uninflecting lexeme, such as an \ili{English} preposition, has just a (root) form and neither content\is{paradigm!content} nor form paradigm\is{paradigm!form}. An uninflectable lexeme, on the other hand, has a content paradigm\is{paradigm!content} and therefore behaves as though it were an inflecting lexeme, but it lacks a form\is{paradigm!form}/realized paradigm\is{paradigm!realized}. Uninflectability is not the same as defectivity\is{defectiveness}: it is not the case that an uninflectable lexeme cannot be used in sentences. But this raises the question of what form of an uninflectable lexeme it is that undergoes \isi{lexical insertion}. I propose a solution to this problem which appeals to an enriched notion of \isi{lexical representation}, based on the model presented in \citet{spencer2013}. 
+
+The discussion illustrates an important point made by one of the first linguists to investigate uninflectability (in \ili{Slavic} languages) on a large scale: 
+``Unflektierbarkeit zeigt die Grenzen und damit die innere Struktur des morphologischen Systems einer Sprache" (\citealp[60]{doleschal2002-mici}; see also \citealp{doleschal2001}): ``Uninflectability points to the boundaries and hence the inner structure of the morphological system of a language". I would argue, though, that the importance of  uninflectability goes beyond the implications for any given language, but has repercussions for the way we view morphological systems in general, and provides further evidence in support of an autonomous morphology \citep[cf][]{aronoff1994}, and in support of the idea that inflectional systems are structured in paradigms\is{paradigm}.
+
+\section{A typology of uninflectability} \label{sec:typology}
+
+In \citet{spencer2020} I argue for two axes or parameters of uninflectability. The familiar instances are those where a single lexeme fails to inflect in all morphosyntactic contexts, so that uninflectability is an idiosyncratic lexical property of that particular lexeme. This is \emph{lexical uninflectability} (corresponding to \citeauthor{doleschal2001}'s (\citeyear{doleschal2001}) `paradigmatische Uninflektierbarkeit'). However, there are also cases in which an otherwise inflecting class of lexemes fails to inflect in a specific morphosyntactic context or construction. This is \emph{contextual}\is{uninflectability!contextual} or \emph{constructional uninflectability}\is{uninflectability!constructional} (\citeauthor{doleschal2001}'s \citeyear{doleschal2001} ``systematische Uninflektierbarkeit'').  For instance, the non-head noun of an \ili{English} noun-noun \isi{compound} typically fails to take (plural) inflection. The second parameter is that of total\is{uninflectability!total} vs. partial uninflectability\is{uninflectability!partial}. In the most familiar cases an uninflectable lexeme has no inflected forms at all \textendash\ \emph{total uninflectability}\is{uninflectability!total}. However, there are well-documented instances in which a lexeme inflects for one set of features, say, for nominal case in singular number forms, but fails to show inflection for other feature combinations, e.g. nominal case in the plural. This is \emph{partial uninflectability}\is{uninflectability!partial}. The hypothetical example just give in fact corresponds to the \ili{Polish} \textex{muzeum}-nouns discussed below, p. \pageref{muzeum}.
+
+This classification of uninflectability in terms of total\is{uninflectability!total} vs. partial\is{uninflectability!partial} and lexical vs. constructional\is{uninflectability!constructional}/contextual\is{uninflectability!contextual} uninflectability implies a four-way typology, shown schematically in Table \ref{tab:fourtypes}: Type 1 total\is{uninflectability!total}/lexical, Type 2 partial\is{uninflectability!partial}/lexical, Type 3 total\is{uninflectability!total}/contextual\is{uninflectability!contextual}, Type 4 partial\is{uninflectability!partial}/contextual\is{uninflectability!contextual}.   %
+All but Type 4 have been discussed in the literature, but before I come to Type 4 I very briefly exemplify  the first three types.
+
+\begin{table}[ht]
+	\centering
+	
+	\begin{tabular}{lll}
+		\lsptoprule
+		& lexical & contextual\is{uninflectability!contextual} \\
+		\midrule
+		total\is{uninflectability!total} & Type 1 & Type 3	\\
+		partial\is{uninflectability!partial} & Type 2 & Type 4 \\
+		\lspbottomrule
+	\end{tabular}
+	
+	\caption{Four theoretical types of uninflectability}
+	\label{tab:fourtypes}
+\end{table}
+
+A clear case of Type 1, total lexical uninflectability\is{uninflectability!total}, is found in the \ili{Russian} noun lexicon. \ili{Russian} nouns distinguish 6 x 2 = 12 case/number forms but about 3000 are indeclinable (uninflectable): all the forms of their \isi{paradigm} are identical to the root, e.g. \textit{kenguru} `kangaroo’. We distinguish such {uninflectable} lexemes from uninflecting lexemes on the one hand and defective\is{defectiveness} lexemes (e.g. \ili{Russian} \textit{me\v{c}ta} `dream’, lacking genitive plural) on the other. Uninflectable lexemes can occur in all the contexts open to inflecting lexemes (unlike defective\is{defectiveness} lexemes), but the form is invariable, as shown in the \ili{Russian} examples in \xref{kenguru}  (where \textit{uninfl} indicates an uninflecting or uninflectable form):
+
+
+\ea\label{kenguru}
+\begin{xlist}
+\ex\label{wombat}
+\gll	odin 				vombat/kenguru\\
+one.\textsc{nom.m.sg} wombat(\textsc{m})\textsc{nom.sg}/kangaroo(\textsc{uninfl})\\
+\glt	‘one wombat/kangaroo’ 								
+\ex\label{wombats}
+\gll	s 	èt-imi 			vombat-\textbf{ami}/kenguru\\
+with 	these-\textsc{ins.pl} 	wombat-\textsc{\textbf{ins.pl}}/kangaroo(\textsc{uninfl})\\
+\glt	`with these wombats/kangaroos’
+\end{xlist}									
+\z
+
+\noindent%
+Crosslinguistically, any part of speech, not just nouns, can show uninflectability. 
+
+In a number of languages, certain classes of adjective  borrowed from languages with rather different inflectional systems  fail to inflect: \ili{German} \textex{prima}, `great', \textex{rosa}, `pink', \ili{Greek} \textex{ble} `blue', \textex{gri} `grey'. In \ili{Bulgarian} and \ili{Macedonian} a number of adjectives borrowed from \ili{Turkish} are uninflectable, such as \ili{Macedonian} \textex{taze} ‘fresh’  (\citealp{friedman1993}. See also \citeauthor{thorntondachille2025}, this volume, for discussion of uninflectable adjectives in \ili{Italian}.) 
+
+Some languages have inflecting adpositions\is{adposition}. These are  often derived historically from nouns, and they typically  take possessive agreement\is{agreement!possessive} morphology. For instance,  \ili{Welsh} prepositions are said to fall into three inflectional classes: %
+\lxm{ar} `on',    \textex{arnaf}  `\textsc{1sg}', \textex{arno} `\textsc{3sg.m}', \textex{arni} `\textsc{3sg.f}' etc, %
+\lxm{tros} `over', \textex{trosof}  `\textsc{1sg}', \textex{trosto} \textsc{`3sg.m'}, \textex{trosti} `\textsc{3sg.f}' etc, %
+\lxm{gan} `with',    \textex{gennyf}  \textsc{`1sg'}, \textex{ganddo} \textsc{`3sg.m'}, \textex{ganddi} \textsc{`3sg.f'} etc.  %
+However, many prepositions fail to inflect, and instead just take ordinary pronominal complements \citep[47, 127\textendash130]{williams1980}: \lxm{gyda} `with'  \textex{gyda mi} `with me'. 
+
+While less commonly found, even verbs can be uninflecting, as in the case of  \ili{French} loans from \ili{Romani}, verbs in the Verlan criminal argot, and more recently loans from \ili{English} such as  \textex{follow} `follow (e.g. on the social media platform X, formerly known as  ``Twitter'')' \citep{boye2019}. Examples of the latter can be found in social media and in the lyrics of \ili{French} rap songs\is{rap (song)}, as in \xref{follow}. (These examples are of interest for the way we will later come to characterize the notion of \textit{inflection}.)
+
+\ea\label{follow}
+\begin{xlist}
+	
+	\ex\label{jetefollow}
+	\gll	Baby girl, si je te follow. \\
+	baby girl, yes I you follow \\
+	\glt	`Yes, babe, I'm following you.' \hfill (\textit{Sirène} \textendash\ Luidji)\\ 
+	\url{https://music.youtube.com/watch?v=0EeheHnqQio}					
+	
+	\ex\label{ellemafollow}
+	\gll	
+	Elle m'-a follow.	\\
+	she me-has follow	\\
+	\glt	`She (has) followed me.'	\\
+	\url{https://www.youtube.com/watch?v=GbzBfr2aBus }						 
+	
+	\ex\label{followback}
+	\gll	
+	Elle m’-a pas followback quand je l’-ai follow.  \\
+	she me-has \textsc{neg} followback when I her-have follow\\
+	\glt		`She didn't follow me back when I followed her.'	\\ 
+	\url{https://www.azlyrics.com/lyrics/niska/rseaux.html} 							
+\end{xlist}
+\z
+
+Lexemes can also be partially (un)inflectable\is{uninflectability!partial}, Type 2 in  Table \ref{tab:fourtypes} (\citealp[26\textendash28]{baermanbrowncorbett2015}; see Corbett, this volume, for a carefully documented typology of partial uninflectability\is{uninflectability!partial}):   verbs of the \ili{English} \textit{hit} class have only \textit{-s} and \textit{-ing} inflections; \ili{Macedonian} adjectives such as \textit{kasmetlija} ‘lucky, \textsc{sg}’, \textit{kasmetlii} ‘lucky, \textsc{pl}’ fail to show the expected three-way gender contrast  in the singular \citep{friedman1993}. A particularly interesting case is that of a small group of neuter gender \ili{Latin} loanwords into \ili{Polish} with the endings \mbox{\textex{-um}} or \mbox{\textex{-o}}, \textex{muzeum} `museum', \label{muzeum} \textex{studio} `studio' (\citealp[118]{swan2002}; see  Corbett, this volume, for detailed discussion). In addition to having the `wrong' genitive plural form (\textex{muzeów, studiów} for the expected zero ending form) these words are uninflectable in all the five otherwise distinct case forms of the singular `slab' of their \isi{paradigm}. Thus, while a native noun such as \lxm{pismo} `document' has singular case marked forms \textex{pismo, pisma, pismu, pismem, pismie} (for nominative/accusative/vocative, genitive, dative, instrumental, locative), \lxm{muzeum, studio} have just \textex{muzeum, studio}.%
+\footnote{%
+	Loanwords borrowed as masculine gender nouns inflect normally, though they abstract out the \textex{-um} component as the \textsc{nom.sg} ending: \textex{album, albu, albem, albie} `album (nominative/accusative/vocative, genitive/dative, instrumental, locative singular)'. 
+} %
+
+It is rarer for verbs to show partial uninflectability\is{uninflectability!partial}, but a form of this is seen in the \ili{Russian} copular\is{copula}/verb of existence \lxm{byt\pr}. In the past tense this verb is regular, formed on the root \textex{by-} with the \textex{-l} suffix of the `l-participle' form, glossed \textsc{l} in examples \xref{byla}.  
+
+\ea\label{byla}
+\begin{xlist}
+	\ex\label{bylakniga}
+	\gll	U	menja			by-l-a				kniga.\\
+	at	me[\textsc{gen}]		\textsc{cop.pst-l-f.sg}	book\textsc{(f).\textsc{sg}}\\
+	\glt	`I had a book.' [literally 'with me there.was a.book']
+	\ex \label{bylainteresnaja}
+	\gll	Kniga 					by-l-a				interesnaja.\\
+	book\textsc{(f)}.\textsc{sg}	\textsc{cop.pst-l-f.sg}	interesting.\textsc{f.sg}\\
+	\glt	`The book was interesting.'										
+\end{xlist}
+\z
+In the present tense the copular\is{copula}/verb of existence is usually omitted altogether, (\ref{kniga}a, b), but  under certain circumstances it is possible to add the invariable present tense form \textex{jest\pr}. In  \xref{jestkniga} the overt \isi{copula} adds rather subtle nuances of meaning so that  \xref{jestkniga} tends to imply an individual-level\is{predication!individual-level} or temporary predication, while the form without \isi{copula}, \xref{umenjakniga}, tends to be interpreted as a stage-level\is{predication!stage-level} or permanent state. 
+
+\ea
+\label{kniga}
+\begin{xlist} 
+	\ex\label{umenjakniga}
+	\gll	U	menja			kniga.\\
+	at	me[\textsc{gen}]		book\textsc{(f)}.\textsc{sg}\\
+	\glt	`I have a book.' 
+	\ex\label{interesnaja}
+	\gll	Kniga 						interesnaja.\\
+	book\textsc{(f)}.\textsc{sg}			interesting.\textsc{f.sg}	\\
+	\glt	`The book is interesting.'										
+	\ex\label{jestkniga}
+	\gll	U	menja			jest\pr{}		kniga.\\
+	at	me[\textsc{gen}]		\textsc{cop.prs}	book\textsc{(f)}.\textsc{sg}\\
+	\glt	`I have a book.'  							
+\end{xlist}
+\z
+
+Unlike all other \ili{Russian} (non-impersonal) verbs, which agree with the subject in person/number, the present tense copular\is{copula} form is invariant for all persons/numbers, whether it is used purely as a copular\is{copula}, or whether it has an existential meaning. Example \xref{jestja} is the title of a \ili{Russian} pop song (\url{https://www.youtube.com/watch?v=_oM4CQVXats}), while example \xref{tokareva}  is the title of a novel by V. Tokoreva.
+
+\ea\label{jestja}
+\gll	U	tebja				jest\pr{}		ja.\\
+at	you[\textsc{gen}]	\textsc{cop.prs}	I[\textsc{nom.sg}]\\
+\glt	`You have me.' 									
+\z
+
+\ea\label{tokareva}
+\gll	Ja				jest\pr.		Ty				jest\pr.		On 				jest\pr.				\\
+I[\textsc{nom.sg}] 	\textsc{cop.prs}	you[\textsc{nom.sg}]	\textsc{cop.prs}	he[\textsc{nom.sg}]	\textsc{cop.prs}			\\
+\glt	`I am. You are. He is.'													
+\z
+The \ili{Russian} copular\is{copula}, then, is an instance of a verb which inflects normally except in  the present tense, where it  is uninflectable for the expected person/number agreements\is{agreement}.%
+\footnote{%
+	In languages like \ili{Russian}, \ili{Arabic} and others in which the present tense copular\is{copula} is generally omitted altogether one might say that we have a maximally non-canonical instance of partial uninflectability\is{uninflectability!partial}, in which uninflectability manifests itself as total absence. 
+}
+
+%%%%%%%	Constructional/contextual uninflectability	%%%%%%%%%
+%\begin{sloppypar}
+	\ili{Russian} \textit{kenguru} is uninflectable in all its occurrences, a case of  \textit{lexical uninflectability}. However, \ili{English} \textit{kangaroo} is inflectable except in compounds\is{compound}: \textit{kangaroo(*s)} \textit{tails},  (arguably) an instance of \textit{contextual uninflectability}\is{uninflectability!contextual}, in which an otherwise inflecting lexeme has to be realized as a non-inflecting word form, or even as an uninflected bound stem\is{stem!bound}, as in many cases of noun incorporation. Where the uninflectability seems to be an integral part of a grammatical construction, as in the case of \ili{English} compounding\is{compound}, we can talk of \textit{constructional uninflectability}\is{uninflectability!constructional}, a subset of the contextual uninflectability\is{uninflectability!contextual} type. When a lexeme becomes completely uninflectable because of the construction or context it is in we have an instance of Type 3, total\is{uninflectability!total} constructional\is{uninflectability!constructional}/contextual\is{uninflectability!contextual}, uninflectablity.
+%\end{sloppypar}
+
+{\sloppy One  type of constructional uninflectability\is{uninflectability!constructional} closely related to \ili{English} compounding\is{compound} is the  \isi{Light Verb Construction (LVC)} in certain languages  \citep{spencer2020}. %
+In  most languages LVCs\is{Light Verb Construction (LVC)} don't show (contextual) uninflectability\is{uninflectability!contextual}, but straightforward uninflectedness. However, in some languages we   find the same kind of contrast between inflectability and uninflectability in LVCs\is{Light Verb Construction (LVC)} that we see in compounds\is{compound} in many languages. For instance, the well-known \ili{Japanese} LVC\is{Light Verb Construction (LVC)} formed with the empty verb \lxm{suru} `do' often alternates between a form with completely inert noun complement, as in \textex{benkyoo suru} `study' with bare noun \lxm{benkyoo} `studying', and a variant based on a grammatically marked form of the noun,  \textex{benkyoo o suru}, in which the noun complement of the light verb\is{Light Verb Construction (LVC)} bears the object marker \lxm{o} \citep{miyamotokishimoto2016}.\par}
+
+A particularly interesting case of contextual uninflectability\is{uninflectability!contextual} is the predicative adjective\is{predicative (adjective)} in \ili{German}, illustrated in \xref{klein}.
+
+\ea \label{klein}
+	\ea\label{kleines}
+	\gll	Ich 	bin 	ein 	\textbf{kleines} 		Känguru.\\
+	I 	am 	a 	little.\textsc{n.sg.nom/acc} 	kangaroo 		\\
+	\glt	‘I am a little  kangaroo.’ 
+	
+	\ex\label{istklein}
+	\gll	Das Känguru ist \textbf{klein}(*-e/*-es/\ldots).\\
+	the kangaroo is little\textsc{(uninfl)}\\
+	\glt	`The kangaroo is little.’										
+\z
+\z
+
+This type of uninflectability is found not  just with predicative adjectives\is{predicative (adjective)} after the \isi{copula} \lxm{sein}. It is found with secondary predication, postnominal attributive adjectives\is{attributive!adjective}, and generally in any position other than canonical attributive modification\is{attributive!modification}, including adjective-noun compounds\is{compound} such as \textex{Kleingeld} `small change' (literally `small\_money', cf *\textex{Kleinegeld}, *\textex{Kleinesgeld}), and we could also extend this to adverbial use \citep{trost2006, durscheid2002}.  For these reasons it is difficult to associate this contextual uninflectability\is{uninflectability!contextual} with any specific construction type. 
+
+The \ili{German} predicative adjective\is{predicative (adjective)} construction leaves an interesting, largely unexplored, question for \isi{paradigm}-/lexeme-based models of inflection: precisely what grammatical features are borne by  the  predicative\is{predicative (adjective)} form  of an otherwise inflectable \ili{German} adjective? For instance, what number/gender/case feature values does the predicate adjective \textex{klein} in \xref{istklein} actually bear, if any? And if it fails to bear any of the standard adjectival feature values, how is its form specified in the grammar, given that the bare root form \textex{klein} itself never occurs in the position of an attributive modifier\is{attributive!modifier}, but always bears some kind of inflectional suffix? 
+
+More generally, we can ask this question of any instance of contextual uninflectability\is{uninflectability!contextual}, even those cases where it appears as though the uninflected lexeme has the form of an inflected word form in a cell of the lexeme's \isi{paradigm}. \citet{cetnarowska2021} reports an interesting case in point. In \ili{Polish} composite lexical units (a type of \isi{compound} construction), an otherwise inflecting modifier word may appear as an uninflected element.  She discusses cases such as \textex{statek widmo} `ghost ship', \xref{statekwidmo}, formed by modifying the noun \textex{statek} `ship' with the (normally inflectable) noun \textex{widmo} `ghost'.
+
+\ea\label{statekwidmo}	
+\begin{xlist}
+	\ex\label{widmo}
+	\gll	o		statk-ach 		widm-o		\\
+	about		ship-{\textsc{loc.pl}}	ghost-{\textsc{nom.sg}}\\
+	
+	\ex\label{widmach}
+	\gll	o		statk-ach 		widm-ach		\\
+	about		ship-{\textsc{loc.pl}}	ghost-{\textsc{loc.pl}}\\
+	\glt		`about ghost ships'
+	
+\end{xlist}
+\z
+
+\noindent%
+The examples \xref{widmo} and  \xref{widmach} are identical in meaning and are equally acceptable. In example \xref{widmach}  both components of the \isi{compound} inflect for locative plural, but in \xref{widmo} the modifier noun \textex{widmo} `ghost' appears in the citation\is{citation form}, nominative singular form.  The phenomenon illustrated in  \xref{widmo} is different from either the lexical uninflectability shown by \ili{Russian} \textit{kenguru}-words, or the contextual uninflectability\is{uninflectability!contextual} of \ili{German} predicative adjectives\is{predicative (adjective)}. The form \textex{widmo} is, in fact, an inflected form, the nominative singular, part of the inflectional \isi{paradigm}, and not an uninflected \isi{stem} or root form. 
+
+\citet{cetnarowska2023} proposes a Construction Morphology\is{Construction Morphology} \citep{booij2010} solution to this paradoxical situation: take the N-\textex{widmo} construction to be a kind of \isi{compound} in which \textex{widmo} is (optionally) specified to be in the nominative  singular form only (taken to be the default form by Cetnarowska). %
+In effect, this redefines one of the morphosyntactic/morphosemantic functions of the property set \textit{nominative singular}.	Another solution is  to assume that when uninflecting, \textex{widmo} is a distinct (though related) lexeme whose root form is specified as identical to the nominative singular form of the standard lexeme. This would have the advantage of allowing us to code the metaphorical meaning change as a separate lexical property. However, there is little difference between the two analyses.
+
+In some cases it is not immediately apparent whether we are dealing with lexical uninflectability or contextual uninflectability\is{uninflectability!contextual}. \citet{spencer2020}  discusses the case of  indeclinable  foreign  names in \ili{Russian}. Many borrowed or cited foreign words, and especially names, have a phonological shape which is difficult to accommodate to the \ili{Russian} morphological system, like \textit{kenguru} (no native nouns have a \isi{stem} ending in a vowel) or  \textit{Si (Czin\pr pin)} `Xí (Jìnpíng)’. Other foreign names, however, can easily be inflected as though they were \ili{Russian}: \textit{Bil} ‘Bill’, genitive singular \textit{Bil-a} (cf \textit{Kiril}, \textit{Kiril-a}), or \textit{Klinton} ‘Clinton’, genitive singular \textit{Klinton-a} (cf \textit{Anton} `Anton', genitive singular \mbox{\textit{Anton-a}).} However, native female referent names do not have  phonological forms such as \textit{Klinton}, and native given names do not end in \textit{-i} for either sex, so that \textit{Xilari Klinton} ‘Hillary Clinton’ is indeclinable, like  \textit{Si} ‘Xí’, \xref{Klinton}.
+
+\ea\label{Klinton}
+
+re\v{c}\pr\ `the speech of \ldots'
+
+\begin{xlist}
+	\ex
+	\gll		Bill-a 				Klinton-a \\
+	Bill-\textsc{gen.sg} 	Clinton-\textsc{gen.sg}\\
+	\glt		`\ldots Bill Clinton'
+	\ex	
+	\gll		Xillari 			Klinton\\
+	Hillary(\textsc{uninfl}) Clinton(\textsc{uninfl})\\
+	\glt		`\ldots Hillary  Clinton'
+	\ex	
+	\gll		Xilari 			Benn-a	\\
+	Hilary(\textsc{uninfl}) Benn-\textsc{gen.sg}\\
+	\glt		`\ldots Hilary  Benn' 
+	
+\end{xlist}	
+\z
+\noindent%
+(Hilary Benn is a (male) British politician.) Not all foreign female referent names are indeclinable. Where the form of a name resembles that of a declinable \ili{Russian} name it will be inflected, as in the case of the \ili{Spanish} name in \xref{Solana}. 
+
+\ea\label{Solana}
+\gll	knigi Teres-y Solan-y\\
+books Teresa-\textsc{gen.sg} Solana-\textsc{gen.sg}\\
+\glt			`the books of Teresa Solana'
+\z
+
+A different instance is that of the  \ili{Russian} form of the name of the Roman orator,   Marcus Tullius Cicero,  \textex{Mark Tullij {Ciceron}}. All three components of this name are inflecting. In each case, \ili{Russian} takes the bound stem\is{stem!bound} of the \ili{Latin} name and uses this as the unbound stem\is{stem!bound}/nominative singular form, cf the original \ili{Latin}  genitive form \textex{Marc-i Tulli-i Ciceron-is}.
+
+Generally, there is   no reason in principle why a female name like \textit{Klinton} couldn't be inflected just like the male name but taking feminine gender agreements\is{agreement}, in much the same way that thousands of male-referent names and kin terms (especially diminutives\is{diminutive}, such as \textex{Andrju\v{s}a} from \textex{Andrej}) inflect like feminine gender nouns but take masculine agreements\is{agreement}: \textex{Ja znaju èt-ogo mu\v{z}\v{c}in-u} `I know this-\textsc{m.acc/gen.sg} man-\textsc{acc.sg}. Alternatively, \ili{Russian} could have supplied  female-referent names with a special feminine gender ending, like the \ili{Czech} \textit{-ová}. What this means is that we have to  regard \textex{Klinton}(\textsc{m}) and \textex{Klinton}(\textsc{f}) as distinct, though related(!), lexemes, and we should analyse the female-referent  names as an instance of total\is{uninflectability!total} lexical uninflectability. 
+
+\sloppy
+The partial lexical uninflectability\is{uninflectability!partial} seen with \ili{Polish} \textex{muzeum}-nouns is found more systematically in cases of ``sporadic agreement''\is{agreement!sporadic} \citep{fedden2019}. In a number of \ili{Nakh-Dagestanian} languages many verbs agree with (principally absolutive case) arguments.  However, this agreement is often only shown by a minority of verbs. Other lexemes  fail to show corresponding agreement, but otherwise show regular inflection for other verbal (TMA) categories. In this respect the verb system of these languages is similar to the prepositional lexicon of \ili{Celtic} languages such as \ili{Welsh}. Sporadic argument agreement\is{agreement!sporadic}  is to be distinguished from differential object marking/\isi{agreement}, where the presence of absence of \isi{agreement} is semantically or pragmatically significant, for instance, indicating focus, \isi{definiteness}, specificity and so on (see Corbett, this volume, for a detailed typology.)
+
+The extant literature which is devoted explicitly to uninflectability has only clearly identified three distinct types: 
+(i) lexically conditioned total\is{uninflectability!total} uninflectability (\ili{Russian} \textex{kenguru}-nouns); 
+(ii) lexically conditioned partial uninflectability\is{uninflectability!partial} (\ili{Polish} \textex{muzeum}-nouns);  
+(iii) sporadic agreement\is{agreement!sporadic}.  This raises the question of whether there might be clear cases of a fourth type, \textit{partial contextual/constructional uninflectability}\is{uninflectability!partial}\is{uninflectability!contextual}\is{uninflectability!constructional}, in which all  lexemes of a given class are expected to inflect in a given construction but in which some lexemes fail to inflect for a subset of features in those constructions. In other words can we find exemplars of the missing type in the simple typology shown in Table \ref{tab:typology}?
+
+\begin{table}[ht]
+	\centering
+	
+	\begin{tabular}{lll}
+		\lsptoprule
+		& lexical & contextual\is{uninflectability!contextual} \\
+		\midrule
+		total\is{uninflectability!total} & Type 1: \textex{kenguru}-noun	& Type 3: \ili{German} predicative  adjective\is{predicative (adjective)} \\
+		partial\is{uninflectability!partial}	& Type 2: sporadic agreement\is{agreement!sporadic} & Type 4: ??? \\
+		\lspbottomrule
+	\end{tabular}
+	
+	\caption{Incomplete typology of uninflectability}
+	\label{tab:typology}
+\end{table}
+
+\ili{Polish} \textit{widmo}-compounds\is{compound}: The first candidate to consider is the \ili{Polish} construction illustrated in \xref{widmo} above.  The uninflecting element is, in fact, the nominative singular form, as we have seen, but that form is fixed by the construction itself. Though the \textex{widmo}-compounds\is{compound} broadly fit the characterization of  type (iv) uninflectability they are not perfect exemplars of that type, because only a relatively small number of lexemes seem to enter into the construction. It is therefore worth examining whether there are more general, lexically less restricted, cases of contextual\is{uninflectability!contextual} partial uninflectability\is{uninflectability!partial}.
+
+\ili{Latvian} genitive \isi{compound}:
+One candidate which is similar to the \textex{widmo}-compounds\is{compound} but not lexically restricted is illustrated by a class of noun-noun (N N) compounds\is{compound} in \ili{Latvian}.  In this language, a very common way for a noun to serve as attributive modifier\is{attributive!modifier} to a head noun is through a noun-noun headed \isi{compound} construction type in which the modifier noun obligatorily appears in the genitive case, either singular \xref{kafijas} or plural \xref{latviesu} \citep[56]{mathiassen1997}.
+
+\ea
+\ea \label{kafijas}
+\gll	kafij-as 			tas\={\i}te				\\
+coffee-\textsc{gen.sg} 	cup				\\ 
+\glt		`coffee cup'  
+
+\ex\label{latviesu}
+\gll	latvie\v{s}-u			valoda				\\
+Latvian-\textsc{gen.pl} 	language				\\ 
+\glt		`Latvian (language)' [literally `language of the Latvians']
+\z
+\z
+
+Although \ili{Latvian} has N N compounds\is{compound} in which the modifier is in the root form, as well as relational adjectives\is{relational (adjective)}, the  N\textsubscript{genitive} + N construction has a high token frequency. It is much more common than, say, the corresponding construction in the closely related \ili{Lithuanian}.  Thus, while `stone house' is normally rendered with the N\textsubscript{genitive} + N construction in \ili{Latvian}, in \ili{Lithuanian} a relational adjective\is{relational (adjective)} would be found, agreeing like any other adjective in number, gender, case  \citep[174]{kalnacalokmane2016}.
+
+\ea
+\ea\label{akmens} \ili{Latvian} \\
+\gll	akmen-s			nams			\\
+stone\textsc{-gen.sg}	house(\textsc{m}).\textsc{nom.sg}	\\
+\glt		`stone house'\\
+
+\ex\label{akmeninin} \ili{Lithuanian} \\
+\gll	akmen-in-is				namas			\\
+stone\textsc{-rel.adj-m.gen.sg}	house(\textsc{m}).\textsc{nom.sg}		\\
+\glt		`stone house' [literally `petrous house']
+\z
+\z
+In \ili{Latvian}, many of the N\textsubscript{genitive} + N expressions, the genitive attributive noun is itself modified, by nouns, adjectives, numerals, prepositions and other elements \citep[171\textendash172]{kalnacalokmane2016}.
+
+\ea\label{genpl}
+
+\begin{xlist}
+	\ex
+	\gll	 liel-zied-u 					ceriņi				\\
+	large-flower-\textsc{gen.pl}	 lilac	\\
+	\glt		‘large-flowered lilac’
+	
+	\ex
+	\gll	deviņ-stāv-u 				māj-a					\\
+	nine-storey-\textsc{gen.pl} 	house 		\\
+	\glt		‘nine-storeyed house’
+\end{xlist}
+\z
+
+
+\ea
+\ea\label{vienzilbes}
+
+\gll	 vien-zilb-es vārds				\\
+one-syllable-\textsc{gen.sg} 	word			\\
+\glt		‘monosyllabic word’
+
+\ex
+\gll	 bez-maks-as pakalpojums			\\
+without-charge-\textsc{gen.sg} service		\\
+\glt		‘free service’ 
+\z
+\z
+In a number of such cases the \isi{compound} N\textsubscript{genitive} modifier is modified by a preposition which would normally govern a case other than the genitive, comparable to `paratactic' adjectives in other European languages, such as \ili{Russian} \textex{za-rube\v{z}-nyj} `overseas', from \textex{za} `beyond', \textex{rube\v{z}} `border', \textex{-nyj} `adjective-forming suffix'. The difference is that in \ili{Latvian} the noun remains a noun and does not have to be transposed\is{transposition} into a (relational) adjective\is{relational (adjective)}. The structure is thus akin to that of the \ili{English} \textex{over-seas}. In the \ili{Latvian} construction the noun remains in the genitive case, irrespective of what case is governed by the compounded\is{compound} preposition \citep[181]{kalnacalokmane2016}.  This shows that the genitive has been frozen as an exponent of the modifier function of the noun. For instance, when governing a noun phrase in the plural, all \ili{Latvian} prepositions take dative case (whatever case they govern in the singular), but  in the corresponding \isi{compound} genitives the noun remains in the genitive plural, \xxref{tabletes}{pilseta}. The N\textsubscript{genitive} + N constructions, including the \isi{compound} genitives can also function as nominal predicates, \xref{bezmaksas}. 
+
+\largerpage
+\ea\label{tabletes}
+\begin{xlist}
+% 	\needspace{3\baselineskip}
+	\ex\label{pretsapem} 
+	N + P + DAT
+	
+	\gll	tablet-es pret sāp-ēm 	\hspace{5em}	\hfill $\Rightarrow$	\\
+	pill-\textsc{nom.pl} against pain-\textsc{dat.pl}				\\
+	\glt	‘pills against pain’
+	
+	\ex 
+	\label{pretsapju}
+	\isi{compound} genitive
+	
+	\gll	pret-sāpj-u tablet-es				\\
+	against-pain-\textsc{gen.pl} pill-\textsc{nom.pl}	\\
+	\glt	‘painkillers ’ 
+	
+\end{xlist}
+
+\ex\label{pilseta}
+\begin{xlist}
+	\ex 
+	\label{starppilsetam}
+	N + P + DAT
+	
+	\gll	autobus-s starp pilsēt-ām 	\hspace{5em}	\hfill $\Rightarrow$	\\
+	bus-\textsc{nom.sg} between city-\textsc{dat.pl}	\\
+	\glt	‘bus between cities’ 
+	
+	
+	\ex 
+	\label{starppilsetu}
+	\isi{compound} genitive
+	
+	\gll	starp-pilsēt-u autobus-s				\\
+	between-city-\textsc{gen.pl} bus-\textsc{nom.sg}			\\
+	\glt	‘intercity bus’ 
+	
+\end{xlist}
+\z
+
+\ea
+\label{bezmaksas}
+\gll	 Šis 				pakalpojums 					būs				bez-maksas.		\\
+this.\textsc{nom.sg.m} 	service(\textsc{m})\textsc{nom.sg} 	\textsc{cop.fut.3} 	without-charge.\textsc{gen.sg}	\\
+\glt			‘This service will be free.’ \hfill \citep[178]{kalnacalokmane2016}
+
+\z
+
+The attributive genitive marked noun can also be used in elliptical contexts which represent a non-canonical form of attributive modification\is{attributive!modification}. Thus, a set of teaching materials by  \citet{nau2008} entitled \emph{Gramatikas modulis} (`grammar-\textsc{gen.sg} module'), has a \ili{Latvian}-\ili{Polish} glossary with the title \xref{vardnica}. 
+\ea\label{vardnica}
+\gll	student-u vārdnīca (latvieš-u – pol̦-u)		\\
+student-\textsc{gen.pl}	vocabulary	(Latvian-\textsc{gen.pl} {} Pole-\textsc{gen.pl})	\\
+\glt		`students Latvian-Polish vocabulary'
+\z
+Here, the genitive plural forms \textex{latvieš-u} `Latvian' and \textex{pol̦-u} `Polish' function as attributive modifiers\is{attributive!modifier} to an elided head noun \textex{vārdnīca} `dictionary'.
+
+The conclusions from the \ili{Latvian} genitive attributive construction are that genitive case functions as a kind of `frozen' inflection, much like the nominative singular form of \ili{Polish} \textex{widmo}-nouns. However, the attributive nouns retain the number contrast, so they are not completely uninflectable. In this respect they are akin to \ili{Polish} \emph{muzeum}-nouns, except that they are  constructionally uninflectable\is{uninflectability!constructional}, not lexically uninflectable. The \ili{Latvian} genitive compounds\is{compound} therefore not only present a plausible example of the missing type (iv)  of uninflectability, but also highlight the point made by Corbett (this volume), that uninflectability is not a binary or absolute category, but admits of degrees of variation. 
+
+\ili{Hungarian} inflecting infinitive\is{infinitive!inflecting (in Hungarian)}: Another  possible instance of  type (iv) uninflectability is the \ili{Hungarian} inflecting infinitive\is{infinitive!inflecting (in Hungarian)}. The infinitival complement to certain auxiliary(-like) verbs, \textex{kell} `need', \textex{lehet, szabad} `is possible/allowed',  inflects like a possessed noun, shown in boldface in \xref{hunginf}, agreeing with the (understood) subject in person/number (\xref{mennem}, \citealp[314]{keneseivagofenyvesi1998}, \xref{menned}, \citealp[210]{kiss2002}, \xref{beszelnie}, \citealt[318]{keneseivagofenyvesi1998}).
+
+\ea\label{hunginf}
+\begin{xlist}
+	\ex \label{mennem}
+	
+	
+	\gll	Nekem		most		{men-n-\textbf{em}}		kell.		\\
+	me.\textsc{dat}	now		go-\textsc{inf-\textbf{1sg.px}}	need		\\
+	\glt		`I have to go now.'		\hfill{[present tense] }\\
+	
+	\ex	\label{menned}
+	\gll	Korábban	kell-ett			volna 			neked		haza 	{men-n-\textbf{ed}}.			\\
+	earlier	need-\textsc{pst}	\textsc{conditional} 	you.\textsc{dat} home	go-\textsc{inf-\textbf{2sg.px}}		\\
+	\glt		`You needed to have gone home earlier.'	\hfill{[past conditional]}	
+	\ex \label{beszelnie}
+	
+	\gll	Nem	fontos	magyarul	{beszél-ni-\textbf{e}}.		\\
+	not	important	Hungarian	speak-\textsc{inf-\textbf{3sg.px}}		\\
+	\glt		`It isn't important that s/he speak Hungarian.'	\hfill{[complement to \emph{fontos}]}	\\
+	%											\hfill{[Hungarian]}	
+\end{xlist}
+\z
+With other (auxiliary-like) verbs, there is no inflection, \xref{felallni}, \citep[314]{keneseivagofenyvesi1998}.
+
+\ea\label{felallni}
+\gll	Nem	tud-ok/bír-ok	{fel-áll-ni}.	\\
+not	able-\textsc{1sg.prs}	up-stand-\textsc{inf}	\\
+\glt		`I am not able to stand up.' 
+\z
+No inflection is found with unspecified subjects, presumably because as far as the verb is concerned, there is no subject, \xref{czinalni}, \citep[314]{keneseivagofenyvesi1998}.
+
+\ea\label{czinalni}
+\gll	Mit kell a kerttel csinál-ni? \\
+what need the garden.to do-\textsc{inf}	\\
+\glt		`What needs to be done to the garden?'
+\z
+As in the case of \ili{German} predicative adjective\is{predicative (adjective)} uninflectability, it is not clear what counts as a `construction' here, so it is safer to label the phenomenon as `contextual uninflectability'\is{uninflectability!contextual}.
+
+The \ili{Hungarian} inflecting infinitive\is{infinitive!inflecting (in Hungarian)} is the constructional counterpart to the sporadic agreement\is{agreement!sporadic} phenomenon found in \ili{Nakh-Dagestanian} languages and elsewhere. The difference is that it is not lexically conditioned, it is determined by the wider syntactic context and applies to all appropriate lexemes. Together with the  \ili{Latvian} genitive compounds\is{compound},  the \ili{Hungarian} (partially) inflecting infinitive\is{infinitive!inflecting (in Hungarian)} serves to fill in the missing cell in the partial typology of uninflectability given in Table \ref{tab:typology}, allowing us to propose the typology in Table \ref{tab:fourway}.
+
+\begin{table}
+	\centering
+	
+	\begin{tabular}{lp{10em}l}
+		\lsptoprule
+		& lexical & contextual\is{uninflectability!contextual} \\
+		\midrule
+		total\is{uninflectability!total} & \textex{kenguru}-noun & \ili{German} predicative adjective\is{predicative (adjective)} \\
+		partial\is{uninflectability!partial}	& \textex{muzeum}-noun & \ili{Latvian} genitive compounds\is{compound} \\
+		& & (\ili{Polish} \textex{widmo}-compounds\is{compound})	\\
+		& sporadic agreement\is{agreement!sporadic} & \ili{Hungarian} inflected infinitive \\ 
+		\lspbottomrule
+	\end{tabular}
+	
+	\caption{Four-way typology of uninflectability}
+	\label{tab:fourway}
+\end{table}
+
+
+\section{What counts as inflection?} \label{sec:whatcounts}
+We have so far been tacitly assuming that we know what it means for a lexeme to inflect. However, any  serious study of the nature and typology of uninflectability must first establish what exactly is meant by \textit{inflection}. There are several types of morphological or morphosyntactic process that are closely related to inflection, and which in some ways could be said to count as inflection, so it is worthwhile asking whether an uninflectable lexeme can undergo those processes. These include clitic-like\is{clitic} affixation (or conversely, affix-like clisis\is{clitic}), \isi{periphrasis}, and various types of evaluative morphology\is{morphology!evaluative (\emph{see also} diminutive, augmentative)}, for instance, \isi{diminutive} formation\is{word formation}. (Admittedly  superficial) examination of extant descriptions of uninflectable lexemes suggests that none of these processes count as inflection for the purposes of defining uninflectability. In other words, uninflectability only seems to relate to what we might call `core' inflection: uncontroversial affixation or \isi{stem} modification serving to realize a central repertoire of functional categories (hence, excluding evaluative morphology\is{morphology!evaluative (\emph{see also} diminutive, augmentative)}). 
+
+According to some authors, pronominal and other elements that are traditionally referred to as clitics\is{clitic} in a variety of languages should really be thought of as a particular type of affix, which effectively means that the properties those `clitics'\is{clitic} realize are inflectional features (e.g. \citealp{monachesi1999} for \ili{Italian},  \citealp{joseph1988} for \ili{Greek},  \citealp{lyons1991} for \ili{Macedonian}, \citealp{millersag1997,bonami2007} for \ili{French} amongst others; see also \citealp{spencerluis2012}). The uninflectable \ili{French} verb \lxm{follow}, however, seems to cooccur freely with these bound pronominals in \xref{jetefollow}, suggesting that such clitic-affixes\is{clitic} do not count as inflection for the purposes of uninflectability.
+
+Similarly, it has been claimed that the postpositive definite\is{definiteness} articles in \ili{Bulgarian} and \ili{Macedonian} are better thought of as phrasal affixes or edge inflections, rather than straightforward clitics\is{clitic} (\citealp{sadock1991, halpern1995}; see also \citealp[129\textendash30]{spencerluis2012}). But these, too, can attach to uninflectable adjectives in those languages, e.g. \ili{Macedonian}  \textex{taze-{to}} `fresh-\textsc{def}' `the fresh (one)' (multiple attestations on the internet). 
+
+In \xref{ellemafollow} we see an instance of an uninflectable \ili{French} verb licensing the periphrastic\is{periphrasis} past tense (`passé composé') construction, suggesting that \isi{periphrasis}, too, fails to count as core inflection (\citealp[208]{spencerpopova2015}).
+
+The status of evaluative morphology\is{morphology!evaluative (\emph{see also} diminutive, augmentative)} with respect to traditional notions of inflection and derivation\is{derivation (\emph{see also} word formation)} is notoriously unclear (for discussion see \citealp[113\textendash122]{spencer2013}; \citealp{grandi2015}). I shall adopt the view that certain types of evaluative morphology\is{morphology!evaluative (\emph{see also} diminutive, augmentative)} have to be distinguished from derivation\is{derivation (\emph{see also} word formation)} or word-formation\is{word formation} proper, that is, from lexeme formation. We can encapsulate this stance as the  \emph{\isi{Novel Lexeme Criterion}}: If a morphological process applies to some form of a lexeme and can only sensibly be said to deliver a form belonging to the same lexeme then that process is not one of derivation\is{derivation (\emph{see also} word formation)}/word-formation\is{word formation}. A case in point would be \isi{diminutive}/\isi{augmentative} forms of proper names\is{proper name}. In \ili{Russian}, a name such as \textex{Andrej} can give rise to a number of expressive \isi{diminutive} forms such as \textex{Andrju\v{s}a, Andrju\v{s}enʹka}. However, these \isi{diminutive} forms will all denote the same individual as that denoted by the more formal variant \textex{Andrej}.   In this sense, the diminutives\is{diminutive} are just forms of the basic name. (This does not necessarily mean that it makes sense to call \isi{diminutive} formation\is{word formation} an inflectional process, of course.) 
+
+The first point to establish is that evaluative morphology\is{morphology!evaluative (\emph{see also} diminutive, augmentative)} can often be applied to uninflecting words, that is, words which belong to classes which are not expected to take any kind of inflection in any case. The most obvious such instances are seen in languages with no or virtually no inflectional morphology in the first place.  \ili{Chinese}, for instance, lacks (uncontroversial) inflections, but has non-affixal evaluative morphological\is{morphology!evaluative (\emph{see also} diminutive, augmentative)} processes: reduplication, ablaut, tone shift \citep{arcodia2015}. In  inflecting languages, we find that evaluative morphology\is{morphology!evaluative (\emph{see also} diminutive, augmentative)} can be applied to uninflecting word classes such as adverbs or quantifiers. This is true of the \ili{Basque} \isi{diminutive} suffix \textex{-txo} \citep[197\textendash198]{artiagoitia2015}, and the \ili{Jingulu} evaluative suffix\is{morphology!evaluative (\emph{see also} diminutive, augmentative)} \textex{-kaji} \citep[416]{pensalfini2015}.  
+
+The propensity for evaluative morphology\is{morphology!evaluative (\emph{see also} diminutive, augmentative)} to apply to uninflecting words, even if with strong lexical limitations, seems rather widespread. Even in  \ili{Russian}, for instance, which has  adjective-based evaluative morphology\is{morphology!evaluative (\emph{see also} diminutive, augmentative)} in addition to very productive noun-based evaluation, but no productive evaluative morphology\is{morphology!evaluative (\emph{see also} diminutive, augmentative)} for other parts of speech, we find isolated instances such as the \isi{diminutive} form of the word  \textex{spasibo} `thank you' $\Rightarrow$ \mbox{\textex{spasib-k-i}} (\isi{diminutive} suffix \textex{-k-} with an apparent plural ending \textex{-i}).  Given this background we can ask what potential an uninflecting name in \ili{Russian} might have for \isi{diminutive} formation\is{word formation}. In my extended family there is a dog whose English name is Harry, but who also responds to the \ili{Russian} form of the name, \textex{Xari}. The \ili{Russian} form is  uninflectable. However, it readily takes the \isi{diminutive} form \textex{Xari-k} (which is how he is usually addressed by \ili{Russian}-speaking family members). If  the set of situations just described are  typical then it indicates that evaluative morphology\is{morphology!evaluative (\emph{see also} diminutive, augmentative)}, too, does not count as \textit{inflection} for the purposes of uninflectability.
+
+Uninflectable lexemes can sometimes undergo derivation\is{derivation (\emph{see also} word formation)}-like inflectional processes. For instance, comparative/superlative formation\is{word formation} in \ili{Indo-European} adjectives and adverbs does not seem to create a new lexeme, yet it adds an important meaning component to the original base word and changes its syntactic potential considerably. In this respect it is far from canonical as inflection. It is therefore not too surprising that the  \ili{German} contextually uninflectable\is{uninflectability!contextual} predicate adjectives have comparative forms, \xref{kleiner}.
+
+\ea\label{kleiner} \ili{German}
+\begin{xlist} 	
+	\ex \gll	Das Känguru ist {klein}.\\
+	the kangaroo is little(\textsc{uninfl})\\
+	\glt			`The kangaroo is little.' 
+	
+	\ex \gll 	Aber dieses ist noch {klein-er}.		\\
+	but  this-one is even little-\textsc{comparative} \\
+	\glt			`But this one is even smaller.'
+\end{xlist}
+\z
+
+It should equally come as no surprise to learn that uninflectable lexemes can undergo uncontroversially derivational morphology\is{derivation (\emph{see also} word formation)}. More significantly, such lexemes can undergo morphology which sits on the boundary between canonical derivation\is{derivation (\emph{see also} word formation)} and canonical inflection.  %
+In Table \ref{tab:kino} we see examples of standard derivation\is{derivation (\emph{see also} word formation)} (\textex{kono\v{s}\v{c}nik}, \textex{kengurjonok}), and the formation of what Spencer (\citeyear{spencer2013}) refers to as a \isi{transpositional lexeme},  in this case a relational adjective\is{relational (adjective)} that adds no semantic predicate to the base noun but which nevertheless behaves like an autonomous lexeme, \textex{kofejnyj} \citep[for a justification of this claim and an extensive crosslinguistic typology of relational adjectives\is{relational (adjective)} see][]{nikolaevaspencer2019}.
+
+\begin{table}[ht]
+	\centering
+	
+	\begin{tabular}{lllll}
+		\lsptoprule
+		\textex{kino} & `cinema' & $\Rightarrow$ & \textex{kono\v{s}\v{c}nik} & `cinema worker'	\\
+		\textex{kenguru} & `kangaroo' & $\Rightarrow$ & \textex{kengurjonok} & `joey (baby kangaroo)' \\
+		\textex{kofe} & `coffee' & $\Rightarrow$ & \textex{kofejnyj} & `pertaining to coffee' \\
+		& & & & (relational adjective)\is{relational (adjective)} \\
+		\lspbottomrule
+	\end{tabular}
+
+	\caption{Derivation\is{derivation (\emph{see also} word formation)} applied to uninflectable \ili{Russian} nouns}
+	\label{tab:kino}
+\end{table}
+
+Finally, uninflectable lexemes may undergo compounding\is{compound}, including the more morphological type of compounding\is{compound} which involves an \isi{intermorph}, as in the \ili{Russian} examples shown in \xref{compounding}, where \textex{klin} `wedge' is an ordinary inflecting noun while \textex{kino} `cinema' is uninflectable. 
+
+\ea\label{compounding}
+\ili{Russian} \isi{compound} formation\is{word formation}
+\renewcommand{\tabcolsep}{2pt}
+
+\begin{tabular}[t]{lll}
+	
+	\textex{kino} `cinema'; \textex{operator} `operator' & $\Rightarrow$ & \textex{kin-o-operator}	\\
+	& & `cameraman' \\
+	cf & & \\  
+	\textex{klin} `wedge'; \textex{obraznyj} `having form X' & $\Rightarrow$ & \textex{klin-o-obraznyj} \\
+	& & `wedge-shaped' \\
+\end{tabular}
+\renewcommand{\tabcolsep}{6pt}
+\z
+
+
+\section{A \isi{paradigm}-based solution}  \label{sec:solution}
+
+We turn now to the problem of how we can best represent the various types of uninflectability in a formal model of morphology. This is a non-trivial problem for at least two reasons. First, as we have seen, and as \citeauthor{corbett2025} (this volume, Section 4) demonstrates at length, uninflectablity turns out to be a multi-dimensional phenomenon which is best thought of in terms of degrees of uninflectability rather than an absolute property.  Second,  there are a number of conceivable ways of stating the facts of uninflectability in various frameworks. However, we should aim to go beyond simple description and strive towards the more interesting goal of stating those facts in a way that reveals some kind of insight into the underlying nature of (the various types of) uninflectability, and which might thus provide the beginnings of an explanation for the observed patterns. 
+
+Total uninflectability\is{uninflectability!total} is a relatively neglected problem,  especially in the theoretical literature. I have already mentioned the important monograph-length descriptive study by \citet{doleschal2001}, but uninflectability  is not mentioned in \citet{stump2016}, nor can I find reference to it in recent handbooks such as \citet{baerman2015}, including psycholinguistic studies \citep{stoll2015, walenski2015}. The discussion in \citet[65, 156\textendash159, 162]{brownhippisley2012}, in which uninflectedness is treated as a kind of \isi{syncretism} with the root form, is an honourable exception \citep[see also][26\textendash28.]{baermanbrowncorbett2017}.
+
+In this section I will develop a formal account based on a realizational model of inflection combined with the approach to \isi{lexical representation} advocated in \citet{spencer2013}. It is important to be able to propose a formal account that encompasses all four types in the typology of Table \ref{tab:typology} in essentially the same way. Otherwise, we will have no guarantee that we are not dealing with apparently similar but in fact disparate phenomena.  What this means is that there has to be some core formal property or collection of properties that is shared uniquely by the four types of uninflectability but not by other phenomena. 
+
+\sloppy
+Traditional morpheme-based models (including classical LFG\is{Lexical Functional Grammar (LFG)})  would  presumably be obliged to postulate up to twelve zero suffixes for \textit{kenguru}-nouns and for the \ili{Russian} (Hillary) \textex{Klinton}. Distributed Morphology\is{Distributed Morphology} \citep{embick2015} might be able to deploy the device of Impoverishment to neutralize formal distinctions between otherwise inflected forms by retreating to some maximally unmarked form identical to the lexical root. But it is hard to see how this would work for languages such as \ili{Greek}, in which all inflected words are affixed forms of a bound stem\is{stem!bound} (cf  the \ili{Latin} noun declension illustrated below in Table \ref{tab:dominus}). For such cases it would presumably be necessary to posit a special zero suffix for some arbitrarily chosen cell/feature set and then Impoverish the rest of the \isi{paradigm} to that cell. Uninflecting lexemes thus present a particularly severe challenge to such models. Inferential-realizational\is{morphology!inferential-realizational} models such as PFM1\is{Paradigm Function Morphology (PFM)!PFM1} \citet{stump2001} would have to posit massively neutralizing rules of referral (always to the lexical base form), not  much of an improvement. 
+
+\citet{spencer2020} argues for an analysis which makes crucial appeal to  the distinction between two types  of \isi{paradigm} proposed in \citet{stump2016}, in a model that has come to be known as PFM2\is{Paradigm Function Morphology (PFM)!PFM2}. PFM2\is{Paradigm Function Morphology (PFM)!PFM2} distinguishes crucially between content\is{paradigm!content} and form paradigms\is{paradigm!form} (\PC, \PF).  %
+The leading idea is very similar to that which motivates the distinction between s(yntactic)-features and m(orphological)-features in \citeauthor{sadlerspencer2001}'s (\citeyear{sadlerspencer2001}) analysis of the \ili{Latin} perfect passive\is{passive (voice)} \isi{periphrasis}. The s-features\is{s-feature} are those features that govern syntactic constructions and which may receive some special non-lexical semantic interpretation. For example, in \ili{English} \isi{definiteness} is a  property of noun phrases which gives rise to (very subtle and poorly understood) semantic and pragmatic contrasts. It is also an obligatory property, much like a purely inflectional property such as verb tense. However, it is never expressed by a purely morphological form, rather it is expressed by specific function words (in/definite\is{definiteness} articles, demonstratives) and other constructional properties (e.g. possessive phrases). This means that it is a purely syntactic feature. In Scandinavian languages, for instance, Danish \citep{lundskaernielsenholmes2015} \isi{definiteness} is expressed both by function words and by special inflected forms of the noun, while in \ili{Latvian} \citep{kalnacalokmane2021} \isi{definiteness} is expressed by special morphological forms of attributive adjectives\is{attributive!adjective}. For those languages, then, \isi{definiteness} is a feature which regulates not only syntactic structure, but also morphological form.  
+
+In PFM2\is{Paradigm Function Morphology (PFM)!PFM2} \PC\ defines all the syntactically accessible inflectional contrasts a lexeme is obliged to make. %
+It serves as the interface between morphological forms and syntactic-semantic structures, in the sense that the cells of the \PC\ are defined by features which represent all the morphosyntactic contrasts visible to the syntax, as well as all the functional semantic contrasts that are interpreted by the semantics. This is Stump's \mbox{(2016: 105)} \textit{\isi{interface hypothesis}}: ``Paradigms\is{paradigm} are the interfaces of inflectional morphology with syntax and semantics". % 
+Given this characterization,  the features, $\sigma$, defining the \PC\ are a subset of the s-features\is{s-feature}, the total set of features required to specify syntactic structures and the interpretation of functional features (as opposed to lexical meanings). 
+
+By contrast, the form paradigm\is{paradigm!form}, \PF, serves as part of the definition of  the set of morphophonological\is{morphophonology} forms expressing the contrasts defined at the level of the \PC\ \citep[106\textendash115]{stump2016}. The \PF\ for a lexeme $\mathcal{L}$ is a set of pairings of complete property sets%
+\footnote{%
+	Stump refers to `properties' rather than features. For our purposes we can treat these terms as synonymous, but I use `property' when discussing Stump's own proposals.
+} %
+with a set of appropriately selected stems\is{stem} for \lex.  The cells in   \PF\ are therefore ordered pairs  of the form $\langle$Z, $\tau$$\rangle$, 
+where Z is a member of the lexeme $\mathcal{L}$’s \isi{stem} set    and $\tau$ is a set of (morphomic\is{morphome}) morphosyntactic properties possibly distinct from the set $\sigma$. It is \PF\ that serves as the point of departure for the application of the  rules of morphology, the Paradigm Function\is{Paradigm Function, \emph{see also} Paradigm Function Morphology}, which  maps the cells of \PF\  to a realized paradigm\is{paradigm!realized} (\PR), consisting of pairs of the form   $\langle$$\omega$, $\tau$$\rangle$, where $\omega$ is the inflected word form \citep[or a set of word forms in the case of \isi{overabundance},][]{thornton2012}. In this respect the \PF\ is a theory internal construct whose role is to serve as the input to the battery of realization rules that make up the PFM2\is{Paradigm Function Morphology (PFM)!PFM2} morphological engine. 
+
+The paradigms\is{paradigm} \PC\ and \PF\ are related through a principle of Paradigm Linkage\is{Paradigm Linkage}, mediated by  \Corr, a Correspondence function\is{Correspondence (function)} which specifies the mapping \mbox{\PC\ $\mapsto$ \PF}, in part defined by the function \textit{pm} (`property mapping'\is{property!mapping}) defined over the feature sets, $\Sigma$, T, of \PC, \PF. The \PC\  of a lexeme is thus a matrix of cells consisting of ordered pairs of the form $\langle$$\mathcal{L}$,$\sigma$$\rangle$, where $\sigma$ is some subset of $\Sigma$. The component $\mathcal{L}$ is a lexical index which identifies an equivalence class of lexemes by their inflectional \isi{paradigm}, ignoring irrelevant homophony/homonymy where appropriate. In this respect, a word such as the \ili{English} verb \lxm{draw} belongs to a single lexemic equivalence class, even though it has a wide range of meanings, some of them totally unrelated to each other (\textex{draw a tooth, draw a conclusion, draw a picture,~\ldots}). In other words, the lexemic equivalence class with respect to morphology is defined by the shared inflectional \isi{paradigm}. This is not the only way that lexemes need to be individuated, of course. As \citet{fradin2003} point out, derivational morphology\is{derivation (\emph{see also} word formation)} often targets very specific meanings of homonymous or polysemous lexemes, even if those lexemes share all their inflectional features (see also \citealt{bonamicrysmann2017} for further discussion). For the cases I shall be discussing, however, only very coarse grained distinctions  between lexemes are required. The component $\sigma$ is a complete and coherent morphosyntactic property set, which the syntax-semantics needs to have access to, so as to express purely syntactic dependencies such as \isi{agreement} and government, and for realizing or specifying the values of obligatory meaningful categories such as nominal number, verb tense and so on. The set $\sigma$ crucially does not include purely morphological (morphomic\is{morphome}) properties such as inflectional class indices.
+
+In a canonical inflectional system the  \PC\ and \PF\ are isomorphic: each lexeme $\mathcal{L}$ is associated with a unique root, Z, its sole inflectional \isi{stem}, and $\tau=\sigma$, and  \Corr\ and  \textit{pm}\is{property!mapping} are the identity function. This is canonical paradigm linkage\is{Paradigm Linkage} as defined in  \citet[113, example (2)]{stump2016}. Note that the properties which define \PC\ and \PF\ are taken from the same vocabulary of properties and in the canonical case the two sets are identical, not \textit{merely} isomorphic, but actually identical (\citealp[113]{stump2016}; see below). %
+However, \citet{stump2016} catalogues a variety of non-canonical situations, in which $\tau\neq\sigma$. 
+The deviations from the canonical isomorphic mapping between \PC\  and \PF\ include \isi{syncretism}, \isi{deponency}, \isi{heteroclisis}, \isi{overabundance}, \isi{defectiveness}. In a number of cases  the deviation from canonicity is purely morphomic\is{morphome}. Heteroclisis\is{heteroclisis}, for instance, is found when a lexeme  inflects according to more than one inflectional class in different parts of its \isi{paradigm} (say, singular vs plural forms). In the case of \isi{deponency}, e.g. \ili{Latin} verbs which are `passive\is{passive (voice)} in form but active in meaning', we have an unexpected mapping from the content property `active voice' to a set of forms which would normally realize passive voice\is{passive (voice)}. In the case of \isi{syncretism} we have a pair of contrasting \PC\ properties which map\is{property!mapping} to identical \PF\ properties, neutralizing the \PC\ property contrast. For instance, \citet[174\textendash75]{stump2016} handles a set of syncretisms\is{syncretism} in the Bhojpuri verb  by ‘deleting’ certain property values from the \PF\  \isi{paradigm} in the \textit{pm}\is{property!mapping} and hence halving the number of cells. 
+
+In a few of the case studies presented in \citet{stump2016}, notably the \ili{Nepali} `long present negative' conjugation (following the analysis proposed in \citealp{bonamiboye2008}) the set $\tau$ includes properties which \citet[139\textendash145]{stump2016} describes as `morphomic'\is{morphome}. These properties, which Stump, following Bonami and Boyé labels `row' and `column', have no correspondent at all in the \PC. However, in the great majority of cases the properties in the set $\tau$ are formally exactly  the same objects as the properties in $\sigma$. This majority situation reflects the  property-set preservation principle\is{property-set preservation principle} as described by  \citet[113]{stump2016}, \xref{psp}. 
+
+\ea\label{psp}
+Property-set preservation\is{property-set preservation principle}: Content cells and their form correspondents have the same property set; that is, for any property set $\sigma$ associated with a content cell, \textit{pm}\is{property!mapping}($\sigma$) = $\sigma$.
+\z
+Property-set preservation\is{property-set preservation principle} conceals a mild conceptual inconsistency in PFM\is{Paradigm Function Morphology (PFM)}. That model is based on the principle of the autonomy of morphology or \textit{morphology-by-itself} \citep{aronoff1994}, as discussed extensively in \citet[Chapter 8]{stump2016}: ``\ldots~morphomic\is{morphome} properties can all be seen as an effect of properties that are restricted to the level of form paradigms\is{paradigm!form}" \citep[120]{stump2016}. But the reverse should hold too, given the architectural assumptions of PFM\is{Paradigm Function Morphology (PFM)}: all the properties of \PF\ (and \PR) should themselves be morphomic\is{morphome}, for the simple reason that neither syntax nor semantics have access to those levels of representation (cf \citealp{boyeschalchli2019}; \citealp{spencer2021}). Exploring these issues goes beyond our remit here.
+
+I will illustrate the virtue of the \PC/\PF\ distinction with a brief survey of \ili{German} noun declension. This case  illustrates the extent to which inflection can be morphomic\is{morphome} but more importantly for our present purposes it also illustrates the kind of case which might be mistaken for a case of (partial) uninflectability\is{uninflectability!partial} when in fact it is something else.  
+
+In standard descriptions, \ili{German} nouns inflect for four cases and two numbers \citep{durrell2002}, so that the  \ili{German} noun phrase is defined by an 8-celled \isi{paradigm}, illustrated in Table \ref{tab:der} by the declension of the definite\is{definiteness} article in the masculine singular form. %
+In Table \ref{tab:Vater} we see the declension of two typical nouns, \lxm{Vater} `father',  and \lxm{Hand} `hand',  and in  Table \ref{tab:Student} we see the declension of the`weak' noun \lxm{Student} `student'. %
+Nouns of the \textex{Student}-class, traditionally called weak nouns, differ from so-called `strong' nouns in that all their forms end in \textex{-en} except for their nominative singular form.  We might be tempted to assume that weak nouns are therefore  indeclinable for 7/8ths of their \isi{paradigm} and only inflect (subtractively) in the nominative singular. However, this would be to completely misanalyse \ili{German} noun inflection.
+
+%\largerpage
+\begin{table}
+	\begin{center}
+		
+		\begin{tabular}{lll}
+			\lsptoprule
+			& \textsc{singular}	& \textsc{plural} \\ 	 
+			\midrule
+			\textsc{nominative} & der & die \\
+			\textsc{accusative} & den & die \\
+			\textsc{genitive} & des & der \\
+			\textsc{dative} & dem & den \\	
+			\lspbottomrule	
+		\end{tabular}
+	\vspace*{-0.5cm}	
+	\end{center}
+	\caption{\ili{German} definite\is{definiteness} article masculine singular}
+	\label{tab:der}
+\end{table}
+
+\begin{table}[ht]
+	\begin{center}
+		
+		\begin{tabular}{lllll}
+			\lsptoprule
+			& \multicolumn{2}{c}{\lxm{Vater} `father'} & \multicolumn{2}{c}{\lxm{Hand} `hand'} \\
+			& \textsc{singular}	& \textsc{plural} & \textsc{singular} & \textsc{plural} \\ 
+			\midrule							
+			\textsc{nominative}	& Vater	& Väter	& Hand	& Hände \\
+			\textsc{accusative} & Vater	& Väter	& Hand	& Hände \\
+			\textsc{genitive} & Vaters & Väter & Hand & Hände \\
+			\textsc{dative} & Vater	& Vätern & Hand	& Händen \\
+			\lspbottomrule	
+		\end{tabular}
+	\end{center}
+	
+	\caption{Standard description of \ili{German} `strong' noun declension: \lxm{Vater, Hand}}
+	\label{tab:Vater}
+\end{table}
+
+
+\begin{table}[ht]
+	\begin{center}
+		
+		\begin{tabular}{lll}
+			\lsptoprule
+			&\multicolumn{2}{c}{\lxm{Student} `student'} \\	
+			&\textsc{singular} & \textsc{plural} \\ 
+			\midrule							
+			\textsc{nominative}	& Student & Studenten \\
+			\textsc{accusative}	& Studenten	& Studenten \\
+			\textsc{genitive} & Studenten & Studenten \\
+			\textsc{dative} & Studenten	& Studenten \\	
+			\lspbottomrule
+		\end{tabular}
+	\vspace*{-0.5cm}
+	\end{center}
+	
+	\caption{Standard description of \ili{German} `weak' noun declension: \lxm{Student}}
+	\label{tab:Student}
+\end{table}
+
+Let us call the features defining the \PC\  `$\sigma$-features' (a subset of the s-features\is{s-feature}) and those defining the \PF\ `$\mu$-features' (for `morphological/morphomic'\is{morphome} features, broadly equivalent to m-features\is{m-feature}).  In \ili{German}  there is a considerable mismatch between the $\sigma$-feature set required for the \PC\ and the $\mu$-feature set (\citealp{boyeschalchli2019}; \citealp{spencer2009}). %
+What is unusual about the weak nouns is that they show that the morphomic\is{morphome} feature inventory depends on lexical class. In the strong nouns the inflectional split is between singular and plural subparadigms\is{paradigm} (mainly), rather than nominative singular and the rest of the \isi{paradigm}. Notice that the \lxm{Student} class is not the only one whose \isi{paradigm} only has two distinct forms. The same is true of \lxm{Mädchen} `girl', \lxm{Wohnung}  `flat, apartment', \lxm{Park} `park', Table \ref{tab:MWP}.
+
+\begin{table}[ht]
+	\begin{center}
+		
+		%\begin{tabular}{lll@{\hspace{2em}}ll@{\hspace{2em}}ll}
+		\begin{tabular}{lllll@{\hspace{2em}}ll}
+			\lsptoprule
+			&\multicolumn{2}{c}{\lxm{Mädchen} `girl'}						&\multicolumn{2}{c}{\lxm{Wohnung} `apartment'}			&\multicolumn{2}{c}{\lxm{Park} `park'}\\	
+			& \textsc{sg} & \textsc{pl} & \textsc{sg} & \textsc{pl} & \textsc{sg} & \textsc{pl} \\ 
+			\midrule
+			\textsc{nom} & Mädchen & Mädchen & Wohnung & \cellcolor{lightgray}Wohnungen	& Park & \cellcolor{lightgray}Parks \\
+			\textsc{acc} & Mädchen & Mädchen & Wohnung & \cellcolor{lightgray}Wohnungen & Park & \cellcolor{lightgray}Parks \\
+			\textsc{gen} & \cellcolor{lightgray}Mädchens & Mädchen & Wohnung & \cellcolor{lightgray}Wohnungen & \cellcolor{lightgray}Parks & \cellcolor{lightgray}Parks \\
+			\textsc{dat} & Mädchen & Mädchen & Wohnung & \cellcolor{lightgray}Wohnungen & Park & \cellcolor{lightgray}Parks \\	
+			\lspbottomrule
+		\end{tabular}
+	
+	\end{center}
+	
+	\caption{Standard description of \ili{German} noun declension: \lxm{Mädchen, Wohnung, Park}}
+	\label{tab:MWP}
+\end{table}
+
+In fact, no \ili{German} noun distinguishes more than four of the eight theoretically possible forms (the noun  \lxm{Beamte} `civil servant' and nouns such as \lxm{Angestellte(r)} `employee' inflect like adjectives, not nouns). The `weak' nouns are the only nouns which ever distinguish nominative from accusative case and then only in the singular (a small set of masculine irregular nouns such as \lxm{Name} `name'  also distinguish nominative singular from accusative singular, but they only have a total of three distinct forms each in their complete \isi{paradigm}: \textex{Name}, nominative singular, \textex{Namens}, genitive singular, \textex{Namen} elsewhere). It is therefore more in keeping with our morphomic\is{morphome} assumptions to  characterize the \ili{German} noun \PF\ by just giving arbitrary labels to the various form classes, as illustrated in \xref{Germannouns}, where I conflate in part  the (abstract) \PF\ with the concrete realized paradigm\is{paradigm!realized}.
+
+\ea\label{Germannouns}
+\begin{xlist}
+	
+	\ex\label{Vater}	
+	Form1=Vater; Form2 = Form1$\otimes$s; Form3=Umlaut(Form1); Form4=Form3$\otimes$n
+	\ex\label{Hand}	
+	Form1=Hand; Form2 =Umlaut(Form1)$\otimes$e; Form3=Form2$\otimes$n
+	\ex\label{Maedchen}	
+	Form1=Mädchen; Form2 = Form1$\otimes$s
+	\ex\label{Wohnung}	
+	Form1=Wohnung; Form2 = Form1$\otimes$en
+	\ex\label{Park}	
+	Form1=Park; Form2 = Form1$\otimes$s
+	\ex\label{Student}	
+	Form1=Student; Form2 = Form1$\otimes$en
+\end{xlist}
+\z
+Notice that these specifications give the superficial impression that \lxm{Wohnung} and \lxm{Student} belong to exactly the same lexical class, but that impression is dispelled when we look at the \Corr\ function. This specifies Form2 for the \textex{Wohnung}-class as  the \PF\ correspondent of \PC\ [\feat{Number}{plural}], while for the \textex{Student}-class, Form2 is the default correspondent and Form1 is specified as the \PF\ correspondent of [\feat{Number}{singular}, \feat{Case}{nominative}]. Sample rules are provided in \xref{GermanCorr}.
+
+\ea\label{GermanCorr}
+%\begin{compactenum}[(i)]
+% \needspace{5\baselineskip}
+\begin{enumerate}[(i)]
+	\item		Class:\lxm{Vater}
+	
+	[\featname{number}:plural, \featname{case}:dative]  $\Rightarrow$ Form4
+	
+	[\featname{number}:plural]  $\Rightarrow$ Form3
+	
+	[\featname{number}:singular, \featname{case}:genitive]  $\Rightarrow$ Form2
+	
+	
+	Elsewhere  $\Rightarrow$ Form1
+	
+	\item		Class:\lxm{Student}
+	
+	[\featname{number}:singular, \featname{case}:nominative] $\Rightarrow$ Form1
+	
+	Elsewhere $\Rightarrow$ Form2
+	
+	\pagebreak[2]
+	
+	\item		Class:\lxm{Wohnung}
+	
+	[\featname{number}:plural] $\Rightarrow$ Form2
+	
+	Elsewhere $\Rightarrow$ Form1%
+	\footnote{Choice of Form1 as the default is arbitrary, of course, mandated only by the fact that singular tends to be the default number in languages like \ili{German}.}
+	
+\end{enumerate}		
+%\end{compactenum}
+\z
+
+What we learn from  systems like the \ili{German} noun \isi{paradigm} is that there is no necessary simple correspondence between inflectional form and inflectional function. But more than that, the divergence between form and function can become so great that a lexeme hardly appears to inflect at all. The \ili{German} weak nouns are just one step away from becoming uninflectable. This illustrates yet again  the point made by \citeauthor{corbett2025} (this volume, especially Section 4) that uninflectability is not an all-or-nothing affair. It is  then the task of the formal grammarian to find adequate ways to represent this fact.
+
+We are now in a position to propose a formal model of uninflectability within a \isi{paradigm}-based morphology. The leading intuition will be that an uninflecting lexeme has a full \PC\ but a depleted or even non-existent \PF. Recall that the original motivation for the \PC$\sim$\PF\ distinction is the idea that the \PC\ represents the interface with syntax/semantics, while the \PF\ represents the interface with (morpho)phonology. One way of thinking of this is to say that PFM2\is{Paradigm Function Morphology (PFM)!PFM2} is a model of \emph{\isi{lexical insertion}}: the \PC\ defines a set of properties that a lexeme is obliged to realize in a given language, while the \PF\ specifies what kinds of morphophonological\is{morphophonology} forms will be available to realize those properties. In other words, the \Corr\ function regulates the syntax/semantics$\sim$morphology interface by specifying which \PF\ cell occupant corresponds to a given \PC\ feature set. In this way, \Corr\ regulates \isi{lexical insertion} for inflecting lexemes \citep[cf][27\textendash30, 115]{stump2016}. 
+
+Central to the argument, then, is the claim that the problem of uninflectability is intimately related to the question of \isi{lexical insertion}. We can reframe the problem in this way: how can a lexical model of inflection license the insertion of lexical forms\is{lexical insertion} which apparently fail to bear inflection? We must therefore address the question of how \isi{lexical insertion} is conceived in a \isi{paradigm}-/lexeme-based model of morphosyntax.  We begin with the most innocuous looking of lexical elements, the uninflecting lexeme. 
+
+%
+The uninflecting lexemes of a language, such as \ili{English} prepositions, can easily be defined as members of a lexical class which is not associated with any \PC.  In the architecture of PFM2\is{Paradigm Function Morphology (PFM)!PFM2} the cells of the \PF\ are defined by projection from \PC\ by means of the \Corr\ mapping. Thus, in the absence of a \PC\ the \PF\ will be undefined. How, then, can we determine the form such a lexeme takes when it is selected to be part of a sentence (\isi{lexical insertion})?
+
+\sloppy
+One possibility is that we treat uninflecting lexemes as having a trivial inflectional \isi{paradigm}, consisting of one \PC\ cell, $\langle$$\mathcal{L},\sigma$$\rangle$ mapped to a \PF\ cell $\langle$Z,$\varnothing$$\rangle$, where $\varnothing$ is a null form property of some kind. The feature $\varnothing$ is not associated with any realization rule, so we still have no way of specifying the final form of the inserted lexeme. The obvious step would be to invoke Stump's \isi{Identity Function Default (IFD)}. However, it is not clear how this could be done given the standard PFM\is{Paradigm Function Morphology (PFM)} architecture.
+
+The motivation for the IFD is to provide an output for a maximally general, underspecified\is{underspecification} input. However, this application is \isi{paradigm}-driven, in the following sense. The inflectional \isi{paradigm} of any lexical class is defined in terms of some ensemble of features. Consider the simplest case of a \isi{paradigm} with just two cells, say, a noun inflecting for \featspec{number}{\{singular, plural\}}. The IFD guarantees that the cell, say, $\langle$\lxm{dog}, [\featspec{number}{singular}]$\rangle$ will be mapped to a \PF\ correspondent, even in the absence of a realization rule defined over the feature specification [\featspec{number}{singular}], namely, the form given by the \isi{stem} selection rule for \ili{English} nouns, which itself by default delivers the lexical root form /dog/. 
+
+Implicit here is the assumption that inflectional defectivity\is{defectiveness} is to be avoided, ceteris paribus. The grammar demands that an \ili{English} count noun have an inflectional \isi{paradigm} with two forms, one for singular and one for plural (even if those forms are morphophonologically\is{morphophonology} identical, as in the case of \lxm{sheep}). The IFD guarantees that \lxm{dog} has a singular form,  by applying the totally underspecified\is{underspecification} realization rule \xref{IFDRR} in the first (sole) inflectional rule block, where X = /dog/ \citep[cf. ][465]{bonamistump2016}. 
+
+\ea\label{IFDRR}
+X\textsubscript{U}, \{ \} $\rightarrow$ X 
+\z
+Rule \xref{IFDRR} states that a form `X' (whether basic or complex),   realizes a completely underspecified\is{underspecification} morphosyntactic property set \{U\}, by being mapped to itself. 
+
+\begin{table}
+	\begin{center}
+		
+		\begin{tabular}{lll}
+			\lsptoprule
+			&\textsc{singular}	&\textsc{plural}			\\
+			\midrule
+			\textsc{nominative}	&domin-u-s		&domin-iː			\\
+			\textsc{vocative}	&domin-e			&domin-oː-s		\\
+			\textsc{genitive}	&domin-iː			&domin-oː-rum		\\
+			\textsc{dative}		&domin-oː			&domin-iː-s		\\
+			\textsc{ablative}	&domin-oː			&domin-iː-s		\\
+			\lspbottomrule
+		\end{tabular}
+	\vspace*{-0.5cm}
+	\end{center}
+	\caption{Paradigm\is{paradigm} of \ili{Latin} \lxm{dominus} `lord'} \label{tab:dominus}
+\end{table}
+
+In some cases it will appear that the IFD fails to apply. \ili{Latin} nouns inflect for five cases and two numbers. A 2nd declension noun such as \lxm{dominus} `lord' has a root form /domin/ which is bound\is{stem!bound} and thus never appears in an unsuffixed form, as can be seen from Table \ref{tab:dominus}. Even if we assume that its inflected forms are based in part on a derived \isi{stem} form (say, \textex{domin-u} or \textex{domin-o}), there will be no cell in the noun's \isi{paradigm} that is not formed with an inflectional suffix, so that the whole \isi{paradigm} has to be defined by the application of non-trivial, specified realization rules, including the nominative singular form. When applied to a lexeme such as \lxm{dominus} the IFD would define a root form \textex{domin} (and possibly also an uninflected bound derived stem\is{stem!bound} \textex{domin-u}, \textex{domin-o} or whatever, depending on the details of the analysis). However, such a bound form\is{stem!bound} would never be realized as a fully inflected word form, and would thus never be eligible for \isi{lexical insertion} into a syntactic phrase, because all the cells in the \isi{paradigm} of \lxm{dominus} are filled by forms which are defined by  inflectional rules which are more specific, and which thus pre-empt the IFD.%
+\footnote{%
+	The inflectional rules of \ili{Latin} can be expected to take nominative  (and singular) as default values of the \featname{case} and \featname{number} features, in which case there would be  an important sense  in which the IFD \emph{does} apply even to \lxm{dominus}. It is just that its effects are hidden.} %
+
+Given the architecture of PFM\is{Paradigm Function Morphology (PFM)} it is clear that the IFD is irrelevant to the  question of how to specify the form of an uninflecting lexeme for \isi{lexical insertion}, for the simple reason that the IFD specifies forms in inflection paradigms\is{paradigm}, but an uninflecting lexeme, by definition, has no inflectional \isi{paradigm}, no \isi{paradigm} function, and a fortiori, is not subject to any realization rule, not even the maximally underspecified\is{underspecification} rule \xref{IFDRR} which instantiates the IFD.%
+\footnote{This conclusion is equally valid for the morph-based interpretation of PFM\is{Paradigm Function Morphology (PFM)} proposed by \citet{crysmannbonami2016} and \citet{crysmann2020} under the rubric of Information-based Morphology (IbM)\is{Information-based Morphology (IbM)}.} 
+
+The only way we could deploy the IFD for uninflecting lexemes, it seems, is to provide such lexemes with a \isi{paradigm}. This would entail creating  a special inflected form, realizing some  property, say, [\featspec{lexicalinsertion}{yes}]\is{lexical insertion}, whose inflectional (one-celled) \isi{paradigm} is not specified by any stipulated realization rule. This would mean that its form is invariably defined by the IFD. In other words,  each uninflecting lexeme would have a \PC\ whose cell realized the [\featspec{lexicalinsertion}{yes}]\is{lexical insertion} feature, and whose form correspondent was $\iota$(Z), where $\iota$ is the identity function and Z is the lexical root. %
+In fact, given the assumptions of PFM2\is{Paradigm Function Morphology (PFM)!PFM2}, such a treatment is the only one possible. The \PC, recall, represents the interface between morphological form (the contents of the \PF\ cells) and syntax-semantics. Therefore, either we have to assume that uninflecting lexemes do, after all, have a \PC, and are hence ``covertly'' inflecting, or we have to conclude that uninflecting lexemes fall outside the PFM\is{Paradigm Function Morphology (PFM)} architecture in its current form, and that they interface with the rest of the grammar in some other way. 
+
+The ploy of creating a `dummy' inflectional \isi{paradigm} for uninflecting lexemes is,  in essence, is the solution proposed by \citet[119]{sag2012}. He assumes a ``trivial''  \textit{Zero Inflection Construction}, shown in \xref{zeroinflcxt}, ``which pumps noninflecting lexemes to word status. This construction takes a lexeme as daughter, licensing mothers that are of type \textit{word}, but otherwise identical to their daughter."
+
+\ea\label{zeroinflcxt}
+\textit{Zero Inflection Construction} ($\uparrow$\textit{infl-cxt})
+
+\textit{zero-infl-cxt}	$\Rightarrow$
+\avm{											
+	[MTR		&\textit{X} ! \textit{word}\\
+	DTRS		&<\textit{X} : \type{invariant-lxm}>]
+}
+\z
+The  type feature  \textit{invariant-lxm} defines the class of uninflecting lexemes, and the symbol ! in  \mbox{MTR X ! Y} means that the mother X is identical to the daughters except for the specification Y, in other words that the only difference between the daughter and the mother is that the daughter is of the supertype \textit{lexeme}, while the mother is of the type \textit{word}. The annotation ($\uparrow$\textit{infl-cxt}) means that \textit{zero-infl-cxt} is a subtype of the \textit{infl-cxt} construction, \xref{infl-cxt}, \citep[Sag's (57)][108]{sag2012}, which states ``The mother of an inflectional construct is of type \emph{word}; the daughters must be lexemes."[Footnote omitted]
+
+
+\ea\label{infl-cxt}
+Inflection construction in SBCG\is{Sign‐Based Construction Grammar (SBCG)}
+
+\textit{infl-cxt:}	
+\avm{											
+	[MTR		&\textit{word}\\
+	DTRS		&\textit{list}  :	{(\type{lexeme})}]
+}
+\z
+
+The problems with the type shifting account, whether in Sign-Based Construction Grammar\is{Sign‐Based Construction Grammar (SBCG)} or in PFM\is{Paradigm Function Morphology (PFM)}, are the following.  %
+The principal problem is that it is clearly no more than an arbitrary device deployed solely to meet the parochial architectural needs of a particular formalization of the model. %
+Second, it fails to capture the very clear intuition that an uninflecting lexeme is a lexeme that fails to inflect, not a lexeme with some strange `zero' inflection. In particular, what feature specification is an uninflecting lexeme associated with? Do all uninflecting lexemes `realize' the same `zero feature'? % 
+The counter-intuitiveness of the solution becomes obvious when we consider languages such as \ili{Vietnamese}, which have no inflectional morphology at all. The type-shifting procedure would have to create a `trivially' inflected form for every lexeme in the language, even though the language lacks any inflection. Finally, we have a question which is not addressed in Sag's account, but which is central to this paper: what is the relationship between lexemes which belong to a non-inflecting class such as \ili{English} prepositions (members of Sag's \textit{invariant-lxm} type, our uninflecting lexemes), and uninflectable lexemes, whether lexically uninflectable, like \lxm{kenguru} or contextually\is{uninflectability!contextual}/constructionally uninflectable\is{uninflectability!constructional}, like \ili{German} predicative adjectives\is{predicative (adjective)}?
+
+
+An alternative to a type-shifting account,  sketched in \citet{spencer2019-paper,spencer2019-poster} says that an uninflecting lexeme has literally no inflectional \isi{paradigm}, whether \PC\ or \PF. It is not associated with any \PC\ in any form, because it is not, by definition, associated with any morphologically expressed morphosyntactic property. A fortiori it is not associated with a \PF. This leaves the question of how to specify the form of such a lexeme when it occurs in a syntactic construction, that is, how to specify \isi{lexical insertion} for such a lexeme. Ideally, we should do this without appeal to the PFM\is{Paradigm Function Morphology (PFM)} equivalent of the type shifting operation \xref{zeroinflcxt}.
+
+In \citeauthor{spencer2019-paper} (\citeyear{spencer2019-paper,spencer2019-poster}; see also \citealp{spencer2020}) I proposed a \isi{Default Exponence Principle (DEP)}, which states informally that, by default, the form of any word undergoing \isi{lexical insertion} (however this notion is characterized) is the lexical root, even in the case of a standardly inflecting lexeme. To see how that account was supposed to work let $\Sigma$ be the set of features defining a content paradigm\is{paradigm!content}, and let T be the set of features defining the corresponding form paradigm\is{paradigm!form}.  %
+As things stand  the Paradigm Linkage\is{Paradigm Linkage} mapping will be undefined for cases where $\Sigma$ = T = ∅. \citet{spencer2020} therefore assumes mapping \xref{default}, the Default Exponence Principle\is{Default Exponence Principle (DEP)}, as the default morphosyntactic expression of all lexemes defined over null feature sets.
+
+\ea\label{default} \isi{Default Exponence Principle (DEP)} [to be rejected!]
+
+PF($\langle$Z, ∅$\rangle$) = Z = STEM$_{0}$($\mathcal{L}$)
+\z
+The intended upshot is that the default realization of all lexemes is STEM$_{0}$ ($\equiv$ Z, the lexical root). %
+For inflecting lexemes the DEP \xref{default} is overridden by the more specific \Corr\ function.  However, for an uninflecting lexeme DEP has the same effect as Sag’s Zero Inflection Construction. This would mean that  we would not require uninflectable lexemes to have a non-null inflectional \isi{paradigm}. The uninflected lexemes whose form is defined by \xref{default} have just a root form but no associated \isi{paradigm}, content paradigm\is{paradigm!content} or form paradigm\is{paradigm!form}.%
+
+The idea behind this formulation is that the DEP is overridden by any genuinely inflected word form, in the sense that any lexeme which has a \PF\ will have a definition of lexical form which is more specific that the DEP, and this will pre-empt the default.  %
+However, there is an important flaw in this way of viewing default root exponence. The difficulty relates to the apparently trivial and obvious aspect of the model mentioned above: what is the relationship between the \isi{lexical insertion} of an inflected form and \isi{lexical insertion} of an uninflected form? In the present case, the technical problem with our informal DEP is that it is not possible to treat uninflected default root forms and inflected word forms as being in (Paninian) competition with each other. Therefore, it is not possible for a specific inflected form to override the root insertion default. Such an override would only be possible if the root insertion were formalized as a kind of zero inflection, of the sort we have just rejected.%
+\footnote{The appeal to the DEP also makes it more difficult to understand the relationship between uninflectedness and defective\is{defectiveness} lexemes, since one of the entailments of DEP is that all licensed collections of $\sigma$-features for a lexeme correspond to some form, and this entailment is incompatible with the existence of defective\is{defectiveness} lexemes. However, the question of \isi{defectiveness} and uninflectability has to remain the subject of work in progress.
+}
+
+I therefore abandon the proposal based on the DEP. In order to account for uninflectability, however, we need  to make completely explicit what we mean by \isi{lexical insertion}. I shall sketch such an account, what I take to be essentially the notion of \isi{lexical insertion} that is invariably presupposed in the literature, and then show how it serves as the basis of an account of uninflectability. My account will appeal crucially to the model of \isi{lexical representation} and lexical relatedness offered in \citet{spencer2013}.
+
+
+The intuition we wish to capture is very simple: by default, lexemes are uninflecting and the phonological form which realizes a syntactic node, $\nu$, is the sole phonological form associated with that lexeme, the lexical root. Where we have an inflecting lexeme the default root insertion operation has to be pre-empted by a more specific operation which inserts a more narrowly specified phonological form. That form is the \PF\ correspondent of  the most narrowly specified cell in the lexeme's \PC\, corresponding to the featural content of syntactic node $\nu$. I shall code the notion of \isi{lexical insertion} in relatively informal terms, borrowing and adapting the notational conventions introduced in the Parallel Architecture model of \citet{jackendoffaudring2020}. 
+
+First, we assume that \isi{lexical insertion} is coded as a co-indexing of a syntactic node, $\nu$, with a morphophonological\is{morphophonology} representation of a word form, $\omega$. Thus, to say that the forms /ðə/, /blak/, /dog/ are inserted into the NP frame [\textsubscript{NP}[\textsubscript{D} the] [\textsubscript{A} black] [\textsubscript{N} dog]] is simply to provide the appropriate indices:  [\textsubscript{D} the]$_{1}$ [\textsubscript{A} black]$_{2}$ [\textsubscript{N} dog]$_{3}$]$\Leftrightarrow$/ðə/$_{1}$ /blak/$_{2}$ /dog/$_{3}$.  
+
+Second, we should observe that such co-indexation is always feature-driven in the sense that the node $\nu$ is necessarily specified by at least a lexical category feature (or equivalent), and that the phonological form it is coindexed with has to be associated with a compatible feature specification. The leading idea is this. Let us denote the set of all the morphosyntactic, morpholexical interface features (morphosyntactic features) as $\mathcal{I}$. The set $\mathcal{I}$ will contain all the possible features which could govern morphosyntactic structure, including complementation/selection features and others, perhaps including sociolinguistic properties where these interact with morphosyntactic well-formedness. %
+%\citep[see][for discussion of such factors in Czech inflection]{Kucera73}. %
+Lexical insertion\is{lexical insertion} is then a relation which takes a node in a syntactic structure and matches it with a word form or set of word forms which offer the best fit with the specification on that node. Where the syntactic construction is underspecified\is{underspecification} we may find that this partial specification or description is compatible with more than one form. For instance, in the syntactic context \textit{The \rule{2em}{0.75pt} sat on the mat} the unspecified position is compatible with a noun in either singular or plural form. However, for simplicity of exposition let us assume that the syntactic node is fully specified and that the semantics specifies a lexeme with a unique meaning, so that \isi{lexical insertion} gives a unique output up to perfect synonymy, including semantically neutral \isi{overabundance}. 
+
+\ea\label{LexIn} Lexical Insertion\is{lexical insertion} (\textsc{LexIn})
+
+Given a syntactic node, $\nu$, defined by some feature set $\mathcal{F}\subset\mathcal{I}$ and given a lexeme, lexemic index\is{Lexemic Index (LI)} $\mathcal{L}$. Then $\mathcal{L}$ and $\nu$ can be coindexed iff there is some $\omega$, a phonological word form of $\mathcal{L}$, which expresses/realizes the largest set $\mathcal{G} \subset\mathcal{I}$, of features such that $\mathcal{F}\subseteq\mathcal{G}$.
+
+\z
+
+As formulated in \xref{LexIn} \textsc{LexIn} will also license the \isi{lexical insertion} of an uninflecting form such as \textex{on} in  \textit{The cat sat \rule{2em}{0.75pt}  the mat}. In the case of a singular or plural noun the coindexation takes place between the syntactic node and the form correspondent of the appropriate cell in the lexeme's \PC, which by Paradigm Linkage\is{Paradigm Linkage} maps to the appropriate cell in the \PF. In the case of an uninflecting preposition, I have argued that there is no \PC, hence, no \PF, so that the only form available for insertion\is{lexical insertion} will be the lexical root, realizing the purely syntactic features of the preposition, such as its lexico-syntactic category, P.%
+\largerpage
+\footnote{%
+	In a complete formalization care will have to be taken to ensure that the morphophonological\is{morphophonology} characterization of the inflected word forms in the realized paradigm\is{paradigm!realized}, and the morphophonological\is{morphophonology} characterization of the bare root form of an uninflecting lexeme are couched in the same morphophonological\is{morphophonology} vocabulary, so that both types of representation will be ``pronounceable'' at the appropriate level of description.
+} %
+
+The important point about the formulation of \textsc{LexIn} is that it makes absolutely no (direct) reference to inflection. However, the set $\mathcal{I}$ clearly includes  the set of (non-morphomic\is{morphome}) inflectional features which define the content paradigms\is{paradigm!content} of lexemes, and which therefore serve as (part of) the interface between morphology and syntax. It is thus reasonable to say that the \isi{lexical insertion} of an inflected word form is a special case compared to the insertion of an uninflecting word form. The featural characterization of an inflected word form will include as a bare minimum the categorial information associated with that lexeme (however such categories are defined) together with its own inflectional content. 
+
+We now have nearly all the machinery need to account for uninflectability. I will crucially appeal to the \PC$\sim$\PF\ distinction, though, as far as I can tell,  all that is required for the analysis to work is any  equivalent distinction between syntactically relevant and syntactically invisible (morphomic\is{morphome}) features, such as the morphological vs. syntactic feature distinction of \citet{sadlerspencer2001} or the HEAD vs. INFL features distinction of HPSG-oriented\is{Head‐driven Phrase Structure Grammar (HPSG)} treatments of morphology such as IbM \citep{crysmannbonami2016,crysmann2020}. In this respect, the problem of lexical and contextual uninflectability\is{uninflectability!contextual} provides additional strong support for some such distinction.
+
+It remains for us to ensure that the mechanisms by which the inflected forms of an inflecting lexeme are defined are essentially the same as the  mechanism by which the root form of an uninflecting lexeme is defined. The model of lexical organization proposed in \citet{spencer2013} provides the necessary machinery. We assume that all lexemes are individuated by means of a unique lexemic index,  LI\is{Lexemic Index (LI)}, $\mathcal{L}$. For simplicity, in the case of concrete lexemes I will use the name of the lexeme in \textsc{small capitals} as its lexemic index\is{Lexemic Index (LI)}: \lxm{sheep, hit} etc. We further assume that  a lexeme has to be furnished  with at least three more representations or attributes: % 
+FORM\is{attribute!FORM attribute}, specifying as a minimum the unpredictable aspects of the lexeme's phonology and morphology, such as the shape of the root, any idiosyncratic \isi{stem} forms or inflected forms, and so on; %
+SYN\is{attribute!SYN attribute}, a representation of crucial aspects of the syntax of the lexeme, such as syntactico-lexical category membership, argument structure or complementation features and so on; %ʌʌ
+SEM\is{attribute!SEM attribute}, a semantic/pragmatic representation. These representations can be thought of as the output of three functions over the LI, e.g. FORM\is{attribute!FORM attribute}(\lxm{hit}), SYN\is{attribute!SYN attribute}(\lxm{hit}), SEM(\lxm{hit})\is{attribute!SEM attribute}. Consider an uninflecting lexeme such as the preposition \lxm{under}. The morphophonological\is{morphophonology} root form, /ʌndə/ (or whatever) is defined by FORM\is{attribute!FORM attribute}(\lxm{under}). For an inflecting lexeme such as \lxm{dog} we have a (maximally simple) \PC, say, \{$\langle$\lxm{dog}, \textsc{sg}$\rangle$,$\langle$\lxm{dog}, \textsc{pl}$\rangle$\}. \ili{English} morphology defines the \Corr\ function in such a way that the \PR\ of \lxm{dog} is \{$\langle$\textex{dog}, \textsc{sg}$\rangle$,$\langle$\textex{dogz}, \textsc{pl}$\rangle$\}. 
+
+Our aim now is to provide a mechanism for the formal representation of an uninflecting lexeme such as \lxm{under} and the formal representation of an inflecting lexeme such as \lxm{dog} which allows both type of lexeme to be treated in the same way by the principles of \isi{lexical insertion}. In effect, this amounts to uniting  the FORM attribute\is{attribute!FORM attribute} for lexemes such as \lxm{under}, and the \Corr\ function as applied to inflected words, but without introducing a (covert) disjunction. We can achieve this by defining \isi{lexical insertion} over an expanded \isi{lexical representation} of inflected lexemes in which   the content of the FORM attribute\is{attribute!FORM attribute} is  generalized so as to cover all possible form correspondents of a lexeme, including those defined initially in terms of a (non-trivial) \PC. In other words, the expanded lexical entry of a lexeme incorporates that lexeme's realized paradigm\is{paradigm!realized}, effectively coding the common notion of ``full-listing''\is{full‐listing hypothesis} of inflected forms in lexical representations\is{lexical representation} \citep{butterworth1983}.  
+
+This expanded \isi{lexical representation} effectively formalizes the traditional notion that one of the purposes of the lexeme concept is to unify all the inflected forms of a lexeme as members of a single unit. In fact, such a generalization seems to be required even for uninflecting lexemes. For instance, some lexemes exhibit \isi{allomorphy} which is determined in purely morphophonological\is{morphophonology} terms independently of morphosyntactic context. The \ili{English} indefinite\is{definiteness} article, \textex{a$\sim$an} is a case in point. The FORM attribute\is{attribute!FORM attribute} applied to \lxm{a}, the LI  of the indefinite\is{definiteness} article, therefore yields two outputs, \{/a/, /an/\}, perhaps together with some morphophonological\is{morphophonology} featural annotation specifying which contexts each form occurs in.%
+\footnote{%
+	This may mean that FORM\is{attribute!FORM attribute} is a relation rather than a function, sensu stricto. However, this depends on exactly how such \isi{allomorphy} is implemented, and so I will continue to speak of functions here. 
+} % 
+Other cases of this sort might be found with uninflecting lexemes that have full form vs \isi{clitic} alternants, high vs low register variants, and so on, or more exotic alternations of the kind illustrated by \ili{English} \textex{in my stead $\sim$ instead of me}. Such alternations are not inflectional in character, but they do show that defining the root form of an uninflecting lexeme can be non-trivial.  %
+Against this background we now consider (non-defective) inflecting lexemes. 
+
+Consider the 2nd declension   \ili{Latin} noun \lxm{dominus}, illustrated earlier in Table~\ref{tab:dominus}. Let's assume that its root form is  /domin/. We now appeal to the architecture of \isi{lexical representation} proposed in \citet[184\textendash89]{spencer2013}, in which the FORM attribute\is{attribute!FORM attribute} includes the lexeme's morpholexical signature, MORSIG\is{morpholexical signature (MORSIG)}, a subattribute of FORM\is{attribute!FORM attribute}, which specifies the morphological class (MORCLASS)\is{morphological class (MORCLASS)} to which the lexeme belongs for the purposes of the inflectional morphology. For instance, the \isi{lexical representation} for the \ili{Latin} \lxm{dominus} will have a FORM attribute\is{attribute!FORM attribute} roughly as in \xref{dominusform1}.
+
+\ea\label{dominusform1}\is{morpholexical signature (MORSIG)}\is{morphological class (MORCLASS)}
+\avm{
+	[form		[morsig	&[morclass	&declension2]	\\
+	stem\textsubscript{0}	&domin		]		\\
+	]
+}
+\z
+The attribute FORM\is{attribute!FORM attribute} for \lxm{dominus} will specify this \isi{stem} (directly) and also all the inflected forms of Table \ref{tab:dominus} (indirectly, via the rules of \ili{Latin} morphology). This gives us the schematized \isi{lexical representation} shown in \xref{dominusform2}, where $\langle$\ldots$\rangle$ stands for the representations of the cells of the rest of the \isi{paradigm}.
+
+\ea\label{dominusform2}\is{morpholexical signature (MORSIG)}\is{morphological class (MORCLASS)}
+
+\avm{
+[form		[morsig	&[morclass	&declension2]	\\
+	stem\textsubscript{0}	&domin				\\
+	nom,sg	&dominus\\
+	nom,pl 	&{dominiː}\\
+	<\ldots>
+			]		
+]
+}
+\z
+Similarly, the expanded FORM attribute\is{attribute!FORM attribute} for the \ili{German} adjective \lxm{klein} will be roughly that of \xref{kleinform}.
+
+\ea\label{kleinform}\is{morpholexical signature (MORSIG)}\is{morphological class (MORCLASS)}
+
+
+\avm{
+	[form		[morsig	[morclass	&adjective]	\\
+	stem\textsubscript{0}	&klein				\\
+	masculine nom.sg	&kleiner\\
+	neuter nom.sg		&kleines\\
+	<\ldots>
+	]		
+	]
+}
+\z
+In both the \ili{Latin} and the \ili{German} examples the STEM\textsubscript{0}\is{stem} form is the basis for the inflectional rules of morphology. The crucial difference is that in the case of \lxm{klein}, the \ili{German} morphosyntax includes rules which make direct appeal to the STEM\textsubscript{0}\is{stem} form, whereas this is not true for \ili{Latin}, even if that STEM\textsubscript{0}\is{stem} form happens to have the \isi{morphophonology} of a pronounceable word.%
+\footnote{%
+	This account opens up the possibility that a lexeme might have two STEM forms\is{stem}, one the basis for morphology, whether free or bound\is{stem!bound}, the other specifically applicable only to certain syntactic constructions. The special combining forms found in some of the compounds\is{compound} of \ili{German} \citep{nublingszczepaniak2013} and other languages might be a candidate. 
+}
+
+Now consider  an uninflectable lexeme such as \ili{Russian} \lxm{kenguru}. I assume that as a lexical property its \Corr\ function fails to define a mapping\is{property!mapping} to \PF. This means that none of the cells in the lexeme's \PC\ has a form correspondent.  We code this fact by stipulating that \lxm{kenguru} belongs to an inflectional class \mbox{[MORCLASS:uninflectable]}\is{morphological class (MORCLASS)}. Lexemes of this class are associated with a property mapping\is{property!mapping} which states that the feature set for the form\is{paradigm!form}/realized\is{paradigm!realized} paradigm of the lexeme is undefined: \propm({$\sigma$}) = undefined. Effectively, this means that there will be no  expanded lexical entry for \lxm{kenguru}, so that its \isi{lexical representation} will remain that shown in \xref{kengurulexrep}.
+
+
+\ea\label{kengurulexrep}\is{morpholexical signature (MORSIG)}\is{morphological class (MORCLASS)}
+\avm{
+	[form		[morsig	&[morclass	&uninflectable]	\\
+	stem\textsubscript{0}	&kenguru		]		\\
+	]
+}
+\z
+However, our definition of \isi{lexical insertion} makes no direct mention of a form correspondent to an inflectional cell, or indeed to any kind of \isi{paradigm}, whether \PC, \PF, or \PR.   \textsc{LexIn} just asks for a phonological word associated with the features on the syntactic node. In the absence of the (generally very specific) form-feature pairings defined by the \PF, \PR, all we have is the lexical root (or what I have labelled `STEM\textsubscript{0}'\is{stem}). It is therefore this root that undergoes the coindexation which instantiates \isi{lexical insertion} in our informal characterization. It is in this sense that the root of \lxm{kenguru} is a default form for inflection. The effect is to define a lexeme which behaves morphologically like an uninflecting lexeme, but which can undergo \isi{lexical insertion} just as though it were an inflecting lexeme. The case of \ili{Russian} female referent foreign names such as (\textex{Hillary}) \textex{Clinton} can be dealt with in the same way that we handle the \textex{kenguru-}nouns, provided the grammatical representation of proper names\is{proper name} has access to the referent's sex/gender, and provided we allow the female referent form of the name to constitute a distinct lexeme from the male referent form. Note that this only applies at the level of individual name lexemes; it does not apply to the class of non-native female names as a whole, or to the entire  NP containing that name. A woman with a \ili{Russian} (-sounding) given name, such as \textex{Melania Trump} or \textex{Marina Warner} will have that given name inflected but not the surname: \textex{kniga Melani-i Tramp/Marin-y Vorner} `Melania Trump's/Marina Warner's book'. 
+
+In the case of contextual uninflectability\is{uninflectability!contextual}  the main descriptive burden generally has to be placed on the syntax. Thus, the obvious way of handling the  contextually uninflecting\is{uninflectability!contextual} \ili{German} predicative adjective\is{predicative (adjective)} is to stipulate that in predicative use (however defined) \textsc{LexIn} targets that value of the adjective's FORM attribute\is{attribute!FORM attribute} which has just categorial features and no others, namely, the STEM\textsubscript{0}\is{stem}. This will mean that none of the features in the adjective's \PC\ will be applicable, so that in predication position the adjective will behave exactly like an uninflecting (NB \emph{not} uninflectable) lexeme. Again, since \textsc{LexIn} is effectively defaulting here  to the lexical root,  the grammar will not have to pretend that \textex{klein} in  \xref{istklein} (repeated here in adapted form) bears any (spurious) inflectional features.
+
+\begin{exe}
+	\exr{istklein}
+	\gll Das Känguru ist \textbf{klein}. \\
+	the kangaroo is little\textsc{(uninfl)} \\
+	\glt `The kangaroo is little.’
+\end{exe}
+	
+\noindent%
+This makes the case of predicative adjectives\is{predicative (adjective)} identical to that of other complement predicates to copular\is{copula} verbs in \ili{German}. For instance, in \xref{freund}
+we see an instance of a NP functioning as  the complement to the copular\is{copula}.
+
+\ea\label{freund}
+\begin{xlist}
+	\ex 
+	\gll	Das Känguru ist mein Freund.	\\
+	the kangaroo.\textsc{sg} is my.\textsc{m.nom.sg} friend\textsc{(m).nom.sg}	\\
+	\glt	`The kangaroo is my friend.'
+
+	\ex
+	\gll	Die Kängurus sind unsere Freunde.	\\
+	the kangaroo.\textsc{pl} are our.\textsc{nom/acc.pl} friend.\textsc{non-dat.pl}	\\
+	\glt	`The kangaroos are our friends.'
+\end{xlist}
+\z
+	
+\noindent%
+The complement NPs \textex{mein Freund} `my friend' and  \textex{unsere Freunde} `our friends' are in the nominative singular/plural form (unambiguously so in the case of the singular). Here we have to say that the syntax  demands a nominative case marked predicative\is{predicative (adjective)} NP complement. This is not a given. In \ili{Polish}, for instance, the NP complement to any copular\is{copula} verb will normally be in the instrumental case, while in \ili{Russian} the choice of case depends on lexical and semantic factors. Adverbial phrases, including prepositional phrases, can also serve as complements to the copular\is{copula} verb, as seen in example \xref{hier} from \ili{German}.
+
+\ea \label{hier}
+\gll	Das Känguru ist hier/hinter dem Baum.	\\
+the kangaroo is here/behind the tree	\\
+\glt	`The kangaroo is here/behind the tree.'
+\z  
+\noindent%
+In such constructions  the adverbials \textex{hier, hinter dem Baum}, do not realize any morphosyntactic property at all.
+
+We have now largely achieved one of our principal aims. In both Type 1 and Type 3 total uninflectability\is{uninflectability!total} \textsc{LexIn} targets an uninflected \isi{stem} form, either because the syntax demands it (contextual\is{uninflectability!contextual}/constructional uninflectability\is{uninflectability!constructional})  or because the lexeme lacks any other forms (lexical uninflectability). 
+
+Turning now  to partial uninflectability\is{uninflectability!partial}, consider first  the \ili{Polish} \textex{muzeum}-words.   Recall that lexemes of this class, \lxm{muzeum}, \lxm{studio} and so on, typically retain, it seems, their latinate morphological structure: \textex{muze-um, studi-o}. This can be seen from the plural inflected forms: \textex{muze-a, muze-ów, \ldots}, \textex{studi-a, studi-ów, \ldots}. These are  based on a bound stem\is{stem!bound}, \mbox{\textex{muze-,}} \mbox{\textex{studi-,}} which also appears in derived forms: \textex{muze-al-n-y} `pertaining to museums'. In effect, such lexemes  exhibit \isi{heteroclisis}. The plural part of the \isi{paradigm} inflects according to a relatively standard inflectional class (though with an unusual genitive plural form), based on a bound stem\is{stem!bound}. The singular part of the \isi{paradigm} is uninflectable, and is based on what historically is generally the nominative singular (``\isi{citation form}'') of the original \ili{Latin} word, i.e. that part of the \isi{paradigm} is governed by the feature \feat{morclass}{uninflectable}\is{morphological class (MORCLASS)}. Thus, the singular and plural paradigms\is{paradigm} belong to distinct inflectional classes. More specifically, following \citet[189\textendash91]{stump2016} such a lexeme is associated with two distinct (though in this case, phonologically related) basic stems\is{stem}, each of which belongs to a distinct inflectional class. The singular subparadigm\is{paradigm} is defined over the invariant \isi{stem} form \textex{muzeum}, and this \isi{stem} is marked as being uninflectable. This means that it is not associated with any \PF. In the plural, however, the \isi{stem}, \textex{muze-} inflects according to the specific inflectional class it belongs to.  
+
+
+Consider again the phenomenon of  `sporadic agreement\is{agreement!sporadic}' \citep{fedden2019}. %
+There are two important differences between sporadic agreement\is{agreement!sporadic} as seen in, say, the \ili{Nakh-Dagestanian} languages and the partial uninflectability\is{uninflectability!partial} seen in  cases such as the \ili{Polish} \textit{muzeum}-class. The \textit{muzeum}-class words are very much the exception in the \ili{Polish} lexicon, and for half their \isi{paradigm} they are completely uninflectable. However, in the case of sporadic agreement\is{agreement!sporadic} it is generally the verbs showing agreement morphology that are in the minority, and those verbs that fail to show agreement nonetheless inflect normally for other inflectional categories. Thus, there is a sense in which sporadic agreement\is{agreement!sporadic} is a species of \isi{overdifferentiation}, though on such a scale that it has to be coded explicitly in the grammar and not just ignored as an aberration. But this simply means that the agreeing lexemes are given a richer \textit{morpholexical signature}\is{morpholexical signature (MORSIG)} than other lexemes, that is, they are associated with a richer set of inflectional features for which they are obliged to inflect (here, agreement features). As far as I can tell, the sporadic agreement\is{agreement!sporadic} cases do not therefore pose any special problems compared with other types of partial uninflectability\is{uninflectability!partial}:  only a part of the verb lexicon bears specification for the agreement features. 
+
+Now consider again the \ili{Polish} \textex{widmo}-construction. The  nominative singular form \textex{widmo} (and likewise, the form  \textex{muzeum}), is, of course, traditionally regarded as the  \isi{citation form} of the lexeme \lxm{widmo}. It is presumably for this reason that such forms are chosen to serve as  uninflecting variants in languages such as \ili{Polish} or \ili{Latin}, whose inflectional stems\is{stem} are generally bound morphemes\is{stem!bound}. In such languages, citation forms\is{citation form} seem the natural choice of default form with respect to \isi{lexical insertion}. However, from a formal point of view this seems to entail that \isi{lexical insertion} can in part be defined over the lexeme's morpholexical signature\is{morpholexical signature (MORSIG)}, i.e. the set of inflectional features for which it must inflect. Specifically, it appears to require that default application of \textsc{LexIn} can appeal somehow to those feature sets which function as defaults. It is not obvious how such an effect can be achieved formally, however.
+
+{
+	A somewhat similar situation is found when we see the use of a \isi{citation form} in titles of literary works and similar.%
+	\footnote{%
+		I am grateful to Grev Corbett for urging me to consider such constructions.
+	} % 
+	As a consequence, in certain contexts such titles and similar types of name (e.g. names of journals or newspapers), appear to be uninflecting in languages where we could otherwise expect them to inflect. In \ili{Russian}, for instance, the title \textex{Vojna i mir}, `War and peace', inflects as a normal conjoined noun phrase, as in \xref{vojny}, with both nouns appearing in the expected genitive case.%
+	
+		\ea\label{vojny}
+		
+		\gll	poslednee	izdanie	``Vojn-y			i	mir-a"	\\
+		latest		edition	War-\textsc{gen.sg}	and	peace-\textsc{gen.sg}	\\
+		\glt	`the latest  edition of ``War and Peace"'
+		
+		\z
+		However, somewhat more natural, perhaps, is a construction in which the title is in \isi{apposition} to a generic noun such as \lxm{roman} `novel', as in \xref{romana}.
+		
+		\ea\label{romana}
+		
+		\gll	poslednee	izdanie	roman-a			``Vojn-a			i	mir"	\\
+		latest		edition	novel-\textsc{gen.sg}	War-\textsc{nom.sg}	and	peace.\textsc{nom.sg}	\\
+		\glt	`the latest  edition of  the novel ``War and Peace"'
+		
+		\z
+		In \xref{romana} it is the noun `novel' which receives genitive case, while both nouns in the title itself remain in the nominative singular \isi{citation form}.
+		
+		The appositional\is{apposition} construction illustrated in \xref{romana} is reminiscent of \isi{compound} nouns in a number of languages with a phrasal non-head, such as \textex{his why-does-it-always-have-to-happen-to-me attitude}.%
+		\footnote{%
+			See the contributions to \citet{tripskornfilt2017} for discussion of phrasal compounding\is{compound} and specifically \citet{pafel2017} for interesting typological observations.
+		} %
+	One class of such phrasal compounds\is{compound}  is generally taken to be quotative: the phrasal non-head expression is not used as such, but rather quoted. If we take the title \textex{Vojna i mir} in \xref{romana} to be the citation of the title then it is less mysterious to see it appearing in the \isi{citation form}. It might even be possible that  citation accounts for the use of the default nominative singular in the \ili{Polish} \textex{widmo}-constructions, though further speculation would take us too far afield.
+	
+	Finally, we turn to the cases of partial constructional\is{uninflectability!partial}\is{uninflectability!constructional}/contextual uninflectability\is{uninflectability!contextual}, as exemplified by the \ili{Hungarian} agreeing infinitive and the \ili{Latvian} genitive compounds\is{compound}. The \ili{Latvian} genitive compounds\is{compound} exhibit a structure which is in many ways comparable to the compounds\is{compound}  in which the non-head of the \isi{compound} has to appear in a special ``combining form'', as found in \ili{Sanskrit}, \ili{Greek}, \ili{German} and other languages. For instance, \ili{German} has a large number of compounds\is{compound} of the form \textex{Liebeslied} `love song', formed by combining the nouns \textex{Liebe} `love' and \textex{Lied} `song' with a meaningless \isi{intermorph} \textex{-s-}: \textex{Liebe-s-lied} \citep{nublingszczepaniak2013}, and many \ili{Russian} compounds\is{compound} take the form of the example \xref{compounding} \textex{klin-o-obraznyj} `wedge-shaped' cited  above. The crucial difference is that the \ili{Latvian} `combining form' is always identical to a genitive case form of the non-head noun (singular or plural). This means that the grammar has to select a specific cell in the lexeme's \isi{paradigm}, as opposed to a particular \isi{stem} form or the root form.
+	
+	The \ili{Hungarian} infinitive construction is essentially homologous to the spontaneous \isi{agreement} described for \ili{Nakh-Dagestanian} languages and others, with the difference that the construction applies to all verbs and not just to a (sizeable) minority. The solutions proposed for spontaneous \isi{agreement} will therefore presumably carry over to the \ili{Hungarian} case, but without the lexical restrictions needed for lexically-governed spontaneous \isi{agreement}.
+}
+
+\section{Conclusions and queries}
+	
+This paper has had two principal goals. 
+
+First, I have extended the typology of uninflectability, arguing for the four-way typology shown in Table \ref{tab:typology}. This establishes two parameters of uninflectability. A word can be either totally\is{uninflectability!total} or partially uninflectable\is{uninflectability!partial}. A word can be uninflectable either as an inherent lexical property or the uninflectability can be induced by the syntactico-semantic context (contextual uninflectability\is{uninflectability!contextual}) or  actually introduced as part of a grammatical construction (constructional uninflectability\is{uninflectability!constructional}). The literature attests only three of the four possibilities, but additional evidence from \ili{Hungarian} and \ili{Latvian} suggest that the full typology is viable. 
+
+As part of this conceptual endeavour I have asked just what inflectional features it is that a lexeme can be uninflectable for. The answer seems to be just the core inflectional features that are associated in that language with (more or less canonical) synthetic morphology. 
+	
+	
+Second, I have asked how uninflectability can be accommodated in  a formal grammar. Taking as my point of departure the PFM2\is{Paradigm Function Morphology (PFM)!PFM2} model of \citet{stump2016} I have argued that we can treat uninflectability as a total\is{uninflectability!total} or partial\is{uninflectability!partial} lack of a form\is{paradigm!form}/realized paradigm\is{paradigm!realized} in a lexeme that nonetheless has a fully-fledged content paradigm\is{paradigm!content}. The fact that the uninflectable lexeme is associated with a content paradigm\is{paradigm!content} distinguishes the uninflectable lexemes from the common-or-garden uninflecting classes of lexemes, such as \ili{English} prepositions. By defining lexical representations\is{lexical representation} in the right way, however, we can make the principles of \isi{lexical insertion} (the syntactic licensing of a concrete form of a lexeme) apply in the same way to uninflecting lexemes and uninflectable lexemes. By defining the FORM attribute\is{attribute!FORM attribute} of a lexeme as the output of inflectional morphology it is then also possible to account for the \isi{lexical insertion} of ordinarily inflected word forms using the same machinery. 
+
+A number of questions arise from this study.
+
+I have suggested, on the basis of admittedly limited evidence, that uninflectability only applies in the case of thorough-going synthetic inflection. To what extent is this actually true? And to the extent that it is true, does it provide a test bed for identifying the notion of \textit{core synthetic inflection} in a given language? If so, this might have implications for the notion of paradigmatic\is{paradigm} organization and for the putative distinction between inflection and derivation\is{derivation (\emph{see also} word formation)}.
+
+Uninflectability is not an all-or-nothing, binary phenomenon. It remains to be seen, therefore, whether the account sketched here can accommodate all gradient cases of uninflectability in a convincing fashion.
+
+The PFM2\is{Paradigm Function Morphology (PFM)!PFM2} model presupposes a very specific view of inflectional morphology, and the level of form paradigm\is{paradigm!form}, in a sense, is an artefact of that model. Other closely related models do not appeal to such a level, for instance, Network Morphology \citep{brownhippisley2012} or the morph-based HPSG-oriented\is{Head‐driven Phrase Structure Grammar (HPSG)} implementation of PFM2\is{Paradigm Function Morphology (PFM)!PFM2} in Information-based Morphology\is{Information-based Morphology (IbM)} \citep{crysmannbonami2016}. Moreover, the notion of form paradigm\is{paradigm!form} itself raises conceptual questions: if the feature ensemble defining the content paradigm\is{paradigm!content} has to be interpreted by syntax/semantics then those features cannot, by definition, be morphomic\is{morphome} (in the sense of \citealp{aronoff1994} and many subsequent references, including \citealp{stump2016}). But if the form paradigm\is{paradigm!form} represents a level that is `informationally encapsulated' from syntax/semantics and just defines formal, morphological relations, then it is odd to see that the features which define it in the canonical cases of linkage are precisely the non-morphomic\is{morphome} content paradigm\is{paradigm!content} features (cf \citealp{boyeschalchli2019}, \citealp{spencer2021}). Future research should therefore be devoted to generalizing the account offered here so as to make it compatible with any model of inferential-realizational inflectional morphology\is{morphology!inferential-realizational}.
+
+Finally, we have seen that it is important to distinguish uninflectability from defectivity\is{defectiveness}, but does the current proposed analysis of uninflectability have any (possibly unwelcome) implications for defectivity\is{defectiveness}? A defective\is{defectiveness} lexeme is one which lacks one or other forms from its \isi{paradigm}, so that there is no way of expressing that particular cell's feature content for that lexeme. For instance, the \ili{Russian} noun \lxm{me\v{c}ta} `dream' cannot be used in the genitive plural form, even though all \ili{Russian} speakers know what that form `ought' to be, namely, $^{*!}$\textex{me\v{c}t} (where the annotation $^{*!}$ is intended to mean `form which is expected, but which is unacceptable'). \citet{stump2010}, examining the interaction of \isi{defectiveness} with \isi{syncretism}, suggests that \isi{defectiveness} might be a property either of content paradigms\is{paradigm!content}, or of form paradigms\is{paradigm!form}. 
+My approach to uninflectability suggests that it is better to treat defectivity\is{defectiveness} as a property of the lexeme's content paradigm\is{paradigm!content}, as the safest way of ensuring that \textsc{LexIn} has no member of the form paradigm\is{paradigm!form}/FORM attribute\is{attribute!FORM attribute} to fall back on. In other words, a defective\is{defectiveness} lexeme is one with a defective\is{defectiveness} morpholexical signature\is{morpholexical signature (MORSIG)}, which simply denies the existence of certain cells in the content paradigm\is{paradigm!content}, hence, a priori in the form\is{paradigm!form}/realized\is{paradigm!realized} paradigm.
+ 
+ 
+\section*{Abbreviations}
+\begin{tabularx}{.45\textwidth}{lQ}
+\textsc{acc} & accusative \\
+\textit{Corr} & Correspondence (function) \\
+\textsc{dat} & dative \\
+DEP & Default Exponence Principle \\
+\textsc{f} & feminine \\
+\textsc{gen} & genitive \\
+HPSG & Head-driven Phrase Structure Grammar \\
+IbM & Information-based Morphology \\
+IFD & Identity Function Default \\
+\textsc{inf} & infinitive \\
+\textsc{ins} & instrumental \\
+LFG & Lexical Functional Grammar \\
+LI & Lexemic Index \\
+\end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+\textsc{loc} & locative \\
+LVC & light verb construction \\
+\textsc{m} & masculine \\
+MWE & multiword expression \\
+\textsc{n} & neuter \\
+\textsc{nom} & nominative \\
+PF & Paradigm Function \\
+PFM & Paradigm Function Morphology \\
+\textsc{pl} & plural \\
+\textit{pm} & property mapping \\
+\textsc{px} & possessor \\
+SBCG & Sign-Based Construction Grammar \\
+\textsc{sg} & singular \\
+TAM & tense-aspect-mood \\
+\textsc{uninfl} & uninflectable \\
+\textsc{voc} & vocative \\
+\end{tabularx}
+
+
+\section*{Acknowledgements}
+
+I am grateful to the audience of the DGfS Arbeitsgruppe for stimulating questions and observations and especially to Bo\.{z}ena Cetnarowska and Jenny Audring. Grev Corbett made very valuable comments on an earlier draft of the written paper. I would also like to record my thanks to Sebastian Fedden and Enrique Palancar, for the invitation to participate and especially for  organising such an enjoyable Workshop, with such uniformly high quality presentations. 
+
+%\section*{Contributions}
+%John Doe contributed to conceptualization, methodology, and validation.
+%Jane Doe contributed to writing of the original draft, review, and editing.
+
+
+{\sloppy\printbibliography[heading=subbibliography,notkeyword=this]}
+\end{document}

@@ -1,0 +1,613 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook}
+\ChapterDOI{10.5281/zenodo.20611907}
+\author{Lameen Souag\orcid{}\affiliation{LACITO (CNRS - Sorbonne Nouvelle - INALCO)}}
+
+\title{The diachronic stability of uninflectability in Berber}
+
+\abstract{Most varieties within Berber, an Afroasiatic language family of Northern Africa, feature a robust system where nouns inflect for \textit{state}. This typically involves two forms: the citation form (\textit{free state}) and a marked form (misleadingly called the \textit{construct state}), used mainly for postverbal nominatives and objects of prepositions. The system has been analyzed as either a marked-nominative case system or a typologically unique phenomenon. However, state inflection only applies to nouns with a gender-marked prefix, leaving a substantial minority of nouns uninflected. This includes many borrowed Arabic or Romance nouns, as well as some inherited terms like kinship words, which can be traced back to proto-Berber. While there are instances of state marking extending to previously uninflected nouns, it has never been fully generalized to all nouns. Comparative data suggests that selective uninflectedness has remained stable over a period of two millennia.}
+
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[23]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction} \label{13sec1}
+
+If a lexeme is not marked for a morphological feature for which other members of its class are marked, it is \emph{uninflectable}\is{uninflectability} \citep{spencer2020}, or \emph{uninflected}\is{uninflectedness} \citep[30]{baermanbrowncorbett2005}. The former term will be adopted here to avoid ambiguity, as the latter is used by Spencer in a different sense. Thus, for instance, \ili{English} nouns inflect for \isi{number}, but \emph{sheep} is uninflectable\is{uninflectability}.
+
+In most of the \ili{Berber} (Amazigh\il{Berber!Amazigh}) languages of North Africa, most nouns are inflected for a feature conventionally termed \textit{\isi{state}} (arguably \isi{case}; explained below), as well as for \isi{number}. For example, `man' in \ili{Kabyle} is \emph{argaz} in the free state\is{state!free}, but \emph{wərgaz} in the annexed state\is{state!annexed}. However, a significant proportion of nouns are uninflectable\is{uninflectability} for \isi{state}; \ili{Kabyle} `thirst', for instance, is \emph{fad} in both free\is{state!free} and annexed state\is{state!annexed}. In this article, it is shown that \isi{uninflectability} in \ili{Berber} is both synchronically widespread and diachronically stable over a millennium or more.
+
+Such a result is surprising a priori. It appears reasonable to expect some kind of relationship between the frequency of \isi{uninflectability} for a feature and the likelihood of the morphology continuing to mark that feature. After all, at the extremes, a feature for which all words are uninflectable\is{uninflectability} is not a feature relevant to \isi{inflectional morphology} at all. One for which all potentially inflectable items are inflectable can potentially carry a high functional load; one for which, say, half are uninflectable\is{uninflectability} must perforce have a rather low one, making it much easier to dispense with. Such arguments tend to suggest that a high lexical frequency of \isi{uninflectability} for a given feature should be diachronically unstable. \ili{Berber} thus provides an important data point for the study of how \isi{uninflectability} relates to linguistic change.
+
+\subsection{Background} \label{13sec1.1}
+
+\ili{Berber}, or Amazigh\il{Berber!Amazigh}, constitutes a family of closely related languages within the \ili{Afroasiatic} phylum, spoken by tens of millions of people across North Africa. The family is primarily concentrated in Morocco and Algeria, but extends from Mauritania to western Egypt, and as far south into the Sahel as northern Burkina Faso. Some of its best known members include Tashlhiyt\il{Tashlhiyt (\emph{also} Shilha)} (Shilha\il{Tashlhiyt (\emph{also} Shilha)}) in southern Morocco, \ili{Kabyle} in northern Algeria, and \ili{Tamajeq} (\ili{Tuareg}) in Niger.
+
+In all \ili{Berber} varieties, the prototypical noun (including most high-frequency nouns and almost all inherited nouns) starts with a prefix explicitly marked for masculine or feminine \isi{gender} and for singular or plural \isi{number}; values other than masculine singular are usually additionally marked by a suffix\is{suffixation} or by stem-internal alternations. Both features are relevant to \isi{agreement} -- of the verb with the \isi{subject}, of pronouns (bound or free) with their referents, of adjectives with nouns\ldots{} In most varieties, the nominal prefix\is{nominal!prefix} is also marked for a non-agreement feature traditionally termed \textit{\isi{state}} (\emph{état} in \ili{French}, \emph{addad} in \ili{Kabyle}), which can take two values: \textit{free}\is{state!free} or \textit{absolute} (\emph{libre, ilelli}; henceforth glossed \textsc{fs}) and \textit{annexed}\is{state!annexed} or \textit{dependent\is{state!dependent}\is{dependent!state}} (\emph{d'annexion, amaruz}; glossed \textsc{as}). The latter is often misleadingly called \textit{construct state}, a term best reserved for head marking rather than dependent marking\is{dependent!marking} \citep{creissels2009-construct}. To a rough first approximation, these terms correspond to the \isi{absolutive} and \isi{nominative} respectively in a marked-nominative\is{nominative!marked-nominative} \isi{case} system; however, such an analysis is problematic for certain \ili{Berber} varieties and obscures some of the functions of these states\is{state}, as discussed in more detail in Section \ref{13sec1.3} below. The paradigms given in Table \ref{13tab1} are representative.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{lll}%{tabularx}{0.6\textwidth}{lXX}
+		\lsptoprule
+			\ili{Kabyle} & free\is{state!free} & annexed\is{state!annexed} \\
+			\midrule
+			\textsc{m.sg} & a-mɣar & wə-mɣaṛ \\
+			\textsc{m.pl} & i-mɣaṛ-ən & yə-mɣaṛ-ən \\
+			\textsc{f.sg} & ta-mɣaṛ-t & tə-mɣaṛ-t \\
+			\textsc{f.pl} & ti-mɣaṛ-in & tə-mɣaṛ-in \\
+			& & \\
+			\midrule
+			\ili{Tamasheq} & free\is{state!free} & annexed\is{state!annexed} \\
+			\midrule
+			\textsc{m.sg} & a-mɣar & ă-mɣar \\
+			\textsc{m.pl} & i-mɣar-ăn & ə-mɣar-ăn \\
+			\textsc{f.sg} & ta-mɣar-t & tă-mɣar-t \\
+			\textsc{f.pl} & ti-mɣar-en & tə-mɣar-en \\
+		\lspbottomrule
+	\end{tabular}
+	\caption{Paradigm of ‘old person’ in \ili{Kabyle} and \ili{Tamasheq}}
+	\label{13tab1}
+\end{table}
+
+Every \ili{Berber} variety that retains \isi{state} marking has a substantial number of nouns which are uninflectable\is{uninflectability} for \isi{state}. A rough estimate of their type frequency may be gathered by picking a set of pages at random from a \ili{Berber} dictionary ordered by roots and counting nouns. For \ili{Tamazight} \citep{taifi1991}, such a procedure applied to ten pages suggests that about 39\% (37/95) of nouns are uninflectable\is{uninflectability} for \isi{state}. For \ili{Tamajeq} \citep{prassealojalymohamed1998}, applied to five pages, it yielded 29\% (34/116). By token frequency, a quick count suggests that uninflectable\is{uninflectability} nouns (excluding personal pronouns and numerals) account for about 37\% of the first two pages of the \ili{Kabyle} folk tale ``The Orphan's Cow'' \citep[79--80]{allioui2017}; in more loanword-friendly\is{loanword} genres, the figure would likely be higher. Figures like these are a far cry from the marginality of uninflectable\is{uninflectability} nouns in languages like \ili{Russian} or \ili{Polish}. To understand the high frequency of state-uninflectable\is{state}\is{uninflectability} nouns across \ili{Berber}, we must examine the factors conditioning state\is{state}-\isi{uninflectability} and their history. Before doing so, some background on \ili{Berber} subclassification and on the nature of \textit{\isi{state}} is necessary.
+
+\subsection{Berber-internal relationships} \label{13sec1.2}
+
+To interpret the predominantly synchronic \ili{Berber} data from a historical perspective, it is necessary to consider its \isi{family tree}. \ili{Berber} fits no better into a pure tree model than, say, Romance; the influence of \ili{Berber} languages on other \ili{Berber} languages remained substantial until a few centuries ago, and continues in some areas \citep{souag2017}. Nevertheless, some splits within the family are evidently much deeper than others. The varieties that likely split off earliest -- \ili{Zenaga} and \ili{Tetserret} in the southwest, \ili{Awjili} and to some extent \ili{Ghadamsi} in the far east -- have lost \isi{state} marking, and will therefore not concern us here. Most of the remaining varieties fall naturally into four subgroups:
+
+\begin{enumerate}
+	\item
+	\ili{Tuareg} across the central Sahara and Sahel: \ili{Tamahaq} in Algeria and Libya, \ili{Tamasheq} in Mali, \ili{Tamajeq} in Niger
+	\item
+	\ili{Zenati} from eastern Morocco to southern Tunisia, notably including \ili{Tarifiyt} (eastern Morocco) and \ili{Chaoui} (eastern Algeria), along with numerous smaller varieties such as \ili{Figuig} (eastern Morocco), \ili{Bissa} (west-central Algeria), \ili{Tumzabt} (south-central Algeria)
+	\item
+	\ili{Kabyle} in north-central Algeria
+	\item
+	Atlas varieties in most of Morocco, especially \ili{Tamazight} (southeast) and Tashlhiyt\il{Tashlhiyt (\emph{also} Shilha)} (southwest), but also a couple of smaller varieties, such as \ili{Senhaja}, in the north.
+\end{enumerate}
+
+It remains debatable whether any of these four can be subgrouped together more closely, but 2--4 share some phonological innovations, and can be classed together areally as ``northern Berber\il{Berber!northern}''.
+
+\subsection{\textit{State}\is{state} in Berber} \label{13sec1.3}
+
+Most \ili{Berber} varieties continue to mark nouns for \isi{state}, although some peripheral varieties, such as \ili{Siwi} \citep{souag2013}, \ili{Awjili} \citep{vanputten2014}, or \ili{Tetserret} \citep{lux2013}, have lost the annexed state\is{state!annexed}, and hence no longer have \isi{state} marking. The formal marking of \textit{\isi{state}} is relatively uniform across \ili{Berber}, with the exception of \ili{Tuareg}. As illustrated above in Table \ref{13tab1}, in \ili{Tamasheq}, and \ili{Tuareg} more generally, the \textit{annexed state} (\textsc{as})\is{state!annexed} can be given a unitary morphophonological analysis as the result of \isi{vowel reduction} from the \textit{free state} (\textsc{fs})\is{state!free}, taking peripheral \emph{a, e}, \emph{i} to central \emph{ă, ă,} \emph{ə} with subsequent lower-level phonological adjustments \citep[147]{heath2005-grammar}. For other \ili{Berber} varieties, in which \emph{*ă \textgreater{} ə,} such an analysis might appear tempting for the feminine forms; it is, however, ruled out, at least synchronically, by the semivowels that appear in the masculine forms. These semivowels, moreover, are clearly original rather than innovative; some \ili{Tuareg} varieties preserve relict traces of them in poetry and in placenames \citep{brugnatelli1997}, as does \ili{Zenaga} in placenames \citep{taine-cheikh2005}.
+
+The function of \textit{\isi{state}} differs in detail across \ili{Berber} varieties. However, a few generalizations appear to be exceptionless across those varieties that have retained this category. State\is{state} is never an \isi{agreement} feature: when a noun is followed by a nominal adjective\is{nominal!adjective}\footnote{Like nouns (of which they constitute a subclass), nominal adjectives\is{nominal!adjective} usually start with a nominal prefix\is{nominal!prefix}. They can be used as the head of a noun phrase without any further marking; thus for instance \emph{a-zəggʷaɣ} `red (\textsc{m.sg.})' can also be `(the/a) red one (\textsc{m.sg.})'. In such a case, they are marked for \isi{state} like any other noun.} or by another noun in apposition to it, the latter is always in the free state\is{state!free} irrespective of the \isi{state} of the preceding noun. The free state\is{state!free} is always the \isi{citation form} of the noun, used in contexts that minimally include preposed topics (including preverbal subjects\is{subject}) and in situ direct objects. The annexed state\is{state!annexed} is always conditioned by material preceding (usually directly preceding) the noun on which it appears. In every variety that has retained \isi{state} marking at all, the annexed state\is{state!annexed} appears in at least the following three contexts:
+
+\medskip
+
+\noindent A) complements\is{complement} of some prepositions\is{preposition}, such as \isi{genitive} \emph{n}, dative \emph{i}, instrumental \emph{s}, etc. - but not of all prepositions\is{preposition} (the specific list varies from language to language); contrast (\ref{13ex1}) with (\ref{13ex2}).
+
+\begin{exe}
+	\ex \label{13ex1} \ili{Kabyle} \citep[24]{mettouchifrajzyngier2013}
+	\begin{xlist}
+		\ex 
+		\gll ɣər \textbf{wə}-drar \\
+		at \textbf{\textsc{msg.as}}-mountain \\
+		\trans ‘at the mountain’
+		
+		\ex 
+		\gll s \textbf{a-}drar \\
+		to \textbf{\textsc{msg.fs}}-mountain \\
+		\trans ‘to the mountain’
+	\end{xlist}
+\end{exe}
+
+\noindent B) the dependent noun\is{dependent!noun} in tight compounds following certain heads, as in (\ref{13ex2}).
+
+\begin{exe}
+	\ex \label{13ex2} Tashlhiyt\il{Tashlhiyt (\emph{also} Shilha)} \citep[116]{elmoujahid1997} \\
+	\gll ayt \textbf{u-}zaɣar \\
+		sons.of \textbf{\textsc{msg.as-}}plain \\
+		\trans ‘plainsmen’
+\end{exe}
+
+\noindent C) a noun governed by a preceding numeral or similar quantifier, as in (\ref{13ex3}--\ref{13ex4}). (Not all numerals do this in any one language; on the variation in numeral-noun syntax across different varieties, see \citep[212]{galand2002}.)
+
+\begin{exe}
+	\ex \label{13ex3} \ili{Bissa} \citep[67]{genevois1973} \\
+	\gll yiğ \textbf{wə-}ryaz \\
+	one.\textsc{m} \textbf{\textsc{msg.as}}-man \\
+	\trans ‘one man’
+\end{exe}
+
+\begin{exe}
+	\ex \label{13ex4} \ili{Tumzabt} \citep[95]{abdessalamabdessalam1996} \\
+	\gll səmms-ət \textbf{t-}sədnan \\
+	one.\textsc{m} \textbf{\textsc{fpl.as-}}women \\
+	\trans ‘five women’
+\end{exe}
+
+In all these contexts, the state assigner\is{state!assigner} must directly precede the noun to which it assigns the annexed state\is{state!annexed}; \citet[148]{heath2005-grammar} notes that, in \ili{Tamasheq}, even a pause after the preceding \isi{preposition} is enough to force its \isi{complement} to appear in the free state\is{state!free}.
+
+In some peripheral varieties, such as \ili{Senhaja} \citep[362, 407]{gutova2021} or Ouargla \citep[79, 113]{delheureochoa2019}, A-C are apparently the only contexts where annexed state\is{state!annexed} appears. Across most varieties, however, e.g. Tashlhiyt\il{Tashlhiyt (\emph{also} Shilha)} \citep[114--116]{elmoujahid1997}, \ili{Tamasheq} \citep[147, 247]{heath2005-grammar}, \ili{Tamahaq} \citep[25]{cortade1969}, and \ili{Figuig} (\citealt[88--89]{kossmann1997}; \citealt{kossmann2016}), the annexed state\is{state!annexed} is also assigned to:
+
+\medskip
+
+\noindent D) a postverbal \isi{subject} -- but never a preverbal one, nor a \isi{right dislocated} one; contrast (\ref{13ex5a}) to (\ref{13ex5b}).
+
+\begin{exe}
+	\ex \label{13ex5} \ili{Chaoui} \citep[135]{djarallah1993}
+	\begin{xlist}
+		\ex \label{13ex5a}
+		\gll H-ənna=as \textbf{h-}gəʕʕuṣ-t. \\
+		\textsc{3fsg}-say.\textsc{pfv=3sg.dat} \textbf{\textsc{fsg.as}}-goat-\textsc{fsg} \\
+		\trans ‘The goat told him.’
+		
+		\ex \label{13ex5b}
+		\gll \textbf{Ha-}gəʕʕuṣ-t a=y t-uš ta-žəɣɣim-t. \\
+		\textbf{\textsc{fsg.fs}}-goat-\textsc{fsg} \textsc{irr=1sg.dat} \textsc{3fsg.}give \textsc{fsg.fs-}gulp-\textsc{fsg} \\
+		\trans ‘The goat will give me some milk.’
+	\end{xlist}
+\end{exe}
+
+Unlike A-C, condition D does not typically require strict adjacency. \citet[573]{heath2005-grammar} reports that \ili{Tamasheq} requires the \isi{subject} to be immediately postverbal unless fronted, but this does not hold true even in other \ili{Tuareg} varieties.
+
+While ``\isi{state}'' is not traditionally identified with \isi{case}, these four categories strongly suggest an analysis of ``\isi{state}'' as a marked-nominative\is{nominative!marked-nominative} \isi{case} system \citep{sasse1984, konig2008, belkadi2024}. \citet[1]{blake1994} defines \isi{case} as ``marking dependent nouns\is{dependent!noun} for the type of relationship they bear to their heads''. Conditions 1--3 fit unproblematically into such a definition. Since most \ili{Berber} varieties have VSO basic word order, Condition 4 can be understood as the application of \isi{case} marking to in situ subjects\is{subject}; preverbal subjects\is{subject} are rather to be analysed as topics, assigned default \isi{case}. The analysis of \isi{state} as \isi{case} has accordingly also been widely adopted in generativist work on \ili{Berber} \citep{guerssel1992, felice2020, belkadi2024}. On this analysis, ``free state\is{state!free}'' should properly be called the \isi{absolutive}, and ``annexed state\is{state!annexed}'' the \isi{nominative}.
+
+To these four conditions, however, \ili{Kabyle} \citep{mettouchifrajzyngier2013}, \ili{Tumzabt} \citep[96]{abdessalamabdessalam1996}, and at least to some extent \ili{Tarifiyt} (\citealt{lafkioui2000}; \citealt[39, 132]{mourighkossmann2020}) add a fifth -- apparently not applicable in other varieties examined, such as Tashlhiyt\il{Tashlhiyt (\emph{also} Shilha)} \citep{mettouchifleisch2010} -- which complicates such an analysis:
+
+\medskip
+
+\noindent E) a \isi{right dislocated} noun other than the \isi{subject} of a verb: i.e. a \isi{subject} following the predicate of a non-verbal sentence, or a non-subject co-referential with a preceding pronominal clitic. Both are illustrated in (\ref{13ex6}).
+
+\begin{exe}
+	\ex \label{13ex6} \ili{Tumzabt} \citep[96]{abdessalamabdessalam1996}
+	\begin{xlist}
+		\ex \label{13ex6a}
+		\gll D a-ssṛa n w-urəɣ \textbf{tə-}yẓiwt. \\
+		\textsc{cop} \textsc{msg.fs-}necklace \textsc{gen} \textbf{\textsc{msg.as}}-gold \textsc{fsg.as-}girl. \\
+		\trans She’s (as beautiful as) a golden necklace [lit. a necklace of gold], the girl.
+		
+		\ex \label{13ex6b}
+		\gll Ğği-n=as ta-yətti \textbf{u-}bəṛhuš \\
+		do.\textsc{pfv-3mpl=3sg.dat} \textsc{fsg.fs-}care \textbf{\textsc{msg.as-}}dog \\
+
+		y-rəwl=asən. \\
+		\textsc{3msg-}flee.\textsc{pfv=3pl.dat} \\
+		\trans ‘They took care of him, the ungrateful dog, and he ran away from them.’
+	\end{xlist}
+\end{exe}
+
+The analysis of \isi{state} in such varieties -- especially in \ili{Kabyle} -- is accordingly controversial. Building upon the work of \citet{galand1969}, \citet{mettouchifrajzyngier2013} reject a \isi{case} analysis, observing that any of subjects\is{subject}, objects, and objects of prepositions\is{preposition} can occur in either \isi{state}, and consider \isi{state} as a previously unrecognised typological category ``provid[ing] the value (in the logical sense) for the variable of the function grammaticalized in a preceding constituent'' (p. 13), i.e., for a function such as \isi{subject}, object, or \isi{number}, specifying the noun phrase fulfilling or being quantified by that function. \citet{arkadiev2015}, on the other hand, argues that \ili{Kabyle} ``\isi{state}'' fits well into the cross-linguistic typology of marked-nominative\is{nominative!marked-nominative} \isi{case} systems, and is best analysed as such, as in \citet{creissels2009-uncommon}. Under any analysis, \ili{Kabyle} ``\isi{state}'' marking cannot be accounted for in terms of argument structure alone, but interacts strikingly with information structure.
+
+The question of where \isi{state} marking fits into broader cross-linguistic comparative categories, however, is not our primary concern here. State\is{state} marking is evidently a morphological feature of the noun; Table \ref{13tab2} illustrates that it shows \isi{allomorphy} that is not synchronically predictable from the stem alone nor from the free state\is{state!free} alone. For example, stems sharing the shape CiCəC differ in their free state\is{state!free} marker (\emph{a-} vs. \emph{i-}) -- likewise stems sharing the shape CaC (Ø vs. \emph{a-} vs. \emph{l-}) -- and nouns sharing the same shape aCaC in the free state\is{state!free} show different forms in the annexed state\is{state!annexed} (uCaC vs. waCaC). State\is{state} marking is equally clearly conditioned by syntax. Nouns which fail to mark it are therefore, by definition, uninflectable\is{uninflectability} for \isi{state}: such nouns are ``insensitive to distinctions which are still syntactically relevant'' \citep[30]{baermanbrowncorbett2005}.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{lll}%{tabularx}{0.5\textwidth}{lXX}
+		\lsptoprule
+							  & free\is{state!free} & annexed\is{state!annexed} \\
+			\midrule
+			`warming oneself' & a-ẓiẓən 			  & u-ẓiẓən \\
+			`rope' 			  & i-zikər 			& i-zikər \\
+			\tablevspace
+			`hunger' 		  & fad 				& fad \\
+			`finger' 		  & a-ḍad 				 & u-ḍad \\
+			`land' 			  & akal 				& w-akal \\
+			`omen' 			  & l-fal 				& l-fal \\
+		\lspbottomrule
+	\end{tabular}
+	\caption{Examples of \isi{allomorphy} in \isi{state} marking in \ili{Kabyle} (cf. \citealt{dallet1982})}
+	\label{13tab2}
+\end{table}
+
+\section{Uninflectability\is{uninflectability} for \isi{state}} \label{13sec2}
+
+All \ili{Berber} varieties have a substantial number of nouns which are uninflectable\is{uninflectability} for \isi{state}. These arise for several reasons: phonological, morphological, and to a lesser extent even semantic.
+
+\subsection{Phonologically motivated} \label{13sec2.1}
+
+\subsubsection{Vowel-initial stems} \label{13sec2.1.1}
+
+As implied by the segmentation in Table \ref{13tab2}, contrasts like \emph{aḍad -- uḍad} `finger' vs. \emph{akal -- wakal} `land' are most conveniently analysed as reflecting a difference in the form of the stem -- consonant-initial vs. vowel-initial -- rather than of the prefix \citep{prasse1964, penchoen1973}. While consonant-initial noun stems are rather more numerous, all \ili{Berber} varieties with \isi{state} marking also have a certain number of vowel-initial ones. Such stems can often -- arguably always \citep{prasse1969, prasse2011} -- be reconstructed as resulting from the loss of a former initial laryngeal, but that is of no synchronic relevance. No \ili{Berber} variety allows a surface sequence of two successive vowels word-internally; in this context, the vowel of the nominal prefix\is{nominal!prefix} is regularly deleted (\emph{akal} `land' rather than *\emph{aakal}; \ili{Tamasheq} \emph{taɣma} `thigh', uninflectable\is{uninflectability} for \isi{state}, rather than free\is{state!free} *\emph{taaɣma} and annexed\is{state!annexed} \emph{*tăaɣma}).
+
+This results in systematic \isi{uninflectability} in situations where the vowel of the nominal prefix\is{nominal!prefix} would otherwise be the only distinctive marker of \isi{state}. As discussed in Section \ref{13sec1}, the annexed state\is{state!annexed} is formed by \isi{vowel reduction} for feminine nouns in northern Berber\il{Berber!northern} and across the board in \ili{Tuareg}. As a result, feminine vowel-initial stems across northern Berber\il{Berber!northern}, and all vowel-initial stems in \ili{Tuareg}, are systematically uninflectable\is{uninflectability}, as illustrated in Table \ref{13tab3}.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{\textwidth}{XXXXX}
+		\lsptoprule
+			& \textsc{sg} free\is{state!free} & \textsc{sg} annexed\is{state!annexed} & \textsc{pl} free & \textsc{pl} annexed \\
+			\midrule
+			\multicolumn{2}{l}{\ili{Kabyle} \citep{dallet1982}} & & & \\
+			\midrule
+			`wind' & aḍu & w-aḍu & - & - \\
+			`heart' & ul & w-ul & ul-awən & w-ul-awən \\
+			`lung' & t-ur-ətt\textsuperscript{s} & t-ur-ətt & t-ur-in & t-ur-in \\
+			`thigh' & t-aɣma & t-aɣma & t-aɣm-iwin & t-aɣm-iwin \\
+			`sweat' & t-idi & t-idi & t-id-iwin & t-id-iwin \\
+			& & & & \\
+			\midrule
+			\multicolumn{2}{l}{\ili{Tamasheq} \citep{heath2006}} & & & \\
+			\midrule
+			`wind' & aḍu & aḍu & aḍu-tăn & aḍu-tăn \\
+			`heart' & ulh & ulh & ulh-awăn & ulh-awăn \\
+			`lung' & t-orr & t-orr & t-orr-awen & t-orr-awen \\
+			`thigh' & t-aɣma & t-aɣma & t-aɣm-iwen & t-aɣm-iwen \\
+			`sweat' & t-ide & t-ide & t-ad-iwen & t-ad-iwen \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Vowel-initial stems contrasted across \ili{Kabyle} and \ili{Tamasheq}}
+	\label{13tab3}
+\end{table}
+
+\subsubsection{i-/y- \isi{neutralisation}} \label{13sec2.1.2}
+
+In proto-Berber\il{Berber!proto-Berber}, the prefix vowel *a- regularly shifted to *e- in certain contexts, notably before *ă \citep{vanputten2016, vanputten2018}. With the merger of *ă \textgreater{} \emph{ə} and *e \textgreater{} \emph{i} in almost all of Northern Berber\il{Berber!northern}, the conditioning factor was lost, and this \isi{allomorphy} went from being phonetically conditioned to being lexically conditioned. Almost all Northern Berber\il{Berber!northern} varieties thus have a minority class of nouns taking the prefix vowel \emph{i} in the singular, alongside the more numerous ones in \emph{a}.
+
+For feminine nouns, this merger neutralised \isi{number} marking within the prefix but poses no difficulties for \isi{state} marking: free\is{state!free} *te- \textgreater{} \emph{ti-}, whereas annexed\is{state!annexed} *tă- \textgreater{} \emph{tə}-. For masculine nouns, free\is{state!free} *e- \textgreater{} \emph{i-} as expected; for the annexed state\is{state!annexed}, however, we find \emph{yə-} rather than \emph{**}wə-, posing some difficulties for \isi{reconstruction} (cf. \citealt[15]{prasse1974}) and also for inflectability. Northern Berber\il{Berber!northern} (with minor exceptions in Tunisia) never allows schwa to occur in an open syllable (cf. \citealt{kossmann1995}), and does not contrast \emph{i-} with \emph{y-} before a consonant: \emph{yə \textgreater{} i} / \_CV, as independently motivated for example by the behaviour of the \textsc{3m.sg.} \isi{subject} marker. As a result, CV-initial masculine stems which lexically happen to take \emph{i-} are also systematically uninflectable\is{uninflectability} for \isi{state}, as seen in Table \ref{13tab4}. In some varieties this is taken further. Notably, in \ili{Tamazight} and Tashlhiyt\il{Tashlhiyt (\emph{also} Shilha)}, schwa is no longer phonemic, irrespective of syllable structure \citep{dellelmedlaoui1985, ridouane2008}. Accordingly, \emph{i-}prefix nouns are normally uninflectable\is{uninflectability} for \isi{state} there even before CC-initial stems \citep[51]{elmoujahid1982}.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{\textwidth}{XXXXX}
+		\lsptoprule
+		& \textsc{sg} free\is{state!free} & \textsc{sg} annexed\is{state!annexed} & \textsc{pl} free & \textsc{pl} annexed \\
+		\midrule
+		\multicolumn{2}{l}{\ili{Kabyle} \citep{dallet1982}} & & & \\
+		\midrule
+		`share' & a-mur & u-mur & i-mur-ən & i-mur-ən \\
+		`eagle' & i-gidər & i-gidər & i-gudar & i-gudar \\
+		`cave' & i-fri & yə-fri & i-fr-an & yə-fr-an \\
+		& & & & \\
+		\midrule
+		\multicolumn{2}{l}{\ili{Tamazight} \citep{taifi1991}} & & & \\
+		\midrule
+		`share' & a-mur & u-mur & i-mur-n & i-mur-n \\
+		`eagle' & i-gidr & i-gidr & i-gidr-n & i-gidr-n \\
+		`cave' & i-fri & i-fri & i-fr-an & i-fr-an \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{\emph{i-}prefixed stems contrasted with \emph{a-}prefixed ones in \ili{Kabyle} and \ili{Tamazight}}
+	\label{13tab4}
+\end{table}
+
+
+\subsubsection{Prefix \isi{vowel reduction}} \label{13sec2.1.3}
+
+Early in its history, both \ili{Tuareg} and \ili{Zenati} underwent a \isi{sound change} reducing the vowel of the singular free state\is{state!free} prefix to *ă preceding certain stems of the form CV\ldots{} (in particular CVC, Ca\ldots, or Cu...a\ldots), where V represents a full vowel rather than a reduced one (\citealt[19--21]{prasse1974}; \citealt[31]{kossmann1999}; \citealt[60]{brugnatelli2006}). This *ă was retained as such in \ili{Tuareg} (or in some contexts changed by vowel harmony to \emph{ə}), but ended up as Ø in most of \ili{Zenati}, since (with some exceptions in Tunisia) the latter does not allow reduced vowels in open syllables. Subsequent changes and loanwords\is{loanword} have since made the distribution of reduced free state\is{state!free} prefixes more opaque in \ili{Zenati}.
+
+In contexts where \isi{state} is marked only by \isi{vowel reduction} -- as it is for all state-marked\is{state} nouns in \ili{Tuareg} and for all feminine ones in \ili{Zenati} -- words with reduced free state\is{state!free} prefixes are accordingly systematically uninflectable\is{uninflectability} for \isi{state} in the singular. In the rare cases where they also happen to be unpluralisable, this results in full \isi{uninflectability} for \isi{state}, as in Table \ref{13tab5}.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{0.75\textwidth}{XXX}%{tabularx}{0.75\textwidth}{XXX}
+		\lsptoprule
+		& free\is{state!free} & annexed\is{state!annexed} \\
+		\midrule
+		\multicolumn{3}{l}{\ili{Tamasheq} \citep{heath2006}} \\
+		\midrule
+		`pubic hair' & ă-šinšăḍ & ă-šinšăḍ \\
+		`health' & tă-ssoxe-t & tă-ssoxe-t \\
+		& & \\
+		\midrule
+		\multicolumn{2}{l}{\ili{Beni Snous} \citep{destaing1914}} & \\
+		\midrule
+		`butter' & t-lussi & t-lussi \\
+		`sun' & t-fuy-t & t-fuy-t \\
+		& & \\
+		\midrule
+		\multicolumn{3}{l}{Cf. Tashlhiyt\il{Tashlhiyt (\emph{also} Shilha)} \citep{destaing1920}} \\
+		\midrule
+		`butter' & ta-lussi & t-lussi \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Nouns uninflectable\is{uninflectability} due to originally phonologically conditioned prefix \isi{vowel reduction}}
+	\label{13tab5}
+\end{table}
+
+At least one \ili{Zenati} variety, \ili{Ouargli} \citep[79]{delheureochoa2019}, has lost the prefix even in the construct \isi{state} of words with reduced free state\is{state!free} prefixes, making words like \emph{fus} `hand' uninflectable\is{uninflectability}. This change, however, cannot be accounted for through regular \isi{sound change} alone; it rather constitutes a \isi{reanalysis} of such words as prefixless nominals (see Section \ref{13sec2.2.1} below), generalising the principle that nouns with no prefix vowel in the free state\is{state!free} are uninflectable\is{uninflectability}.
+
+\subsection{Morphologically motivated} \label{13sec2.2}
+
+As seen in the introduction, canonical nouns across \ili{Berber} start with a nominal prefix\is{nominal!prefix} capable of being marked for \isi{gender}, \isi{number}, and \isi{state}. Many nouns, however, are not canonical in this respect. Some lack a prefix altogether. Others start with an invariable prefix, for reasons that are purely historical and lexical rather than being explained by phonological developments. In either case, \isi{state} marking is unavailable.
+
+\subsubsection{Nominals with no prefix} \label{13sec2.2.1}
+
+The presence of a nominal prefix\is{nominal!prefix} is a necessary -- though not sufficient -- condition for a noun to be marked for \isi{state}. But, across the entire family, all personal pronouns, most numerals, and a variable set of core kinship terms\is{kinship term} take no nominal prefix\is{nominal!prefix}. Certain types of verbal nouns\is{verbal noun} are also normally prefixless, especially \emph{fad} `thirst' and \emph{laẓ} `hunger', along with some \isi{baby talk} forms and loanwords\is{loanword}, and certain types of compound noun \citep[58]{brugnatelli2006}. Many such forms are also uninflectable\is{uninflectability}, or only suppletively\is{suppletive} inflectable, for \isi{number}. Table \ref{13tab6} illustrates the range of such forms in \ili{Kabyle}.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{\textwidth}{XXXXX}
+		\lsptoprule
+		& \textsc{sg} free\is{state!free} & \textsc{sg} annexed\is{state!annexed} & \textsc{pl} free & \textsc{pl} annexed \\
+		\midrule
+		`daughter' & yəlli & yəlli & yəssi & yəssi \\
+		`one (\textsc{m})' & yiwən & yiwən & - & - \\
+		`two (\textsc{m})' & - & - & sin & sin \\
+		`he' & nətt\textsuperscript{s}a & nətt\textsuperscript{s}a & nutni & nutni \\
+		`you (\textsc{m})' & kəčč & kəčč & kunwi & kunwi \\
+		`thirst' & fad & fad & - & - \\
+		`owie' & diddi & diddi & - & - \\
+		`pennyroyal' & fləggu & fləggu & - & - \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Some prefixless nominals in \ili{Kabyle} \citep{dallet1982}}
+	\label{13tab6}
+\end{table}
+
+Within the inherited vocabulary, such forms are few and limited in productivity despite their high frequency. However, loanwords\is{loanword} from languages such as \ili{Hausa}, \ili{Songhay}, and \ili{Bambara} (cf. \citealt[164]{heath2005-grammar}), or \ili{Spanish} \citep{kossmann2009}, are regularly borrowed without a prefix, making this an unambiguously open class in languages like \ili{Tamasheq} or \ili{Tarifiyt}, as illustrated in Table \ref{13tab7}.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{\textwidth}{XXXXX}
+		\lsptoprule
+		& \textsc{sg} free\is{state!free} & \textsc{sg} annexed\is{state!annexed} & \textsc{pl} free & \textsc{pl} annexed \\
+		\midrule
+		\multicolumn{3}{l}{\ili{Tarifiyt} \citep{mourighkossmann2020}} & & \\
+		\midrule
+		`cheese' & kisu & kisu & - & - \\
+		`mechanic' & mikaniku & mikaniku & mikaniku-ṯ & mikaniku-ṯ \\
+		`seagull' & ɣaḇyuṭ-a & ɣaḇyuṭ-a & ɣaḇyuṭ-aṯ & ɣaḇyuṭ-aṯ \\
+		& & & & \\
+		\midrule
+		\multicolumn{3}{l}{\ili{Tamasheq} \citep{heath2006}} & & \\
+		\midrule
+		`stalk' & koɣəri & koɣəri & koɣəri-t-ăn & koɣəri-t-ăn \\
+		`frog sp.' & mbăla & mbăla & - & - \\
+		`ladle' & zăɣto & zăɣto & zăɣto-t-ăn & zăɣto-t-ăn \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Some prefixless loanwords\is{loanword} in \ili{Tarifiyt} (< \ili{Spanish}) and \ili{Tamasheq} (< \ili{Songhay})}
+	\label{13tab7}
+\end{table}
+
+Not all loanwords\is{loanword} from these languages are borrowed without the prefix; contrast, for instance, \ili{Tarifiyt} \emph{a-kwaḏrun} `doorpost', \emph{ṯ-kuppa-ṯ} `cup' (\textless{} \ili{Spanish} \emph{cuadro} `frame', \emph{copa}), \ili{Tamasheq} \emph{ă-karfu} `rope', \emph{tă-kăŋkani-t-t} `watermelon' (\textless{} Timbuktu \ili{Songhay} \emph{karfo}, \emph{kaŋkani}). In \ili{Tarifiyt}, however, Mourigh and Kossmann's data indicate that almost all \ili{Spanish} nouns are borrowed without the prefix, suggesting that this has become the default strategy. The factors determining whether or not a loanword\is{loanword} takes the prefix in such cases have yet to be studied.
+
+\subsubsection{Nouns with inherently uninflectable\is{uninflectability} prefixes} \label{13sec2.2.2}
+
+All \ili{Berber} languages have borrowed extensively from \ili{Arabic}. Many \ili{Arabic} nouns are given \ili{Berber} prefixes, e.g. \ili{Kabyle} \emph{a-bənnay} `builder' \textless{} \emph{bannāy} (Classical\il{Arabic!Classical} \emph{bannāʔ}). However, a very common strategy is to borrow them together with the \ili{Arabic} definite article \emph{l-/əl-/ăl-}, whose \emph{l-} assimilates to a following coronal consonant (cf. \citealt[208]{kossmann2013}). This is then treated as an invariant prefix with no semantic interpretation (glossed here as \textsc{n}), although both its extremely high frequency and its behaviour in morphological derivations indicate that it is nevertheless treated as segmentable. Very occasionally this prefix even gets extended to an inherited \ili{Berber} noun, as in \ili{Siwi} \emph{l-əgʷrazən} `dogs' \textless{} \emph{a-gʷərzni} `dog' \citep[76]{souag2013}. As a result, a rather large proportion of nouns in any given \ili{Berber} language start with an inherently uninflectable\is{uninflectability} prefix \emph{(ə)l-} (\ili{Tuareg} \emph{ăl-}). Table \ref{13tab8} gives a small sample.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{\textwidth}{XXXXX}
+		\lsptoprule
+		& \textsc{sg} free\is{state!free} & \textsc{sg} annexed\is{state!annexed} & \textsc{pl} free & \textsc{pl} annexed \\
+		\midrule
+		Kabyle\il{Kabyle} & & & & \\
+		\midrule
+		`calculation' & l-ḥisab & l-ḥisab & l-ḥisab-at & l-ḥisab-at \\
+		`carrion' & l-ğif-a & l-ğif-a & l-ğif-at & l-ğif-a \\
+		& & & & \\
+		\midrule
+		Tamasheq\il{Tamasheq} & & & & \\
+		\midrule
+		`family' & ăl-ʕăyal & ăl-ʕăyal & ăl-ʕăyal-ăn & ăl-ʕăyal-ăn \\
+		`usefulness' & ăl-fayd-a & ăl-fayd-a & ăl-fayd-at-ăn & ăl-fayd-at-ăn \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Some loans with the \ili{Arabic} article}
+	\label{13tab8}
+\end{table}
+
+This issue does not just arise with loanwords\is{loanword}; some \ili{Berber} varieties also use an inherited uninflectable\is{uninflectability} masculine prefix \emph{wa-} with a small set of nouns, typically names of flora and fauna \citep{brugnatelli1998}. The prefixal status of this \emph{wa-} is sometimes debatable, but is often confirmed by other members of the same word family: thus \ili{Kabyle} \emph{wa-zduz} `broomrape (\emph{Orobanche} sp.)' is presumably so-called for its shoots' resemblance to a pestle (\emph{a-zduz}). Language-internal variation leads to similar conclusions; for `goosefoot (\emph{Chenopodium})', \ili{Kabyle} variously has \emph{wa-ktun} or \emph{a-ktun} \citep{zidat2016, dallet1982}. The form of this prefix recalls the \textsc{m.sg.} element \emph{wa} used in the formation of demonstrative pronouns. Its history is poorly understood, but it has been argued to be a relict from a previous stage of the nominal prefix\is{nominal!prefix} system in \ili{Berber} \citep{brugnatelli1997}. Like \emph{l-}, this prefix is inherently uninflectable\is{uninflectability}; in most cases it also seems to be unpluralisable. A few derivational prefixes with more specific meanings are also uninflectable\is{uninflectability} for \isi{state}: privative \emph{war-} (\textsc{m.}) / \emph{tar-} (\textsc{f.}), evaluative prefixes like \ili{Kabyle} \emph{yir-} `bad', etc.
+
+Some demonstrative/relative/support pronouns are marked for \isi{case}, as highlighted by \citet{brugnatelli2006}, though most are not. Both types can be analysed as starting with (or consisting of) an element comparable to the nominal prefix\is{nominal!prefix}, as illustrated in Table \ref{13tab9}.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{\textwidth}{L{2.5cm}XXXX}
+		\lsptoprule
+		& \textsc{sg} free\is{state!free} & \textsc{sg} annexed\is{state!annexed} & \textsc{pl} free & \textsc{pl} annexed \\
+		\midrule
+		`this, already' & ay-a & w-ay-a & - & - \\
+		`this, what, whatever' & ay-ən & w-ay-ən & - & - \\
+		`this (\textsc{m})' & wa-gi & wa-gi & wi-gi & wi-gi \\
+		`this (\textsc{f})' & ta-gi & ta-gi & ti-gi & ti-gi \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Selected demonstrative/relative/support pronouns in Kabyle \citep{dallet1982}}
+	\label{13tab9}
+\end{table}
+
+\subsection{Semantically motivated} \label{13sec2.3}
+
+Semantically motivated variation in \isi{state} marking in \ili{Berber}, and indeed language-internal variation in \isi{state} marking more generally, has yet to be seriously explored. However, \isi{state} marking can be affected by sematic factors in at least one context.
+
+Proper nouns, like common nouns, can be inflectable for \isi{state} if they start with an appropriate prefix; thus in \ili{Tamasheq}, for instance, the annexed state\is{state!annexed} of the place name \emph{a-măjon} ``Amajon'' is \emph{ă-măjon}, and occurs where one would expect it to \citep[40]{heath2005-texts}. It has recently been observed by Nacira \citet{abrous2023}, however, that in \ili{Kabyle}, at least, proper nouns may variably be treated as uninflectable\is{uninflectability} even when the prefix is present, appearing in the expected free state\is{state!free} in contexts which normally require the annexed state\is{state!annexed}. Examination of \ili{Kabyle} written texts confirms this observation in seemingly identical syntactic contexts within the same document, as in (\ref{13ex7a}--\ref{13ex7d}).
+
+\begin{exe}
+	\ex \label{13ex7} \ili{Kabyle} \citep{sadilandri2020}
+	\begin{xlist}
+		\ex \label{13ex7a}
+		\gll Yə-qqim \textbf{A-}rəzqi di l-ḥəbs. \\
+		\textsc{3msg}-stay.\textsc{pfv} \textbf{\textsc{msg.fs}}-Rezki in \textsc{n}-jail \\
+		\trans ‘Arezki stayed in jail.’ \hfill (p. 26)\\
+		(cf. condition D)
+		
+		\ex \label{13ex7b}
+		\gll Yə-sla \textbf{U-}rəzqi bəlli… \\
+		\textsc{3msg}-hear.\textsc{pfv} \textbf{\textsc{msg.as}}-Rezki \textsc{comp} \\
+		\trans ‘Arezki heard that…’ \hfill (p. 27)\\
+		(cf. condition D)
+		
+		\ex \label{13ex7c}
+		\gll L-yaqut tə-nna=as i \textbf{A-}rəzqi. \\
+		\textsc{n}-Yakout \textsc{3fsg}-say.\textsc{pfv=3sg.dat} to \textbf{\textsc{msg.fs}}-Rezki \\
+		\trans ‘Yakout said to Arezki.’ \hfill (p. 27)\\
+		(prepositions\is{preposition} \emph{n} and \emph{i} assign the annexed state\is{state!annexed} – condition A)
+		
+		\ex \label{13ex7d}
+		\gll l-əhduṛ n \textbf{U-}rəzqi \\
+		\textsc{n}-speech \textsc{gen} \textbf{\textsc{msg.as}}-Rezki \\
+		\trans ‘Arezki’s speech’ \hfill (p. 25)\\
+		(cf. condition A)
+	\end{xlist}
+\end{exe}
+
+Comparable examples can be found with feminine proper nouns, as in (\ref{13ex8a}--\ref{13ex8b}).
+
+\begin{exe}
+% 	\needspace{2\baselineskip}
+	\ex \label{13ex8} \ili{Kabyle} \citep[18]{hamadouche2007}
+	\begin{xlist}
+		\ex \label{13ex8a}
+		\gll I d=bədd-ən \textbf{Ta-}saʕdi-t d \\
+		\textsc{rel} \textsc{centrip}=stand.\textsc{pfv}-\textsc{3mpl} \textbf{\textsc{fsg.fs}}-fortunate-\textsc{fsg} with \\
+		
+		tə-rbaʕ-t=is. \\
+		\textsc{fsg.as}-group-\textsc{fsg=3sg.gen} \\
+		\trans ‘Where Tasadit and her group stood.’ \\
+		(cf. condition D)
+		
+		\ex \label{13ex8b}
+		\gll yiw-ət n tə-lwəs-t n \textbf{T-}saʕdi-t \\
+		one-\textsc{f} \textsc{gen} \textsc{fsg.as}-sister.in.law-\textsc{fsg} \textsc{gen} \textbf{\textsc{fsg.as}}-fortunate-\textsc{fsg} \\
+		\trans ‘a sister-in-law of Tasadit’s’ \\
+		(cf. condition A)
+	\end{xlist}
+\end{exe}
+
+Personal names that can be marked for \isi{state} at all are strikingly rare in \ili{Kabyle} -- in a list of some two hundred traditional personal names, \citet[1027--1035]{dallet1982} includes only nine, all either identical with or transparently connected to common nouns or adjectives: \emph{akli} [lit. `slave'], \emph{a-məqʷṛan} [lit. `big'], \emph{a-məẓyan} [lit. `little'], \emph{a-ṛəzqi} [based on \emph{əṛṛəzq} `lot, property'], \emph{ta-saʕdi-t} [lit. `fortunate'], \emph{ta-wəṛduš-t} [a hypochoristic based on \emph{ta-wəṛdi-t} `pink'], \emph{a-zwaw} [lit. `Zwawi, Kabyle'], \emph{aʕṛab} [lit. `Arab']\emph{, ta-məʕzuz-t} [lit. `darling']. It is thus not surprising that this variation has so far received little attention. Much further work, ideally examining large text corpora, will be required before it can be determined whether this situation is representative or is just a peculiarity of (21\textsuperscript{st} century?) \ili{Kabyle}. For the moment, it constitutes the only clear evidence for semantically motivated variation in \isi{state} marking in \ili{Berber}.
+
+\section{The diachrony of \isi{state} \isi{uninflectability}} \label{13sec3}
+
+In contemporary \ili{Berber} varieties, \isi{state} \isi{uninflectability} is a prominent phenomenon affecting much of the lexicon. Does this reflect an unstable intermediate situation on the way towards the loss of \isi{state} inflection -- an outcome attested in some peripheral varieties? To test this hypothesis, it is necessary to examine its history. Premodern records of \ili{Berber} are rather sparse and often difficult to interpret, but span a period of more than two millennia. The internal diversity of \ili{Berber} is sufficient to allow considerable progress to be made in \isi{reconstruction}, despite the persistent difficulty of distinguishing common inheritance from family-internal contact. Combining both sources of data makes it possible to estimate roughly how long different categories of nouns have
+been uninflectable\is{uninflectability}.
+
+\subsection{Written attestations} \label{13sec3.1}
+
+The earliest attestations of \ili{Berber} -- \ili{Libyco-Berber} inscriptions from the pre-Roman period -- do not transcribe vowels, except to some extent word-finally. Even allowing for that limitation, they provide no evidence for \isi{state} marking through nominal prefixes\is{nominal!prefix}. In the few cases of \isi{genitive} constructions with a masculine singular possessor where a modern speaker would expect the annexed state\is{state!annexed} to be marked by \emph{w-} even in a consonantal text, no such marker is found: thus the bilingual text RIL 1 \citep[1--2]{chabot1940}, dating probably to the 2\textsuperscript{nd} century BC, has \emph{nbbn n-š?rh} ``cutters of wood'' and \emph{nb[.]n n-zlh} ``founders of iron'' (cf. \ili{Kabyle} \emph{a-sɣaṛ} a.s. \emph{wə-sɣaṛ} `wood', \emph{uzzal} a.s. \emph{w-uzzal} `iron'). The orthographic \emph{-h} in such cases appears to be a suffix\is{suffixation}, fitting into a broader spectrum of evidence that \isi{suffixation} could mark a wider range of functions on \ili{Libyco-Berber} nouns than it does in any modern \ili{Berber} variety \citep{vanputten2017}. It is possible that \emph{-h} was used to mark the \isi{genitive} in some circumstances, but the evidence is too limited to allow any firm conclusions about \isi{case} or \isi{state} marking -- nor, \emph{a fortiori}, about \isi{uninflectability} for either.
+
+{\sloppy Similarly, common nouns of \ili{Berber} origin recorded in African Roman texts usually do not display the characteristic nominal prefixes\is{nominal!prefix} found throughout \ili{Berber} today. As late as the 5\textsuperscript{th} century, we find \ili{Latin} \emph{gemio(n-)} in the \isi{Albertini Tablets} corresponding to modern \emph{a-gəmmun} `irrigated square of land', and \emph{gelela(m)} in \iai{Cassius Felix} for modern \emph{ta-găll-ăt} (etc.) `colocynth' (\citealt{murciasanchez2011}). If the nominal prefix\is{nominal!prefix} were already an obligatory part of the \isi{citation form} of such nouns, one would expect them to remain so when borrowed into \ili{Latin}, which has no phonological constraints on word-initial vowels. It thus seems likely that the modern pan-\ili{Berber} system of \isi{state} marking had not yet reached Roman Africa or Numidia, though it might already have taken shape somewhere outside the empire's borders. Even as late as the 9\textsuperscript{th} century, \iai{Ibn Quraysh}'s lexical comparisons between a west Algerian \ili{Zenati} variety and \ili{Hebrew} include unexpectedly prefixless forms such as \emph{kəmmus} `parcel' or \emph{šəfay} `milk' alongside regularly prefixed ones such as \emph{a-səkkum} `asparagus' \citep{cohen1972}; cf. \ili{Tarifiyt} \emph{a-ḵəmmus, a-šəffay, a-səkkum} \citep{abarrou2023}. A possible relic of this stage today could be the very sporadic attestations in \ili{Kabyle} proverbs and riddles of prefixless versions of \textsc{m.sg.} nouns that would normally require the prefix \citep[58]{brugnatelli2006}.\par}
+
+The earliest unambiguous direct evidence for obligatory prefixal \isi{state} marking in \ili{Berber} dates to the second millennium. By the 11\textsuperscript{th} century (\citealt{chaker1981}; \citealt[113]{vandenboogert1997}), even sources without vowel marking attest to \textsc{m.sg.} free\is{state!free} \emph{a-} (the \isi{citation form}) vs. construct \emph{w-} (attested primarily in genitives\is{genitive}), alongside \textsc{m. pl.} free\is{state!free} \emph{i-} vs. construct \emph{y-}. By the 12\textsuperscript{th} century, the \ili{Arabic}-\ili{Berber} glossary of \iai{Ibn Tunart} confirms a \isi{state} system basically similar to today's (although the evidence must be interpreted carefully, since surviving copies are late); more importantly, it provides examples relevant to \isi{uninflectability}. As in modern \ili{Berber}, a significant minority of nouns are prefixless, e.g. \emph{ḍukkuk} `(the star) Alcor', \emph{miḍrus} `cadaver', \emph{mṭṭiḍ-ulli} `Schneider's skink' (lit. `sucker(of)-goats'), while others start with \emph{wa-}, e.g. \emph{wa-biba} `mosquito', \emph{wa-yləllu} `henbane' (\citealt[106, 119]{vandenboogert1997}; \citealt{amennou2021}). In most such cases, the noun is only attested in \isi{citation form}. However, in \emph{tibi n Mṣr} `mallow of Egypt', the prefixless proper noun \emph{Mṣr}, from \ili{Arabic} \emph{Miṣr}, appears in a context where the annexed state\is{state!annexed} is expected, suggesting that prefixless forms were indeed uninflectable\is{uninflectability} then as now.
+
+{\sloppy The \isi{uninflectability} of vowel-initial feminine stems is confirmed for the 12\textsuperscript{th}~century by \iai{Al-Bayḏaq}, who records both \emph{\textless ā tūmart īnaw\textgreater{} a t-umər-t inəw} `oh my joy!', with \emph{t-umər-t} in the free state\is{state!free}, and \emph{Ibn Tūmart} ``\iai{Ibn Tumart}'' (named after the former exclamation), where \emph{t-umər-t} must be in the annexed state\is{state!annexed} (condition~B), judging by comparable forms in the same source such as \emph{Ibn Wə-mɣar} `son of the chief' (\citealt[109--112]{vandenboogert1997}; \citealt{marcy1932}). Further examples are to be found in \iai{Al-Kutāmī}'s 13\textsuperscript{th} century commentary on \iai{Dioscorides}' \emph{Pharmacopoea}, which provides a number of plant names written plene (with vowels indicated by letters), including many \isi{genitive} compounds showing the expected \isi{state} marking. Among these, we find instances of vowel-initial stems in the annexed state\is{state!annexed} (condition A), showing apparently uninflectable\is{uninflectability} forms: thus \emph{t-aɣaṭ} `goat', \emph{t-ili} `ewe' in \emph{ta-mar-t ən t-aɣaṭ} `goat's beard', \emph{ta-məzzuɣ-t ən t-ili} `ewe's ear' \citep[121]{vandenboogert1997}. If such forms reflect the loss of an original stem-initial consonant, a suggestion discussed above, then it appears that this consonant had already been lost 900 years ago.\par}
+
+The so-called \isi{Leiden fragment}, tentatively dated to the 14\textsuperscript{th} century,\footnote{I am grateful to Evgeniya Gutova for allowing me to view a scan of this manuscript.} attests a high concentration of \ili{Arabic} nouns borrowed with \emph{əl-}, as illustrated in example~\ref{13ex9}.
+
+\begin{exe}
+	\ex \label{13ex9} Medieval Moroccan Berber\il{Berber!Medieval Moroccan} \\
+	<dāyās yatārā rabba ’lʕalamyn alājr nālššahyd> \\
+	\gll *da-yas yə-tara ṛəbb-əl-ʕalamin \\
+	\textsc{prog-3sg.dat} \textsc{3msg}-write.\textsc{impf} lord-\textsc{n}-worlds \\
+	\gll əl-ajr n əš-šahid \\
+	\textsc{n}-reward \textsc{gen} \textsc{n}-martyr \\
+	\trans ‘The Lord of the Worlds decrees for him the reward of a martyr.’ (Leiden Ms Or. 23.306v)\is{Leiden fragment}
+\end{exe}
+
+The first letter -- always written as \emph{alif} -- is normally left entirely unvocalised when preceded by an orthographically separate word (including prepositions\is{preposition} such as \textless kaɣ\textgreater{} \emph{gəɣ} `in'); sentence-initially, however, it is written as \textless'a\textgreater, and when preceded by an orthographically proclitic \isi{preposition} (such as \isi{genitive} \textless n-\textgreater{} \emph{n}) appears as \textless ā\textgreater, due to the preservation of the letter \emph{alif.} This pattern of variation is evidently not conditioned by \isi{state} marking, and can be explained as purely orthographic. It thus appears that the modern \ili{Berber} pattern of making \ili{Arabic} loanword\is{loanword} in \emph{əl-} uninflectable\is{uninflectability} for \isi{state} already applied 700 years ago.
+
+So far, our medieval examples have derived from Moroccan\il{Berber!Medieval Moroccan} sources, reflecting an Atlas variety relatively close to modern Tashlhiyt\il{Tashlhiyt (\emph{also} Shilha)}. Further east, however, scattered \isi{Ibadi} sources provide data\il{Berber!Ancient!Eastern} from a similarly early period, despite some difficulties in dating. A late copy of a chronicle probably dating to the 12\textsuperscript{th} century shows the expected inflection patterns for inflectable nouns, e.g. \emph{am-an} `water' but (cf. condition A) \emph{əs w-am-an} `with water' \citep[288--289]{lewicki1934}. At the same time, it confirms the \isi{uninflectability} of pronouns, with examples like \emph{ɣas šək} `only you' (where free state\is{state!free} is expected) alongside (with a \isi{preposition} expected to assign annexed state\is{state!annexed}, cf. condition A) \emph{am šək} `like you' \citep[280--281]{lewicki1934}. It also attests to the existence of prefixless \emph{fad} `thirst' (\emph{ibid}:283), \emph{middən} `people' (\emph{ibid}:295) as well as \emph{əl-}prefixed \ili{Arabic} loans like \emph{əl-məruwwət} `bravery', \emph{əd-din} `religion' (\emph{ibid:}286). The unprefixed noun \emph{Yuš} `God' occurs as the object of prepositions\is{preposition} (cf. condition A) in forms like \emph{tamazyida ən Yuš} `mosque of God' (\emph{ibid:}288), \emph{ɣəf Yuš} `on God' (\emph{ibid:}282), with no sign of \isi{state} marking. Ongoing work on a book of religious law suspected to date from the same period paints a similar picture, though also revealing relics of a third unprefixed \textit{\isi{state}} used only in numeral+noun combinations \citep{brugnatelli2011}. In this work \citep[75--77]{calassanti-motylinski1905}, we find the prefixless noun \emph{šra} `(any)thing' both in the free state\is{state!free} context of a postverbal direct object (\emph{wəl yə-li \textbf{šra}} `he does not have anything') and in the annexed state\is{state!annexed} context of a postverbal \isi{subject} (\emph{i-d yə-qqim \textbf{šra}} `if anything remains', cf. condition D), providing direct confirmation that it was uninflectable\is{uninflectability} as expected.
+
+In modern \ili{Berber}, while canonical nouns are inflectable for \isi{state}, a large number of nouns are uninflectable\is{uninflectability} for \isi{state} due to having no prefix, the wrong prefix, or a stem whose beginning is phonologically incompatible with the relevant prefix distinctions. A priori, this might appear to be an unstable state, in which a child acquiring the language might readily be tempted to overgeneralise one class or the other, and in which an overgeneralisation of \isi{uninflectability} can hardly lead to any semantic misunderstandings. Yet all the available written evidence, as examined here, suggests that this situation has remained stable in most varieties for about a millennium.
+
+\subsection{Reconstruction\is{reconstruction}} \label{13sec3.2}
+
+A noun prefix system with \isi{state} marking can reliably be reconstructed for proto-Berber\il{Berber!proto-Berber} based on comparison of existing systems. A recent proposal which appears convincing is given in Table \ref{13tab10} \citep{vanputten2015}.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{lll}%{tabularx}{0.5\textwidth}{XXX}
+		\lsptoprule
+			& free\is{state!free} & annexed\is{state!annexed} \\
+			\midrule
+			\textsc{m.sg} & *a- & *wă- \\
+			\textsc{m.pl} & *i- & *yə- \\
+			\textsc{f.sg} & *ta- & *tă- \\
+			\textsc{f.pl} & *tə- (> *ti-) & *tə- \\
+		\lspbottomrule
+	\end{tabular}
+	\caption{Proto-Berber\il{Berber!proto-Berber} nominal prefixes\is{nominal!prefix}}
+	\label{13tab10}
+\end{table}
+
+The \isi{reconstruction} of \textsc{f.pl.} free\is{state!free} *tə-, however, depends crucially on the evidence from eastern \ili{Berber} varieties which have lost \isi{state} marking. All varieties that have actually retained \isi{state} marking reflect a proto-system in which the \textsc{f.pl.} free state\is{state!free} prefix was *ti-, not *tə-, apparently reflecting analogy with the masculine forms; such a system should probably be reconstructed for a lower-level proto-language dating to a period after some eastern \ili{Berber} varieties had already split off. The *y in the \textsc{m.pl.} annexed forms\is{state!annexed} may plausibly be derived from pre-proto-Berber\il{Berber!proto-Berber} *w, as in \citet[14--16]{prasse1974}; doing so allows greater symmetry between \textsc{m.sg.} and \textsc{m.pl.}
+
+Most proposals for the internal \isi{reconstruction} of the prefix system draw upon its striking similarities to various demonstrative/relative/support pronoun series, e.g. \ili{Kabyle} definite \textsc{m.sg.} \emph{wa}, \textsc{f.sg.} \emph{ta}, \textsc{m.pl.} \emph{wi}, \textsc{f.pl.} \emph{ti} `this'. The best-known cross-linguistic grammaticalisation process that could account for these similarities is what \citet{greenberg1978} baptised the \isi{Demonstrative Cycle}: demonstrative \textgreater{} definite article \textgreater{} non-generic article \textgreater{} class affix. \citet{brugnatelli1997, brugnatelli2006}, following \citet{vycichl1957}, argues for this model's applicability to \ili{Berber}, and explains the \isi{state} distinctions as having emerged secondarily through stress shifts and the loss of initial semivowels in certain contexts (though neither change appears regular). \citet[12]{prasse1974} and \citet{prasse2002}, on the other hand, sees the free state\is{state!free} forms as deriving from a different pronoun series than the annexed state\is{state!annexed} ones, comparing the former to \ili{Tamahaq} neutral relative heads like \emph{a} and the latter to definite ones like \emph{wa}. In his scenario, the intermediate stage would have reflected a usage of such heads to mark predication and possession/attribution respectively.
+
+Neither of these models has yet produced a fully satisfactory account for the proto-Berber\il{Berber!proto-Berber} forms or the syntactic distribution of \isi{state} marking. Nevertheless, the \isi{Demonstrative Cycle} hypothesis has important implications for the history of \isi{uninflectability} in \ili{Berber}. There is considerable cross-linguistic variation in which nominal elements require or permit articles and under which circumstances; in \ili{English}, for instance, we note that pronouns and demonstratives can never take them (*\emph{the you, *the that}), while generic nouns and certain kinship terms\is{kinship term} do not require them (\emph{hunger}, \emph{thirst}, \emph{Mom, Grandpa}), and toponyms typically exclude them (\emph{London}/\emph{*The London}) but occasionally require them (\emph{The Hague/*Hague}). The \isi{Definiteness Hierarchy} \citep{aissen2003} is useful in plotting much of this variation:
+
+\begin{quote}
+	Personal pronoun \textgreater{} Proper name \textgreater{} Definite \textgreater{} Indefinite specific \textgreater{} \newline Non-specific
+\end{quote}
+
+Personal pronouns and proper names (and by extension inalienable kinship terms\is{kinship term}) are inherently definite, and as such typically require no article; as expected assuming the \isi{Demonstrative Cycle}, they obligatorily or typically take no nominal prefix\is{nominal!prefix} throughout \ili{Berber}. As \citet{greenberg1978} demonstrates, generic (or non-specific) nominals (including typical uses of numerals) are frequently left unmarked even in languages that require definites and specific indefinites to be marked overtly by an article. Nominals which usually or always occur at the extreme ends of the \isi{Definiteness Hierarchy} are accordingly more likely than others to escape the effects of the \isi{Demonstrative Cycle}, and thus to end up without a class prefix.
+
+As seen in Section \ref{13sec2.2.1}, all \ili{Berber} varieties have a significant class of prefixless nouns, and show no nominal prefixes\is{nominal!prefix} in personal pronouns and most numerals and demonstratives. This situation can be reconstructed for proto-Berber\il{Berber!proto-Berber}, as illustrated in Table \ref{13tab11a} (which continues below as \ref{13tab11b}). (For the \isi{reconstruction} of prefixless kinship terms\is{kinship term}, see also \citealt{souag2022}; on the development of `thing' into an indefinite pronoun, see \citealt{souag2018}.) If the nominal prefix\is{nominal!prefix} system originated through the \isi{Demonstrative Cycle} as generally assumed, then this situation must primarily reflect retention from pre-proto-Berber\il{Berber!proto-Berber}, rather than any kind of prefix loss.
+
+\begin{table}[ht]
+	\centering
+	\renewcommand{\thetable}{11a}
+	\begin{tabularx}{\textwidth}{XXXX}
+		\lsptoprule
+		& Zenaga\il{Zenaga} & Tashlhiyt\il{Tashlhiyt (\emph{also} Shilha)} & Figuig\il{Figuig} \\
+		& \citep{taine-cheikh2008} & \citep{destaing1920} & \citep{kossmann1997} \\
+		\midrule
+		`hunger' & - & ḷaẓ & ḷaẓ \\
+		`thirst' & fäđ & fad & fad \\
+		`sister' & yäđmäh & ultma & wətna \\
+		– \textsc{pl} & t\textsuperscript{y}šäđmäh & istma & yəssma \\
+		`daughter' & - & illi & yəlli \\
+		– \textsc{pl} & - & isti & yəssi \\
+		`(some)thing' & kāräh & kra & šṛa \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Some nouns which are reconstructible for proto-Berber\il{Berber!proto-Berber} with no prefix [Table continues in \ref{13tab11b}]}
+	\label{13tab11a}
+\end{table}
+
+\begin{table}[ht]
+	\centering
+	\renewcommand{\thetable}{11b}
+	\begin{tabularx}{\textwidth}{XXXXX}%XXXL{2.5cm}X
+		\lsptoprule
+		& Kabyle\il{Kabyle} & Tamahaq\il{Tamahaq} & Awjili\il{Awjili} & \multirow[t]{2}{*}{proto-Berber\il{Berber!proto-Berber}} \\
+		& \citep{dallet1982} & \citep{prasse2010} & \citep{vanputten2014} & \\
+		\midrule
+		`hunger' & laẓ & laẓ & tə-laz-at & *laẓ \\
+		`thirst' & fad & fad & tə-fad-at & *fad \\
+		`sister' & wəltma & wălătma & wərtna & *wălăt-ma \\
+		– \textsc{pl} & yəssətma & šetma & sətma & *ysăt-ma \\
+		`daughter' & yəlli & yăll & wəlli & *yăwle \\
+		– \textsc{pl} & yəssi & ešš & - & *yăste \\
+		`(some)thing' & kra & (hărăt) & kəra & *kăra \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Some nouns which are reconstructible for proto-Berber\il{Berber!proto-Berber} with no prefix [Table begins in \ref{13tab11a}]}
+	\label{13tab11b}
+\end{table}
+
+% Reset numbering if you have other tables afterward
+\addtocounter{table}{-1}
+\renewcommand{\thetable}{\arabic{table}}
+
+{\sloppy Other types of morphologically motivated \isi{state} \isi{uninflectability} are also likely to go back to proto-Berber\il{Berber!proto-Berber}, but are supported by a narrower and less secure range of attestations. The uninflectable\is{uninflectability} prefix *wa- was probably present in proto-Berber\il{Berber!proto-Berber}, as argued by \citet{brugnatelli1998}, but it seems impossible to securely reconstruct any specific noun as having had this prefix, if only because so many varieties have lost it; it likely had a more specific function than *a- did. Among uninflectable\is{uninflectability} derivational prefixes, a \isi{pejorative} is widely attested -- \ili{Kabyle} \emph{yir-}, \ili{Tamasheq} \emph{erk-}, \ili{Zenaga} \emph{ä-gär-} -- but the sound correspondences appear irregular, making its \isi{reconstruction} challenging.\par}
+
+Nevertheless, proto-Berber\il{Berber!proto-Berber} clearly had a narrower range of uninflectable\is{uninflectability} nouns than its modern descendants. Most of the phonologically motivated instances of \isi{state} \isi{uninflectability} discussed above can be reconstructed as originally inflectable, as made clear in Section \ref{13sec2.1}. It is likely that proto-Berber\il{Berber!proto-Berber} already had some vowel-initial noun stems, but even for this category Prasse plausibly reconstructs an unattested laryngeal *h\textsubscript{1} in most instances \citep{prasse1969, prasse2011}. Semantically motivated \isi{state} \isi{uninflectability} is so far attested only in one variety, and therefore cannot be reconstructed back at any depth, although this might change as more data becomes available. Even among morphologically motivated instances, it is implausible a priori that proto-Berber\il{Berber!proto-Berber}, presumably spoken before contact with \ili{Arabic} began, could have had a nominal prefix\is{nominal!prefix} *ăl-, uninflectable\is{uninflectability} or otherwise -- and \ili{Arabic} loanwords\is{loanword} are now numerous even in basic vocabulary. The Proto-Berber\il{Berber!proto-Berber} lexicon would thus have had a rather lower proportion of uninflectable\is{uninflectability} nouns than any major modern \ili{Berber} variety.
+
+\section{Conclusions} \label{13sec4}
+
+State\is{state} \isi{uninflectability} in \ili{Berber} is synchronically mostly predictable from the \isi{citation form} of a noun alone, with a few exceptions; it is conditioned primarily by morphological and secondarily by phonological factors. Semantic factors seem to play only a very marginal role based on available data, although further work is needed.
+
+State\is{state} \isi{uninflectability} can be reconstructed as diachronically stable in \ili{Berber} over a time span that must amount to millennia for a significant number of core prefixless terms, including kin terms and some verbal nouns\is{verbal noun} as well as pronouns and numerals. It has observably remained stable for at least a millennium or so in such cases, while coming to be extended to a wider range of phonologically and morphologically motivated categories of \isi{uninflectability} nouns. This illustrates that partial \isi{uninflectability} need neither be a transitional stage, as in Old French\il{French!Old}, nor a phenomenon limited to the margins of the lexicon, as in \ili{Russian} or \ili{Polish}. Any challenges it may pose for learnability are evidently far from insuperable.
+ 
+ 
+%\section*{Abbreviations}
+%\begin{tabularx}{.45\textwidth}{lQ}
+%... & \\
+%... & \\
+%\end{tabularx}
+%\begin{tabularx}{.45\textwidth}{lQ}
+%... & \\
+%... & \\
+%\end{tabularx}
+%
+%\section*{Acknowledgements}
+
+%\section*{Contributions}
+%John Doe contributed to conceptualization, methodology, and validation.
+%Jane Doe contributed to writing of the original draft, review, and editing.
+
+
+{\sloppy\printbibliography[heading=subbibliography,notkeyword=this]}
+\end{document}

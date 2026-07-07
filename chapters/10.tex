@@ -1,0 +1,1079 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook}
+\ChapterDOI{10.5281/zenodo.20611901}
+\author{Anna M. Thornton\orcid{}\affiliation{Università dell'Aquila} and Paolo D’Achille\orcid{}\affiliation{Università Roma Tre}}
+\title{Uninflectability in Italian nouns and adjectives}
+
+\abstract{This chapter illustrates the factors that render Italian nouns and adjectives uninflectable. Three phonological factors – ending in a stressed vowel, in a consonant or in /i/ in the citation form – are causes of uninflectability for both nouns and adjectives; while ending in a stressed vowel results in exceptionless uninflectability at all times, nouns and adjectives ending in a consonant were phonologically adapted by providing them with a final vowel, and subsequently integrated in an inflecting class, in older stages of the Italian language, but at present this does not happen anymore; a few nouns and adjectives ending in /i/ have occasionally developed an inflecting variant through backformation, when the form ending in /i/ has been interpreted as an inflected masculine plural form. Another factor that produces uninflectability of nouns is a mismatch between a noun’s final vowel and its gender: neological masculine nouns in /a/ and feminine nouns in /o/, whose final vowels are typical of nouns bearing the opposite gender value, are treated as uninflectable in contemporary Italian.  Even recently borrowed or recently coined nouns ending in the vowels most typical for their gender can be uninflectable; this is more common for nouns denoting inanimate entities, and for nouns bearing foreign characteristics in their spelling. There are also cases of constructional uninflectability, two of which are briefly discussed. The chapter also illustrates the inflectional classes of Italian nouns and adjectives and provides quantitative data about types and tokens in each inflectional class from several available databases.}
+
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[23]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+\il{Italian|(}\is{uninflectability|(}
+\section{Introduction} 
+
+\citet{spencer2020} introduced a useful terminological distinction between \emph{uninflecting} and \emph{uninflectable} lexemes. He calls \emph{uninflecting} lexemes and classes of lexemes that ``are not associated with any inflectional paradigm'', like \ili{English} prepositions, and \emph{uninflectable} ``members of an otherwise inflecting class''\is{inflectional class} that ``unexpectedly fail to inflect'', like the \ili{Russian} noun \textsc{kenguru} `kangaroo' \citep[142]{spencer2020}.
+
+In the Italian grammatical tradition, the same words, the adjective \emph{invariabile} lit. `\isi{invariable}' and the noun \emph{invariabilità} lit. `invariability'\is{invariable}, are used for both cases. Traditional Italian grammars list nine parts of speech, of which five (articles, adjectives, nouns, pronouns and verbs) are said to be \emph{variabili} `inflecting' and four (adverbs, prepositions, conjunctions and interjections) \emph{invariabili}\is{invariable} `uninflecting'. Within the inflecting parts of speech, specific nouns and adjectives are \emph{invariabili}\is{invariable} `uninflectable', i.e. appear in the same phonological form in any syntactic context, as the noun \emph{città} `city, town' in (\ref{10ex1}) and the adjective \emph{blu} `blue' in (\ref{10ex2}):
+
+\begin{exe}
+	\ex \label{10ex1}
+	\begin{xlist}
+		\ex 
+		\gll \emph{l-a} \emph{città} \emph{vecchi-a} \\
+		\textsc{def-f.sg} city(\textsc{f})[\textsc{sg}] old-\textsc{f.sg} \\
+		\trans ‘the old town’
+		
+		\ex 
+		\gll \emph{l-e} \emph{città} \emph{italian-e} \\
+		\textsc{def-f.pl} city(\textsc{f})[\textsc{pl}] Italian-\textsc{f.pl} \\
+		\trans ‘the Italian cities’
+	\end{xlist}
+\end{exe}
+
+\begin{exe}
+	\ex \label{10ex2}
+	\begin{xlist}
+		\ex 
+		\gll \emph{l-a} \emph{penn-a} \emph{blu} \\
+		\textsc{def-f.sg} pen(\textsc{f})-\textsc{sg} blue[\textsc{f.sg}] \\
+		\trans ‘the blue pen’
+		
+		\ex 
+		\gll \emph{l-e} \emph{penn-e} \emph{blu} \\
+		\textsc{def-f.pl} pen(\textsc{f})-\textsc{pl} blue[\textsc{f.pl}] \\
+		\trans ‘the blue pens’
+		
+		\ex 
+		\gll \emph{il} \emph{libr-o} \emph{blu} \\
+		\textsc{def.m.sg} book(\textsc{m})-\textsc{sg} blue[\textsc{m.sg}] \\
+		\trans ‘the blue book’
+		
+		\ex 
+		\gll \emph{i} \emph{libr-i} \emph{blu} \\
+		\textsc{def.m.pl} book(\textsc{m})-\textsc{pl} blue[\textsc{m.pl}] \\
+		\trans ‘the blue books’
+	\end{xlist}
+\end{exe}
+
+{\sloppy In previous work \citep{dresslerthornton1996, dachillethornton2003, dachille2005-sullinvari, dachillethornton2008} we have investigated qualitative and quantitative properties of Italian uninflectable nouns.\par}
+
+In this chapter, we illustrate uninflectability in Italian nouns, updating our previous findings on the basis of new data concerning usage in the first twenty years of the twenty-first century, and investigate adjectives with the same methodology used for nouns by \citet{dachillethornton2003}.\footnote{Uninflectable Italian adjectives have been briefly discussed by \citet{fedden2019} in the context of his investigation of ``sporadic agreement''. To the best of our knowledge, they have not received specific attention in the context of Italian linguistics. Uninflectable verbs do not seem to exist in Italian.}
+
+\citet{spencer2020} also drew attention to \emph{constructional non-inflectedness / uninflectedness / uninflectability}\is{uninflectability!constructional}, a property exhibited in ``grammatical constructions involving lexemes which cannot bear inflections [...] in that context'', such as ``the modifying non-head noun in an \ili{English} noun-noun compound'' \citep[148]{spencer2020}.\footnote{\citet{spencer2020} uses ``constructional non-inflectedness''	in the title of section 4, but then discusses the possibility that we should make a terminological distinction between constructional uninflectedness (\emph{sic}) and constructional uninflectability\is{uninflectability!constructional}; this second term is considered more appropriate for cases in which a lexeme	which normally inflects fails to do so in specific constructions \citep[148--149]{spencer2020}. The Italian cases discussed in Section \ref{10sec4}, then, are instances of constructional uninflectability\is{uninflectability!constructional}.} In this chapter, we will touch constructional uninflectability\is{uninflectability!constructional} only briefly, in Section \ref{10sec4}; a thorough investigation of this phenomenon in Italian must be left for further research.
+
+The chapter is organized as follows: in Section \ref{10sec2} we present the inflectional classes\is{inflectional class} of Italian nouns and adjectives, and quantitative data on types in each class from various available databases; in Section \ref{10sec3} we illustrate and discuss the factors that render Italian nouns and adjectives uninflectable, and their variation in diachrony, with a focus on the contemporary situation; in Section \ref{10sec4} we briefly discuss two cases of constructional uninflectability\is{uninflectability!constructional}; Section \ref{10sec5} summarizes our conclusions.
+
+\section{Inflection and inflectional classes\is{inflectional class|(} of Italian nouns\is{noun|(} and adjectives} \label{10sec2}
+
+Before delving into the investigation of Italian uninflectable nouns and adjectives, a brief sketch of Italian nominal inflection is in order.
+
+Italian nouns inflect for \textsc{number}, which has two values: \textsc{singular} and \textsc{plural}. They are usually assumed to have an inherent \textsc{\isi{gender}} value, either \textsc{masculine} or \textsc{feminine}. Nouns control agreement in Gender\is{gender} and Number on articles and adjectives (including possessives\is{possessive}, demonstratives and some quantifiers) within NPs, and NPs control agreement in Gender\is{gender} and Number on predicates that agree (adjectives and past participles appearing in certain periphrastic verb forms, according to conditions described in \citealt[78]{thornton2019-noncanonical}), on most third person pronouns, and on periphrastic relative pronouns.
+
+Table \ref{10tab1} illustrates the paradigm of the Italian definite article, a reliable exponent of agreement feature values in most contexts, which will often appear in our examples below. In the singular, final vowels are deleted before vowel-initial words (this deletion is represented orthographically by an apostrophe); the distribution of the \textsc{m.sg} shapes \emph{il} and \emph{lo} and the \textsc{m.pl} shapes \emph{i} and \emph{gli} is mostly phonologically conditioned, but
+there are some lexically conditioned oddities (e.g., \emph{gli dei} `the Gods' vs. \emph{i denti} `the teeth'; cfr. \citealt[62]{maidenrobustelli2000}).\footnote{For a recent survey of the various proposals on the distribution of the shapes of the Italian \textsc{m.sg} definite article, see \citet{repetti2020}.}
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{0.5\textwidth}{XXX}
+		\lsptoprule
+			& \textsc{masculine} & \textsc{feminine} \\
+			\midrule
+			\textsc{singular} & \emph{il, lo, l’} & \emph{la, l’} \\
+			\textsc{plural} & \emph{i, gli} & \emph{le} \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Forms and shapes of the Italian definite article}
+	\label{10tab1}
+\end{table}
+
+Table \ref{10tab2} illustrates the inflectional classes of Italian nouns, according to the numbering proposed by \citet{dachillethornton2003}; class 7 is only attested in Old Italian\il{Italian!Old}, and is no longer used in contemporary Italian. Class 6 (shaded in grey) hosts uninflectable nouns.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{llll}
+		\lsptoprule
+			\multicolumn{2}{l}{Nouns’ endings} & Class & Gender\is{gender} \\
+			\textsc{sg} & \textsc{pl} & & \\
+			\midrule
+			\emph{-o} & \emph{-i} & 1 & \textsc{m} with one exception \\
+			\emph{-a} & \emph{-e} & 2 & \textsc{f} \\
+			\emph{-e} & \emph{-i} & 3 & \textsc{m, f} \\
+			\emph{-a} & \emph{-i} & 4 & \textsc{m} with two exceptions \\
+			\emph{-o} & \emph{-a} & 5 & \textsc{sg m, pl f} \\
+			\rowcolor{gray!25}
+			stressed V & stressed V & 6 & \textsc{m, f} \\
+			\rowcolor{gray!25}
+			C & C & & \\
+			\rowcolor{gray!25}
+			 \emph{-i} & \emph{-i} & & \\
+			\rowcolor{gray!25}
+			... & ... & & \\
+			\emph{-o} & \emph{-ora} & 7 & \textsc{sg m, pl f} \\
+			& & (extinct) & \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Inflectional classes of Italian nouns}
+	\label{10tab2}
+\end{table}
+
+The gender assignment\is{gender!assignment} system of Italian is mixed: most nouns denoting humans and animals that are economically important have semantic assignment (masculine is assigned to nouns denoting males, feminine to nouns denoting females), but there are a few epicene nouns denoting humans (e.g. \textsc{persona} (\textsc{f}) `person', \textsc{personaggio(m)} `character (in a novel, play, etc)') and many denoting animals (e.g. \textsc{giraffa(f)} `giraffe', \textsc{serpente(m)} `snake'). Inanimate and abstract nouns are assigned a gender\is{gender} value on the basis of phonological or morphological criteria, or sometimes by semantic ``crazy rules'' (\citealt{enger2009}; e.g., nouns denoting cars are feminine, cf. \citealt{thornton2001}).
+
+As shown in Table \ref{10tab2}, classes 1, 2 and 4, and the extremely non-canonical and inquorate class 5 (on which cf. \citealt[85--87]{thornton2019-noncanonical}) align with a \isi{gender} value completely or with extremely few exceptions, while classes 3 and 6 host nouns of both genders\is{gender}. Table \ref{10tab3} shows the percentage of nouns of each \isi{gender} in these classes.\footnote{Data in Table \ref{10tab3} are based on BDVDB \citep{thorntoniacobiniburani1997}, a database containg about 4500 nouns belonging to the Italian Basic Vocabulary \citep{demauro1989}.}
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{0.4\textwidth}{Xrr}
+		\lsptoprule
+			& \textsc{m} & \textsc{f} \\
+			\midrule
+			Class 3 & 50.7\% & 49.3\% \\
+			Class 6 & 48.6\% & 51.4\% \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Percentage of masculine and feminine nouns in \\ classes 3 and 6}
+	\label{10tab3}
+\end{table}
+
+\is{adjective|(}
+Table \ref{10tab4} illustrates the inflectional classes of Italian adjectives; for contemporary Italian we follow the classification proposed by \citet{iacobinithornton2016}, which contains classes 1-5; we have added classes 6 and 7 which are only attested in earlier stages of the language; the rightmost column of Table \ref{10tab4} draws attention to correspondences between inflectional classes of nouns and adjectives. As in Table \ref{10tab2}, classes which host adjectives completely or partially uninflectable are highlighted in grey. Classes 6 and 7 are only attested in Old Italian\il{Italian!Old}, and are no longer used in contemporary Italian.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{0.85\textwidth}{p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}X}
+		\lsptoprule
+			\multicolumn{2}{l}{Adjectives’ endings} & Gender\is{gender} & Class & \multirow{2}{2.5cm}{Corresponding class for nouns} \\
+			\textsc{sg} & \textsc{pl} & & & \\
+			\midrule
+			\emph{-o} & \emph{-i} & \textsc{m} & \multirow{2}{*}{1} & 1 \\
+			%\cmidrule{1-3} \cmidrule{5-5}
+			\emph{-a} & \emph{-e} & \textsc{f} & & 2 \\
+			\hline
+			\rowcolor{gray!25}
+			\emph{-e} & \emph{-i} & \textsc{m=f} & 2 & 3 \\
+			\hline
+			\emph{-a} & \emph{-i} & \textsc{m} & \multirow{2}{*}{3} & 4 \\
+			%\cmidrule{1-3} \cmidrule{5-5}
+			\emph{-a} & \emph{-e} & \textsc{f} & & 2 \\
+			\hline
+			\emph{-e} & \emph{-i} & \textsc{m} & \multirow{2}{*}{4} & 3 \\
+			%\cmidrule{1-3} \cmidrule{5-5}
+			\emph{-a} & \emph{-e} & \textsc{f} & & 2 \\
+			\hline
+			\rowcolor{gray!25}
+			stressed & stressed & \textsc{m=f} & 5 & 6 \\
+			\rowcolor{gray!25}
+			V & V & & & \\
+			\rowcolor{gray!25}
+			C & C & & & \\
+			\rowcolor{gray!25}
+			\emph{-i} & \emph{-i} & & & \\
+			\rowcolor{gray!25}
+			... & & & & \\
+			\hline
+			\emph{-o} & \emph{-a} & \textsc{m} & 6 & 5 \\
+			%\cmidrule{1-3} \cmidrule{5-5}
+			\emph{-a} & \emph{-e} & \textsc{f} & (extinct) & 2 \\
+			\hline
+			\emph{-e} & \emph{-i} & \textsc{m} & 7 & 3 \\
+			%\cmidrule{1-3} \cmidrule{5-5}
+			\emph{-e} & \emph{-e} & \textsc{f} & (extinct) & 6 \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Inflectional classes of Italian adjectives}
+	\label{10tab4}
+\end{table}\largerpage[0.5]
+
+In Tables \ref{10tab5} and \ref{10tab6} we present data on the percentage of lexemes in each class. The data are drawn from two different sources: BDVDB \citep{thorntoniacobiniburani1997}, a database containing information of various kinds on the about 7,000 lexemes constituting the Italian Basic Vocabulary \citep{demauro1989}, and DeGNI \citep{demartinobraccolaudanna2023}, a database containing information on \isi{gender} and inflectional class of the nouns contained in CoLFIS \citep{bertinettoburanilaudannamarconirattirolandothornton2005}, a frequency dictionary of contemporary written Italian. BDVDB contains about 4,500 nouns and about 1,100~adjectives, i.e. those appearing among the top 5,000 most frequent lexemes in LIF (\citealt{bortolinitagliavinizampolli1971}, a frequency dictionary of written Italian based on a corpus of about 500,000 tokens, from texts published between 1947 and 1968), and those appearing among about 2,500 lexemes not present in the top frequency ranks in LIF, but deemed to be highly available for speakers, since they denote objects and situations commonly encountered in everyday life (e.g., \emph{forchetta} `fork', \emph{ingorgo} `traffic jam', \emph{carino} `cute', \emph{pigro} `lazy'); CoLFIS, on which DeGNI is based, contains over 20,000 nouns, from a corpus of written Italian of about 3.8M tokens, drawn from press and literature published between 1992 and 1994.\footnote{The data in Table \ref{10tab5} are not completely comparable with respect to class 5, because DeGNI does not consider it a separate class, and merges data on nouns belonging to this class with data on other inflectionally odd nouns, such as various types of compounds, in a category ``Other'', which accounts for 4\% of the nouns in the CoLFIS corpus on which DeGNI is based.} DeGNI contains only nouns; therefore, for adjectives we have only data from BDVDB (which contains 1,128 adjectives), presented in Table \ref{10tab6}.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{0.7\textwidth}{lrr}
+		\lsptoprule
+			Class & percentage of types & percentage of types \\
+			& in BDVDB & in CoLFIS / DeGNI \\
+			& N = 4,583 & N = 23,619 \\
+			\midrule
+			1 & 37.7\% & 31\% \\
+			2 & 34.4\% & 23\% \\
+			3 & 20.8\% & 20\% \\
+			4 & 1.3\% & 1\% \\
+			5 & 0.3\% & ?? \\
+			\rowcolor{gray!25}
+			6 & 5.4\% & 21\% \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Percentage of nouns in each inflectional class (types)}
+	\label{10tab5}
+\end{table}
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{0.4\textwidth}{lr}
+		\lsptoprule
+			Class & percentage of types \\
+			& in BDVDB \\
+			& N = 1,128 \\
+			\midrule
+			1 & 65.2\% \\
+			2 & 31.7\% \\
+			3 & 0.9\% \\
+			4 & 0.01\% \\
+			\rowcolor{gray!25}
+			5 & 2.0\% \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Percentage of adjectives in each inflectional class (types)}
+	\label{10tab6}
+\end{table}
+
+% \needspace{2\baselineskip}
+Clearly, inflectional classes of Italian nouns and adjectives do not constituite a canonical system, as defined by \citeauthor{corbett2009} (\citeyear{corbett2009}; see also \citealt[79--87]{thornton2019-noncanonical}): membership in the various classes is not balanced, and uninflectable nouns and adjectives are few in BDVDB; however, in DeGNI, based on a corpus collected at the end of the twentieth century, class 6, containing uninflectable nouns, seems to be about as numerous as classes 2 and 3, which are inflecting. This seems to point to an increase of uninflectability of Italian nouns in recent times.\is{adjective|)}
+
+\largerpage[0.5]
+To investigate the evolution of inflectional class membership, we have created and manually annotated a small corpus, containing 500 tokens of nouns and 500 tokens of adjectives from Italian texts belonging to each one of eleven time periods, between 1211 and 2022, shown in Table \ref{10tab7}.\footnote{The data about nouns in the periods between 1211 and 2000 have been collected in 2000 and analyzed in \citet{dachillethornton2003}; for the present chapter, we have extended the noun corpus to cover the period 2001-2022, and have collected and analyzed data on adjectives.} We have as much as possible avoided establishing the time periods mechanically, aligning them with centuries; whenever possible, we have chosen as initial and final dates for a given period years which are conventionally considered turning points in the linguistic history of Italian (such as Boccaccio's\ia{Boccaccio, Giovanni} death in 1375, the publication of Bembo's\ia{Bembo, Pietro} \emph{Prose della volgar lingua} in 1525, the publication of the first edition of the Italian dictionary by \isi{Accademia della Crusca} in 1612, etc.). The twentieth century has been subdivided in three periods to have a better grasp of recent developments, and we have included texts from the twenty-first century up to 2022. For each time period, we have selected five prose texts belonging to different genres (such as novels and plays, scientific texts, essays, chronicles,~ledgers, biographies and autobiographies, letters, legal texts, articles in newspapers and magazines) and have counted 100 tokens of nouns and 100 tokens of adjectives from a continuous portion of text, classifying each token in the inflectional class to which it belongs.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{0.4\textwidth}{XX}
+		\lsptoprule
+			Time period & Dates \\
+			\midrule
+			I & 1211–1300 \\
+			II & 1301–1375 \\
+			III & 1376–1525 \\
+			IV & 1526–1612 \\
+			V & 1613–1691 \\
+			VI & 1692–1800 \\
+			VII & 1801–1900 \\
+			VIII & 1901–1945 \\
+			IX & 1946–1968 \\
+			X & 1969–2000 \\
+			XI & 2001–2022 \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Time periods used to partition the corpus analyzed}
+	\label{10tab7}
+\end{table}
+
+
+\section{Inflection and uninflectability of Italian nouns} \label{10sec3}
+
+\subsection{Productivity\is{productivity|(} of inflectional classes of Italian nouns} \label{10sec3.1}
+
+{\sloppy Previous qualitative and quantitative analyses \citep{dresslerthornton1996, dachillethornton2003} have shown that the various inflectional classes of Italian nouns have different degrees of productivity, defined in terms of Dressler's (\citeyear{dressler1997, dressler2003}) criteria of inflectional productivity, according to which an inflectional class is productive at a given time if it gains new members through integration\is{loanword!morphological integration} of loanwords\is{loanword} and other types of neologisms or through class shift of lexemes changing their inflectional class in diachrony.\footnote{See also \citet{gardani2013} for a critical discussion of Dressler's criteria.}\par}
+
+Class 5 is completely unproductive (while it was productive at least up to the fourteenth century, according to \citealt{gardani2013}), has been losing members to class 1 throughout the centuries \citep{santangelo1981}, and is now inquorate (it contains around two dozens of nouns, many of which are overabundant in their plural cell, with a plural of class 1 alongside one of class 5, cf. \citealt{thornton2010-11}).
+
+Class 4 is losing members towards class 6, and is only fed by productive suffixation, most notably the formation of person-denoting nouns in \emph{-ista} (such as \emph{terrapiattista} `someone who believes that the earth is flat' \leftarrow \emph{terra piatta} `flat earth').
+
+Class 3 is losing members to class 6.
+
+Classes 1 and 2 are productive according to several criteria; they were productive even according to the strongest criterion in Dressler's classification, integration\is{loanword!morphological integration} of loanwords\is{loanword} with unfitting phonological form, up to the nineteenth and even the early twentieth century (e.g., \ili{English} \emph{beefsteak,} ``unfitting'' because it ends in a consonant, was adapted as \emph{bistecca}, attested since 1844, and is still
+inflected as a class 2 noun), but nowadays loanwords\is{loanword} ending in consonants (i.e., with unfitting phonological form) are assigned to class 6. Nouns converted from verbs are assigned to class 1 (e.g., \emph{scippo} `bag-snatching' \leftarrow \emph{scippare} `snatch [a bag]') and some clipped nouns from deverbal suffixed action nouns are assigned to class 2 (e.g., \emph{codifica} \leftarrow \emph{codificazione} `coding').
+
+Class 6 is gaining members in several ways, mainly by hosting loanwords\is{loanword} ending in a consonant or in /i/; even indigenous affixation feeds it, e.g. with quality nouns in \emph{-ità} such as \emph{padanità} `quality of belonging to the Po valley territory [Val Padana]'.
+
+Table \ref{10tab8} shows the increase of membership in class 6 of both tokens and types in our corpus, from the thirteenth to the end of the twentieth century; this increase has been shown to be statistically significant \citep[219]{dachillethornton2003}.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{0.6\textwidth}{lrr}
+		\lsptoprule
+		& 13\textsuperscript{th} century & end of 20\textsuperscript{th} century \\
+		\midrule
+		tokens & 2.4\% & 8.6\% \\
+		types &  2.7\% & 9.5\% \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Percentage of types and tokens of nouns in class 6 in the corpus}
+	\label{10tab8}
+\end{table}
+
+\citet{dachillethornton2003} concluded that the main system-defining property of Italian noun inflection is the alignment of back vowels (/a/ and /o/) with \textsc{singular} and of front vowels (/e/ and /i/) with \textsc{plural}, and the alignment of the singular ending /a/ with \textsc{feminine} and the singular ending /o/ with \textsc{masculine}; nouns not displaying such an alignment in their paradigm, such as class 3 nouns, that end in the front vowel /e/ in the singular and can belong to either \isi{gender} (cf. Table \ref{10tab3}), so that some plurals in /i/ are feminine, show an increasing tendency to become uninflectable, as do masculine nouns ending in /a/ (class 4) and feminine nouns ending in /o/ (investigated by \citealt{dachillethornton2008})\is{inflectional class|)}\is{productivity|)}.
+
+\subsection{Properties of uninflectable Italian nouns}
+
+In this section we illustrate the properties that influence the uninflectability of nouns in Italian. These properties are mainly phonological, but the relation between a noun's \isi{gender} and its ending in the singular also plays a role, as do orthographic and stratal properties.
+
+Table \ref{10tab9} shows the progressive appearance of nouns of various kinds in our corpus. A ✔ in a cell in Table \ref{10tab9} means that nouns of the kind listed in the row are attested in the time period corresponding to the column. A continuous shading means that nouns of the kind listed in the row are unattested in the time periods corresponding to the columns, and are only attested later; the lighter shading in the row corresponding to nouns ending in a consonant is due to the fact that there is a doubtful occurrence of a noun ending in a consonant in period I (\emph{dies} `day', which, however, is a \ili{Latin} word inserted in a vernacular context, a kind of code-switch), but then no more tokens till period VIII, that is till the twentieth century. An empty white cell means that nouns of the kind listed in the row are not attested in our corpus in the time period corresponding to the column, but are attested in the corpus in earlier periods.
+
+\begin{sidewaystable}[H]
+	\centering
+	\begin{tabularx}{\textwidth}{p{2.7cm}XXXXXXXXXXX}
+		\lsptoprule
+			\multicolumn{1}{r}{Time period} & I & II & III & IV & V & VI & VII & VIII & XI & X & XI \\
+			\multicolumn{1}{l}{Kind of noun} & 1211–1300 & 1301–1375 & 1376–1525 & 1526–1612 & 1613–1691 & 1692–1800 & 1801–1900 & 1901–1945 & 1946–1968 & 1969–2000 & 2001–2022 \\
+			\midrule
+			stressed final V & ✔ & ✔ & ✔ & ✔ & ✔ & ✔ & ✔ & ✔ & ✔ & ✔ & ✔ \\
+			\textsc{masculine} in \emph{‑e} & & ✔ & & & & & & & & ✔ & \\
+			\textsc{feminine} in \emph{‑e} & & & ✔ & ✔ & & & & & & & \\
+			\textsc{feminine} in \emph{‑i} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & ✔ & & & ✔ & & ✔ & ✔ \\
+			\textsc{masculine} in \emph{‑i} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & ✔ & & & & & ✔ & \\
+			\textsc{feminine} in <\emph{ie}> & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & ✔ & ✔ & & ✔ & & ✔ \\
+			final C & ? & \cellcolor{gray!50} & \cellcolor{gray!50} & \cellcolor{gray!50} & \cellcolor{gray!50} & \cellcolor{gray!50} & \cellcolor{gray!50} & ✔ & ✔ & ✔ & ✔ \\
+			\textsc{masculine} in \emph{‑a} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & ✔ & & \\
+			\textsc{feminine} in \emph{‑o} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & \cellcolor{gray!75} & ✔ & ✔ & \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Appearance of various kinds of uninflectable nouns in the corpus}
+	\label{10tab9}
+\end{sidewaystable}
+
+\subsubsection{Phonological properties} \label{10sec3.2.1}
+
+The main property that makes a noun uninflectable for phonological reasons in Italian is ending in a stressed vowel.\footnote{In the standard Italian orthography, final stressed vowels are marked by an accent in polysyllabic native words and orthographically integrated\is{loanword!morphological integration} loanwords\is{loanword}, and in some but not all monosyllables, according to various normative rules which we will not illustrate here because they are orthogonal to the issue that concerns us. In the text we follow standard spelling, and provide phonological transcriptions when necessary.} Nouns ending in stressed vowels and treated as uninflectable are attested in all periods in our corpus (cf. Table \ref{10tab9}), and have existed throughout the history of the Italian language. They have come about at first from \ili{Latin} nouns, in various ways: some inherited nouns have come to end in a stressed vowel because a final consonant or consonant cluster has been lost (\ref{10ex3a}); a sizeable number of nouns end in a stressed vowel after loss by apocope of a final unstressed syllable (\ref{10ex3b}); another source of final stressed vowels is the deletion of a final /e/, which was etymological but was reanalyzed as epithetic and consequently deleted (\ref{10ex3c}).
+
+\begin{exe}
+	\ex \label{10ex3}
+	\begin{xlist}
+		\ex \label{10ex3a} Lat. \textsc{rex} > \emph{re} ‘king’
+		\ex \label{10ex3b} Lat. \textsc{civitate(m)} > \emph{cittate} / \emph{cittade} > \emph{città} ‘city’ \\
+		Lat. \textsc{virtute(m)} > \emph{virtute} / \emph{virtude} > \emph{virtù} ‘virtue’
+		\ex \label{10ex3c} Lat. \textsc{die(m)} > \emph{die} > \emph{dì} ‘day’
+	\end{xlist}
+\end{exe}
+
+Later the type has grown through loanwords\is{loanword}, such as the ones in (\ref{10ex4}),
+encountered in our corpus:
+
+\begin{exe}
+	\ex \label{10ex4}
+		\emph{falpalà} ‘flounce’, \emph{caffè} ‘coffee’ 
+\end{exe}
+
+There has never been any attempt at integrating nouns ending in a stressed vowel in one of the inflecting classes\is{inflectional class}. These are the nouns most truly uninflectable for phonological reasons.
+
+A second group of nouns whose uninflectability correlates with a phonological property is represented by nouns ending in /i/.\footnote{We do not address uninflectable nouns ending in unstressed /u/, which are very few and quite recent loanwords\is{loanword} such as \emph{guru}, \emph{haiku}, \emph{sudoku}, \emph{tofu}.} These are attested in our corpus since period V, roughly corresponding to the seventeenth century. This type at first included only feminine nouns of Greek\il{Greek!Ancient} origin, such as the ones in (\ref{10ex5}):
+
+\begin{exe}
+	\ex \label{10ex5}
+	\emph{ipotesi} ‘hypothesis’, \emph{estasi} ‘ecstasy’, \emph{crisi} ‘crisis’...
+\end{exe}
+
+Later, the type has grown through loanwords\is{loanword}, most often assigned masculine \isi{gender}, such as the ones in (6) from our corpus:
+
+\begin{exe}
+	\ex \label{10ex6}
+	\emph{baby} /ˈbɛbi/ ‘kid’,\footnote{In the context in which it appears in our corpus, \emph{i baby} refers to football players in a junior team, and could be glossed ‘the colts’.} \emph{floppy} ‘floppy disk’...
+\end{exe}
+
+In masculine nouns frequently used in the plural, the final /i/ can be perceived as a \textsc{m.pl} ending of class 1\is{inflectional class}, with consequent \isi{backformation} of a singular in /o/; this happened in the case of \emph{cachi} \textless{} Jap. \emph{kaki} `Diospyros kaki'.\footnote{In theory, a masculine plural form in ‑\emph{i} could lead to \isi{backformation} of a class 3\is{inflectional class} singular in ‑\emph{e} or a class 4\is{inflectional class} singular in‑\emph{a}: however, such cases are not attested in the thorough investigation of \isi{backformation} in Italian by \citet{dachille2005-retroforma}.} Table \ref{10tab10} shows the frequency of the two options in the \citetitle{ittenten20} corpus (a corpus which is part of the \emph{TenTen} corpus family, and contains 12.4 billion tokens from texts downloaded from the Web in the years 2019-2020) in contexts in which the noun is used in the singular preceded by the indefinite article:
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{0.7\textwidth}{XrXr}
+		\lsptoprule
+			uninflectable & tokens & inflected & tokens \\
+			(class 6\is{inflectional class}) & & in class 1 & \\
+			\midrule
+			\emph{un cachi} & 106 & \emph{un caco} & 203 \\
+			\emph{un kaki} & 30 & \emph{un kako} & 7 \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Inflectional forms of singular \emph{cachi} / \emph{kaki} in \citetitle{ittenten20}}
+	\label{10tab10}
+\end{table}
+
+Inflection in class 1\is{inflectional class} through \isi{backformation} clearly correlates with orthographic integration\is{loanword!morphological integration}: in the standard spelling of contemporary Italian the letter \textless k\textgreater{} is only used in loanwords\is{loanword}, and the data show that the most common option is inflection in class 1\is{inflectional class} for the orthographically integrated\is{loanword!morphological integration} forms (with a ratio of 1.9 : 1 in favour of class 1\is{inflectional class}), but uninflectability for the forms spelled with \textless k\textgreater{} (with a ratio of 4.3 : 1 in favour of class 6\is{inflectional class}).
+
+The last phonological property that makes a noun uninflectable in contemporary Italian is its ending in a consonant. In our corpus, this type appears only in the twentieth century, and is attested in all time periods since the VIII, with nouns such as the ones in (\ref{10ex7}), which are mostly loanwords\is{loanword} (but a few, such as the brand name \emph{domopak} `plastic food wrap', are autochthonous formations):
+
+\begin{exe}
+	\ex \label{10ex7}
+		\emph{lastex}, \emph{rayon}, \emph{sport}, \emph{tweed}, \emph{claque}, \emph{refrain}, \emph{soubrette}, \emph{round}, \emph{goal}, \emph{supporter}, \emph{assist}, \emph{vermouth}, \emph{Nord}, \emph{Internet}, \emph{computer}, \emph{hardware}, \emph{software}, \emph{hard disk}, \emph{mouse}, \emph{monitor}, \emph{modem}, \emph{scanner}, \emph{mail}, \emph{domopak}, \emph{hashish}, \emph{babysitter}, \emph{performance}, \emph{governance}, \emph{input}
+\end{exe}
+
+Previously, loan nouns ending in a consonant were adapted, appending a final unstressed vowel (/a/ for feminine nouns, /o/ for masculine ones) after gender assignment\is{gender!assignment}; only rarely, a final /e/ was supplied, either epenthetically or because the loanword\is{loanword} was analyzed as containing a suffix ending in ‑\emph{e.} These nouns were then inflected in the class\is{inflectional class} appropriate to their \isi{gender} and ending. This is shown by the data in (\ref{10ex8}), with examples of \ili{Arabic} (from \citealt{mancini1992}) and \ili{English} loanwords\is{loanword} integrated\is{loanword!morphological integration} before the twentieth century.
+
+\begin{exe}
+	\ex \label{10ex8}
+	\begin{xlist}
+		\ex \ili{Arabic} loanwords\is{loanword}
+		
+		\begin{itemize}
+			\item Nouns denoting human males integrated\is{loanword!morphological integration} in class 1\is{inflectional class}:\\
+			\emph{sulṭān} > \emph{sultano} ‘sultan’\\
+			\emph{šayx} > \emph{sceicco} ‘sheikh’
+			
+			\item Nouns denoting inanimate entities:\\
+			\emph{xaršūf} > \emph{carciofo} ‘artichoke’ \hfill integrated in class 1\\
+			\emph{līmūn} > \emph{limone} ‘lemon’ \hfill integrated in class 3
+		\end{itemize}
+		
+		\ex \ili{English} loanwords\is{loanword}
+		
+		\begin{itemize}
+			\item Nouns denoting humans: \\
+			\emph{quaker} > \emph{quacchero} \hfill masculine, integrated\is{loanword!morphological integration} in class 1\is{inflectional class}\\
+			\emph{quaker} > \emph{quacchera} \hfill feminine, integrated in class 2
+			
+			\item Nouns denoting inanimate entities:\\
+			\emph{beef-steak} > \emph{bistecca} \hfill integrated in class 2 \\
+			\emph{yard} > \emph{iarda} \hfill integrated in class 2
+		\end{itemize}
+		
+	\end{xlist}
+\end{exe}
+
+Nouns denoting humans received \isi{gender} by a semantic rule demanding congruence between \isi{gender} and sex of the referent, and were subsequently provided with the vocalic endings of the most typical classes\is{inflectional class} for each \isi{gender}, i.e., class 1\is{inflectional class} for masculine and class 2\is{inflectional class} for feminine. Nouns denoting inanimate entities were either assigned masculine \isi{gender} by default, or assigned feminine \isi{gender} because they were associated with already existing nouns of similar meaning (see \citealt[72--73]{thornton2003} for details on \emph{bistecca} and \emph{iarda}.) \emph{Limone} was integrated\is{loanword!morphological integration} in class 3\is{inflectional class} probably because it was analyzed as containing the suffix \emph{-one}.\footnote{\citet[43--45]{gardani2013} draws attention to the role of native derivational suffixes in the integration\is{loanword!morphological integration} of loanwords\is{loanword}.}
+
+In the twentieth century, morphological integration\is{loanword!morphological integration} of loanwords\is{loanword} ending in a consonant stopped. We assume that a final consonant was analyzed as a phonological factor\is{uninflectability!factors in uninflectability!phonological} preventing inflectability; however, \citet{fedden2019} claims that the reason for uninflectability of Italian adjectives ending in a consonant is ``etymological'' rather than phonological. It is hard to tear apart the two factors, since the overwhelming majority of Italian nouns and adjectives ending in a consonant are indeed loanwords\is{loanword}, and probably awareness of their loan status was present in the speakers who first introduced these words into Italian. However, there are some nouns formed in Italian which end in a consonant and are uninflectable, such as \emph{colf} `domestic help' from \emph{collaboratrice familiare} lit. `family aide', and acronyms like \emph{gip} from \emph{giudice [delle] indagini preliminari} `magistrate responsible for a preliminary investigation', \emph{pec} from \emph{posta elettronica certificata} `registered e-mail', \emph{Caf} from \emph{centro di assistenza fiscale} `tax service center', and others. This seems to point to the conclusion that it is the phonological property of ending in a consonant, rather than the etymological property of being a loanword\is{loanword}, that makes a noun uninflectable in contemporary Italian.
+
+\subsubsection{Between class 3\is{inflectional class} and uninflectability: nouns in \emph{-e}}
+
+The next group of uninflectable nouns we will discuss is that of feminine nouns in /e/. In this case there is no phonological impediment to inflectability, since nouns ending in /e/ can be inflected according to class 3\is{inflectional class}.
+
+However, feminine nouns in /e/ were treated as uninflectable in periods III and IV; they acquired a plural in ‑\emph{e} by analogy with nouns of class 2\is{inflectional class} (feminines with singular in ‑\emph{a} and plural in ‑\emph{e}), but these analogical formations were not retained and nouns such as \emph{meretrice} `prostitute(\textsc{f})', \emph{cagione} `cause(\textsc{f})', \emph{lode}(\textsc{f}) `praise', attested as uninflectable in periods III and IV in our corpus, later reverted to inflecting according to class 3\is{inflectional class}, as they still do.
+
+A subgroup of feminine nouns in /e/ presents a problem that might be considered of the kind that \citet{fedden2019} calls ``phonotactic\is{uninflectability!factors in uninflectability!phonotactic}'': this is the case of nouns ending in /ie/ -- orthographically \textless ie\textgreater, phonetically realized most often as [je] -- such as \emph{barbarie} `barbarism, barbarity', attested in our corpus as uninflectable in period VI, and \emph{serie} `series', attested in our corpus as uninflectable from period VII. Plural forms of class 3\is{inflectional class} such as *\emph{barbarii} [barˈbarji] and *\emph{serii} [ˈsɛrji] are phonotactically\is{uninflectability!factors in uninflectability!phonotactic} illegal, since [ji] is not tolerated in Italian and is reduced to /i/ (\citealt[93, §64]{camilli1965}). A repair strategy producing plural forms such as *\emph{barbari} /barˈbari/ and *\emph{seri} /ˈsɛri/ would be possible: nouns of class 1\is{inflectional class} such as \emph{occhio} /ˈɔkkjo/ `eye', \emph{operaio} /opeˈrajo/ `worker' have the plural forms \emph{occhi} /ˈɔkki/ and \emph{operai} /opeˈrai/; however, for feminine nouns in /e/ this strategy is not attested. Later, even some nouns ending in orthographic \textless ie\textgreater, phonologically ending in a palatal affricate followed by /e/, such as \emph{specie} /ˈspɛtʃe/ `species', which had a regular plural of class 3\is{inflectional class} \emph{speci}, started to be treated as uninflectable (\citealt[§III.114--115]{serianni1988}).
+
+More recently, a tendency to treat various kinds of nouns ending in /e/, both feminine and masculine, as uninflectable rather than as belonging to class 3\is{inflectional class} is gaining weight. Table \ref{10tab11} illustrates this tendency for a masculine loanword\is{loanword} from \ili{Japanese}, \emph{kamikaze} `kamikaze' and a feminine loanword\is{loanword} from Greek\il{Greek!Ancient}, \emph{stele} `stele', presenting data on the frequency of the plural forms of these nouns preceded by the plural definite article in the \citetitle{ittenten20} corpus.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{0.85\textwidth}{XrXr}
+		\lsptoprule
+			class 6\is{inflectional class} & frequency in & class 3 & frequency in \\
+			(uninflectable) & \citetitle{ittenten20}  & (\textsc{sg} \emph{‑e} / \textsc{pl} \emph{‑i}) & \citetitle{ittenten20} \\
+			\midrule
+			\emph{i kamikaze} & 2036 & \emph{i kamikazi} & 3 \\
+			\emph{le stele} & 1164 & \emph{le steli} & 324 \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Plural forms of \emph{kamikaze} and \emph{stele}}
+	\label{10tab11}
+\end{table}
+
+Again, the lexeme whose foreign status\is{foreign spelling} can be perceived from the orthographic form has a stroger tendency to uninflectability.
+
+\subsubsection{Uninflectability due to mismatch between \isi{gender} value and ending\is{mismatch between phonology and gender|(}}
+
+\subsubsubsection{Relation between \isi{gender} values and endings in Italian nouns}
+
+Although the singular ending of inflectable Italian nouns cannot be considered an exponent of \isi{gender}, since the same vowel appears in nouns of both genders\is{gender} (even minimal pairs, e.g., \emph{fronte}(\textsc{f}) `forehead' / \emph{fronte}(\textsc{m)} `front', \emph{lama}(\textsc{f}) `blade' / \emph{lama}(\textsc{m)} `lama; llama'), it cannot be denied that statistically the overwhelming majority of nouns ending in \emph{-o} are masculine and the great majority of nouns ending in \emph{-a} are feminine, as shown by the data in Table \ref{10tab12} (from \citealt[109]{sgroi2008}, with further elaboration by us; Sgroi based his counts on the 73644 nouns listed in the dictionary by \citealt{demauro2000}; comparable results were obtained by \citealt[126]{demartinobraccolaudanna2023} on nouns in the CoLFIS corpus).\footnote{\citet{sgroi2008} counted only once nouns that have the same citation form but can appear with both \isi{gender} values; hence the column with data for ``\textsc{m \& f}'' nouns. These are cases of masculine and feminine nouns referring to persons and used in both genders\is{gender} according to the sex of the referent (such as \emph{cantante} `singer' in class 3\is{inflectional class} and \emph{giornalista} `journalist', in class 4\is{inflectional class} when masculine and in class 2\is{inflectional class} when feminine), homonyms with different \isi{gender} and different semantics (such as \emph{fronte}(\textsc{m}) `front' and \emph{fronte}(\textsc{f}) `forehead') and nouns whose \isi{gender} oscillates in usage (such as \emph{groviera} `gruyère').}
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{0.75\textwidth}{lrrrr}
+		\lsptoprule
+			Final vowel & \% \textsc{m} & \% \textsc{f} & \% \textsc{m} \& \textsc{f} & Total number \\
+			in the \textsc{sg} & & & & of types \\
+			\midrule
+			\emph{-a} & 5.1\% &  86.8\% & 7.9\% & 24,126 \\
+			\emph{-o} & 99\% & 0.4\% & 0.4\% & 25,614 \\
+			\emph{-e} & 50.9\% & 40.6\% & 8.5\% & 16,540 \\
+			\emph{-i} & 35.2\% & 54\% & 10.6\% & 1,566 \\
+			\emph{-u} & 83.1\% & 5.3\% & 11.6\% & 95 \\
+			Stressed V, C & 51.6\% & 43.7\% & 4.7\% & 5,703 \\
+			Total & 52.4\% & 42.2\% & 5.3\% & 73,644 \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Singular ending and \isi{gender} value of Italian nouns}
+	\label{10tab12}
+\end{table}
+
+Against this background, masculine nouns ending in \emph{-a} and feminine nouns ending in \emph{-o} are troublesome\is{noun!feminine in \emph{-o} (in Italian)}.
+
+\subsubsubsection{Masculine nouns in \emph{-a}\is{noun!masculine in \emph{-a} (in Italian)|(}} \label{10sec3.2.3.2}
+
+Masculine nouns in \emph{-a} have been thoroughly investigated by \citet{migliorini1957},\footnote{The first edition of this article appeared in 1934; the article was republished in 1957 with many additions.} who provides an extremely detailed list of data. He observes that the earliest stratum of loanwords\is{loanword} resulting in masculine nouns in \emph{-a} is represented by \ili{Latin} (\ref{10ex9a}) and particularly Greek\il{Greek!Ancient} learned loanwords\is{loanword} (\ref{10ex9b}--\ref{10ex9c}):
+
+\begin{exe}
+	\ex \label{10ex9}
+	\begin{xlist}
+		\ex \label{10ex9a} \emph{scriba} ‘scribe’, etc.
+		\ex \label{10ex9b} \emph{papa} ‘pope’, \emph{duca} ‘duke’, \emph{collega} ‘colleague’, etc.
+		\ex \label{10ex9c} \emph{diadema} ‘tiara’, \emph{diploma} ‘id.’, \emph{diaframma} ‘diaphragm’, etc.
+	\end{xlist}
+\end{exe}
+
+This type of nouns inflects according to class 4\is{inflectional class} (\emph{scriba / scribi, papa / papi, diploma / diplomi,} etc.), and this schema has been productive\is{productivity}, attracting agent nouns that had ``a Greek flavour'' (``di sapore greco'', \citealt[59]{migliorini1957}) even when their etymon contained /o/, as in the case of \emph{stratega} `strategist' (\textless{} Greek\il{Greek!Ancient} \emph{stratēgós} `general'), \emph{parassita} `parasite' (\textless{} Greek\il{Greek!Ancient}~\emph{parásitos}), nouns in ‑\emph{iatra} (\textless{} Greek\il{Greek!Ancient} \emph{iatrós} `physician') designating medical specialists, like \emph{pediatra} `pediatrician', \emph{odontoiatra} `dentist', and others.
+
+A later stratum of masculine nouns in ‑\emph{a}\footnote{It could be argued that here one should write ``in /a/'' rather than ``in \emph{-a}'', since uninflectable nouns do not have a segmentable ending, hence the hyphen may seem unwonted. We are aware of the issue, but here we keep to the common practice of inserting a hyphen before final vowels that could in theory be interpreted as inflectional endings in Italian.} is represented by nouns that Migliorini calls ``exotic'' loans, such as the ones in (\ref{10ex10}):
+
+\begin{exe}
+	\ex \label{10ex10}
+		\emph{lama} ‘llama; Buddhist spiritual leader’, \emph{karma}, \emph{alpaca}, \emph{boa}, \emph{cobra}, \emph{gorilla}, \emph{puma}, \emph{anaconda}, \emph{panda}\footnote{There is no need to gloss the nouns that have been borrowed into \ili{English} in the same form.}
+\end{exe}
+
+Many of the nouns in (\ref{10ex10}) denote animals not autochthonous in Europe; they have been borrowed at the end of the nineteenth century, not directly from the ``exotic''\footnote{For present purposes we define exotic loans as loanwords\is{loanword} coming from countries that are far-away and little known \citep[7]{mancini1992}.} languages in which they originate, nor through \ili{Spanish} or \ili{Portuguese}, in which they are feminine, but through \ili{French}, in which they are masculine; they have received masculine \isi{gender} in Italian because of their \isi{gender} in \ili{French}, and are treated as uninflectable.
+
+It must be observed that the majority of these nouns do not betray their foreign origin\is{foreign spelling} through spelling and do not present any phonological\is{uninflectability!factors in uninflectability!phonological} or phonotactic\is{uninflectability!factors in uninflectability!phonotactic} oddness.\footnote{An anonymous reviewer observes that a final sequence \textless oa\textgreater, found in \emph{boa}, is not frequent in Italian; this is correct, but the fact remains that the majority of the nouns in (\ref{10ex10}) are not phonologically\is{uninflectability!factors in uninflectability!phonological} of phonotactically\is{uninflectability!factors in uninflectability!phonotactic} odd: compare, e.g., \emph{karma} with native \emph{arma} `arm, weapon'\emph{, firma} `signature', \emph{forma} `form', \emph{Parma} toponym\emph{, tarma} `moth'\ldots{}} What are then the causes of their uninflectability?
+
+A first possibility is that they are treated as uninflectable because of their foreign (or rather, exotic) origin\is{foreign spelling}, of which the first speakers who borrowed them were well aware. A second possibility is that they are treated as uninflectable because they exhibit a mismatch between \isi{gender} and ending. Probably both factors play a role. The hypothesis that the \isi{gender} / ending mismatch plays a role, notwithstanding the fact that it did not cause a problem for nouns of the first stratum (cf. (\ref{10ex9})), is corroborated by the observation that there are other masculine nouns in \emph{-a} that are treated as uninflectable, whose origin is not exotic. These are nouns like the ones in (\ref{10ex11}), which have been created by a variety of mechanisms of lexicon enrichment:
+
+\begin{exe}
+	\ex \label{10ex11}
+	\begin{xlist}
+		
+		\ex Metonymy \\
+		\emph{boia} ‘executioner, hangsman, headsman’ < Lat. \emph{boia(m)} ‘leather collar, thong’
+		
+		\ex Vossianic antonomasia \\
+		\emph{sosia} ‘look-alike’ < \emph{Sosia} in Plautus’ and Molière’s plays\\
+		\emph{balilla} ‘8–14-year-old boy in Fascist youth organization’ < \emph{Balilla}, nickname of Giovan Battista Perasso
+		
+		\ex Deverbal conversion \\
+		\emph{tartaglia} ‘stutterer’ < \emph{tartagliare} ‘stutter’
+		
+		\ex Ellipsis of a masculine head or assignment of masculine gender\is{gender!assignment} because of a masculine hyperonym \\
+		\emph{avana} ‘Havana cigar’ (\emph{sigaro} ‘cigar’ is masculine)\\
+		\emph{barbera}, \emph{marsala} ‘kinds of wine’ (\emph{vino} ‘wine’ is masculine)
+		
+		\ex \label{10ex11e} «Nomi cartellino», lit. tag nouns \citep{migliorini1975}\footnote{\citet{migliorini1975} proposed to call “nomi cartellino”, lit. tag nouns, those nouns resulting from the nominalization of verb forms which appeared as the first word of prayers (like \emph{credo} ‘I believe’) or as words written with particular graphic prominence in legal documents (such as the examples in (\ref{10ex11e})).}\\
+		\emph{vaglia} ‘money order’ < ‘be\_worth.\textsc{3sg.prs.sbjv}’\\
+		\emph{proclama} ‘edict, decree’ < ‘proclaim.\textsc{3sg.prs.ind}’
+		
+	\end{xlist}
+\end{exe}
+
+
+Already \citet[104--108]{migliorini1957} attributes the uninflectability of masculine nouns in ‑\emph{a} of the kinds in (\ref{10ex10}) and (\ref{10ex11}) to a \isi{gender} / ending mismatch. He also lists a number of plural forms in \emph{‑a} of
+nouns that normally inflect according to class 4\is{inflectional class} that he observed in the press (such as \emph{gli scriba, i fratricida, i due omicida, i regicida, i Belga, gli analfabeta, i despota, i monarca, i comma, i dogma, i panorama, i prisma}), noting that this type of deviation from standard inflection is far more frequent than simple typos, and interprets this as further evidence that at least for non-highly educated speakers masculine nouns in \emph{-a} are uninflectable. Our own data confirm this tendency, which is not always limited to uneducated speakers: we encountered \emph{gli scriba} (vs. \emph{gli scribi}) in a text illustrating an exhibition in Venice's Palazzo Grassi, and heard \emph{i sisma} `the earthquakes' (vs. \emph{i sismi}) on national TV news. Data from the \citetitle{ittenten20} corpus on recently borrowed masculines in ‑\emph{a}, shown in Table \ref{10tab13}, confirm their uninflectability.
+
+\begin{table}[H]
+	\centering
+	\resizebox{!}{2.9cm}{
+	\begin{tabularx}{0.9\textwidth}{lXrXr}
+		\lsptoprule
+			Noun & Plural NP & Frequency & Plural NP & Frequency \\
+			& queried & & queried & \\
+			& Class 6\is{inflectional class} & & Class 4 & \\
+			\midrule
+			\emph{sherpa} ‘id.’ & \emph{gli sherpa} & 620 & \emph{gli sherpi} & 0 \\
+			\emph{burqa / burka} ‘id.’ & \emph{i burqa} & 77 & \emph{i burqi} & 0 \\
+			& \emph{i burka} & 45 & & \\
+			\emph{chakra} ‘id.’ & \emph{i chakra} & 4,352 & \emph{i chakri} & 0 \\
+			\emph{parka} ‘id.’ & \emph{i parka} & 287 & \emph{i parki} & 0 \\
+			& & & [\emph{i parkas} & 1] \\
+			\emph{mascara} ‘id.’ & \emph{i mascara} & 1,004 & \emph{i mascari} & 2 \\
+		\lspbottomrule
+	\end{tabularx}}
+	\caption{Treatment of recently borrowed masculine nouns in \emph{‑a} in the \citetitle{ittenten20} corpus\is{noun!masculine in \emph{-a} (in Italian)|)}}
+	\label{10tab13}
+\end{table}
+
+
+\subsubsubsection{Feminine nouns in \emph{-o}\is{noun!feminine in \emph{-o} (in Italian)|(}} \label{10sec3.2.3.3}
+
+Feminine nouns in \emph{‑o} have been thoroughly investigated by \citet{dachillethornton2008}. One of them, \emph{mano} `hand', is exceptionally inflected according to class 1\is{inflectional class}, and is the only feminine noun in this class\is{inflectional class}.\footnote{\emph{Sinodo} `synod' and \emph{parodo} `parodos' are used both as masculine and as feminine nouns; when feminine, they are attested both as inflecting in class 1\is{inflectional class} and as uninflectable \citep[474]{dachillethornton2008}.} Any other feminine noun in \emph{-o} is uninflectable; there are only a handful of such nouns in common usage, exemplified in (\ref{10ex12}) according to the way they
+have come into existence:
+
+\begin{exe}
+	\ex \label{10ex12}
+		Feminine nouns in \emph{-o}
+	\begin{xlist}
+		\ex Loanwords\is{loanword} (both from classical and modern languages) \\
+		\emph{consecutio temporum} ‘sequence of tenses’\\
+		\emph{lectio magistralis} ‘keynote lecture’\\
+		\emph{demo} ‘demo’ \\
+		\emph{macro} ‘macro’ \\
+		\emph{cabrio} ‘convertible car’ (clipping from \emph{cabriolet})
+		
+		\ex Clippings (“Accorciamenti”) \\
+		\emph{auto} \leftarrow \emph{automobile} ‘car’\\
+		\emph{foto} \leftarrow \emph{fotografia} ‘snapshot’\\
+		\emph{moto} \leftarrow \emph{motocicletta} ‘motorbike’
+		
+		\ex Ellipsis of a feminine head \\
+		\emph{sdraio} \leftarrow \emph{sedia a sdraio} ‘deckchair’\\
+		\emph{lampo} \leftarrow \emph{chiusura lampo} ‘zipper’
+		
+		\ex Metaphors and metonymies \\
+		\emph{biro} ‘ballpoint pen’ (from the name of its inventor László Biró)\\
+		\emph{caporetto} ‘crushing defeat’ (from the toponym Caporetto, where Italy lost a battle in WWI)
+	\end{xlist}
+\end{exe}
+
+Already \citet[106]{migliorini1957} considered the \isi{gender} / ending mismatch as the reason why these nouns are uninflectable\is{noun!feminine in \emph{-o} (in Italian)|)}\is{mismatch between phonology and gender|)}.
+
+\subsubsection{The catastrophe: masculine nouns in \emph{-o} and feminine nouns in \emph{-a} treated as uninflectable}
+
+There are cases of masculine nouns in \emph{-o} and feminine nouns in \emph{-a} treated as uninflectable, rather than as inflecting in classes 1 and 2\is{inflectional class} respectively. Some of these are instances of constructional uninflectability\is{uninflectability!constructional} (cf. Section \ref{10sec4}), but others are loanwords\is{loanword} or recent coinages, such as \emph{euro}, which could very easily fit in classes 1 and 2\is{inflectional class}.
+
+Table \ref{10tab14} shows data from the \citetitle{ittenten20} corpus for feminine nouns in \emph{-a}.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{0.9\textwidth}{lXrXr}
+		\lsptoprule
+			Noun & plural NP & Frequency & plural NP & Frequency \\
+			& queried & & queried & \\
+			& Class 6\is{inflectional class} & & Class 2 & \\
+			\midrule
+			\multirow{2}{2cm}{\emph{geisha} /ˈɡɛiʃʃa/ ‘id.’} & \emph{le geisha} & 285 & \emph{le geishe} & 366 \\
+			& \emph{le gheiscia} & 0 & \emph{le gheisce} & 3 \\
+			& & & & \\
+			\emph{iguana} ‘id.’ & \emph{le iguana} & 73 & \emph{le iguane} & 692 \\
+			& & & & \\
+			\multirow{2}{2cm}{\emph{keffiah} /ˈkɛfja/ ‘id.’} & \emph{le keffiah}  & 4 & \emph{le keffie} & 1 \\
+			& \emph{le chefia} & 0 & \emph{le chefie} & 1 \\
+			& & & & \\
+			\multirow{2}{2cm}{\emph{casbah} /ˈkazba/ ‘id.’} & \emph{le casbah} & 32 & \emph{le casbe} & 1 \\
+			& \emph{le casba} & 1 & \emph{le casbe} & 1 \\
+			& & & & \\
+			\emph{siesta} ‘id.’ & \emph{le siesta} & 0 & \emph{le sieste} & 31 \\
+			& & & [\emph{le siestas} & 1] \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Treatment of some borrowed feminine nouns in \emph{‑a} in the \citetitle{ittenten20} corpus}
+	\label{10tab14}
+\end{table}
+
+The data in Table \ref{10tab14} reveal that two factors are at play in treating borrowed feminine nouns in \emph{-a} as uninflectable or as belonging to class 2\is{inflectional class}. From the semantic point of view, uninflectability is stronger in inanimate nouns, and weaker in [+ human] and [+ animate] nouns, such as \emph{geisha} and \emph{iguana.} The second factor concerns orthographic integration\is{loanword!morphological integration}: nouns that are orthographically integrated\is{loanword!morphological integration} are usually also morphologically integrated\is{loanword!morphological integration} and inflected according to class 2\is{inflectional class}. The two factors intersect: for example, \emph{geisha} is more commonly inflected in class 2\is{inflectional class} than uninflectable due to its being [+ human], but there is still a sizeable number of tokens of \emph{le geisha}, while its orthographically integrated\is{loanword!morphological integration} counterpart \emph{gheiscia} (of very low frequency) is treated as a class 2\is{inflectional class} noun, and *\emph{le gheiscia} is not attested in the \citetitle{ittenten20} corpus.
+
+Turning to masculine nouns in \emph{-o}, the most striking case is that of \emph{euro}, overwhelmingly treated as uninflectable, notwithstanding the fact that its most immediately associated nouns, such as \emph{dollaro} `dollar', \emph{marco} `mark', \emph{franco} `franc', are inflected in class 1\is{inflectional class},\footnote{The plural \emph{euri} is a low variant, used jocularly or by uneducated speakers or in certain local varieties, mainly Tuscany and Rome. On the inflection or uninflectability of \emph{euro} see \citet{fanfani2001}, \citet{gomezgane2003}.} that it denotes an inanimate entity and that it has no foreign orthographic feature\is{foreign spelling}. Data about other borrowed masculine nouns in \emph{-o} are presented in Table \ref{10tab15}.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{\textwidth}{lXrXr}
+		\lsptoprule
+		Noun & plural NP & Frequency & plural NP & Frequency \\
+		& queried & & queried & \\
+		& Class 6\is{inflectional class} & & Class 1 & \\
+		\midrule
+		\emph{bonzo} ‘bonze’ & \emph{i bonzo} & 0 & \emph{i bonzi} & 352 \\
+		& & & & \\
+		\emph{torero} ‘id.’ & \emph{i torero} & 1 & \emph{i toreri} & 250 \\
+		& & & [\emph{i toreros} & 14] \\
+		& & & & \\
+		\emph{kimono} ‘id.’ & \emph{i kimono} & 374 & \emph{i kimoni} & 33 \\
+		& \emph{i chimono} & 0 & \emph{i chimoni} & 0 \\
+		& & & & \\
+		\multirow{2}{2.5cm}{\emph{eskimo} ‘hooded coat’} & \emph{gli eskimo} & 17 & \emph{gli eskimi} & 5 \\
+		& \emph{gli eschimo} & 0 & \emph{gli eschimi} & 3 \\
+		& & & & \\
+		\emph{poncho} ‘id.’ & \emph{i poncho} & 115 & \emph{i ponchi} & 17 \\
+		& & & [\emph{i ponchos} & 30] \\
+		& \emph{i poncio} & 0 & \emph{i ponci} & 1 \\
+		& & & & \\
+		\emph{gazebo} ‘id’ & \emph{i gazebo} & 4,132 & \emph{i gazebi} & 703 \\
+		& & & [\emph{i gazebos} & 3] \\
+		& & & & \\
+		\emph{avocado} ‘id.’ & \emph{gli avocado} & 751 & \emph{gli avocadi} & 73 \\
+		& & & [\emph{gli avocados} & 36] \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Treatment of some borrowed masculine nouns in \emph{‑o} in the \citetitle{ittenten20} corpus}
+	\label{10tab15}
+\end{table}
+
+The same two factors at play with borrowed feminine nouns in \emph{-a} appear to have an effect on the treatment of borrowed masculine nouns in \emph{-o}. The two [+~human] nouns, \emph{bonzo} `bonze' and \emph{torero} `bullfighter', which happen to be orthographically undistinguishable from native nouns, are inflected according to class 1\is{inflectional class}; nouns denoting inanimate entities are preferably treated as uninflectable, particularly if their orthography bears foreign\is{foreign spelling} characteristics (\textless k\textgreater{} rather than \textless ch\textgreater{} in \emph{kimono} and \emph{eskimo}, \textless ch\textgreater{} rather than \textless ci\textgreater{} in \emph{poncho}); nouns of \ili{Spanish} origin can also appear in the \ili{Spanish} plural form in \emph{-s}.
+
+A growing tendency to uninflectability is observable also in a lexical class of native nouns, those denoting months. Nouns denoting months are all masculine, and in the singular end either in \emph{-o} (\emph{gennaio, febbraio, marzo, maggio, giugno, luglio, agosto}) or in \emph{-e} (\emph{aprile, settembre, ottobre, dicembre}), inflecting according to class 1\is{inflectional class} or class 3\is{inflectional class}; particularly the names of months ending in \emph{-embre} are treated as uninflectable more often than as inflecting in the \citetitle{ittenten20} corpus; names of months ending in \emph{-o} on average are more commonly inflected according to class 1\is{inflectional class}, but their treatment as uninflectable is attested too, as shown by the examples in (\ref{10ex13}), from the \citetitle{ittenten20} corpus.
+
+\begin{exe}
+	\ex \label{10ex13}
+	\begin{xlist}
+		\ex 
+		\gll \emph{Come} \emph{tutti} \emph{i} \emph{gennaio}, \emph{sono} \emph{iniziati} \emph{i} \emph{saldi}. \\
+		like all.\textsc{m.pl} \textsc{def.m.pl} January(\textsc{m}).[\textsc{pl}] \textsc{aux} started.\textsc{m.pl} \textsc{def.m.pl} sales(\textsc{m}).\textsc{pl} \\
+		\trans ‘Like every January, sales have started.’
+		
+		\ex 
+		\gll \emph{quel} \emph{gennaio} \emph{tra} \emph{i} \emph{gennai} \emph{più} \emph{freddi} \emph{di} \emph{sempre} \\
+		that.\textsc{m.sg} January(\textsc{m}).\textsc{sg} among \textsc{def.m.pl} January(\textsc{m}).\textsc{pl} more cold.\textsc{m.pl} of always \\
+		\trans ‘that January among the coldest Januaries ever’
+		
+		\ex 
+		\gll \emph{come} \emph{tutti} \emph{i} \emph{settembre} \\
+		like all.\textsc{m.pl} \textsc{def.m.pl} September(\textsc{m}).[\textsc{pl}] \\
+		\trans ‘like every September’
+		
+		\ex 
+		\gll \emph{I} \emph{settembri} \emph{caldi} \emph{si} \emph{concentrano} \emph{negli} \emph{anni} \emph{’80}. \\
+		\textsc{def.m.pl} September(\textsc{m}).\textsc{pl} hot.\textsc{m.pl} \textsc{refl} concentrate.\textsc{prs.3pl} in\_\textsc{def.m.pl} year(\textsc{m}).\textsc{pl} ’80 \\
+		\trans ‘Hot Septembers are concentrated in the 1980s.’
+	\end{xlist}
+\end{exe}
+
+\subsection{Conclusions on nouns}
+
+All the above data show that in contemporary Italian there is a strong tendency to treat various classes of nouns as uninflectable, even when their phonological properties, i.e., ending in the vowels /a/, /o/, /e/ in the singular, would allow them to be inflected according to classes 2, 1 and 3\is{inflectional class} respectively. Moreover, a mismatch\is{mismatch between phonology and gender} between the \isi{gender} value of a noun and the \isi{gender} statistically more commonly associated with its final vowel is a categorical factor that makes a new noun uninflectable: class 4\is{inflectional class} (hosting masculine nouns ending in /a/, a prototypically feminine ending) does not acquire new members,\footnote{Except (as already observed in Section \ref{10sec3.1}) through derivation with the suffix \emph{-ista} `‑ist' or compounding with \ili{Latin} or Greek\il{Greek!Ancient} combining forms such as \emph{-cida} `killer', ‑\emph{iatra} `doctor', etc., i.e., formatives that have been used in Italian lexeme formation for centuries.} and some of its old members are becoming uninflectable (cf. Section \ref{10sec3.2.3.2}); feminine nouns in /o/ are uninflectable (cf. Section \ref{10sec3.2.3.3}).
+
+Among the three main inflecting classes\is{inflectional class}, class 3 is losing members to uninflectability more than class 1\is{inflectional class}, and class 1\is{inflectional class} more than class 2\is{inflectional class}. Nouns denoting inanimate entities have a stronger tendency to be treated as uninflectable than nouns denoting human or animate entities\is{noun|)}.
+
+\subsection{Uninflectability in Italian adjectives\is{adjective|(}}
+
+\subsubsection{Inflection of Italian adjectives\is{inflectional class|(}}
+
+Italian adjectives inflect for \isi{gender} and number; they are agreement targets, controlled by head nouns in NPs when used attributively and by subject NPs when used predicatively.
+
+Inflectional classes of Italian adjectives have been presented in Table \ref{10tab4} (cf. Section \ref{10sec2}).
+
+In Table \ref{10tab16} we present data on the token frequency of adjectives in each class in the corpus used for the present article (cf. Section \ref{10sec2}). Clearly, class 1 (which corresponds to classes 1 and 2 of nouns) has the majority of tokens in all periods; the only other class which has a sizeable frequency is class 2 (which corresponds to class 3 of nouns), whose token frequency appears to be growing since the second half of the twentieth century. All other classes have an extremely low token frequency in our corpus.
+
+\begin{sidewaystable}[H]
+	\centering
+	\begin{tabularx}{0.85\textwidth}{lrrrrrrrrrrr}
+		\lsptoprule
+			\multicolumn{1}{r}{\hspace{0.5cm}Period} & \multicolumn{1}{c}{I} & \multicolumn{1}{c}{II} & \multicolumn{1}{c}{III} & \multicolumn{1}{c}{IV} & \multicolumn{1}{c}{V} & \multicolumn{1}{c}{VI} & \multicolumn{1}{c}{VII} & \multicolumn{1}{c}{VIII} & \multicolumn{1}{c}{IX} & \multicolumn{1}{c}{X} & \multicolumn{1}{c}{XI} \\
+			\multicolumn{1}{l}{Class} & 1211- & 1301- & 1376- & 1526- & 1613- & 1692- & 1801- & 1901- & 1946- & 1969- & 2001- \\
+			& 1300 & 1375 & 1525 & 1612 & 1691 & 1800 & 1900 & 1945 & 1968 & 2000 & 2022 \\
+			\midrule
+			1 & 78.6 & 81.4 & 83.0 & 78.8 & 79.0 & 79.4 & 77.0 & 81.8 & 73.2 & 71.4 & 72.8 \\
+			2 & 11.8 & 14.2 & 11.2 & 17.0 & 18.6 & 17.6 & 19.6 & 16.6 & 25.2 & 26.4 & 25.4 \\
+			3 & 0 & 0.2 & 0 & 0 & 0 & 0 & 1.2 & 0.6 & 0.6 & 1.0 & 0.6 \\
+			4 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0.2 & 0 \\
+			5 & 9.6 & 4.2 & 2.4 & 4.0 & 2.4 & 3.0 & 2.2 & 1.0 & 1.0 & 1.0 & 1.2 \\
+			6 & 0 & 0 & 0.6 & 0.2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+			7 & 0 & 0 & 2.8 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+			Total & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Percentage of tokens of adjectives in each class in the corpus}
+	\label{10tab16}\is{inflectional class|)}
+\end{sidewaystable}
+
+\subsubsection{Uninflectable adjectives in Italian}
+
+\largerpage[1.5]
+
+Class 5\is{inflectional class} hosts uninflectable adjectives. In tagging for membership in an \isi{inflectional class} the adjectives in the corpus, we had to make choices about what to count as an adjective, and then as an \textit{uninflectable adjective}. We adopted a very traditional definition of \textit{adjective}, similar to the one used in descriptive grammars; therefore we included demonstratives, indefinites and possessives\is{possessive} used as noun modifiers; basically, we included lexemes traditionally classified as adjectives in the Italian grammatical tradition and that can occur as modifiers of nouns bearing any combination of \isi{gender} and number feature values. Therefore, we did not include numerals\is{numeral}\footnote{Numerals\is{numeral} from `2' on do not agree in \isi{gender} and only occur with plural nouns; the numeral\is{numeral} `1' is homophonous with the indefinite article and is not considered an adjective.} and \emph{ogni} `each', which can occur only with singular controllers (albeit of either \isi{gender}). We assigned to class 5\is{inflectional class} adjectives that do not appear in different forms, but that can occur in syntactic contexts which require agreement in both \isi{gender} and number, such as \emph{loro} `their', which can occur with controllers displaying all possible combinations of \isi{gender} and number values,\footnote{Italian possessives\is{possessive} agree in \isi{gender} and number with the noun designating the possessed item, and have inherent values for person and number of the possessor.} but has no overt inflectional exponent, in contrast with other possessives\is{possessive}, as shown in (\ref{10ex14}), where \emph{loro} is contrasted with the \textsc{1sg.poss}, which inflects according to class 1\is{inflectional class}:
+
+\begin{exe}
+	\ex \label{10ex14}
+	\begin{xlist}
+		\ex 
+		\gll \emph{il} \emph{mi-o} \emph{libro} \\
+		\textsc{def.m.sg} \textsc{1sg.poss}-\textsc{m.sg} book(\textsc{m}).\textsc{sg} \\
+		\trans ‘my book’
+		
+		\ex 
+		\gll \emph{il} \emph{loro} \emph{libro} \\
+		\textsc{def.m.sg} \textsc{3pl.poss}[\textsc{m.sg}] book(\textsc{m}).\textsc{sg} \\
+		\trans ‘their book’
+		
+		\ex 
+		\gll \emph{le} \emph{mi-e} \emph{penne} \\
+		\textsc{def.f.pl} \textsc{1sg.poss}-\textsc{f.pl} pen(\textsc{f}).\textsc{pl} \\
+		\trans ‘my pens’
+		
+		\ex 
+		\gll \emph{le} \emph{loro} \emph{penne} \\
+		\textsc{def.f.pl} \textsc{3pl.poss}[\textsc{f.pl}] pen(\textsc{f}).\textsc{pl} \\
+		\trans ‘their pens’
+	\end{xlist}
+\end{exe}
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{0.75\textwidth}{p{2.5cm}XXXX}
+		\lsptoprule
+		\multicolumn{1}{r}{possessed} & \textsc{m.sg} & \textsc{f.sg} & \textsc{m.pl} & \textsc{f.pl} \\
+		\multicolumn{1}{l}{possessor} & & & & \\
+		\midrule
+		\textsc{1sg} & \emph{mio} & \emph{mia} & \emph{miei} & \emph{mie} \\
+		\textsc{2sg} & \emph{tuo} & \emph{tua} & \emph{tuoi} & \emph{tue} \\
+		\textsc{3sg} & \emph{suo} & \emph{sua} & \emph{suoi} & \emph{sue} \\
+		\textsc{1pl} & \emph{nostro} & \emph{nostra} & \emph{nostri} & \emph{nostre} \\
+		\textsc{2pl} & \emph{vostro} & \emph{vostra} & \emph{vostri} & \emph{vostre} \\
+		\textsc{3pl} & \multicolumn{4}{c}{\emph{loro}} \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Inflectional paradigms of Italian possessives\is{possessive}}
+	\label{10tab17}
+\end{table}
+
+Table \ref{10tab17} shows the full paradigms of Italian possessives\is{possessive}. The uninflectability of \emph{loro} is grounded in its diachronic origin: \emph{loro} is the continuant of \ili{Latin} \textsc{(ǐl)lōrŭ(m)} `\textsc{dist.dem.m\&n.pl.gen',} while the other possessives\is{possessive} continue items that were adjectives with fully inflectable paradigms already in \ili{Latin}. However, phonologically, nothing would have prevented the development of an analogical paradigm such as *\emph{loro / lora / lori / lore}, to align with all other possessives\is{possessive}; but this did not happen.\footnote{A search in the OVI corpus (\url{http://gattoweb.ovi.cnr.it/}), which contains texts of Old Italian\il{Italian!Old} (from the first written attestations to the end of the fourteenth	century), has yielded few attestations of \emph{lori} used both as a third person plural masculine pronoun and as a possessive\is{possessive} adjective, and even fewer cases of \emph{lora} as a \textsc{f.sg} possessive\is{possessive} adjective. There are also a few tokens of \emph{lore}, used both as a third person plural pronoun and as a possessive\is{possessive} adjective, in all possible combinations of \isi{gender} and number values, mostly in non-Tuscan texts. It appears that \emph{lore} has been used in some texts at some point instead of \emph{loro}, but as an uninflectable form, just like \emph{loro} in contemporary standard Italian, and not as part of a paradigm contrasting forms with different \isi{gender} and number values.}
+
+As shown in Table \ref{10tab18}, \emph{loro} is the only uninflectable adjective that occurs in all time periods in our corpus (and the high token-frequency of class 5\is{inflectional class} in period 1 is due to a text which contains an exceptionally high number of tokens of \emph{loro}). Table \ref{10tab18} shows all the different types of uninflectable adjectives that we encountered in the corpus: a meagre harvest indeed, of only 14 types and 141 tokens (on a total of 5500 tokens of adjectives).
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{\textwidth}{llllllllllll}
+		\lsptoprule
+			\multicolumn{1}{r}{Time period} & I & II & III & IV & V & VI & VII & VIII & IX & X & XI \\
+			\multicolumn{1}{l}{Type} & & & & & & & & & & & \\
+			\midrule
+			\emph{loro} ‘\textsc{3pl.poss}’ & ✔ & ✔ & ✔ & ✔ & ✔ & ✔ & ✔ & ✔ & ✔ & ✔ & ✔ \\
+			\midrule
+			\emph{più} ‘greater; several’ & & ✔ & ✔ & ✔ & ✔ & ✔ & & & & & \\
+			\midrule
+			\emph{che} ‘what a’ & & ✔ & ✔ & & & & & & & & \\
+			\midrule
+			\emph{assai} ‘a lot of, many’ & & & ✔ & & & & & & & & \\
+			\midrule
+			\emph{dabene} ‘honest’ & & & ✔ & & & & & & & & \\
+			\midrule
+			\emph{altrui} ‘someone else’s’ & & & & & & ✔ & ✔ & & & & \\
+			\midrule
+			\emph{pari} ‘equal, even’ & & & & & & & ✔ & & ✔ & ✔ & \\
+			\midrule
+			\emph{grigio ferro} ‘iron gray’ & & & & & & & & ✔ & & & \\
+			\midrule
+			\emph{pro-capite} ‘per capita’ & & & & & & & & & & ✔ & \\
+			\midrule
+			\emph{qualsiasi} ‘ordinary’ & & & & & & & & & & ✔ & \\
+			\midrule
+			\emph{così} ‘such, like this’ & & & & & & & & & & ✔ & \\
+			\midrule
+			\emph{standard} ‘standard’ & & & & & & & & & & ✔ & ✔ \\
+			\midrule
+			\emph{granata} ‘garnet red’ & & & & & & & & & & ✔ & \\
+			\midrule
+			\emph{blu} ‘blue’ & & & & & & & & & & & ✔ \\
+		\lspbottomrule
+	\end{tabularx}
+	\caption{Presence of uninflectable adjectives in the corpus}
+	\label{10tab18}
+\end{table}
+
+\largerpage[1.5]
+
+Most of the types have phonological shapes parallel to those of uninflectable nouns discussed in Section \ref{10sec3.2.1}: four types end in a stressed vowel (\ref{10ex15a}), four end in /i/ (\ref{10ex15b}), and one ends in a consonant (\ref{10ex15c}); in (\ref{10ex15}) we list the contexts in which these types appear in the corpus and the time period in which they appear.
+
+\begin{exe}
+	\ex \label{10ex15}
+	\begin{xlist}
+		\ex \label{10ex15a} Uninflectable adjectives ending in a stressed vowel \\
+		II \emph{\textbf{più} cardinali} ‘several cardinals’ \\
+		IV \emph{\textbf{più} valore} ‘greater worth’ \\
+		IV and V \emph{\textbf{più} volte} ‘several times’ \\
+		II \emph{\textbf{che} novità} ‘what a piece of news’ \\
+		III \emph{in \textbf{che} modo} ‘in which way’ \\
+		X \emph{un livido \textbf{così}} ‘a bruise this big’ \\
+		XI \emph{bagliore \textbf{blu}} ‘blue glow’
+
+		\ex \label{10ex15b} Uninflectable adjectives ending in /i/ \\
+		III \emph{tempo \textbf{assai}}, \emph{\textbf{assai} robe}, \emph{\textbf{asai} disagi} ‘a lot of time’, ‘many clothes’, ‘many hardships’ \\
+		VI \emph{cognizione dell’animo \textbf{altrui}}, \emph{le fortune \textbf{altrui}} ‘knowledge of someone else’s soul’, ‘other people’s fortunes’ \\
+		VII \emph{\textbf{pari} ardore}, \emph{insistenza \textbf{pari}} ‘equal ardour’, ‘equal insistence’ \\
+		X \emph{altri acidi \textbf{qualsiasi}} ‘other acids of whatever kind’
+		
+		\ex \label{10ex15c} Uninflectable adjectives ending in a consonant \\
+		X \emph{protocolli \textbf{standard}}, \emph{consumi \textbf{standard}} ‘standard protocols’, ‘standard consumption’
+	\end{xlist}
+\end{exe}
+
+A search of usage dictionaries yields a few other uninflectable adjectives with these phonological properties; some examples are given in (\ref{10ex16}):
+
+\begin{exe}
+	\ex \label{10ex16}
+	\begin{xlist}
+		\ex \label{10ex16a} \emph{agé, blasé, démodé, osé, retrò, rococò, tabù}...
+		
+		\ex \label{10ex16b}
+		\begin{xlist}
+			\ex \label{10ex16bi} \emph{impari} ‘uneven’, \emph{dispari} ‘odd (number)’
+			\ex \label{10ex16bii} \emph{mini}, \emph{maxi}
+			\ex \label{10ex16biii} \emph{cachi} / \emph{kaki} ‘khaki’, \emph{cremisi} ‘crimson’, ...
+			\ex \label{10ex16biv} \emph{gay}, \emph{baby}, \emph{sexy}...
+		\end{xlist}
+		
+		\ex \label{10ex16c} \emph{snob, chic, naïf, kitsch, folk, punk, halal, zen, mignon, pop, super, kasher, senior, junior, diesis, gratis}...
+	\end{xlist}
+\end{exe}
+
+While a few adjectives ending in /i/ have been created by native processes, such as prefixation of a base already ending in /i/ (\ref{10ex16bi}) or lexicalization of combining forms (\ref{10ex16bii}), others (\ref{10ex16biii}--\ref{10ex16biv}) are loanwords\is{loanword}, as are practically all the adjectives ending in a stressed vowel (\ref{10ex16a}) or in a consonant (\ref{10ex16c}). The fact that borrowed adjectives of these types are fewer than nouns of the same type is in line with the fact that adjectives overall are the least borrowable\is{borrowability} type of content words. In the loanwords\is{loanword} corpus analyzed by \citet{tadmorhaspelmathtaylor2010}, on 13446 loanwords\is{loanword}, 79.7\% are nouns, 14.4\% are verbs, and only 5.9\% are adjectives and/or adverbs (data elaborated by us on the basis of Table 1 in \citealt[231]{tadmorhaspelmathtaylor2010}).
+
+{\sloppy The phonological factors\is{uninflectability!factors in uninflectability!phonological} accounting for uninflectability of Italian adjectives are parallel to the ones already discussed for nouns. Adjectives ending in a stressed vowel are the most truly uninflectable, and repair strategies to make them inflectable are not attested. In theory, nothing would prevent adaptation\is{loanword!phonological adaptation} of, e.g., \emph{blu} `blue' as *\emph{bluo}, with a full class 1\is{inflectional class} paradigm, as in (\ref{10ex17a}), since forms like the ones in (\ref{10ex17b}) are in common usage, and show that the starred forms in (\ref{10ex17a}) are phonotactically\is{uninflectability!factors in uninflectability!phonotactic} perfectly legal (as observed also by \citealt[308]{fedden2019}):\par}
+
+\begin{exe}
+	\ex \label{10ex17}
+	\begin{xlist}
+		\ex \label{10ex17a} *\emph{bluo} / *\emph{blua} / *\emph{blui} / *\emph{blue}
+		
+		\ex \label{10ex17b} \emph{tuo} ‘2\textsc{sg.poss.m.sg}’, \emph{suo} ‘3\textsc{sg.poss.m.sg}’, ... \\
+		\emph{tua} ‘2\textsc{sg.poss.f.sg}’, \emph{sua} ‘3\textsc{sg.poss.f.sg}’, ... \\
+		\emph{lui} ‘3\textsc{sg}’, \emph{fui} ‘\textsc{be.pst.pfv.1sg}’, ... \\
+		\emph{tue} ‘2\textsc{sg.poss.f.pl}’, \emph{sue} ‘3\textsc{sg.poss.f.pl}’, ...
+	\end{xlist}
+\end{exe}
+
+However, such adaptations\is{loanword!phonological adaptation} are not attested. For adjectives ending in a consonant, instead, some cases of integration\is{loanword!morphological integration} in an inflecting class\is{inflectional class} are attested in older stages of the language, as in the case of \emph{snello} `slender' \textless{} \ili{Frankish} *\emph{snel} (reported by \citealt[179]{repetti2012}); but in contemporary Italian this strategy is not employed anymore. Finally, adjectives ending in /i/ sometimes develop a full paradigm (or at least some inflected forms) of class 1\is{inflectional class} through back formation from a form interpreted as a masculine plural, as in the examples in (\ref{10ex18}):\footnote{However, the possessive\is{possessive} \emph{altrui} `someone else's' (\textless{} \ili{Latin} *\textsc{altĕrūi}, a variant of \textsc{alteri} `other.\textsc{sg.dat'}) did not develop a full paradigm through \isi{backformation}.}
+
+\begin{exe}
+	\ex \label{10ex18}
+		\emph{choosy} /tʃusi/ \hspace*{0.5cm} > \hspace*{0.2cm} \emph{ciuso} /tʃuso/	‘choosy.\textsc{m.sg}’ (jocular) \\
+		\emph{tranqui}\footnote{\emph{Tranqui} is a clipped form from \emph{tranquillo} ‘calm’; the \isi{backformation} of a full paradigm was already observed in \citet[266]{thornton2007} and \citet[101]{dachille2005-retroforma}.} \hspace*{1.15cm} > \hspace*{0.2cm} \textsc{m.sg} \emph{tranquo} / \textsc{f.sg} \emph{tranqua} ‘calm’  \\
+		\hspace*{2.7cm} > \hspace*{0.2cm} \textsc{m.pl} \emph{tranqui} / \textsc{f.pl} \emph{tranque}
+\end{exe}
+
+Uninflectable Italian adjectives have been discussed by \citet{fedden2019}, who maintains that adjectives ending in a stressed vowel or in /i/ are uninflectable for phonological reasons\is{uninflectability!factors in uninflectability!phonological}, while those ending in a consonant are uninflectable for ``etymological'' reasons\is{uninflectability!factors in uninflectability!etymological}: ``These adjectives [i.e., the ones ending in a consonant] are non-agreeing because they are loanwords\is{loanword}'' \citep[308]{fedden2019}. As already observed in the case of nouns, it is hard to tear the two factors apart, since almost all the adjectives ending in a consonant are also loanwords\is{loanword}: however, again as in the case of nouns, there are a few examples of native adjectives ending in a consonant, like \emph{doc} `authentic' (from the acronym \emph{DOC}, which stands for \emph{denominazione di origine controllata} `registered designation of origin'), which are uninflectable like the borrowed ones. This leads us to think that ending in a consonant is the real factor preventing inflectability, and that it is a phonological factor\is{uninflectability!factors in uninflectability!phonological}, not an etymological one\is{uninflectability!factors in uninflectability!etymological}. But it also true that ending in a consonant is a clue that makes non highly-educated speakers assume that the word having this property is a loanword\is{loanword}, and specifically a loanword\is{loanword} from \ili{English} --- so that there are anecdotical reports of speakers producing plural forms such as \emph{kibbutzes}, \emph{Führers}, \emph{soviets} \citep[V]{rattimarconimorgavirolando1988}, and even \emph{i colfs e le colfs} `the.\textsc{m.pl} domestic\_help(\textsc{m}).\textsc{pl} and the.\textsc{f.pl} domestic\_help(\textsc{f}).\textsc{pl}', jocularly used by Marilisa Marilì Lazzari in a post on OperaClick (\url{https://www.operaclick.com/forum/viewtopic.php?t=1650}, last
+access 19 May 2024), where the \ili{English} plural exponent \emph{-s} is applied to a native noun.
+
+A possible case of uninflectability in adjectives that is not phonologically conditioned concerns color terms that are metonymically derived from nouns denoting objects that typically have that color, such as \emph{rosa} `pink' \leftarrow \emph{rosa} `rose', \emph{viola} `purple' \leftarrow \emph{viola} `violet'. These lexemes are uninflectable when used in typically adjectival functions, such as attributive modifier or nominal predicate, while the nouns from which they derive are regularly inflected in class 2\is{inflectional class}. An intermediate situation concerns \emph{marrone} `brown' \leftarrow \emph{marrone} `chestnut': \emph{marrone} `brown' oscillates between inflection in class 2\is{inflectional class} and uninflectability, while the noun \emph{marrone} `chestnut' is regularly inflected in class 3\is{inflectional class}. From the noun \emph{arancio} `orange (fruit)', two color terms have arisen: \emph{arancio} `orange (color)' is uninflectable, while \emph{arancione} `orange (color)' inflects in class 2\is{inflectional class}. All other color terms derived metonymically from nouns of flowers, fruits and other entities typically bearing the color, such as \emph{granata} `garnet red' \leftarrow \emph{granata} `pomegranate' (present in our corpus), are completely uninflectable when used in adjectival function \citep{thornton2004}. Besides, all these color terms do not react positively to various tests of adjectivality, such as the creation of an elative form in ‑\emph{issimo} or usage in prenominal position (while primary color terms allow both). Therefore, it can be debated whether \emph{rosa, viola}, etc. are indeed adjectives, or rather nouns that can be used as attributive modifiers, as suggested by \citet[530]{thornton2004}. If they are nouns, their uninflectability belongs to the realm of constructional uninflectability\is{uninflectability!constructional}, addressed in Section \ref{10sec4}; if they are adjectives, their uninflectability could be classified as due to ``etymological'' reasons\is{uninflectability!factors in uninflectability!etymological} (cf. \citealt{fedden2019}), since speakers are normally aware that the adjectival color term derives from a concrete noun.\is{adjective|)}
+
+\section{Constructional uninflectability in Italian nouns\is{noun|(} and adjectives\is{uninflectability!constructional|(}} \label{10sec4}
+
+\citet[148]{spencer2020} draws attention to constructional uninflectability, i.e., cases in which ``it is the construction itself which prevents an otherwise inflectable lexeme from inflecting''. We have not conducted a full investigation of constructional uninflectability, but we will document two cases of this phenomenon in Italian, one concerning nouns and one concerning adjectives.
+
+A case of constructional uninflectability in nouns is represented by VN and some PN exocentric compounds. VN compounds denote instruments or agents, PN compounds with \emph{fuori-} `out' as their first member denote agents, events, or concrete objects. The nouns which are the second member of these compounds can appear both in their singular form (corresponding to the citation form) and in their plural form, and the \isi{gender} of the second member noun can correspond to or differ from the
+\isi{gender} of the whole compound. When the compound denotes a person, the \isi{gender} of the compound aligns with the sex of the referent. A few examples of compounds denoting persons are given in (\ref{10ex19}):
+
+\begin{exe}
+% 	\needspace{3\baselineskip}
+	\ex \label{10ex19} Compound \hspace*{4.35cm} Noun base 
+	\begin{xlist}
+		\ex 
+		\emph{perditempo} ‘idler’, \hspace*{2.7cm} \textit{tempo}\textsc{(m).sg}, class 1\is{inflectional class} \\ 
+		lit. lose\_time
+		
+		\ex \label{10ex19b}
+		\emph{strizzacervelli} ‘shrink’, \hspace*{2cm} \textit{cervelli}\textsc{(m).pl}, class 1 \\
+		lit. shrink\_brains
+		
+		\ex 
+		\emph{portabandiera} ‘standard-bearer’, \hspace*{0.5cm} \textit{bandiera}\textsc{(f).sg}, class 2 \\
+		lit. carry\_flag
+		
+		\ex \label{10ex19d}
+		\emph{portaborse} ‘flunkey’,  \hspace*{2.32cm} \textit{borse}\textsc{(f).pl}, class 2 \\
+		lit. carry\_bags
+		
+		\ex 
+		\emph{portavoce} ‘spokesperson’, \hspace*{1.5cm} \textit{voce}\textsc{(f).sg}, class 3 \\
+		lit. carry\_voice
+		
+		\ex \label{10ex19f}
+		\emph{rubacuori} ‘charmer’, \hspace*{2.35cm} \textit{cuori}\textsc{(m).pl}, class 3 \\
+		lit. steal\_hearts
+		
+		\ex 
+		\emph{fuoricorso} ‘student who has not \hspace*{0.6cm} \textit{corso}\textsc{(m).sg}, class 1 \\
+		completed a program within \\
+		the prescribed time’, \\
+		lit. out\_course
+		
+		\ex 
+		\emph{fuoriclasse} ‘champion, ace’,  \hspace*{1.3cm} \textit{classe}\textsc{(f).sg}, class 3\is{inflectional class} \\
+		lit. out\_class
+	\end{xlist}
+\end{exe}
+
+When the second member of these compounds is a plural noun, as in (\ref{10ex19b}, \ref{10ex19d}, \ref{10ex19f}) the whole compound is uninflectable, whatever its \isi{gender}; when the second member is a singular noun, the possibility of having a distinct plural form depends on a number of factors. \citet{pellegriniricca2019} have thoroughly investigated the issue of plural formation of VN compounds; data on their usage in corpora and on the prescriptions about plural formation in dictionaries are offered by \citet{micheli2016}. We refer to Pellegrini \& Ricca's study for an extremely detailed presentation of all the semantic factors that interact with the possibility and the probability of treating different kinds of VN compounds as inflectable; here we draw attention to the fact, already observed by \citet[110--112]{pellegriniricca2019}, that the correspondence or mismatch between the \isi{gender} of the second member and that of the whole compound has a significant impact on the inflectability of the compound. \citet[110]{pellegriniricca2019} report the data in (\ref{10ex20}) for \emph{portavoce} `spokesperson' (whose second member is a feminine singular noun, whose regular plural of class 3\is{inflectional class} is \emph{voci}) when it refers to a man or a woman:
+
+% \needspace{3\baselineskip}
+\begin{exe}
+	\ex \label{10ex20}
+		Plural forms and \isi{gender} \hspace*{1.5cm} Ratio uninflectable : inflected \\
+		\emph{i portavoce} / \emph{i portavoci} (\textsc{m}) \hspace*{2.2cm} 24 : 1 \\
+		\emph{le portavoce} / \emph{le portavoci} (\textsc{f}) \hspace*{2.155cm} 3 : 1
+\end{exe}
+
+Although VN compounds are frequently overabundant in the plural, with a plural of class 6\is{inflectional class} alongside one of the same class of their second member, inflectability of these compounds increases when the \isi{gender} of the whole compound corresponds to that of its second member, and decreases when there is a \isi{gender} mismatch between the two, in a statistically significant way \citep[110--112]{pellegriniricca2019}. We interpret this finding as an instance of constructional uninflectability.\is{noun|)}
+
+\is{adjective|(}
+Our second example of constructional uninflectability in Italian concerns color adjectives. Several color adjectives are fully inflectable according to class 1\is{inflectional class}, as shown for \emph{rosso} `red' in (\ref{10ex21}):\footnote{\emph{Verde} `green' inflects according to class 2\is{inflectional class}; \emph{marrone} `brown' and \emph{arancione} `orange' oscillate between uninflectability and inflection according to class 2\is{inflectional class}. In the text we only illustrate the case of class 1\is{inflectional class} color adjectives, for which constructional uninflectability is most striking.}
+
+\begin{exe}
+	\ex \label{10ex21}
+	\begin{xlist}
+		\ex 
+		\gll \emph{vestito} \emph{ross-o} \\
+		dress(\textsc{m}).\textsc{sg} red-\textsc{m.sg} \\
+		\trans ‘red dress’
+		
+		\ex 
+		\gll \emph{gonna} \emph{ross-a} \\
+		skirt(\textsc{f}).\textsc{sg} red-\textsc{f.sg} \\
+		\trans ‘red skirt’
+		
+		\ex 
+		\gll \emph{calzini} \emph{ross-i} \\
+		sock(\textsc{m}).\textsc{pl} red-\textsc{m.pl} \\
+		\trans ‘red socks’
+		
+		\ex 
+		\gll \emph{scarpe} \emph{ross-e} \\
+		shoe(\textsc{f}).\textsc{pl} red-\textsc{f.pl} \\
+		\trans ‘red shoes’
+	\end{xlist}
+\end{exe}
+
+However, when a color adjective is modified by a noun that specifies the color's shade ``by comparing it with the quintessential color attributed to its referent (e.g., \emph{capelli biondo-paglia} `straw-blonde hair', \emph{pantaloni blu notte} `night blue pants') or, metonymically, with the color of an object intimately associated with, or typical of the referent'' \citep[71]{grossmanndachille2019}, color adjectives that are fully inflectable when unmodified become uninflectable, as shown in (\ref{10ex22}):
+
+\begin{exe}
+	\ex \label{10ex22}
+	\begin{xlist}
+		\ex 
+		\gll \emph{vestito} \emph{rosso} \emph{sangue} \\
+		dress(\textsc{m}).\textsc{sg} red\footnotemark \phantom{x} blood \\
+		\trans ‘blood-red dress’
+		
+		\ex 
+		\gll \emph{gonna} \emph{rosso} \emph{sangue} \\
+		skirt(\textsc{f}).\textsc{sg} red blood \\
+		\trans ‘blood-red skirt’
+		
+		\ex 
+		\gll \emph{calzini} \emph{rosso} \emph{sangue} \\
+		sock(\textsc{m}).\textsc{pl} red blood \\
+		\trans ‘blood-red socks’
+		
+		\ex 
+		\gll \emph{scarpe} \emph{rosso} \emph{sangue} \\
+		shoe(\textsc{f}).\textsc{pl} red blood \\
+		\trans ‘blood-red shoes’
+	\end{xlist}
+\end{exe}
+
+\footnotetext{The issue arises of how to gloss the color adjectives appearing in this construction: their form is fully homonymous with the \textsc{m.sg} form, which is also the citation form, but this form does not carry \textsc{masculine} and \textsc{singular} as contextual feature values, nor any other values, since it does not vary with different controllers. We have chosen to give only the lexical meaning in the gloss.}
+
+In this construction, the color adjective appears in its citation form, which in the case of class 1\is{inflectional class} adjectives is a masculine singular form, and remains in this form even when there is a \isi{gender} (and even a number!) mismatch with both the modified head noun and the color modifier, as shown in (\ref{10ex23}) with examples from the \citetitle{ittenten20}
+corpus:
+
+\begin{exe}
+	\ex \label{10ex23}
+	\begin{xlist}
+		\ex 
+		\gll \emph{maglie} \emph{grigio} \emph{perla} \\
+		shirt(\textsc{f}).\textsc{pl} gray pearl(\textsc{f}).\textsc{sg} \\
+		\trans ‘pearl-gray shirts’
+		
+		\ex 
+		\gll \emph{cappotti} \emph{bianco} \emph{panna} \\
+		overcoat(\textsc{m}).\textsc{pl} white cream(\textsc{f}).\textsc{sg} \\
+		\trans ‘cream-white overcoats’
+		
+		\ex 
+		\gll \emph{bomboniere} \emph{bianco} \emph{nozze} \\
+		fancy\_box(\textsc{f}).\textsc{pl} white wedding(\textsc{f.pl})\footnotemark \\
+		\trans ‘wedding-white fancy boxes’
+	\end{xlist}
+\end{exe}
+
+\footnotetext{\emph{Nozze} ‘wedding’ is a \emph{plurale tantum} noun, so it bears the value \textsc{plural} inherently.}
+
+\citet[77]{grossmanndachille2019}, in a very thorough study of compound color terms in Italian, observe that these ``A-N constructions are \isi{invariable}. [...] rare instances of agreement on the head adjective [...] are definitely non-standard in modern Italian''. This construction appears to be a very canonical case of constructional uninflectability, where a class 1\is{inflectional class} adjective, which shows the fullest set of contrasting inflectional forms when unmodified, appears in a ``frozen'' form (cf. \citealt{audring2023}) in a specific construction\is{uninflectability!constructional|)}.\footnote{The form in which the color adjective appears is its citation form, not its root, \emph{contra} what is predicted by \citet{spencer2020}. We do not address this issue here, but assume that Spencer's \textit{reversion to the root} principle can be parametrized, and that languages which do not normally allow roots or bare stems as wordforms will specify which form from a lexeme's form paradigm is to be used in contexts of constructional uninflectability\is{uninflectability!constructional}.}\is{adjective|)}
+
+\section{Conclusions} \label{10sec5}
+
+The survey presented in Sections \ref{10sec3}--\ref{10sec4} has shown that uninflectability is present in both Italian nouns and adjectives. However, in adjectives both its type frequency in the lexicon (Table \ref{10tab6}) and its token frequency in our corpus (Table 16) is much lower than in nouns (cf. Table \ref{10tab5} and Table \ref{10tab8}), and in contrast to nouns, it does not appear to have increased in diachrony. A possible reason for this different behaviour concerns the different proneness of the two word-classes to take in loanwords\is{loanword}: many lexemes that are uninflectable for phonological reasons are loanwords\is{loanword}, and since adjectives are much less borrowable\is{borrowability} than nouns, there are fewer uninflectable adjectives than nouns.
+
+For both nouns and adjectives, certain phonological characteristics produce uninflectability: ending in a stressed vowel is the strongest impediment, for which no repair strategy has ever been applied; ending in a consonant is a strong impediment in contemporary Italian, while in the past repair strategies were employed, and loanwords\is{loanword} ending in a consonant were provided with vocalic endings and inflected (in class 1\is{inflectional class} in the case of adjectives, in class 1\is{inflectional class} or class 2\is{inflectional class}, depending on previous gender assignment\is{gender!assignment}, in the case of nouns, cf. (\ref{10ex8})); ending in /i/ is also an impediment, very occasionally circumvented if the form ending in /i/ can be interpreted as a masculine plural, and a full paradigm of class 1\is{inflectional class} is created through \isi{backformation} (cf. Table \ref{10tab10} and examples in (\ref{10ex18})). These phonological characteristics are not the only causes of uninflectability. New masculine nouns ending in /a/ and feminine nouns ending in /o/ are uninflectable because their \isi{gender} value and their ending clash, since /a/ and /o/ are typical endings for the opposite \isi{gender} values (cf. Table \ref{10tab12}). Finally, even some masculine nouns in /o/ and feminine nouns in /a/ are treated as uninflectable (although in many cases these lexemes have an overabundant plural cell, with a plural form of class 1\is{inflectional class} or class 2\is{inflectional class} alongside an uninflectable one). Most of these cases concern loanwords\is{loanword} that bear some indication of their foreign origin\is{foreign spelling} in their spelling (such as \textless k\textgreater{} instead of \textless ch\textgreater{} or \textless q\textgreater{} not followed by \textless u\textgreater{} for /k/, \textless ch\textgreater{} instead of \textless ci\textgreater{} for /tʃ/, \textless sh\textgreater{} instead of \textless sc(i)\textgreater{} for /ʃ/, cf. Tables \ref{10tab13}--\ref{10tab15}).\footnote{We have investigated data from written corpora; the treatment of these lexemes in spoken Italian remains a desideratum.} This orthographic factor begs the question whether speakers treat some lexemes as uninflectable for etymological reasons\is{uninflectability!factors in uninflectability!etymological}, since a foreign spelling\is{foreign spelling} makes them aware of a word's status as loanword\is{loanword}; the same question may be asked in the case of uninflectable color terms that arise through metonymy from nouns denoting flowers, fruits or other entities typically exhibiting that color, since the speakers normally know both the base noun and the metonymically derived color term. The role of ``etymological'' knowledge must be considered also in the case of nouns and adjectives ending in a consonant: \citet{fedden2019} maintains that these are uninflectable not for phonological reasons, but because they are loanwords\is{loanword}; we have shown that there are also native nouns and adjectives ending in a consonant, usually arising from acronyms; this may point to the generalization that consonantal ending rather than loanword\is{loanword} status is the factor responsible for uninflectability, and this would be a phonological\is{uninflectability!factors in uninflectability!phonological} rather than an etymological factor\is{uninflectability!factors in uninflectability!etymological}; however, it may also be contended that speakers are aware that native uninflectable nouns and adjectives derive form acronyms, and this is a kind of etymological information; therefore, it is hard to tease apart the two factors in the context of Italian nominal and adjectival inflection. Finally, we have briefly discussed some cases of lexical or constructional uninflectability\is{uninflectability!constructional}. We have shown a tendency to treat as uninflectable names of the months (cf. (\ref{10ex13})), and \citet[196]{dachille2005-sullinvari} has reported a tendency to treat as uninflectable the noun \emph{sabato} `Saturday' (thus aligning it with the other masculine names of the days from Monday to Friday, which are uninflectable for phonological reasons, since they end in a stressed /i/). In Section \ref{10sec4} we have presented two cases of constructional uninflectability\is{uninflectability!constructional}: nouns used as second members in exocentric compounds, and color adjectives used in a construction in which they are followed by a noun denoting an entity that prototypically bears that color, such as \emph{rosso sangue} `blood-red', where color adjectives that are fully inflectable when not accompanied by such modifiers (cf. (\ref{10ex21})) appear in their citation form. Concerning constructional uninflectability\is{uninflectability!constructional} in Italian, we believe that we have only scratched the surface of a phenomenon that deserves further investigation.
+
+In conclusion, we have shown that uninflectability is quite widespread in Italian nouns and attested also in Italian adjectives, and that speakers appear to use a lot more information than just phonological information about the signifier of a lexeme when deciding whether to inflect it or not, since information about a noun's \isi{gender} and orthographic, etymological, semantic, lexical and constructional factors also play a role\is{uninflectability|)}\il{Italian|)}.
+ 
+ 
+%\section*{Abbreviations}
+%\begin{tabularx}{.45\textwidth}{lQ}
+%... & \\
+%... & \\
+%\end{tabularx}
+%\begin{tabularx}{.45\textwidth}{lQ}
+%... & \\
+%... & \\
+%\end{tabularx}
+
+\section*{Acknowledgements}
+We thank Andrea Riga\ia{Riga, Andrea} for help in creating and tagging the corpus used for adjectives. Thanks also to the organizers and participants in the Cologne workshop for stimulating discussion that helped us clarify some of our analyses, and to two anonymous reviewers for several observations and comments which have helped us improve the text.
+
+%\section*{Contributions}
+%John Doe contributed to conceptualization, methodology, and validation.
+%Jane Doe contributed to writing of the original draft, review, and editing.
+
+
+{\sloppy\printbibliography[heading=subbibliography,notkeyword=this]}
+\end{document}

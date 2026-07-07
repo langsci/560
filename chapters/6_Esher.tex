@@ -1,0 +1,870 @@
+\documentclass[output=paper]{langscibook}
+\author{Authorname\orcid{}\affiliation{}}
+\title{Title}
+\abstract{Abstract}
+\IfFileExists{../localcommands.tex}{
+  \addbibresource{../localbibliography.bib}
+  \input{../localpackages}
+  \input{../localcommands} 
+  \input{../localhyphenation} 
+  \togglepaper[1]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle 
+%\shorttitlerunninghead{}%%use this for an abridged title in the page headers
+% ATTENTION: Diacritics on the following phonetic characters might have been lost during conversion: {'ɛ', 'ɔ', 'ə', 'ɑ'}
+
+\title{French nominal inflection and diachronic pathways to uninflectability}
+
+Louise Esher
+
+\begin{stylelsAbstract}
+This study addresses the question of whether uninflectability can arise in diachrony by mechanisms other than language contact. The study identifies loss of inflection as a logically possible source of ‘internal’ uninflectability, and examines the well–documented loss of \textsc{number} and \textsc{case} inflection for French nouns as potential examples. While French nouns are shown to develop stable uninflectability for \textsc{number} as the majority inflectional pattern, the feature \textsc{case} is neutralised and then entirely lost, without uninflectability. The contrast between these examples indicates probable conditions on the emergence of uninflectability via loss of inflection.
+\end{stylelsAbstract}
+
+\subsection{Introduction}
+
+In synchrony, \textsc{uninflectability} is characterised as a lack of expected inflectional contrast for lexemes within a given word class: ‘[u]ninflectable lexemes can occur in all the morphosyntactic contexts open to inflecting lexemes (unlike defective lexemes), but their form is invariable’ \citep[143]{Spencer2020}. This paper adopts a diachronic perspective, exploring pathways through which uninflectability may be expected to emerge and conditions which promote or prevent its development.\footnote{I wish to acknowledge the support of LabEx EFL Strand 3, Operation GL4 ‘Typology of inflectional systems with non-canonical inflection’ for my attendance at the DGfS workshop on Uninflectedness where this paper was first presented. I thank the workshop audience, and two anonymous reviewers, for their comments on the initial presentation and manuscript.} 
+
+I first review what is known about the diachronic development of more familiar inflectional phenomena which existing typological studies relate to uninflectability. \citet{BaermanEtAl2005} treat uninflectability (termed ‘uninflectedness’ in their monograph\footnote{For consistency I will use the term \textsc{uninflectability} throughout.} ) as a specific subtype of \textsc{syncretism}, while \citet{Spencer2020} contrasts uninflectability with \textsc{defectiveness} (for which see Sims \textsc{2015)}. These comparators suggest initial expectations for the diachrony of uninflectability, particularly with regard to its emergence (section 2). 
+
+I then examine two case studies illustrating reduction of nominal inflection in the history of French. Focusing on \textsc{number} (section 3), I show that the majority of noun lexemes in modern standard French are uninflectable, and date this phenomenon to a seventeenth–century sound change (\citealt{Pope1934}: 222–223) which creates syncretism between singular and plural forms. The conclusion to be drawn here is that uninflectability can readily arise within a small paradigm where there is minimal formal contrast between inflected forms. 
+
+Turning to \textsc{case} (section 4), I show that these conditions nevertheless do not guarantee stable uninflectability. In early mediaeval French, a set of sound changes and analogical changes promote emergence of a declension class which is uninflectable for case, but these same changes also render the feature \textsc{case} syntactically irrelevant in the context of feminine gender. As the uninflectable declension class is entirely populated by feminine nouns, the result is the loss of the feature \textsc{case} from the inflectional paradigm of these lexemes, rather than stable uninflectability. The conclusion to be drawn here is that stable uninflectability is more likely where inflectional expression of a given feature differs robustly across multiple word classes.
+
+Existing discussion of uninflectability focuses on examples involving language contact and the borrowing of lexical items (\citealt{BaermanEtAl2005}: 33, \citealt{Spencer2020}). The case studies described here establish that alternative, internal pathways to uninflectability exist, subject to specific inflectional conditions (section 5).
+
+\section{Insights from the diachrony of syncretism and defectiveness}
+\subsection{Synchronic approaches to syncretism} %2.1 /
+
+The standard definition of syncretism in contemporary morphological theory, set out by \citet{BaermanEtAl2005}, comprises three key properties:
+
+\begin{quote}
+A morphological distinction which is syntactically relevant (i.e. it is an inflectional distinction)
+\end{quote}
+
+\begin{quote}
+A failure to make this distinction under particular (morphological) conditions
+\end{quote}
+
+\begin{quote}
+A resulting mismatch between syntax and morphology (\citealt{BaermanEtAl2005}: 2)
+\end{quote}
+
+Illustrative classical Latin examples, which will be relevant to the French data discussed later in this paper, are shown in \tabref{tab:key:1}. A morphosyntactic distinction between dative and ablative values of the feature \textsc{case} is justified because the associated forms occur in contexts which are syntactically distinguishable and not interchangeable: dative forms are typically used to encode indirect objects (recipient, goal) and also appear as the complement of certain verbs, such as \textsc{placet} ‘be pleasing to’; while ablative forms occur as the complement of many prepositions, such as \textsc{cum} ‘with’, and to encode the agent in passive structures. However, the featural distinction does not always map to a distinction between phonological forms: in specific morphological contexts, namely in the presence of the value ‘plural’ for the morphosyntactic feature \textsc{number} across declensions, and in the presence of the value ‘second declension’ for the purely morphological (morphomic) feature \textsc{inflectional} \textsc{class}, the dative and ablative forms are of identical phonological shape. These forms thus instantiate a mismatch between syntax and morphology, or syncretism. 
+
+
+\begin{tabularx}{\textwidth}{XXXXXXX}
+ & \textit{rosa} ‘rose’, I &  & \textit{murus} ‘wall’, II &  & \textit{pater} ‘father’, III & \\
+\lsptoprule
+& \textsc{sg} & \textsc{pl} & \textsc{sg} & \textsc{pl} & \textsc{sg} & \textsc{pl}\\
+\textsc{nom} & rosa & rosae & murus & murī & pater & patrēs\\
+\textsc{acc} & rosam & rosās & murum & murōs & patrem & patrēs\\
+\textsc{gen} & rosae & rosārum & murī & murōrum & patris & patrum\\
+\textsc{dat} & rosae & rosīs & murō & murīs & patrī & patribus\\
+\textsc{abl} & rosā & rosīs & murō & murīs & patre & patribus\\
+\lspbottomrule
+\end{tabularx}
+\begin{stylelsTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{Singular and plural forms of first–declension \textit{rosa} ‘rose’, second–declension \textit{murus} ‘wall’ and third–declension \textit{pater} ‘father’ in classical Latin.}
+\label{tab:key:1}
+\end{table}\end{stylelsTableHeading}
+
+The dative–ablative syncretisms qualify as examples of \textsc{canonical} \textsc{syncretism} (\citealt{BaermanEtAl2005}: 34), which involves ‘in certain contexts, a loss of distinctions between some but not all values of a particular feature F’ where those values and F itself are still distinguished by other syntactic objects and thus remain syntactically relevant (\citealt{BaermanEtAl2005}: 34). Instances where distinction between all values of F is lost, and the feature is no longer syntactically relevant (i.e. visible on other syntactic objects) are classed instead as \textsc{neutralisation} (\citealt{BaermanEtAl2005}: 28–30); this would be the equivalent of having no morphosyntactic case distinctions in Latin. \textsc{uninflectability} is defined specifically as involving:
+
+\begin{quote}
+in certain lexemes only, a loss of all values of a particular feature F found elsewhere in the language. [...] Other syntactic objects distinguish values of feature F, either generally or in the given context, and feature F is therefore syntactically relevant. (\citealt{BaermanEtAl2005}: 33).
+\end{quote}
+
+In the Latin example, uninflectability would amount to having some nouns in which a single inflected form is used for all twelve combinations of case and number, while other nouns continue to maintain formal distinctions as shown in \tabref{tab:key:1}, and noun modifiers such as determiners and adjectives also express formal distinctions, whether the noun which they modify is uninflectable or not.
+
+Under Baerman et al.’s (2005) definitions, uninflectability can be understood as massive, generalised syncretism: for a given inflectional feature, multiple feature values are visible in morphosyntax, but all feature values are expressed via an identical inflected form (as opposed to canonical syncretism, where only a subset of feature values are expressed via an identical form, other values being associated with distinct forms). 
+
+\subsection{2.2  Sources of syncretism in diachrony}
+
+If uninflectability is understood as a subtype of syncretism, it is reasonable to expect that it may arise via the same routes as more familiar instances of syncretism. 
+
+The source of syncretism most commonly discussed in scholarly literature is sound change (see e.g. \citealt{Meiser1992}: 190, \citealt{BaermanEtAl2005}: 5, \citealt{Baerman2008}: 229, Esher forthcoming). Where inflectional forms were initially distinguished by a contrast between segments, a sound change which involves either neutralisation of the contrast, or deletion of the contrasting segments, is liable to cause syncretism. Both types can be simply illustrated from Latin first–declension nouns (\citealt{BaermanEtAl2005}: 5, \citealt{Pinkster1990}, \citealt{Sornicola2011}, Esher forthcoming). In classical Latin, for most first–declension nouns, the accusative singular was uniquely identifiable by the presence of final –\textsc{m,} and the ablative singular by final \textsc{–ā} (e.g. \textsc{rosa} ‘rose(\textsc{f).nom.sg}’, \textsc{rosam} ‘rose(\textsc{f).acc.sg}’, \textsc{rosā} ‘rose(\textsc{f).abl.sg}’ in \tabref{tab:key:1}). The subsequent deletion of final –\textsc{m} resulted in syncretism between the nominative singular and accusative singular for such nouns, while the loss of phonemic vowel length additionally caused syncretism of both these forms with the ablative singular (e.g. \textit{rosa} ‘rose(\textsc{f).nom/acc/abl.sg}’). 
+
+Because the source of such changes is morphology–external, and their results depend upon the existing phonological shape and paradigmatic distribution of inflectional forms, they produce highly diverse and language–specific patterns of syncretism which may or may not align with natural classes of feature values (see Esher forthcoming). Once introduced, these patterns may nevertheless be reanalysed as a systematic property of the inflectional system, and replicated by analogy (\citealt{BaermanEtAl2005}: 10, 166–169, \citealt{Hansson2007}, \citealt{Baerman2008}: 230, \citealt{Hinzelin2011,Hinzelin2012}, 2022, \citealt{Esher2020}).
+
+More rarely, a syncretism pattern may arise via morphological analogy. Syncretism of present and imperfect subjunctive forms in the first and second person of some Occitan and Catalan varieties (e.g. \textit{cantèssem} ‘sing.\textsc{prs/ipf.sbjv.1pl}’ supplanting the inherited distinction between \textit{cantem} ‘sing.\textsc{prs.sbjv.1pl}’ and \textit{cantèssem} ‘sing.\textsc{ipf.sbjv.1pl}’) is due to analogical changes which align multiple overlapping morphomic distribution patterns within the inflectional paradigm \citep{Esher2022}. Syncretism may also occur as an incidental by–product of sporadic analogical changes (\citealt{Esher2024}, accepted). Both these types are distinct in origin from morphological analogies which replicate existing syncretism patterns, such as the northern Occitan replacement of etymological \textit{anem} /anã/ ‘go.\textsc{prs.ind.1pl}’ by \textit{vam} /vã/ ‘go.\textsc{prs.ind.1pl}’ introduced from the third person plural form \textit{van} /vã/ ‘go.\textsc{prs.ind.3pl}’ on the model of an existing syncretism between first and third person plural present indicative forms, originating in sound change \citep{Esher2020}.
+
+It is a logical expectation that, like syncretism, uninflectability may arise either via sound change or via analogy; but that, as with syncretism, the sound change pathway is likely to be more commonly attested. The examples of uninflectability in French nominal inflection discussed in this paper illustrate the route via sound change.
+
+\section{Synchronic approaches to defectiveness}
+
+Theoretical analyses of inflectional defectiveness can be found in \citet{BaermanCorbett2010} and \citet{Sims2015}. Baerman \& \citet[1]{Corbett2010} adopt Matthews’ (1997: 89) definition of defective lexemes as having a paradigm which ‘is incomplete in comparison with others of the major class that it belongs to’, while \citet[26]{Sims2015} develops a formal definition framed according to the conventions of Paradigm Function Morphology (\citealt{Stump2001,Stump2016}):
+
+\begin{quote}
+IF there exists a set of morphosyntactic and/or morphosemantic feature values F that is well–defined and morphologically encoded for at least one lexeme belonging to part of speech C;
+\end{quote}
+
+\begin{quote}
+AND IF there exists a well–formed syntactic structure S that requires F in combination with some lexeme L belonging to C;
+\end{quote}
+
+\begin{quote}
+BUT any form of LC that is inserted into S produces an ungrammatical construction;
+\end{quote}
+
+\begin{quote}
+THEN the paradigm cell defined by <LC, [F]> is defective. \citep[26]{Sims2015}.
+\end{quote}
+
+In synchrony, typological approaches classify instances of defectiveness according to whether gaps occur at the level of form or of function (\citealt{BaermanCorbett2010}, \citealt{Sims2015}). Gaps in the inventory of feature value sets may be arbitrarily specified (as in the lack of feminine indefinite patient forms for some Mohawk kinship terms, \citealt{Sims2016}: 78–79), or reflect a lack of semantic need (as in the lack of first and second person forms for weather verbs and impersonal verbs, \citealt{BaermanCorbett2010}). Gaps in the inventory of inflected forms (the \textsc{realised} \textsc{paradigm}, in the terms of \citealt{Stump2016}) are frequently associated with phonological infelicity of typical inflectional patterns when applied to a given lexeme (e.g. the lack of indefinite genitive singular forms for sibilant–final nouns in Swedish, \citealt{Sims2015}: 60). Gaps in the inventory of forms may also match established morphomic patterns of paradigmatic distribution (e.g. the lack of all cells expected to share the ‘infinitive stem’ in some Finnish verbs, \citealt{BaermanCorbett2010}; see also Maiden \& O’\citealt{Neill2010}).
+
+\subsection{2.4  Sources of defectiveness in diachrony}
+
+\citet{BaermanCorbett2010} propose two separate pathways for the emergence of defectiveness: \textsc{arrested} \textsc{development}, and \textsc{decay}. 
+
+In arrested development, a lexeme arises with an incomplete set of inflected forms, but ‘the expected expansion of forms to the whole paradigm stops short’ (2010: 11). Arrested development typically originates in borrowing or derivation (\citealt{BaermanCorbett2010}:12). Expansion through the paradigm is constrained by phonological shape and existing paradigmatic distribution patterns: for example, in French, the conversion of \textit{dénué} ‘devoid’, \textit{dévolu} ‘allotted’ and \textit{contrit} ‘contrite’ from adjectives to past participles generates all periphrastic forms comprising auxiliary and past participle, but only \textit{dénué} develops an infinitive form (and ultimately a complete paradigm) since it matches the productive first-conjugation pattern of syncretism between the past participle and the infinitive (\citealt{BachEsher2015}: 145–146). Arrested development may also affect previously complete lexemes if syntactic or semantic changes expand the content paradigm of the lexeme or of the word class to which it belongs (\citealt{BaermanCorbett2010}:12–13; see also \citealt{Sims2015}: 63–73). 
+
+The phenomenon of arrested development offers an interesting comparison with the examples of uninflectability given by \citet{Spencer2020}, which involve loanwords with a phonological shape that precludes their integration into existing inflectional patterns. Both phenomena can be understood as adaptive strategies for dealing with a novel lexeme of awkward phonological shape: in defectiveness, speakers’ response is to fill only those cells for which a phonologically acceptable realised form is available and satisfies existing inflectional patterns; in uninflectability, speakers’ response is instead to fill all cells with an invariant form, creating a novel inflectional class.\footnote{I diverge from \citet{Spencer2020} in assuming that uninflectable lexemes have a form paradigm which stipulates a set of cells to be filled with an identical form, rather than lacking a form paradigm and defaulting to a stipulated ‘root’ form.} 
+
+The intersection between uninflectability and defectiveness in the case of arrested development intimates that it is also worth entertaining decay as a possible source of uninflectability. 
+
+In decay, a lexeme originates with a full array of inflected forms and feature value sets, some of which progressively cease to be used (2010: 14). Many of the defective French verb lexemes listed by Grévisse \& Goosse (1991: 1273–1287) result from decay: for example, in modern French \textit{ardre} ‘burn’ and \textit{choir} ‘fall’ retain few forms other than the infinitive, but their Latin etyma *ardere, \textsc{cadere} and the mediaeval French forms of these verbs are known to have been complete, i.e. non-defective \citep[392]{Buridant2019}. Baerman \& Corbett (2010: 14–15) suggest multiple routes to decay, including \textsc{spontaneous} \textsc{loss,} in which specific inflected forms are replaced by an alternative construction rather than novel synthetic forms for the same lexeme, and \textsc{functional} \textsc{reanalysis}, in which feature-value sets are lost from the paradigm altogether.
+
+Exploring the possible parallel between uninflectability and decay, sections 3 and 4 investigate case studies involving loss of inflection (loss of feature-value sets from the content paradigm; loss of distinct forms from the realised paradigm; or both) and assess how such loss may contribute to the development of uninflectability. 
+
+\section{Uninflectability and the feature \textsc{number} in the history of French}
+\subsection{3.1  The two–cell content paradigm of modern French nouns}
+
+In modern standard French, the only morphosyntactic feature for which nouns inflect is \textsc{number} (Bach forthcoming; for morphosyntactic features including \textsc{number}, see \citealt{Corbett2012}: 49–50, 73–74, 121).\footnote{Nouns in French do not inflect for grammatical \textsc{gender} (Bach forthcoming); instead, gender on nouns is a lexically stipulated property. Each noun in French is assigned to one or other gender class, either masculine or feminine, and acts as a controller for gender on agreement targets, principally adjectives and determiners (see also \citealt{Corbett2012}, \citealt{BachEsher2023}).} This feature has two values, singular and plural, and thus French nouns canonically have a content paradigm comprising only two cells, as shown in \tabref{tab:key:2} following the formalism developed by Stump (2016: 103–115).
+
+
+\begin{tabularx}{\textwidth}{X}
+\lsptoprule
+
+<\textsc{livre}, \{sg\}>\\
+<\textsc{livre}, \{pl\}>\\
+\lspbottomrule
+\end{tabularx}
+\begin{stylelsTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{Content paradigm of Fr. \textit{livre} ‘book’.}
+\label{tab:key:2}
+\end{table}\end{stylelsTableHeading}
+
+The contrast between singular and plural values of number on nouns is discernable via agreement patterns (for which see \citealt{Corbett2006}: 4–5, 35, 40–43). In example \REF{ex:key:1}\footnote{Constructed examples based on the sentence \textit{Tous ces documents originaux sont fragiles et leur préservation constitue un enjeu fondamental du métier d’archiviste} ‘All these original documents are fragile and conserving them is a fundamental role for professional archivists’, taken from an advert for a European Heritage Days event held in Rennes, France, on 17 \citealt{September2023}, \url{https://www.infolocale.fr/evenements/evenement-rennes-exposition-musee-prendre-soin-des-documents-707121907}, accessed 17 \citealt{November2023}.} , the forms of agreement targets such as the demonstrative determiner \textit{ce} ‘this’, the copula \textit{être} ‘be’, and the adjective \textit{original} ‘original’ (though not \textit{fragile} ‘fragile’, to which I return below in section 4.4), all vary according to the number value of the agreement controller, the noun \textit{journal} ‘newspaper’. Contextual realisations of plural nouns preceding a vowel–initial adjective (i.e. \textsc{variable} \textsc{liaison}) will be discussed in section 3.5.
+
+\ea%1
+    \label{ex:key:1}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.   \textbf{\textit{Ce}} \textit{journal} \textbf{\textit{original}  \textbf{est} }\textit{fragile.}    
+
+    sǝ ʒuʁnal oʁiʒinal ɛ  fʁaʒil  
+
+    this.\textsc{m.sg} newspaper(\textsc{m})\textsc{.sg} original\textsc{.m.sg} is fragile\textsc{.m.sg}
+
+    ‘This original newspaper is fragile’.
+
+  b.   \textbf{\textit{Ces}} \textit{journaux} \textbf{\textit{originaux}} \textbf{\textit{sont}} \textit{fragiles.}  
+
+    se  ʒuʁno    oʁiʒino  sɔ  fʁaʒil  
+
+    these.\textsc{m.pl} newspaper(\textsc{m})\textsc{.pl} original\textsc{.m.pl} are fragile\textsc{.m.pl}
+
+    ‘These original newspapers are fragile’.
+
+The same morphosyntactic contrast remains even when the noun itself does not show any contrast in inflectional form correlated with number value (see also \citealt{Loporcaro2011}: 329), as in example \REF{ex:key:2} for \textit{document} ‘document’. It is this contrast which motivates the assumption of a content paradigm with two cells.
+
+\ea%2
+    \label{ex:key:2}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.   \textbf{\textit{Ce}} \textit{document} \textbf{\textit{original} \textbf{est} } \textit{fragile.}    
+
+    sǝ dokymɑ  oʁiʒinal ɛ fʁaʒil  
+
+    this.\textsc{m.sg} document(\textsc{m})\textsc{.sg}  original\textsc{.m.sg} is fragile\textsc{.m.sg}
+
+    ‘This original document is fragile’.
+
+  b.   \textbf{\textit{Ces}} \textit{documents} \textbf{\textit{originaux}} \textbf{\textit{sont}} \textit{fragiles.}  
+
+    se  dokymɑ  oʁiʒino  sɔ  fʁaʒil  
+
+    these.\textsc{m.pl} document(\textsc{m})\textsc{.pl} original\textsc{.m.pl} are fragile\textsc{.m.pl}
+
+    ‘These original documents are fragile’.
+
+For nouns such as \textit{document}, there is systematic syncretism between the singular and plural forms, which is to say between all cells of the realised paradigm. As the paradigm thus has only a single, invariant form, such nouns qualify as \textsc{uninflectable} in the sense of \citet{Spencer2020}.
+
+\subsection{Uninflectable nouns constitute the majority inflectional class in modern French}  %3.2 /
+
+The contrast between inflecting nouns, such as \textit{journal}, and uninflectable nouns such as \textit{document}, is lexically specified: it is an inflectional class contrast which may be formalised as a morphological feature in the terms of Corbett (2012: 50–61).
+
+In modern standard French, uninflectable nouns constitute the majority inflectional class. The extent of this inflectional class can be estimated from the figures given by the \textit{Grande Grammaire du Français} (\citealt{AbeilléGodard2021}), based on the database \textit{Lexique.org} \citep{NewEtAl2004}. Excluding compound nouns, and phenomena such as \textsc{lexical} \textsc{plurals}\footnote{A familiar French example of a lexical plural, also termed \textsc{pluralia} \textsc{tantum}, is the lexeme \textit{ciseaux} /sizo/ ‘scissors’. The inflectional paradigm of \textit{ciseaux} ‘scissors’ does not contain a morphosyntactically singular form. Its only available form is morphosyntactically plural (i.e. controls plural on agreement targets) and this form is used whether the intended referent is semantically singular or plural: \textit{des ciseaux} ‘a pair of scissors, several pairs of scissors’. By contrast, both values of morphosyntactic number are available in the paradigm of the separate lexeme \textit{ciseau} /sizo/ ‘chisel’: \textit{un ciseau} ‘a chisel’, \textit{des ciseaux} ‘chisels’.}\citep{Acquaviva2008}, leaves 17 751 simplex nouns the paradigms of which are expected to contain forms realising the values ‘singular’ and ‘plural’ for the morphosyntactic feature \textsc{number}. Of these, only 229 lexemes have distinct singular and plural realised forms: the remainder, 98.7\%, with identical singular and plural realised forms, are uninflectable \citep{AbeilléEtAl2021}.
+
+Lexemes with distinct singular and plural forms instantiate diverse inflectional alternation patterns, including contrasts between affixal material, as in \textit{journal} /ʒuʁnal/ ‘newspaper’, \textit{journaux} /ʒuʁno/ ‘newspapers’ and \textit{vitrail} /vitʁaj/ ‘stained glass window’, \textit{vitraux} /vitʁo/ ‘stained glass windows’; contrasts between presence and absence of material, as in \textit{bœuf} /bœf/ ‘ox’, \textit{bœufs} /bø/ ‘oxen’ and \textit{os} /ɔs/ ‘bone’, \textit{os} /o/ ‘bones’; and contrasts between suppletive forms, as in \textit{œil} /œj/ ‘eye’, \textit{yeux} /jø/ ‘eyes’ (see \citealt{AbeilléEtAl2021} for an overview of patterns and their lexical incidence). For some lexemes, there is evidence for variation between singular/plural contrast and singular–plural syncretism; speakers may prefer one or other pattern in general, or associate the distinctive plural with specific contexts or registers, often fossilised expressions (see \citealt{AbeilléEtAl2021} for examples). Such variation is indicative of a progressive trend favouring the uninflectable pattern.
+
+Figures for compound nouns are not available, but it can be assumed that uninflectable patterns remain an overwhelming majority, since the only compounds for which distinct singular and plural forms are available are those involving one of the few base lexemes which have distinct forms. 
+
+\subsection{Exemplifying the distinction between the canonical and the typical} %3.3 /
+
+Throughout the development of the Canonical Typology approach, scholars have consistently stressed that canonical inflectional phenomena represent a theoretical absolute which may not necessarily be encountered in real–life inflectional systems (\citealt{Corbett2007,Corbett2009}, 2023, \citealt{BrownChumakina2013}, \citealt{CorbettFedden2016}, \citealt{Audring2019}, \citealt{Bond2019}):
+
+\begin{quote}
+The canon is where we calibrate from, just as we measure length from zero metres, and temperature from zero kelvins. The canon is not what is frequent, functional, unmarked, or prototypical. No value–judgement is attached: zero metres is not a good length for a typical object, and zero kelvins is not a desirable temperature, but each is a good point to measure from. \citep[188]{Corbett2023}.
+\end{quote}
+
+The inflectional behaviour of French noun lexemes serve as an excellent illustration of this principle. Among the expectations of a canonical lexeme is that ‘every cell in its paradigm will realize the morphosyntactic specification in a way distinct from that of every other cell’ \citep[2]{Corbett2009}; uninflectable lexemes behave non–canonically in having an identical inflectional form for all paradigm cells. Uninflectability occurs in the vast majority of French nouns, including many of the highest token frequency nouns and those referring to basic concepts such as kinship terms or parts of the body. Indeed, even if all noun lexemes in French were uninflectable without exception, the phenomenon would remain non–canonical since the essential facts about the paradigm structure of French nouns remain unchanged: number is a syntactically relevant feature with two values which are visible in agreement phenomena, and which would remain so visible even if no lexical noun exhibited an overt distinction between the inflectional forms realising singular and plural.
+
+\subsection{3.4   Uninflectability on French adjectives}
+
+A clarification is necessary with respect to examples \REF{ex:key:1} and \REF{ex:key:2}, which illustrate a contrast between inflecting and uninflectable adjectives. As with nouns, uninflectability is a lexically specified property of adjectives, and is not related to syntactic structure. Reversing the position of \textit{original} and \textit{fragile} \REF{ex:key:3} shows clearly that, whether these adjectives appear in attributive or predicative position, \textit{original} always presents distinct singular and plural forms, while \textit{fragile} is consistently uninflectable for number. Thus, French adjectives do not instantiate the phenomenon of constructional uninflectability described by Spencer (2020: 148–150) for German.
+
+\ea%3
+    \label{ex:key:3}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.   \textbf{\textit{Ce}} \textit{document   fragile}\textbf{    \textbf{est} } \textbf{\textit{original}}.  
+
+    sǝ   dokymɑ  fʁaʒil    ɛ  oʁiʒinal  
+
+    this.\textsc{m.sg} document(\textsc{m})\textsc{.sg}  fragile\textsc{.m.sg}  is original\textsc{.m.sg}
+
+    ‘This fragile document is original’.
+
+  b.   \textbf{\textit{Ces}} \textit{documents  fragiles}\textbf{  \textbf{sont}} \textbf{\textit{originaux}}.  
+
+    se  dokymɑ  fʁaʒil    sɔ  oʁiʒino  
+
+    these.\textsc{m.pl} document(\textsc{m})\textsc{.pl} fragile\textsc{.m.pl}  are original\textsc{.m.pl}
+
+    ‘These fragile documents are original’.
+
+The inflectional paradigm of adjectives in French is overall richer and more complex than that of nouns, due to involving a greater number of morphological features. The two basic morphosyntactic features which define the content paradigm of a French adjective are \textsc{number} (singular/plural) and \textsc{gender} (masculine/feminine). Furthermore, for at least some adjective lexemes, additional paradigm cells must be posited to account for inflectional contrasts dependent on syntactic position (see \citealt{BonamiBoyé2005} and Bach forthcoming, accepted).
+
+\subsection{3.5  Liaison and uninflectability}
+
+A brief clarification regarding the phenomenon of \textsc{variable} \textsc{liaison} is also useful. Liaison is characterised as follows by \citet{DurandEtAl2011}, in an article surveying the wide range of theoretical treatments which have been proposed: 
+
+\begin{quote}
+La liaison […] conduit à ce qu’un certain nombre de mots apparaissent sous deux formes, une forme courte devant une initiale consonantique et, mais seulement parfois, une forme longue où une consonne finale de liaison s’ajoute devant un mot à initiale vocalique. (\citealt{DurandEtAl2011}: 105–106).
+\end{quote}
+
+\begin{quote}
+‘Liaison […] leads to a number of words appearing in two forms, a short form before a consonant–initial word, and, only in some instances, a long form in which a final liaison consonant is added before a vowel–initial word’ [my translation].
+\end{quote}
+
+An example of potential contrast between realisations with and without liaison is shown in \REF{ex:key:4}:
+
+\ea%4
+    \label{ex:key:4}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.   without liaison
+
+\textit{ces   journaux   originaux,  ces   documents   originaux}
+
+se  ʒuʁno    oʁiʒino   se  dokymɑ  oʁiʒino
+
+  b.  with liaison
+
+ \textit{ces   journaux   originaux,   ces   documents   originaux}
+
+se  ʒuʁnoz  oʁiʒino   se  dokymɑz  oʁiʒino
+
+Historically, liaison is a relic of the context–sensitive deletion of final consonants, which began in environments before a consonant–final word or a pause, and only later progressed to environments before a vowel–initial word (\citealt{Pope1934}: 222–224; see also section 3.6). In synchrony, it is traditionally treated as a phonological phenomenon of truncation, latency or epenthesis (see \citealt{DurandEtAl2011} for discussion); more rarely, liaison has been integrated into morphological descriptions as a phenomenon of inflectional alternation (e.g. \citealt{BonamiBoyé2005}). Scholarly interest centres on the highly variable occurrence of liaison, which is sensitive to sociolinguistic and stylistic factors as well as syntactic cohesion and the frequency of a given construction (\citealt{DurandEtAl2011}, \citealt{DurandLyche2016}). Variationist corpus analysis shows that, although liaison is licit in some contexts following plural nouns, such as the sequence of plural noun and vowel–initial adjective, occurrences of liaison in these contexts are vanishingly rare in spontaneous speech (\citealt{DurandEtAl2011}, \citealt{DurandLyche2016}). 
+
+Under an analysis which integrates liaison forms into the inflectional paradigm of the word preceding the liaison context, French nouns such as \textit{document} cannot be considered uninflectable for number since they show a marginal formal contrast mapping to a morphosyntactic contrast. However, the complex interaction of extramorphological factors governing liaison, together with the very low rate of occurrence for liaison following plural nouns in spontaneous speech, cast doubt on the empirical representativity of such an analysis, and thus this paper will not consider liaison forms to occupy a cell in the canonical inflectional paradigm of French nouns. 
+
+\subsection{3.6   The historical source of uninflectability in French nouns}
+
+The loss of contrast between singular and plural realised forms of most French nouns is traceable to a single articulatory sound change, the deletion of final /s/. This change begins during the sixteenth century and is largely complete by the mid–seventeenth century (\citealt{Pope1934}: 222–223). 
+
+The change itself does not automatically produce uninflectability. Instead, its inflectional consequences depend upon the wider context of the inflectional system. For nouns such as \textit{mur} ‘wall’ < \textsc{murum}, in which number contrast hinged solely on the contrast between presence of final /s/ in the plural \textit{murs}, and absence of /s/ in the singular \textit{mur}, the deletion of final /s/ introduces syncretism between singular and plural forms. For other nouns, in which additional inflectional contrasts were correlated with number, the same sound change historically applied, but without causing syncretism. For example, for nouns such as \textit{cheval} ‘horse’ < \textsc{caballum}, singular and plural forms historically diverged due to the twelfth–century vocalisation of coda /l/ preceding a consonant, and the sixteenth–century monopthongisation of /aw/ to /o/; compare singular /tʃeval/ > /ʃeval/ > /ʃəval/ with plural /tʃevals/ > / tʃevaws/ > /ʃəvos/ (\citealt{Pope1934}: 153–155, 199–200, 246–247).
+
+Because the nominal paradigm only contains two cells, any changes producing syncretism between the forms which realise these two cells will also result in uninflectability. Adjective inflection is a useful comparator here. The loss of final /s/ equally affects adjectives, introducing syncretism between singular and plural forms in many lexemes (uninflectability for number). In adjectives such as \textit{frêle} ‘frail’ < \textsc{fragilem} which exhibited syncretism between masculine and feminine forms in either number value, the loss of final /s/ also produces overall uninflectability for the lexeme; whereas in adjectives such as \textit{vif} ‘lively’ < \textsc{uīuum} which retained a contrast between the forms realising masculine and feminine values of gender in either number value, the lexeme continues to inflect for gender (\tabref{tab:key:3}).
+
+
+\begin{tabularx}{\textwidth}{XXXXX}
+ & \multicolumn{2}{c}{\textit{frêle} ‘frail’} & \multicolumn{2}{c}{\textit{vif} ‘lively’}\\
+\lsptoprule
+& \textsc{sg} & \textsc{pl} & \textsc{sg} & \textsc{pl}\\
+\textsc{m} & \textit{frêle} /fʁɛl/ & \textit{frêles} /fʁɛl/ & \textit{vif} /vif/ & \textit{vifs} /vif/\\
+\textsc{f} & \textit{frêle} /fʁɛl/ & \textit{frêles} /fʁɛl/ & \textit{vive} /viv/ & \textit{vives} /viv/\\
+\lspbottomrule
+\end{tabularx}
+\begin{stylelsTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{Inflection of \textit{frêle} ‘frail’ and \textit{vif} ‘lively’ in modern French.}
+\label{tab:key:3}
+\end{table}\end{stylelsTableHeading}
+
+\section{The feature \textsc{case} in the history of French}
+\subsection{4.1  Loss of inflection and loss of uninflectability}
+
+The reduction and ultimate disappearance of case inflection in French has long formed the subject of detailed historical linguistic investigations (\citealt{Schøsler1984,Schøsler2013}, van \citealt{ReenenSchøsler2000}, \citealt{Sornicola2011}: 18–35, \citealt{Smith2011}: 281–289, \citealt{Ledgeway2012}, \citealt{Buridant2019}, Sims–\citealt{WilliamsBaerman2021}). Beyond documenting the formal and functional changes in inflection, a key concern of many studies is the functional load of inflectional case distinctions in the context of word order and typological shift. This paper focuses instead on the formal analysis of the inflectional system.
+
+As set out in section 2.1, nouns in classical Latin have multiple values of the feature \textsc{case}, which are syntactically relevant and visible via agreement marking \citep{Corbett2006}. Most scholars agree upon the existence of five distinct values (nominative, accusative, genitive, dative, ablative; \citealt{DragomirescuNicolae2016}); for a possible sixth category, the vocative, see \citet{Ashdowne2016}. 
+
+By contrast, in modern standard French, no case inflection is discernable on nouns or on the agreement targets which they control, as shown in example \REF{ex:key:5} where the lexeme \textit{mur} ‘wall’ appears in the same inflected form whether it is a subject (5a, d), a direct object (5b, e) or the complement of a preposition (5c, f); in the singular, the definite and indefinite articles have the forms \textit{le} and \textit{un} respectively, while in the plural, the definite article always has the form \textit{les}; and the forms of adjectives and participles, although not fully exemplified here for reasons of space, likewise do not vary according to the case of the noun which they modify.
+
+\ea%5
+    \label{ex:key:5}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          a.  \textit{le   mur   de   Berlin   est     tombé} 
+
+    the.\textsc{m.sg} wall\textsc{(m).sg} of Berlin be.\textsc{prs.ind.3sg} fall\textsc{.pst.ptcp.m.sg}
+
+    ‘the Berlin Wall fell’
+
+  b.  \textit{construire   un     mur} 
+
+    build.\textsc{inf}   a.\textsc{m.sg}    wall\textsc{(m).sg}
+
+    ‘build a wall’
+
+  c.  \textit{avec     le     mur     des     Etats–Unis}
+
+    with    the.\textsc{m.sg}  wall\textsc{(m).sg}  of\_the    United States
+
+    ‘with the United States’ wall’
+
+  d.  \textit{les     murs     se   multiplient}
+
+    the.\textsc{m.pl}  wall\textsc{(m).pl}  \textsc{refl}   multiply.\textsc{prs.ind.3pl}
+
+    ‘walls are multiplying [i.e. becoming more numerous]’
+
+  e.  \textit{pour   contourner   les     murs     existants}
+
+    to  circumvent.\textsc{inf}  the.\textsc{m.pl}  wall\textsc{(m).pl}  existing.\textsc{m.pl}
+
+    ‘to circumvent existing walls’
+
+  f.  \textit{comme     les     murs     entre     quartiers}
+
+    like    the.\textsc{m.pl}  wall\textsc{(m).pl}  between  neighbourhood(\textsc{m).pl}
+
+    ‘like the walls between neighbourhoods’
+
+Because the feature \textsc{case} is syntactically irrelevant for modern French nouns (i.e. French nouns do not inflect for case), this feature does not participate in the definition of the content paradigm. Thus, for modern French nouns, it would be incorrect to speak of uninflectability with respect to case. There is no expectation that any French noun should inflect for case; the feature is simply absent. 
+
+In existing literature, the historical trajectory from the five–case system of Latin to the absence of case on modern French nouns, via the well–attested intermediate two–case system of mediaeval French, is studied as an example of the gradual loss of inflected forms, of inflectional feature values and ultimately of the inflectional feature itself. Along the way, it is possible to observe both emergence and subsequent loss of uninflectability for case.
+
+\subsection{4.2  Development of the two–case system in mediaeval French}
+
+For detailed consideration of changes in noun inflection between Latin and mediaeval French, including the deletion of final consonants, the neutralisation of vowel length, assimilation of the minor declension classes IV and V to the more populous classes, and the shift of neuter plurals to the first declension, the reader is referred to the descriptions cited in section 4.1. For the purposes of the present paper it will be sufficient to consider the three major declensional types illustrated in \tabref{tab:key:1}. 
+
+In classical Latin, all three major inflectional classes for nouns exhibit 7 to 8 distinct forms in the realised paradigm, distributed across 10 sets of feature values in the content paradigm (singular and plural \textsc{number}; nominative, accusative, genitive, dative and ablative \textsc{case}). Between this period and early French, syntactic changes and sound changes lead to a reduction in both the number of feature value sets in the content paradigm, and the number of distinct forms in the realised paradigm. The genitive and dative cases are largely supplanted by constructions comprising a preposition and the ablative or accusative, removing four cells from the content paradigm, while sound changes cause syncretism between accusative and ablative or accusative and nominative, and analogical changes replicate such syncretism. Many of these changes fall under \citegen{Baerman2008} category of reassignment of case function. 
+
+Importantly, these changes affect not only the nouns which are the principal focus of this study, but also the agreement targets of nouns, principally adjectives, determiners and quantifiers. The loss of formal distinctions between accusative and ablative forms on other syntactic objects compromises the syntactic relevance of a distinction between the two case values altogether. 
+
+By mediaeval French of the twelfth century, only two case values are reliably distinguishable, traditionally termed \textsc{nominative} (reflex of Latin nominative) and \textsc{oblique} (merger of Latin accusative and ablative).
+
+\subsection{Gender and inflectional class in the mediaeval French two–case system}
+
+By the twelfth century, the major inflectional classes for nouns have four–cell content paradigms with realised forms as shown in \tabref{tab:key:4}. 
+
+
+\begin{tabularx}{\textwidth}{XXXXXX}
+ & \textit{rose} ‘rose’ & \textit{murs} ‘wall’ & \textit{flor} ‘flower’ & \textit{pedre} ‘father’ & \textit{cons} ‘count’\\
+\lsptoprule
+\textsc{nom.sg} & \textit{rose} & \textit{murs}  & \textit{flor(s)} & \textit{pedre(s)} & \textit{cons}\\
+\textsc{obl.sg} & \textit{rose} & \textit{mur} & \textit{flor} & \textit{pedre} & \textit{conte}\\
+\textsc{nom.pl} & \textit{roses} & \textit{mur} & \textit{flors} & \textit{pedre} & \textit{conte}\\
+\textsc{obl.pl} & \textit{roses} & \textit{murs} & \textit{flors} & \textit{pedres} & \textit{contes}\\
+\lspbottomrule
+\end{tabularx}
+\begin{stylelsTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{Singular and plural forms of first–declension \textit{rose} ‘rose’, second–declension \textit{murs} ‘wall’, third–declension \textit{flor} ‘flower’, \textit{pedre} ‘father’ and \textit{cons} ‘count’ in twelfth–century French.}
+\label{tab:key:4}
+\end{table}\end{stylelsTableHeading}
+
+The \textit{rose} class, continuing Latin first–declension nouns, has two distinct realised forms, with case syncretism in each number value. In the singular this is a direct consequence of regular sound change (see section 2.2); in the plural, \textit{roses} is the expected reflex of accusative \textsc{rosās}, and replaces expected *rose < \textsc{rosae} in the nominative due to analogical changes in late Latin (see e.g. \citealt{Schøsler2013}). 
+
+The \textit{murs} class, continuing Latin second–declension nouns, also has two distinct realised forms, distributed in a pattern which is entirely due to regular sound changes. Nominative singular \textsc{murus} and accusative plural \textsc{murōs} both develop to \textit{murs}, while nominative plural \textsc{murī} and accusative singular \textsc{murum} both yield \textit{mur}. 
+
+Reflexes of third–declension nouns are more diverse. The majority develop according to regular sound change, but are then subject to analogy from the first and second declensions; feminine nouns such as \textit{flors} ‘flower’ < \textsc{floris} tend to gravitate towards the \textit{rose} class, losing etymological final –\textit{s} in the nominative singular, while masculine nouns such as \textit{pedre} ‘father’ < \textsc{pater} gravitate towards the \textit{murs} class, gaining analogical final –\textit{s} in the nominative singular and losing etymological final –\textit{s} in the accusative plural (Sims–\citealt{WilliamsBaerman2021}). A small number of \textsc{imparisyllabic} nouns, most of which are of masculine gender, retain etymological stem alternations reflecting a difference of syllables between the nominative and all other forms in Latin, e.g. \textit{cons} ‘count.\textsc{nom.sg}’ < \textsc{comes} ‘companion.\textsc{nom.sg’}, \textit{conte} ‘count.\textsc{obl.sg’} < \textsc{comitem} ‘companion.\textsc{acc.sg’;} thus, case inflection for imparisyllabic nouns involves stem contrasts in addition to the presence or absence of final /s/.
+
+Note that traditional descriptions of mediaeval French declension, such as \citet{Buridant2019}, commonly conflate inflectional class and gender: for example, the \textit{rose} class is termed ‘Type I feminine’ while nouns such as \textit{flor(s)} are termed ‘Type II feminine’. This classification is etymological in origin (Type I feminines continue the Latin first declension whereas Type II feminines are reflexes of third–declension nouns), and may also be motivated by the strong correlation between gender and inflectional class in the reflexes of Latin first– and second–declension nouns. Nevertheless, gender and inflectional class are qualitatively distinct: genders are agreement classes relating to morphosyntactic behaviour, while inflectional classes are morphomic classes relating purely to inflectional forms (see e.g. \citealt{Corbett2012}). From the point of view of inflectional class, nouns such as \textit{flor(s)} and \textit{pedre(s)} must be classified depending on their realisation, as belonging to a distinctive class with final –\textit{s} in all forms except oblique singular, belonging to the \textit{rose} class, or belonging to the \textit{murs} class.
+
+\subsection{4.4 \textsc{A}greement, \textsc{gender}, and the morphosyntactic relevance of \textsc{case}}
+
+The discussion in section 4.3 makes the canonical assumption that lexemes instantiating the same word class should have the same shape paradigm (see e.g. \citealt{Corbett2009}). Under this assumption, mediaeval French nouns of the \textit{rose} type have a content paradigm of four cells, but make no formal distinction between the realised forms associated with nominative and oblique case. Yet for the \textit{rose} type to be classified as illustrating case syncretism or even uninflectability for case, the feature \textsc{case} must be demonstrably relevant to syntax. 
+
+This question is more interesting than it appears, because all nouns of the \textit{rose} type are of feminine gender, and the morphosyntactic relevance of case in mediaeval French is dependent upon gender value. For masculine nouns, distinct values of the feature \textsc{case} are visible via agreement phenomena as well as mapping to inflectional alternations; but for feminine nouns, the vast majority of agreement targets do not make a formal distinction between nominative and oblique case (see \citealt{Buridant2019}: 75–78, 139–142, 174–179, 287–298, for the inflection of nouns, adjectives and determiners). In the examples under \REF{ex:key:6}, from the thirteenth–century text \textit{La Châtelaine de Vergy}, the agreement targets of masculine \textit{chevaliers} ‘knight’ vary with case: nominative singular \textit{li} and oblique singular \textit{le} contrast in the definite article, while adjectives typically present final –\textit{s} in the nominative singular but not in the oblique singular. By contrast, the examples under \REF{ex:key:7}, from the same text, show no discernable contrast between nominative and oblique agreement targets of feminine \textit{dame} ‘lady’: the definite article is invariable for case, whether singular \textit{la} or plural \textit{les}, and adjectives have no distinctive inflection in either nominative or oblique.
+
+\ea%6
+    \label{ex:key:6}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+         a. \textit{en un vergier li     chevaliers   toz jors vendroit}
+
+in an orchard the.\textsc{m.nom.sg}   knight(\textsc{m).nom.sg}   all days would\_come
+
+‘Every day the knight would come into an orchard’
+
+b. \textit{Li   chevaliers   fu   biaus      et   cointes}
+
+the.\textsc{m}.\textsc{nom.sg} knight(\textsc{m}).\textsc{nom.sg} was fine.\textsc{m.nom.sg} and distinguished.\textsc{m.nom.sg}
+
+‘The knight was handsome and distinguished’
+
+c. \textit{il  trova   le   chevalier}
+
+he   found   the.\textsc{m.obl.sg} knight(\textsc{m}).\textsc{obl.sg}
+
+‘he found the knight’
+
+d. \textit{d’un   chevalier   preu     et   hardi}
+
+of=a   knight(\textsc{m).obl.sg}   noble.\textsc{m.obl.sg}   and   brave.\textsc{m}.\textsc{obl.sg}
+
+‘of a brave and noble knight’
+
+\ea%7
+    \label{ex:key:7}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+        . a. \textit{sui   haute     dame     honoree}
+
+I am noble.\textsc{f.nom.sg} lady\textsc{(f).nom.sg} honoured.\textsc{f.nom.sg}
+
+‘I am a lady of high degree’
+
+b. \textit{d’amer     dame     si souveraine}
+
+to=love   lady\textsc{(f).obl.sg}   so sovereign.\textsc{f.obl.sg}
+
+‘to love such a noble lady’
+
+c. \textit{la dame li otria […] s’amor}
+
+the.\textsc{f.nom.sg} lady\textsc{(f).nom.sg} to\_him granted \textsc{[…]} her=love(\textsc{f).obl.sg}
+
+‘the lady granted him […] her love’
+
+d. \textit{fors la dame}
+
+except the.\textsc{f.obl.sg} dame\textsc{(f).obl.sg}
+
+‘except the lady’
+
+c. \textit{Les     dames     ont oï le conte} 
+
+the.\textsc{nom.pl}   lady(\textsc{f).nom.pl}   have heard the.\textsc{m.obl.sg} tale(\textsc{m).obl.sg} 
+
+‘The ladies have heard the tale’
+
+d. \textit{querre   toutes     les     dames     de la terre}
+
+to\_fetch  all.\textsc{f.obl.pl}   the.\textsc{f.obl.pl}   lady\textsc{(f).obl.pl}   of the.\textsc{f.obl.sg} land(\textsc{f).obl.sg}
+
+‘to fetch all the ladies of the land’
+
+Within this system, case is syntactically relevant for masculine nouns, but not for feminine nouns: in the terms of Baerman et al. (2005: 28–30), case is \textsc{neutralised} in the context of feminine gender.\footnote{\citet{Buridant2019} notes a small number of adjectives such as \textit{loiaus} ‘loyal’ < \textsc{legalis} and \textit{granz} ‘big’ < \textsc{grandis} which for etymological reasons originate with a contrast between nominative (final /s/) and oblique (no final /s/) forms for both masculine and feminine gender; these are rapidly assimilated to the majority types with case distinctions only for masculine gender. In \textit{La Châtelaine de Vergy}, for example, only \textit{grant} < \textsc{grandem} ‘big.\textsc{f.acc.sg}’ occurs in the feminine singular, whether nominative or oblique is expected.}
+
+In this historical example, uninflectability emerges on a knife–edge: the processes causing case syncretism in the \textit{rose} inflectional class (all members of which are of feminine gender) also cause case syncretism for feminine gender values of many adjectives and determiners. In the \textit{rose} class, though not for other inflectional classes, uninflectability may be diagnosable for a brief period during which case remains visible on a few lexically specified agreement targets. However, as case syncretism in the context of feminine gender spreads to these items too, and as nouns of the \textit{flor} type are assimilated to the \textit{rose} class, the syntactic relevance of case in the context of feminine gender overall reduces, becoming entirely neutralised. Because these changes compromise the relevance of the feature \textsc{case} for syntax, and thus its presence within the inflectional paradigm of the \textit{rose} class, it is more realistic to consider that the content paradigm of feminine nouns reduces to two cells defined only by the contrast of singular and plural \textsc{number}, rather than continuing to assume a four–cell paradigm exhibiting uninflectability for case. 
+
+This example illustrates a near–miss. By definition, uninflectability requires the absence of (realised) inflectional contrasts associated with different values of a given feature F within the paradigm of a given word class C, combined with the presence of (realised) inflectional contrasts associated with the same values of F for other word classes D, E which also inflect for F; contrasts in D, E are necessary to maintain the syntactic relevance of F. There is greater potential for uninflectability to arise if C has a small paradigm with minimal phonological contrast between realised forms. But stable uninflectability in diachrony is only possible where C loses contrasts while D, E retain contrasts. In the mediaeval French example, the phonological substance and morphological distribution patterns of inflected forms for feminine nouns’ agreement targets are so similar to those for nouns of the \textit{rose} class that the changes which cause loss of contrast in the \textit{rose} class correspondingly undermine contrast in agreement targets. The result is neutralisation instead of uninflectability. From this example it can be inferred that stable uninflectability is more likely where inflectional expression of a given feature differs robustly across multiple word classes.
+
+\subsection{4.5 Loss of \textsc{case} as an inflectional feature}
+
+During the fourteenth century, oblique forms progressively supplant nominative forms for nouns of all inflectional classes and genders (for the occasional retention and refunctionalisation of nominative/oblique doublets, see \citealt{Smith2011}), and for their agreement targets. This is a further example of reassignment of case function, since all functions previously associated with the nominative are assumed by the oblique. In the resulting system, case is no longer discernable in morphosyntax, and thus its presence as a feature in the content paradigm can no longer be justified. The content paradigm of nouns reduces to two cells, defined by the single feature \textsc{number} (section 3.1).
+
+\section{Conclusions}
+
+This paper offers a first approach to the question of whether uninflectability can arise in diachrony by mechanisms other than language contact. 
+
+By means of comparison with the better–studied non–canonical phenomena of syncretism and defectiveness, the paper identifies loss of inflection as a process in the course of which uninflectability may potentially arise. Two case studies involving loss of (noun) inflection in the well–described history of French are then selected for more detailed investigation.
+
+The first example concerns the feature \textsc{number} in the post–mediaeval period. For this feature, the range of values discernable in morphosyntax remains constant: the content paradigm of nouns in classical and modern French comprises two cells corresponding to singular and plural number. The inventory of forms in the realised paradigm, however, reduces: in the vast majority of lexemes, where the phonological contrast between singular and plural forms rested on the presence or absence of a single segment, the loss of this contrast due to a single sound change produces syncretism between both (i.e. all) realised forms of the lexeme, and thus uninflectability. 
+
+The second example concerns the feature \textsc{case} in early and mediaeval French. Between Latin and mediaeval French, the inventory of morphosyntactic feature combinations in the content paradigm reduces as the number of distinct values of case decreases, and the inventory of realised forms also reduces due to sound change and loss of paradigm cells. The familiar two–case system of mediaeval French is characterised by a small paradigm and by formal alternations which involve minimal phonological contrast. Yet although syncretism appears rife within this system, careful examination of agreement targets reveals neutralisation of case rather than uninflectability. From this example a more constrained principle can be inferred: stable uninflectability is more likely to develop in small paradigms where the inflectional forms of a given lexeme are minimally different, but where inflectional expression of a given feature differs robustly across multiple word classes.
+
+Overall, this preliminary study indicates that uninflectability can indeed emerge via internal pathways, but only under very restrictive inflectional circumstances. Internal routes to uninflectability require a specific combination of properties regarding (i) paradigm structure in the class of lexemes under investigation, (ii) the substance of inflectional alternations in this class of lexemes, (iii) paradigm structure in the classes of lexemes which are agreement targets for the class of lexemes under investigation, and (iv) the substance of inflectional alternations in the classes of lexemes which are agreement targets. The multiplicity of narrow conditions which must align suggests that emergence of ‘internal’ uninflectability is likely to be a crosslinguistically rare eventuality.
+\begin{verbatim}%%move bib entries to  localbibliography.bib
+@book{AbeilléAbeillé2021,
+	address = {Arles},
+	booktitle = {\textit{{La} grande grammaire du français}},
+	editor = {Abeillé, Anne and Danièle Godard},
+	publisher = {Actes Sud/Imprimerie nationale},
+	sortname = {Abeille, Anne and Daniele Godard},
+	title = {\textit{{La} grande grammaire du français}},
+	year = {2021}
+}
+
+
+Abeillé, Anne, D. Godard, K. Jonasson, L. Melis, F. Mouret, M. Noailly, I. Simatos. 2021. Le nom et le syntagme nominal. In Anne Abeillé \& Danièle Godard (eds.). 2021. \textit{La grande grammaire du français}. Arles: Actes Sud/Imprimerie nationale.
+
+@book{Acquaviva2008,
+	address = {A morphosemantic approach}. Oxford},
+	author = {Acquaviva, Paolo},
+	publisher = {OUP},
+	title = {\textit{Lexical plurals},
+	year = {2008}
+}
+
+
+Ashdowne, Richard. 2016. Address systems. In Adam Ledgeway \& Martin Maiden (eds.), \textit{The Oxford guide to the Romance languages}. Oxford: Oxford University Press.
+
+Audring, Jenny. 2019. Canonical, complex, complicated? In Di Garbo F., Wälchli B. \& Olsson B. (eds.), \textit{Grammatical gender and linguistic complexity}. Berlin: Language Sciences Press. 15–52.
+
+Bach, Xavier. forthcoming. Inflection classes in nouns and adjectives in the Romance languages. In Michele Loporcaro (ed.), \textit{The Oxford research encyclopedia of Romance linguistics}. Oxford: Oxford University Press.
+
+Bach, Xavier. accepted. Enriching the typology of features. \textit{Morphology}.
+
+@incollection{BachEsher2015,
+	address = {Amsterdam},
+	author = {Bach, Xavier, and Louise Esher},
+	booktitle = {\textit{Historical \citealt{Linguistics2013}}},
+	editor = {Dag T. T. Haug},
+	pages = {135–154},
+	publisher = {Benjamins},
+	title = {Morphological evidence for the paradigmatic status of infinitives in {French} and Occitan},
+	year = {2015}
+}
+
+
+@misc{BachEsher2023,
+	author = {Bach, Xavier, and Louise Esher},
+	note = {Romance Linguistics Seminar, Oxford, 11 \citealt{May2023}.},
+	title = {A contrastive view of gender–inclusive strategies in {French} and {English}},
+	year = {2023}
+}
+
+
+\textstylecontributors{Baerman, Matthew. 2008. Case syncretism. In Andrej L. Malchukov \& Andrew Spencer (eds.),}\emph{ The Oxford handbook of case, \textup{219}}\textit{–}230. Oxford: Oxford University Press.
+
+@book{BaermanBaerman2005,
+	address = {Cambridge},
+	author = {Baerman, Matthew, Dunstan Brown and Greville G. Corbett},
+	publisher = {Cambridge University Press},
+	title = {\textit{The syntax–morphology interface: {{A}} study of syncretism}},
+	year = {2005}
+}
+
+
+@incollection{BaermanCorbett2010,
+	address = {Oxford},
+	author = {Baerman, Matthew, and Greville G. Corbett},
+	booktitle = {\textit{Defective paradigms. {{M}}issing forms and what they tell us}},
+	editor = {Matthew Baerman, Greville G. Corbett and Dunstan Brown},
+	pages = {1–18},
+	publisher = {British Academy/Oxford University Press},
+	title = {Defectiveness: {{T}}ypology and diachrony},
+	year = {2010}
+}
+
+
+Baerman, Matthew \& Helen Sims–Williams. 2021. A typological perspective on the loss of inflection. In S. Kranich \& T. Breban (eds.), \textit{Lost in change: Causes and processes in the loss of grammatical elements and constructions}. Amsterdam: John Benjamins, 19–50.
+
+@book{Bescherelle2012,
+	address = {Paris},
+	author = {Bescherelle},
+	publisher = {Hatier},
+	title = {\textit{{La} conjugaison pour tous}},
+	year = {2012}
+}
+
+
+@article{BonamiBonami2005,
+	author = {Bonami, Olivier and Gilles Boyé},
+	journal = {\textit{Recherches linguistiques de Vincennes}},
+	pages = {77–98},
+	sortname = {Bonami, Olivier and Gilles Boye},
+	title = {Construire le paradigme d’un adjectif},
+	volume = {34},
+	year = {2005}
+}
+
+
+Bond, Oliver. 2019. Canonical typology. In Jenny Audring \& Francesca Masini (eds.),~\textit{The Oxford handbook of morphological theory}, 409–431. Oxford: Oxford University Press.
+
+@incollection{BrownBrown2013,
+	address = {Oxford},
+	author = {Brown, Dunstan and Marina Chumakina},
+	booktitle = {\textit{Canonical morphology and syntax}},
+	editor = {Dunstan Brown, Marina Chumakina and Greville G. Corbett},
+	pages = {1–19},
+	publisher = {Oxford University Press},
+	title = {What there is and what there might be: {{A}}n introduction to canonical typology},
+	year = {2013}
+}
+
+
+@book{Buridant2019,
+	address = {Strasbourg},
+	author = {Buridant, Claude},
+	publisher = {Editions de linguistique et de philologie romanes},
+	title = {\textit{Grammaire du français médiéval}},
+	year = {2019}
+}
+
+
+@book{Corbett2006,
+	address = {Cambridge},
+	author = {Corbett, Greville G.},
+	publisher = {Cambridge University Press},
+	title = {\textit{Agreement}},
+	year = {2006}
+}
+
+
+@book{Corbett2007,
+	address = {\textit{Language} 83(1)}},
+	author = {Corbett, Greville G.},
+	publisher = {8–42},
+	title = {\textstylefontitalic{Canonical typology, suppletion and possible words}\textstylepri{},
+	year = {2007}
+}
+
+
+Corbett, Greville G. 2009. Canonical inflectional classes. \textstylepri{In Fabio Montermini, Gilles Boyé \& Jesse Tseng (eds.), \textit{Selected Proceedings of the 6th Décembrettes: Morphology in Bordeaux}}, 1–11. Cascadilla Proceedings Project.
+
+@book{Corbett2012,
+	address = {Cambridge},
+	author = {Corbett, Greville G.},
+	publisher = {Cambridge University Press},
+	title = {\textit{Features}},
+	year = {2012}
+}
+
+
+@article{CorbettCorbett2016,
+	author = {Corbett, Greville G. and Sebastian Fedden},
+	journal = {\textit{Journal of Linguistics}},
+	pages = {495–531},
+	title = {Canonical gender},
+	volume = {52},
+	year = {2016}
+}
+
+
+@book{Corbett2023,
+	address = {\textstylejournalname{\textit{Word Structure}} \textstylevolume{15}(3)},
+	author = {Corbett, Greville G.},
+	publisher = {\textstylepage{181–225}},
+	title = {The agreement hierarchy revisited: {{T}}he typology of controllers},
+	year = {2023}
+}
+
+
+Dragomirescu, Adina \& Alexandru Nicolae. 2016. Case. In Adam Ledgeway \& Martin Maiden (eds.), \textit{The Oxford guide to the Romance languages}. Oxford: Oxford University Press.
+
+@article{DurandDurand2011,
+	author = {Durand, Jacques, Bernard Laks, Basilio Calderone and Atanas Tchobanov},
+	journal = {Que savons–nous de la liaison aujourd'hui? \textit{Langue française}},
+	pages = {103–135},
+	volume = {169},
+	year = {2011}
+}
+
+
+\textstylecontributors{Durand, Jacques \& Chantal Lyche. 2016.} \textstylemaintitle{Approaching variation in PFC: The liaison level. In}\textstyleeditors{ Sylvain Detey, Jacques Durand, Bernard Laks \& Chantal Lyche (eds.)}, \emph{Varieties of spoken French,} 363–375. Oxford: Oxford University Press.
+
+@incollection{Esher2020,
+	address = {Oxford},
+	author = {Esher, Louise},
+	booktitle = {\textit{Variation and change in {Gallo}-{Romance} grammar}},
+	editor = {Sam Wolfe and Martin Maiden},
+	pages = {364–384},
+	publisher = {Oxford University Press},
+	title = {Syncretism and metamorphomes in northern Occitan (Lemosin) varieties},
+	year = {2020}
+}
+
+
+@article{Esher2022,
+	author = {Esher, Louise},
+	journal = {\textit{Revue Romane}},
+	number = {1},
+	pages = {86–115},
+	title = {Overlapping subjunctive forms in {Gallo}– and Ibero–{Romance} verb paradigms},
+	volume = {57},
+	year = {2022}
+}
+
+
+@article{Esher2024,
+	author = {Esher, Louise},
+	journal = {\textit{Journal of Linguistics}},
+	number = {2},
+	pages = {285–323},
+	title = {The intricate inflectional relationships underpinning morphological analogy},
+	volume = {60},
+	year = {2024}
+}
+
+
+Esher, Louise. forthcoming. Syncretism. In Adam Ledgeway, Edith Aldridge, Anne Breitbarth, Katalin É. Kiss, Joseph Salmons, Alexandra Simonenko (eds.), \textit{Wiley–Blackwell companion to diachronic linguistics}. Oxford: Wiley–Blackwell.
+
+Esher, Louise. accepted. \textstyleHTMLCite{\textup{Productive identity spanning recurrent partials and whole word forms. In}} Xavier Bach, Louise Esher \& Sascha Gaglia (eds.), \textit{Comparative and dialectal approaches to analogy}. \textit{Inflection in Romance and beyond}. Oxford: Oxford University Press.
+
+@book{GrévisseGrévisse1991,
+	address = {12e édition} \textit{revue et corrigée}. Paris},
+	author = {Grévisse, Maurice and André Goosse},
+	publisher = {Duculot},
+	sortname = {Grevisse, Maurice and Andre Goosse},
+	title = {\textit{{Le} bon usage},
+	year = {1991}
+}
+
+
+@incollection{Hansson2007,
+	address = {Amsterdam},
+	author = {Hansson, Gunnar Ólafur},
+	booktitle = {\textit{Saami linguistics}},
+	editor = {Ida Toivonen and Diane Nelson},
+	pages = {91–135},
+	publisher = {John Benjamins},
+	sortname = {Hansson, Gunnar Olafur},
+	title = {Productive syncretism in Saami inflectional morphology},
+	year = {2007}
+}
+
+
+@incollection{Hinzelin2011,
+	address = {Oxford},
+	author = {Hinzelin, Marc-Olivier},
+	booktitle = {\textit{Morphological autonomy: {{P}}erspectives from {Romance} inflectional morphology}},
+	editor = {Martin Maiden, John Charles Smith, Maria Goldbach and Marc–Olivier Hinzelin},
+	pages = {287–310},
+	publisher = {Oxford University Press},
+	title = {Syncretism and suppletion in {Gallo}-{Romance} verb paradigms},
+	year = {2011}
+}
+
+
+@incollection{Hinzelin2012,
+	address = {Amsterdam},
+	author = {Hinzelin, Marc–Olivier},
+	booktitle = {\textit{Inflection and Word Formation in {Romance} Languages}},
+	editor = {Sascha Gaglia and Marc–Olivier Hinzelin},
+	pages = {55–81},
+	publisher = {John Benjamins},
+	sortname = {Hinzelin, Marc–Olivier},
+	title = {Verb morphology gone astray: {{S}}yncretism patterns in {Gallo}–{Romance}},
+	year = {2012}
+}
+
+
+Hinzelin, Marc–Olivier. 2022. Allomorphy and syncretism in the Romance languages. In Mark Aronoff (ed.), \textit{The Oxford research encyclopedia of linguistics}. Oxford: Oxford University Press. https://oxfordre.com/linguistics/view/10.1093/acrefore/9780199384655.001.0001/acrefore–9780199384655–e–736
+
+Ledgeway, Adam. 2012. From Latin to Romance: The rise of configurationality, functional categories and head–marking. In Johanna Barðdal et al. (eds), \textit{Variation and change in argument realisation}. Oxford: Blackwell. Special Issue of the Transactions of the Philological Society 110: 422–442.
+
+@incollection{Loporcaro2011,
+	address = {Oxford},
+	author = {Loporcaro, Michele},
+	booktitle = {\textit{Morphological autonomy: {{P}}erspectives from {Romance} inflectional morphology}},
+	editor = {Martin Maiden, John Charles Smith, Maria Goldbach and Marc–Olivier Hinzelin},
+	pages = {327–357},
+	publisher = {Oxford University Press},
+	title = {Syncretism and neutralization in the marking of {Romance} object agreement},
+	year = {2011}
+}
+
+
+@book{Maiden2018,
+	address = {Morphomic structure and diachrony}. Oxford},
+	author = {Maiden, Martin},
+	publisher = {Oxford University Press},
+	title = {\textit{The {Romance} verb},
+	year = {2018}
+}
+
+
+Maiden, Martin \& Paul O’Neill. 2010. On morphomic defectiveness: Evidence from the Romance languages of the Iberian Peninsula. In Matthew Baerman, Greville G. Corbett \& Dunstan Brown (eds.), \textit{Defective paradigms. Missing forms and what they tell us}. Oxford: British Academy/Oxford University Press. 103–124.
+
+@article{Meiser1992,
+	author = {Meiser, Gerhard},
+	journal = {\textit{Transactions of the Philological Society}},
+	pages = {187–218},
+	title = {Syncretism in {Indo}–{European} languages: {{M}}otives, process and results},
+	volume = {90},
+	year = {1992}
+}
+
+
+@book{\emph{\textup{New2004,
+	address = {\textup{Lexique 2: A New French Lexical Database}. Behavior Research Methods, Instruments, \& Computers \textup{36 \REF{ex:key:3}},
+	author = {\emph{\textup{New, B., Pallier, C., Brysbaert, M., Ferrand, L.},
+	note = {}},
+	publisher = {516–524}},
+	sortname = {\emph{\textup{New, B., Pallier, C., Brysbaert, M., Ferrand, L.},
+	title = {}},
+	year = {2004}
+}
+
+
+Reenen, Pieter van \& Lene Schøsler. 2000. Declension in old and middle French: Two opposing tendencies. In John Charles Smith \& Delia Bentley (eds), \textit{Historical \citealt{Linguistics1995}}. Amsterdam: John Benjamins, 327–344.
+
+@book{Schøsler1984,
+	address = {Odense},
+	author = {Schøsler, Lene},
+	publisher = {Odense University Press},
+	sortname = {Schosler, Lene},
+	title = {\textit{{La} déclinaison bicasuelle en ancien français}},
+	year = {1984}
+}
+
+
+Schøsler, Lene. 2013. The development of the declension system. In D. L. Arteaga (ed.), \textit{Research on old French: The state of the art}. New York: Springer, 167–184.
+
+@book{Sims2015,
+	address = {Cambridge},
+	author = {Sims, Andrea},
+	publisher = {Cambridge University Press},
+	title = {\textit{Inflectional defectiveness}},
+	year = {2015}
+}
+
+
+Smith, John Charles. 2011. Change and continuity in form–function relationships. In Martin Maiden, John Charles Smith \& Adam Ledgeway (eds.), \textit{The Cambridge history of the Romance languages, vol I: Structures}. Cambridge: Cambridge University Press, 268–317.a
+
+Sornicola, Rosanna. 2011. Romance linguistics and historical linguistics: Reflections on synchrony and diachrony. In Martin Maiden, John Charles Smith \& Adam Ledgeway (eds.), \textit{The Cambridge history of the Romance languages, vol I: Structures}. Cambridge: CUP, 1–49.
+
+Spencer, Andrew. 2020. Uninflectedness: Uninflecting, uninflectable and uninflected words, or the complexity of the simplex. In Lívia Körtvélyessy \& Pavol Štekauer (eds.), \textit{Complex words: Advances in morphology}. Cambridge: Cambridge University Press, 142–158.
+
+@book{Stump2001,
+	address = {\textit{Inflectional morphology.} Cambridge},
+	author = {Stump, Gregory T.},
+	publisher = {Cambridge University Press},
+	year = {2001}
+}
+
+
+@book{Stump2016,
+	address = {Cambridge},
+	author = {Stump, Gregory T.},
+	publisher = {Cambridge University Press},
+	title = {\textit{Inflectional paradigms}},
+	year = {2016}
+}
+
+
+\end{verbatim}
+\sloppy\printbibliography[heading=subbibliography,notkeyword=this]
+\end{document}

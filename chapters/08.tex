@@ -1,0 +1,558 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook}
+\ChapterDOI{10.5281/zenodo.20611897}
+\author{M. Copot\orcid{0000-0001-5182-9482}\affiliation{Surrey Morphology Group, University of Surrey} and N. Agostinho Da Silva\orcid{}\affiliation{} and A. Beji\orcid{}\affiliation{} and A. Watiez\orcid{}\affiliation{} and O. Bonami\orcid{0000-0003-0688-3855}\affiliation{Université Paris Cité, CNRS, Laboratoire de Linguistique Formelle}}
+
+\title{Emerging uninflectedness in French clipped verbs}
+
+\abstract{This study documents the emergence of systematic verbal clipping in contemporary French, creating a novel source of morphological uninflectedness. While clipping is well-established for French nouns and adjectives (\emph{introduction} $\rightarrow$ \emph{intro}), verbal clipping represents a recent phenomenon primarily found in informal registers (\emph{je me déconnecte} `I disconnect' $\rightarrow$ \emph{je me déco}). Crucially, these forms remain uninflected across paradigm cells despite being phonologically compatible with standard first conjugation patterns, suggesting conventionalized uninflectedness rather than grammatical impossibility. We devise a computational method for retrieving truncated verbs from the FrWaC corpus by identifying verbal tokens that are substrings of inflected verbs in the French lexicon. Distributional semantics determines the contextually optimal full form from multiple candidates, achieving 88\% accuracy in human evaluation. A qualitative analysis of the extracted forms suggests that verbal truncation is productively used by speakers and can apply throughout the verbal paradigm. We follow this up with an experiment to demonstrate that clipped verbs are accepted by speakers in appropriate sociolinguistic contexts. The phenomenon displays interactions between lexeme formation and inflection that are relevant to morphological theory: while inflectional suffixes are fully lost in truncated verbs, stem allomorphy sometimes leads to the preservation of partial inflectional properties, and there is no biuniqueness requirement between full and clipped forms.}
+
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[23]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction} 
+
+There are a variety of reasons that a lexeme can be uninflected, as witnessed in other papers in this volume. However a main source of uninflectedness is a situation where forms of a lexeme have a shape that is inappropriate for the application of usual inflectional regularities --- in other words, the lexeme is uninflected because it is uninflectable. This happens often with borrowings. Consider the \ili{Czech} undeclinable noun \emph{iglú} ‘igloo’. All established inflection classes of \ili{Czech} entail that the \textsc{nom.sg}, which is also the citation form, end in a consonant, or one of the vowels \emph{-a}, \emph{-o}, \emph{-e}, \emph{-í}, \emph{-ý}, \emph{á}, or \emph{é}.\footnote{The last three possibilities are usually not listed in reference grammars but are found with masculine, feminine and neuter nouns converted from adjectives.} As the citation form \emph{iglú} does not have one of the predictable shapes, a natural strategy to accomodate it in the system is not to inflect it at all.
+
+In this paper we document a case where uninflectedness does not result from borrowing but from productive morphology. Many languages combine two interesting characteristics: having a productive \isi{truncation} (or \isi{clipping}) process in the word formation system, and relying on suffixal exponents in inflection. In such a situation, we may wonder whether \isi{truncation} may lead to a situation of uninflectability for lack of an appropriate shape, parallel to the \ili{Czech} example above. English is a language with these two characteristics, but the organization of its inflection system is such that the outcome just described does not arise: for instance, truncating the noun \emph{rhinoceros} to \emph{rhino} does not lead to uninflectability, as English inflection accomodates nouns with any vocalic ending in the singular. But while the coexistence of the two characteristics above does not deterministically yield uninflectability, there are nevertheless cases in which this outcome might be found. In this chapter, we document the emergence in contemporary \ili{French} of productive \isi{clipping} of verbs leading to uninflectedness, and consider whether uninflectedness is motivated by an impossibility of accomodating the clipped verbs in the inflection system. As it will turn out, the situation is more interesting: we will argue that \ili{French} clipped verbs could have been inflected, but that they are not, probably to maintain the specific social meaning associated with \isi{clipping}.
+
+The structure of the chapter is as follows. Section~\ref{sec:background} presents the relevant background facts on \isi{clipping} and uninflectedness in \ili{French}. In Section~\ref{sec:corpus}, we show that clipped verbs are readily found in corpora of contemporary informal \ili{French}, and in Section~\ref{sec:experiment}, we present experimental evidence that \ili{French} speakers find these forms to be fully acceptable in the appropriate contexts. Section~\ref{sec:disc} lays out the consequences of these results.
+
+
+\section{Background on \ili{French} morphology}\label{sec:background}
+
+\subsection{Clipping\is{clipping} in \ili{French}}
+
+In this section we rely heavily on \citeauthor{antoine2000}'s (\citeyear{antoine2000}) dictionary of clipped forms, as well as the informal survey of the state of the art in \citet{cerquiglini2019}.
+
+Clipping\is{clipping} in \ili{French} has been the focus of attention of linguists and lexicographers as early as the 1920s \citep{kjellman1920}. It is attested since the 18th century, and is generally thought to have attained high productivity in the 20th century. Clipping\is{clipping} is found with all major parts of speech, but with variable productivity, as is highlighted in Table~\ref{tab:productivity}, where we compare the proportion of lexemes in various parts of speech in \citeauthor{antoine2000}'s (\citeyear{antoine2000}) dictionary and in the general lexicon. As is immediately striking in the table, \isi{clipping} is clearly overrepresented in nouns, and underrepresented in verbs. 
+
+\newcommand{\iobare}[2]{\ensuremath{\textit{#1}>\textit{#2}}}
+
+\newcommand{\io}[3]{\iobare{#1}{#2}\ \textrm{‘#3’}}
+
+
+\begin{exe}
+	\ex\label{ex:first}\begin{xlist}
+		\ex Nouns: \\\io{introduction}{intro}{introduction},\\ \io{vélocipède}{vélo}{bicycle},\\ \io{appartement}{appart}{apartment}, etc.
+		\ex Adjectives:\\ \io{dégueulasse}{dégueu}{disgusting},\\ \io{sympathique}{sympa}{nice}, etc.
+		\ex Nouns or adjectives:\footnote{We group under ‘nouns or adjectives’ cases where the language uses homophonous items of related meanings in the two parts of speech, and \isi{truncation} applies equally to both. We refrain from making any claim on the morphological relationship between these items.}\\
+		\io{anarchiste}{anar}{anarchist},\\ \io{catholique}{catho}{catholic}, etc.
+		\ex Adverbs:\\ \io{personnellement}{perso}{personally},\\ \io{directement}{directo}{directly},\footnote{Refer to Footnote \ref{o-suff} for a discussion of -o suffixation in \ili{French} clippings\is{clipping}.} etc.
+		\ex Verbs: \io{magnétoscoper}{scoper}{tape-record}
+	\end{xlist}
+\end{exe}
+
+
+\begin{table}
+	\centering
+	\begin{tabular}{lrrl}
+		\lsptoprule
+		Part of speech  & Clippings\is{clipping}  & General lexicon\\% & Example \\
+		\midrule
+		Noun &   79\% & 57\%\\% & \io{appartement}{appart}{apartment}\\
+		Noun or adjective &   9\% & 8\%\\% & \io{anarchiste}{anar}{anarchist}\\
+		Adjective &   8\% & 17\%\\% & \io{dégueulasse}{dégueu}{disgusting}\\
+		Adverb &  3\% &  4\%\\% & \io{personnellement}{perso}{personally}\\
+		Verb &   $<$1\% & 13\%\\% & \\
+		Preposition & $<$1\% & $<$1\%\\% & \\
+		Interjection & $<$1\% & $<$1\%\\% & \\
+		\midrule
+		Total &  1,152 & 47,359\\
+		\lspbottomrule
+	\end{tabular}
+	\caption{Distribution of parts of speech in clippings\is{clipping} as documented in \citet{antoine2000}, compared to lexemes in the general lexicon, as \mbox{documented} in the Lexique 3 database \citet{newbrysbaertveronispallier2007}. \label{tab:productivity}}
+\end{table}
+
+Although both apocope (\isi{clipping} of the end of words) and apheresis (\isi{clipping} of the beginning) are attested (\ref{ex:first}--\ref{ex:apheresis}), only apocope is clearly productive, making up more than 95\% of  \citeauthor{antoine2000}'s (\citeyear{antoine2000}) data. 
+
+\begin{exe}
+	\ex\label{ex:apheresis} \io{autobus}{bus}{bus},\\ \io{capitaine}{pitaine}{captain},\\ \io{ricain}{américain}{American}
+\end{exe}
+
+There is evidence of various kinds that \isi{clipping} is a true lexeme formation process, giving rise to the conventionalisation of new lexemes, rather than a mere online abbreviation mechanism. First, clipped forms sometimes supplant their nonclipped equivalent entirely. Striking examples of this are \emph{vélo} ‘bicycle’, clipped from \emph{vélocipède}, and \emph{métro} ‘subway’, clipped from \emph{train métropolitain}, literally ‘metropolitan train’. In both cases, the nonclipped form has almost entirely fallen out of usage,  to the point that ordinary speakers have no intuition that \isi{clipping} took place.
+
+\largerpage[1]
+
+Second, although the main import of \isi{clipping} is to convey some form of social meaning related to informality, clipped forms sometimes have shifted or otherwise unpredictable meanings, a clear hallmark of lexical listedness. A most striking example is that of \emph{beauf}, originally a clipped form of \emph{beau-frère} ‘brother in law’, but mostly used since the 1960s as a derogatory term to designate an uncultivated person espousing reactionary politics; crucially, that meaning is unavailable for the unclipped form. \citet{kerleroux1999} discusses more systematic semantic effects of \isi{clipping} in the particular case of nominalizations in \emph{-ion}, a corner of the lexicon where \isi{clipping} is particularly productive (\io{introduction}{intro}{introduction}, \io{manifestation}{manif }{manifestation, demonstration}, etc.). According to that study, \isi{clipping} selects noneventive readings of these nouns, leading to contrasts such as that in (\ref{ex:Kerleroux}).
+
+\begin{exe}
+	\ex\label{ex:Kerleroux}\begin{xlist}
+		\ex L'\textbf{introduction}/*l'\textbf{intro} du lynx dans le Vercors provoque des tollés.
+		\trans ‘The \textbf{introduction} of the lynx in the Vercors causes outcry.’
+		\ex L'\textbf{introduction}/l'\textbf{intro} de ta dissertation nous a bien fait rire.
+		\trans ‘The \textbf{introduction} of your essay made us laugh.’
+	\end{xlist}
+\end{exe}
+
+\largerpage[1]
+
+Although  \citeauthor{anselmebonamiburnett2021}'s (\citeyear{anselmebonamiburnett2021}) more thorough empirical study does not confirm the categorical effect that Kerleroux hypothesized, it confirms the existence of differences in the statistical distribution of readings of clipped and nonclipped forms that could not be accounted for if they were a single lexical entity.
+
+Third, \isi{clipping} feeds all varieties of word formation. Table~\ref{tab:compounding} documents cases where clipped forms are bases in either native or neoclassical compounding, while Table~\ref{tab:derivation} provides some examples where they are bases for either affixal derivation or conversion. In none of these cases can the unclipped forms be substituted for the clipped form.
+
+\begin{table}
+	\centering
+	\begin{tabular}{lll}
+		\lsptoprule
+		Base &  Clipped &  Compound\\
+		\midrule
+		vélocipède & vélo & vélodrome\\
+		‘bicycle’ & & ‘bicycle racing arena’\\
+		cinéma & ciné & cinéphile\\
+		‘cinema’ & & ‘cinema enthusiast’\\
+		automobile & auto & automitrailleuse\\
+		‘automobile’ & & {‘machine gun\newline carrying (armored) car’} \\
+		homosexuel & homo & homophobe\\
+		‘homosexual’ & & ‘homophobic’\\
+		microphone & micro & micro-cravate\\
+		‘microphone’ & & ‘clip-on microphone’\\
+		\lspbottomrule
+	\end{tabular}
+	\caption{Examples of \isi{clipping} feeding compounding\label{tab:compounding}}
+\end{table}
+
+\begin{table}
+	\centering
+	\begin{tabular}{lll}
+		\lsptoprule
+		Base &  Clipped &  Derivative\\
+		\midrule
+		vélocipède & vélo & vélociste\\
+		‘bicycle’ & & ‘bicycle mechanic’\\
+		cinéma & ciné & cinéaste\\
+		‘cinema’ & & ‘filmmaker’\\
+		mathématiques & math & matheux\\
+		‘mathematics’ & & ‘mathematician (informal)’\\
+		camelote & came & (se) camer\\
+		‘junk’ & ‘drugs’& ‘do drugs’\\
+		blaireau & blair & blairer\\
+		‘badger’ & ‘nose’ & ‘get along with someone’\\
+		\lspbottomrule
+	\end{tabular}
+	\caption{Examples of \isi{clipping} feeding derivation\label{tab:derivation}}
+\end{table}
+
+Fourth, apocope is frequently accompanied by the suffixation of an extra morph redundantly conveying informality (\ref{ex:o}), most often but not exclusively \emph{-o}.\footnote{\label{o-suff}Suffixation occurs with 25\% of apocopes in Antoine's data, and the suffix is \emph{-o} in 36\% of these cases. As discussed at length by \citet{vihman2019}, this particular suffixation creates a larger family of clipped nouns fitting in a phonological template with a final  \emph{-o}, which is sometimes already  present in the base, see e.g. \emph{intro} from \emph{introduction}, \emph{ado} from \emph{adolescent}, etc. Together, suffixed and unsuffixed \emph{-o} forms make up 32\% of Antoine's dataset. Note also that \emph{-o} suffixation is often accompanied by  allomorphy, see e.g. \emph{crado} from \emph{crasseux} ‘filthy’, \emph{dirlo} from \emph{directeur} ‘director’, \emph{parigot} from \emph{parisien} ‘parisian’. See \citet{kilanischochdressler1999} on the pragmatic value of \emph{-o}.} To the extent that the use of a particular suffix in the context of a particular base is conventionalised, this is again a clear sign of lexical listedness of clipped forms.
+
+\begin{exe}
+	\ex\label{ex:o}\begin{xlist}
+		\ex \io{prolétaire}{prolo}{proletarian},\\ \io{intellectuel}{intello}{intellectual},\\ \io{régulier}{réglo}{reliable},\\ \io{socialiste}{socialo}{socialist}, etc.
+		\ex \io{matériel}{matos}{gear},\\ \io{cantine}{cantoche}{canteen},\\ \io{anglais}{angliche}{English}, etc.
+	\end{xlist}
+\end{exe}
+
+% \largerpage[-2]
+
+Finally, \isi{clipping} interacts in crucial ways with other nonconcatenative processes of \ili{French} conveying related types of social meaning.%
+\footnote{\citet{antoine2000} describes examples such as those in (i) as cases of \isi{clipping} feeding reduplication. Although these cases definitely have a family resemblance with those discussed in the main text in terms of their social meaning, and they do involve some form of \isi{truncation}, the fact that they uniformly involve \isi{truncation} to a single open syllable suggests that they follow a different pattern, widely attested in hypocoristics (ii), and documented in detail by \citet{plenat1984}.
+	\begin{exe}
+		\exi{(i)} \io{communiste}{coco}{communist}, \io{crasseux}{cracra}{filthy}, \io{nourrice}{nounou}{nanny}, \io{mignon}{mimi}{cute}, \io{général}{gégène}{general}
+		\exi{(ii)} \iobare{Sophie}{Soso}, \iobare{Jean}{Jeanjean}, \iobare{Émile}{Mimile}
+	\end{exe}
+}
+Most significantly, \isi{clipping} often affects \emph{\isi{verlan}}, a word formation process whose output is characteristic of ingroup teenage speech,\footnote{The social history of \isi{verlan} use is complex. Most sources agree that, although it has much deeper origins, it started gaining widespread popularity as a marker of ingroup status for youth of disinfranchised \emph{banlieues} of the Paris area in the 1960s and 1970s. It then gained quick cultural prominence in the 1980s and 1990s, to become mostly a generational marker. Ironically, there are now multiple generations of \emph{\isi{verlan}} users attuned to its apropriateness only for younger speakers: many parents of contemporary teenagers used exactly the same forms as their children in the same context at the same age.} and consisting in modifying the prosodic makeup of a word in a manner that obfuscates the sound-meaning association, using a combination of vowel deletions and insertions, and, most compicuously, inversions of order (see \citealt{lefkowitz1991,plenat1995} for detailed description). Importantly for our purposes, in many cases, \isi{verlan} formations of two syllables are followed by \isi{clipping}, resulting in a single closed syllable,  as illustrated in Table~\ref{tab:verlan:clipped}. Again there is clear evidence of the convetionalization of clipped forms: for all the examples in Table~\ref{tab:verlan:clipped}, the nonclipped form is barely used, if at all. Likewise there are many other examples where \isi{verlan} formation is not accompanied by \isi{clipping} in the conventionalised form, although there is no reason that it could not, e.g. \io{pourri}{ripou}{rotten}, \io{méchant}{chanmé}{mean}, \io{tête}{teuté}{head}.
+
+
+\begin{table}
+	\centering
+	\begin{tabular}{llll}
+		\lsptoprule
+		Base &  Verlan\is{verlan} &  Clipped \isi{verlan} & Translation\\
+		\midrule
+		flic & keufli & keuf  & ‘cop’\\
+		fête & teufé & teuf & ‘party’\\
+		femme& meufa & meuf  & ‘woman’ \\
+		père & reupé & reup & ‘father’\\
+		arabe & beura & beur & ‘arab’\\
+		mec & keumé & keum & ‘guy’\\
+		parent & rempa & remp & ‘parent’\\
+		\lspbottomrule
+	\end{tabular}
+	\caption{Examples of \isi{verlan} feeding \isi{clipping}. \label{tab:verlan:clipped}}
+\end{table}
+
+From this quick overview of \isi{clipping} in \ili{French}, we conclude that \isi{clipping} is clearly a productive word formation process integrated in a family of morpho-pragmatic means of conveying informality, but leading to institutionalized coinage of new lexemes. Hence it is a legitimate question to ask whether and how clipped lexemes inflect.
+
+\subsection{The potential for uninflectability}
+
+In this subsection we quickly review the structure of the \ili{French} inflection system, and show that verbs are the only class of lexemes where uninflectability is likely to be observable. 
+
+Inflection is found in \ili{French} in nouns, adjectives and verbs. However, inflectional variability is strongly impoverished in nouns and adjectives, and structured in such a way that uninflectability cannot arise.
+
+Table~\ref{tab:noun:infl} illustrates the main inflectional characteristics of \ili{French} nouns. The vast majority of nouns pattern like \emph{personne} ‘person’: the singular and plural form are identical in most contexts, although a final /z/ may optionally be realized in the plural in so-called \emph{liaison} contexts, i.e., when followed by a vowel-initial attributive adjective.\footnote{See  \citet{bonamidelaisroussarie2021} for a recent overview of \ili{French} \emph{liaison}.} This pattern accounts for $99.3\%$ of the 31,002 nouns documented in the \emph{Flexique} database \citep{bonamicaronplancq2014}. The few remaining cases exhibit some alternation between singular and plural forms; /aj/$\sim$/o/ and /al/$\sim$/o/ are the only two alternations found with a sizable number of lexemes. Importantly for our purposes, there is no phonotactic requirement that a noun following the main pattern has to meet to be usable in either the singular or the plural: any phonotactically well-formed sequence will do. As a result, we expect any new noun to be able to inflect normally.
+
+\begin{table}
+	\centering
+	\begin{tabular}{llll}
+		\lsptoprule
+		Orthographic & \multicolumn{2}{c}{Inflected forms} & Translation \\
+		citation form & \textsc{sg} & \textsc{pl} &\\
+		\midrule
+		personne & /pɛʁsɔn/ & /pɛʁsɔn(z)/ & ‘person’\\
+		vitrail & /vitʁaj/ & /vitʁo(z)/ & ‘stained glass’\\
+		amiral & /amiʁal/ & /amiro(z)/ & ‘admiral’\\
+		œil & /œj/ & /jø(z)/ & ‘eye’\\
+		\lspbottomrule
+	\end{tabular}
+	\caption{Sample of inflectional patterns in \ili{French} nouns.\label{tab:noun:infl}}
+\end{table}
+
+\largerpage[1]
+
+Moving on to adjectives, the situation is similar although a little more complex. A typical \ili{French} adjective follows the pattern illustrated in Table~\ref{tab:adj:infl} by \emph{joli} ‘pretty’ and \emph{net} ‘clear’: identical forms throughout, with the optional realization of a final /z/ in the plural in \emph{liaison} contexts. This pattern is found with 39\% of the adjectives in \emph{Flexique}. Deviations of the pattern come in two main varieties. First, many adjectives such as \emph{petit} ‘small’ exhibit an alternation between a final consonant in the feminine, and an optionally realized consonant in the masculine singular (realized, again, in \emph{liaison} contexts). Second, a smaller set of adjectives have a final /o/ in the masculine plural alternating with a final /al/ in the other three cells of the paradigm.%
+\footnote{There is a handful of other patterns of low type frequency that have been the focus of much theoretical attention but have no bearing on the discussion at hand. See \citet{bonamiboye2005} for details. Typical descriptions also include a set of fully uninflectable adjectives such as \emph{marron} ‘brown’ or \emph{gnangnan} ‘soppy’, which are written without a final <s>, and  purportedly do not give rise to liaison, in the plural. To our knowledge this has never been verified empirically. A search in web corpora documents thousands of examples of the purportedly incorrect orthography in phrases such as \emph{yeux marrons} ‘brown eyes’, and native speaker intuitions on liaison are far from clearcut. While more research would be necessary, this suggests that these adjectives may pattern with \emph{joli} except in highly controlled formal speech and edited writing.}
+The important point for our purposes is that there is at least one clearly productive pattern with high type frequency that places no phonotactic requirements on its members, namely the pattern found with \emph{joli} and \emph{net}: any phonotactic shape that is a legal \ili{French} word can be used as an adjective in any of the four cells in the paradigm. As a result we reach the same conclusion that we reached for nouns: we expect any new adjective to be able to inflect normally.
+
+\begin{table}
+	\centering
+	\begin{tabular}{llllll}
+		\lsptoprule
+		Orthographic & \multicolumn{4}{c}{Inflected forms} & Translation \\
+		citation form & \textsc{m.sg} & \textsc{m.pl} & \textsc{f.sg} &   \textsc{f.pl} & \\
+		\midrule
+		joli & /ʒoli/ & /ʒoli(z)/ & /ʒoli/ & /ʒoli(z)/ & ‘pretty’\\
+		net & /nɛt/ &/nɛt(z)/ & /nɛt/ & /nɛt(z)/ & ‘clean, clear’\\
+		petit & /pəti(t)/ & /pəti(z)/ & /pətit/ & /pətit(z)/ & ‘small’\\
+		global & /ɡlobal/ & /ɡlobo(z)/ & /ɡlobal/ & /ɡlobal(z)/ & ‘global’\\
+		%beau & /bo/ & /bo(z)/ & /bɛl/ & /bɛl(z)/ & ‘beautiful’\\
+		\lspbottomrule
+	\end{tabular}
+	\caption{Sample of inflectional patterns in \ili{French} adjectives.\label{tab:adj:infl}}
+\end{table}
+
+Things become more interesting when we turn to verbs. Unlike nouns and adjectives, \ili{French} verbs make systematic use of affixal exponence. This is true in particular for verbs belonging to the first conjugation, which is the largest inflection class by far (87\% of the verbs documented in \emph{Flexique}\footnote{This is the size of the relevant macroclass according to \citet{beniaminebonamisagot2017}. There is some internal variability within the first conjugation, so that only 69\% of verbs inflect \emph{exactly} as illustrated in Table~\ref{tab:verb:infl}.} and the only one that is clearly productive, both in terms of hosting newly morphologically-formed verbs and borrowings. Table~\ref{tab:verb:infl} shows the paradigm of one such verb. Here two important observations are in order. First, most inflectional affixes are vocalic. This is in particular the case for the (homophonous) most frequent suffixes of the infinitive, past participle, indicative present \textsc{2pl} and imperative \textsc{2pl} (note that other frequent cells, such as those in the present singular and \textsc{3pl}, use a bare stem). Second and relatedly, there is strong phonotactic constraints on the shape of the basic stem of a first conjugation verb, as witnessed by the form used in the indicative present singular. Only 6.3\% of the verbs in \emph{Flexique} have a final vowel. That vowel is never a nasal nor /o/, /ɔ/, /ø/ or /œ/. The vowel /a/ is only attested after /w/ in verbs exhibiting a /wa/$\sim$/waj/ allomorphy (witness \emph{il aboie} /ilabwa/ ‘he barks’ vs. \emph{aboyer} /abwaje/ ‘to bark’).  /ɛ/ and /e/ are much rarer as final segments of verb stems than of stems for nouns and adjectives.
+
+\newcommand{\lav}{lav}
+\renewcommand{\-}{-\color{red}}
+
+
+\begin{table}
+	%\hspace*{-3em}
+	\centering
+	\begin{tabular}[t]{>{\scshape}lllllll}
+		\multicolumn{7}{c}{Finite forms}\\
+		\lsptoprule
+		& \textsc{1sg} & \textsc{2sg} & \textsc{3sg} & \textsc{1pl} & \textsc{2pl} & \textsc{3pl}\\
+		\midrule
+		\textsc{ind.prs} & \lav & \lav & \lav & \lav\-ɔ̃ & \lav\-e & \lav\\
+		\textsc{ind.imperf} & \lav\-ɛ & \lav\-ɛ & \lav\-ɛ & \lav\-jɔ̃ & \lav\-je & \lav\-ɛ\\
+		\textsc{ind.pst} & \lav\-ɛ & \lav\-a & \lav\-a & \lav\-am & \lav\-at & \lav\-ɛʁ\\
+		\textsc{ind.fut} & \lav\-əʁɛ & \lav\-əʁa & \lav\-əʁa & \lav\-əʁɔ̃ & \lav\-əʁe & \lav\-əʁɔ̃\\
+		\textsc{cond} & \lav\-əʁɛ & \lav\-əʁɛ & \lav\-əʁɛ & \lav\-əʁjɔ̃ & \lav\-əʁje & \lav\-əʁɛ\\
+		\textsc{sbjv.prs} & \lav & \lav & \lav & \lav\-jɔ̃ & \lav\-je & \lav\\
+		\textsc{sbjv.imperf} & \lav\-as & \lav\-as & \lav\-a & \lav\-asjɔ̃ & \lav\-asje & \lav\-as\\
+		\textsc{imp} & --- & \lav & --- & \lav\-ɔ̃ & \lav\-e & ---\\
+		\lspbottomrule
+	\end{tabular}\\[.5\baselineskip]
+	\begin{tabular}{llllll}
+		\multicolumn{6}{c}{Nonfinite forms}\\
+		\lsptoprule
+		& &\multicolumn{4}{c}{\textsc{pst.ptcp}}\\
+		\raisebox{1.6ex}[0cm][0cm]{\textsc{inf}} & \raisebox{1.6ex}[0cm][0cm]{\textsc{prs.ptcp}} &  \textsc{m.sg} & \textsc{f.sg} & \textsc{m.pl} & \textsc{f.pl}\\
+		\midrule
+		\lav\-e & \lav\-ɑ̃ & \lav\-e & \lav\-e & \lav\-e & \lav\-e\\
+		\lspbottomrule
+	\end{tabular}
+	\caption{The paradigm of the regular first conjugation noun \textsc{laver} ‘wash’\label{tab:verb:infl}}
+\end{table}
+
+\largerpage[1]
+As a result of these observations, one might expect uninflectability in \ili{French} verbs, if there is a source of new verbs ending in a vowel other than /u/, /i/, or /y/, as the phonological shape of these stems might make them poor candidates for first conjugation inflection, the verbal inflectional class that neologisms and borrowings are assigned to.\footnote{There are very few exceptions to this pattern. Neologisms that get assigned to conjugations other than the first have a clear analogical attractor in the target conjugation, such as \textit{alunir} `to land on the Moon', assigned to the second conjugation because formed in analogy to \textit{atterrir} `to land (on Earth)', which belongs to the second conjugation.} In light of this, consider the dialogue in~(\ref{ex:dialogue}) between two Parisian teenagers, overheard by the last author of this paper in 2014:
+
+\begin{exe}
+	\ex\label{ex:dialogue}\begin{xlist}
+		\exi{S1:}{
+			\gll Oh non, je me suis encore fait \textbf{déco}!\\
+			Oh no \textsc{1sg.nom} \textsc{1sg.acc} be.\textsc{prs.1sg} again make.\textsc{pst.ptcp} \textbf{disconnect.\textsc{inf}}\\
+			\trans ‘Oh no, I was \textbf{disconnected} again!’}
+		\exi{S2:}{
+			\gll  Hein, il t' a \textbf{déco}?\\ 
+			What \textsc{3sg.m.nom} \textsc{2sg.acc} have.\textsc{prs.3sg} \textbf{disconnect.\textsc{pst.ptcp}}\\
+			\trans ‘What, he \textbf{disconnected} you?}
+		\exi{}{
+			\gll Eh ben \textbf{reco}-toi!\\
+			Well then \textbf{reconnect.\textsc{imp.2sg}}-\textsc{2sg.acc}\\
+			\trans ‘Well then \textbf{reconnect}!’}
+		\exi{
+			[\ldots]}{}
+		\exi{S1:}{
+			\gll Je suis \textbf{redéco}!\\
+			\textsc{1sg.nom} be.\textsc{prs.1sg} \textbf{redisconnect.\textsc{pst.ptcp}}\\
+			\trans ‘I am redisconnected!’}
+	\end{xlist}
+\end{exe}
+
+Here we clearly witness uninflectedness, both in the infinitive and the past participle, in three morphologically related clipped verbs whose stem ends in \emph{-o} as a consequence of \isi{clipping}. Hence we witness a good candidate for uninflectability for phonological reasons. What is striking, then, is that such cases are not documented in the literature. They do have a strong feeling of novelty, and tend to feel unacceptable to speakers over 40. In fact,  apocope is usually said to be impossible with verbs, except in very specific cases discussed below, and such cases have not caught the attention of \citet{cerquiglini2019} in his recent overview of the phenomenon. 
+
+The goal of this paper is to document the existence of such cases, and to point out their theoretical importance.
+
+
+
+\subsection{Documented uninflected verbs}
+
+Although examples such as those in~(\ref{ex:dialogue}) are undocumented, there are some well known cases of uninflectedness in \ili{French} verbs. One case that is important but orthogonal to our discussion is that of the lexical items \emph{voici} and \emph{voilà}, which are well-known to be best analyzed as subjectless presentative verbs, as they have a host of syntactic properties not found with other verbs \citep{morin1985,bouchard1988}. However these lexical items exhibit no inflectional variation, and are found only in root clauses conveying an assertion, with no co-occurrence with time adverbials; hence they seem to lack an inflectional paradigm altogether, rather than using forms lacking expected exponents in some or all paradigm cells.
+
+\begin{exe}
+	\ex\label{ex:voila}\gll Voilà ton livre.\\
+	\textsc{pres} \textsc{2sg.m.sg} book\\
+	\trans ‘Here is your book.’
+\end{exe}
+
+More interesting are a series of verbs that alternate between overt inflection and uninflectedness, and are all used within the sphere of informal speech (see among other sources  \citealt{antoine2000,cerquiglini2019,gadetwachs2016}). A prime but lonely example is the verb \emph{fiche},  a euphemistic alternative to the  verb \emph{foutre}, originally meaning ‘have sex’, but which has almost entirely shifted to an argotic equivalent of ‘do, make, give’. Importantly, \emph{fiche} is found without a suffix in clearly infinitival contexts such as (\ref{ex:fiche}), in alternation with a suffixed form.\footnote{The rest of the paradigm of \emph{fiche} is not well documented. The past participle seems to be uniformly \emph{fichu}; there are documented uses of an uniflected form in the present \textsc{1pl} or \textsc{2pl}, although these are much less frequent than their regular alternatives \emph{fichons} and \emph{fichez}.}  
+
+\begin{exe}
+	\ex\label{ex:fiche}\gll J' en ai rien à faire/ foutre/ fiche/ ficher.\\
+	\textsc{1sg} \textsc{part} have.\textsc{prs.3sg} nothing to make.\textsc{inf} do.\textsc{inf} \\
+	\trans ‘I couldn't care less.’
+\end{exe}
+
+
+
+A second relevant example is that of a small family of argotic verbs in \emph{-ave} ultimately borrowed from Romani (\emph{chourave} ‘steal’, \textit{bicrave} ‘sell’, etc.) or formed by analogy to these (\emph{bédave} ‘smoke weed’). These are clearly attested in the infinitive and past participle, either uninflected or with normal first conjugation inflection. Easily accessible corpora contain many more inflected than uninflected forms, but this may be an effect of accessibility of the relevant varieties.
+
+\begin{exe}
+	\ex\label{ex:chourave}\begin{xlist}
+		\ex T fou toi mec tu va \textbf{chourave} mon outil de travaille ?\footnote{\url{https://uberzone.fr/threads/seine-et-marne-quatre-conducteurs-de-vtc-braques-en-trois-nuits.13833/page-2}, consulted on October 2, 2023.  Orthography as in the original.}
+		\trans ‘Are you crazy, you would \textbf{steal} my working tool?’
+		\ex Ben alors, Ford, on va \textbf{chouraver} des pneus à la concurrence maintenant ?\footnote{\url{https://www.downshift.fr/ben-alors-ford-on-pique-des-pneus-a-mercedes}, consulted on October 2, 2023.}
+		\trans ‘So what, Ford, you now \textbf{steal} pneumatics from the competition?
+	\end{xlist}
+\end{exe}
+
+
+\begin{table}
+	\centering
+	\begin{tabular}{llll}
+		\lsptoprule
+		Base &  Verlan\is{verlan} &  Clipped \isi{verlan} & Translation\\
+		\midrule
+		énerver & vénère & --- & ‘vex’\\
+		choper & pécho & ---  & ‘catch, seduce’\\
+		gonfler & flégon & flègue & ‘annoy’\\
+		niquer & kéni & ken & ‘fuck’\\
+		fumer & méfu & mef & ‘smoke’\\
+		\lspbottomrule
+	\end{tabular}
+	\caption{Example of \isi{verlan} verbs\label{tab:verlan:verbs}}
+\end{table}
+
+A third example is that of verbs that have undergone \emph{\isi{verlan}}, sometimes accompanied with \isi{clipping} of the final vowel. Table~\ref{tab:verlan:verbs} presents some relevant examples. Notice that some of these verbs, such as \emph{pécho}, do present a phonotactic shape unfit for inflection, but most don't. Be that as it may, we find again for these verbs alternation between uninflectedness and normal first conjugation inflection, as witnessed in~(\ref{ex:ken}--\ref{ex:pecho}). 
+
+\begin{exe}
+	\ex\label{ex:ken}\begin{xlist}
+		\ex Dès qu'on te dit «~bonjour~», tu sens que tu vas \textbf{ken} ce soir.
+		\footnote{\url{https://www.topito.com/top-preuves-tes-en-chien}, consulted on October 2, 2023.}
+		\trans ‘As soon as they say ‘hi’, you understand that you will \textbf{have sex} tonight.
+		\ex Les gens abuse [\ldots] la fin est nul oui mais le film est parmis ceux ou y’a du sexe arrêtez de vous plaindre comme si vous \textbf{kenez} pas !\footnote{\url{https://twitter.com/NellyKoffi9/status/1519410504346836993}, consulted on October 2, 2023. Orthography as in the original.}
+		\trans ‘People exaggrate [\ldots] Yes, the ending sucks, but this is a film where there is sex, stop complaining as if you never \textbf{had sex}!’
+	\end{xlist}
+	\ex\label{ex:pecho}\begin{xlist}
+		\ex Bon Marinette et Adrien ça fait 5 ans que j’attend que vous vous \textbf{pécho}.\footnote{\url{https://twitter.com/if4irysieun/status/1317846593534558210}, consulted on October 2, 2023.}
+		\trans ‘Well, Marinette and Adrien, I've been waiting for 5 years for the two of you to \textbf{hook up}.’
+		\ex Tu comptes la \textbf{péchoter} en oubliant son anniv ?%
+		\footnote{\url{https://www.wattpad.com/amp/603513342}, consulted on October 2, 2023.}
+		\trans You plan to \textbf{hook up} with her while forgetting her birthday?
+	\end{xlist}
+\end{exe}
+
+This series of examples shows that, although it is a rare phenomenon, there is clear precedent in \ili{French} for verbs to be uninflected, and that uninflectedness is associated with phenomena in the sphere of informal speech. This possibly set the stage for the emergence of a more systematic source of uninflectedness in clipped verbs, to which we now turn.
+
+\section{Clipped verb forms in corpora}\label{sec:corpus}
+
+In the previous section we have presented circumstantial evidence that younger speakers of \ili{French} readily clip verbs, and that this leads to these verbs being uninflected. We now turn to a systematic exploration of the phenomenon.
+We begin by designing a method to retrieve clipped forms from corpora, and reconstructing the corresponding full form. The goal of this endeavour is to investigate the scale of the phenomenon, and create a data set from which to extract generalisations and make inferences about verbal \isi{clipping}.
+
+Clipping\is{clipping} consists of removing phonological material from a word form. A promising strategy therefore is the operationalisation of clipped verb forms in corpora as substrings of existing verb forms. This simple strategy would retrieve all clipped verb forms, but it would also yield a large number of false positives, as any word that happens to be a substring of another would be flagged as a clipped form (e.g. \textit{disc} would be falsely flagged as a clipped form of \textit{discuss}). Therefore the part of the method responsible for identifying potential clipped forms consists of finding substrings of existing verb forms and imposing filtering conditions to avoid including non-clipped forms that fulfil the main criterion. The second part of the method is responsible for retrieving the non-clipped version of the clipped form. This is done by means of distributional semantics and rule-based inference based on context surrounding the form.
+
+\subsection{Methodology\is{automatic detection|(}}\label{sec:corpus:methodology}
+
+\subsubsection{Finding candidate clipped forms}
+We build a reference lexicon containing non-clipped forms of the language. This will serve to check whether a word form is an existing word of \ili{French}. As many commonly used lexicons of \ili{French} such as the GLàFF \citep{hathoutsajouscalderone2014} or Wiktionary include clipped forms and filtering them out manually would be highly time consuming, we instead choose to build our own reference lexicon from corpora that do not contain clipped forms due to their formal register. We construct a lexicon of 331,332 words by combining tokens found in the Français-GUTenberg dictionary \citep{pythoud1999}, a resource created for automatic spelling correction, and in FREELANG \citep{vivier2003}, a list of \ili{French} words that is commonly used for practical applications that need a normative filter, such as creating a word-based game. While the combination of these two resources does not cover the entirety of words in the \ili{French} language, it does have good coverage of frequent words. This is sufficient for our purposes, since \isi{clipping} in \ili{French} is more likely to affect frequent words, and infrequent words tend to be longer than frequent ones \citep{zipf1949, zipf1935}, so it is likely that infrequent words will be superstrings of words already present in our lexicon, and therefore unhelpful for the identification of clipped forms. 
+As the final method will be run on each token in the corpus in context, we organise the lexicon into a trie, as shown in Figure \ref{fig:trie}, so that searching whether a word is a subset of existing words and not an existing string in the dictionary is faster and more efficient than looking the string up in a dictionary as a whole. 
+
+A word in a corpus is considered a candidate clipped form if it is searched for in the trie, and it constitutes a valid path through it but its last letter does not constitute a leaf node. 
+
+We excluded from consideration words of one or two letters,\footnote{While clipped verbs of two letters may exist, candidate clipped words of less than three letters lead to too much indeterminacy when reconstructing their full form. While it would be conceivable to extend the method to two-letter forms, the data reported in this paper does not include them.} words in all caps (as these are overwhelmingly acronyms), and words starting with a capital letter but  not located at the beginning of a sentence (as these are overwhelmingly proper nouns).
+
+This part of the method returns a candidate clipped form with all the candidate full words it could correspond to.
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 0.6\textwidth]{figures/08fig1.png}
+	\caption{A subset of the lexicon containing the \ili{French} words \{\textit{ah}, \textit{abri}, \textit{artiste}, \textit{aride}, \textit{dur}\}, organised into a trie. Nodes with a thicker border represent potential end nodes - paths starting from the origin of the trie and stopping at an end node constitute words in the vocabulary}
+	\label{fig:trie}
+\end{figure}
+
+\largerpage[-0.5]
+
+\subsubsection{Reconstructing the correct form}
+The next step consists of assigning each candidate clipped form a full form. The idea behind the method is to choose between the candidate full forms identified by the previous step by relying on the sentential context surrounding the candidate clipped form: in English, \textit{ref} in isolation could be the clipped form of both \textit{reference} or \textit{referee}, but knowing that the occurrence of \textit{ref} was found in the sentence \textit{`the ref sent off Zidane'}, one can infer with high certainty that it is a clipped form of the second word. 
+
+To capture lexical semantics, we rely on \texttt{word2vec} (\citealt{mikolovchencorradodean2013}, \texttt{gensim} implementation), a model that derives word embeddings by training a neural network to predict a masked word. We specifically rely on the ability to query the model as to the probability of different candidate words in a context. We trained models on the Leipzig \ili{French} News corpus \citep{goldhahneckartquasthoff2012}. The following hyperparameters were varied in training:
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l|l}
+		\lsptoprule
+		Hyperparameter & Values  \\
+		\midrule
+		vector size  & \{10, 20, 50, 100, 150, 200\} \\
+		number of epochs & 0-200, in increments of 5 \\
+		context window & \{3, 5, 7\} \\
+		\lspbottomrule
+	\end{tabular}
+	\caption{Hyperparameter combinations attempted for training \texttt{word2vec} models.}
+	\label{tab:hyperparameters}
+\end{table}
+
+Based on performance of clipped form detection and full form reconstruction on a specially created test corpus, we chose to integrate into the method the \texttt{word2vec} model with a size of 50, 125 training epochs and a context window~of~3.
+
+For every candidate token clipped form, we masked the clipped form and asked  the model to predict how likely it was that each of the candidate full forms could fill the gap. The most likely form was outputed as the corresponding full form for the candidate clipped token.
+
+
+\subsection{Evaluation}\label{sec:corpus:eval}
+We tested the method's performance on held out data containing 362 clipped forms. The method correctly identified 318 (87\%) of these as candidate clipped forms. No false positives were attested, but the 44 remaining clipped forms were not identified -- for 39 of them, this was because the clipped forms happened to already be in the lexicon despite our efforts to minimise this possiblility. The remaining 5 clipped forms were not identified because their corresponding full form was not included in the lexicon.
+
+As for the method's performance in automatically identifying the full form, a form judged to be the correct one by human annotators was produced for 190 of the clipped forms (53\% out of the 362 clipped forms, 60\% of the 318 forms correctly identified as being clipped)\is{automatic detection|)}. 
+
+\subsection{Discussion}\label{sec:corpus:discussion}
+
+While the performance of the full method is not sufficient to perform trustworthy large scale quantitative analyses of clipped forms, its output still provides a starting point for us to make qualitative generalisations about clipped forms, and their features in the verbal domain in \ili{French}.
+
+We set out to find clipped forms in the FrWaC corpus \citep{baronibernardiniferraresizanchetta2009}, a large web-crawled corpus of \ili{French}. By restricting our sample to clipped forms that have been given a verb as their full form and observing them in context, we observe several things. 
+
+Clipping\is{clipping} of verb forms in informal \ili{French} is pervasive, suggesting that we are indeed seeing the emergence of a new source of uninflectedness in the \ili{French} language. Accounting for the low accuracy of our model and assuming that only 60\% of the forms that have been flagged as clipped verbs have been correctly labeled (as indicated by the manual evaluation), we can conservatively estimate to have found 182,520 clipped verb tokens, in a wide variety of cells, suggesting that \isi{clipping} is productive and possible throughout the verbal paradigm.
+
+A broader discussion of what the clipped verbs extracted teach us about the phenomenon can be found in Section \ref{sec:disc}.
+
+\section{Clipped verb forms in language use}\label{sec:experiment}
+The previous section outlined a method to find clipped forms in corpora and discussed observations based on the sample. However, since the data is orthographic, one may question whether the observed clipped forms are in the best case a phenomenon limited to writing, or in the worst case simply typos. To address this possiblity, we perform an experiment to evaluate whether \ili{French} speakers accept clipped verbs in speech.
+
+\subsection{Methodology}
+
+\subsubsection{Task}
+The experiment is a modified acceptability judgement task. In each trial, participants heard a recording of two speakers, one asking a question and the other providing the answer. The task was to judge the acceptability of the answer along three dimensions: whether they could imagine overhearing this exchange between two third parties (testing for the acceptability of the clipped form), whether they thought the answer constituted correct \ili{French} (this question was included to allow participants to express feelings about the infelicitousness of the items where the formality of the question was not matched to the formality of the answer, to prompt participants to separate their intuitions about register from their intuitions about grammaticality and usage) and whether they thought the answer was socially appropriate given the question. In addition, participants were asked to provide a rephrasing of the answer, to check whether they had understood it.
+
+\subsubsection{Items}
+
+Each item was composed of two recordings, one of a speaker asking a question, and the other of someone answering it. The question and the answer varied independently in formality, yielding four versions of each item. The choice to have the items vary in whether the question and answer match for formality, rather than presenting just formal and informal items as a means to distract participants from the purpose of the experiment, which is to establish the acceptability of verbal \isi{truncation} conditional on register. The formality dimension contrasted an informal register with a neutral register (containing no markers of formality nor informality). To obtain the informal version of the sentence, we manipulated known markers of informal speech in \ili{French}, such as lexical choice, the use of informal interjections, and \textit{tutoiement} (the use of the informal second person singular pronoun \textit{tu}, as opposed to the more formal \textit{vous}). The informal version of each question or answer contained two of these markers, which were absent in the neutral version.
+
+The answer portion of each item contained a verb or a noun that could appear in its truncated form. The informal version of the item contained the truncated form, as well as another marker of informality, while the neutral version contained the non-truncated form and no marker of informality. 
+
+A total of 90 items were created. One third of them contained a nominal crucial item in the answer while two thirds contained verbs. Each of the items could be presented in one of four versions, depending on the register of the question and the answer.
+
+\subsubsection{Participants}
+
+Participants were recruited by word of mouth and through links on social media. Participation was voluntary and they were not compensated for their time.
+
+The experiment had a total of 25 participants, 18 women and 7 men. Their ages ranged between 12 and 74, with a median of 22. Three participants hadn't completed high school yet, 10 had a high school diploma, 1 had a bachelor's degree, 8 had a masters' degree or higher qualifications.
+
+\subsection{Results}
+Only items for which the question and the answer matched in formality were retained for analysis. Informal items contained truncated forms and formal items contained non-truncated forms of the same lexeme. This left 850 data points for modeling.
+
+The three measures have a small amount of correlation (Table \ref{tab:corr-measures}), suggesting that participants were treating the judgements as separate to a reasonable degree, as intended.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{lrrr}
+		\lsptoprule
+		& Poss. of overhearing & Situation Fit & Correct \\ 
+		\midrule
+		Poss. of overhearing & 1.00 & 0.39 & 0.36 \\ 
+		Situation Fit & 0.39 & 1.00 & 0.33 \\ 
+		Correct & 0.36 & 0.33 & 1.00 \\ 
+		\lspbottomrule
+	\end{tabular}
+	\caption{Pearson correlation between the different measures collected from participants (Poss. = Possibility)}
+	\label{tab:corr-measures}
+\end{table}
+
+
+The overall acceptability of items was extremely high, with 82\% of datapoints having been given an acceptability above 0.9 out of 1 on an anchored but unmarked scale, a figure that diminished somewhat but remained comparable when looking at truncated verbs only, as shown in Table \ref{tab:mean-cond}.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{llrrr}
+		\lsptoprule
+		Part of speech & Formality & Poss. of overhearing & Situation fit & Correct \\ 
+		\midrule
+		Noun & Neutral & 0.96 & 0.90 & 0.85 \\ 
+		Noun & Informal & 0.92 & 0.89 & 0.63 \\ 
+		Verb & Neutral & 0.94 & 0.86 & 0.79 \\ 
+		Verb & Informal & 0.81 & 0.77 & 0.40 \\ 
+		\lspbottomrule
+	\end{tabular}
+	\caption{The three judgements ($0<x<1$) the experiment required speakers to perform, by item condition and part of speech.}
+	\label{tab:mean-cond}
+\end{table}
+
+We fit a beta regression to responses to the acceptability question, which asked people whether they could imagine hearing the exchange on the street. The regression included random intercepts for item and participant, and age, formality, part of speech of the crucial item in the answer, and item order as fixed effects. The set of fixed effects employed was selected by stepping down a model which originally included other demographic information about the participants such as gender and education, and experimental variables such as item order, which were found to not contribute significantly to explaining the variance. Age and item order were standardised. Formality had neutral as a reference level, and the part of speech of the crucial word had noun as the reference level. The model summary is shown in Table \ref{tab:coefficients}.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{lrrrr}
+		\lsptoprule
+		& Estimate & Std. Error & z value & p value \\ 
+		\midrule
+		(Intercept) & 2.23 & 0.21 & 10.68 & <0.001 \\ 
+		Formality (informal) & -0.18 & 0.11 & -1.70 & 0.09 \\ 
+		Part of speech (PoS) (verb) & 0.01 & 0.11 & 0.05 & 0.96 \\ 
+		Item order & 0.00 & 0.00 & 0.41 & 0.68 \\ 
+		Age & 0.00 & 0.01 & -0.84 & 0.40 \\ 
+		Formality (Informal): PoS (verb) & -0.51 & 0.14 & -3.58 & <0.001 \\ 
+		Formality (Informal): Age & 0.00 & 0.00 & -0.31 & 0.76\\ 
+		\lspbottomrule
+	\end{tabular}
+	\caption{Coefficients for a generalised linear model predicting the acceptability of the answer}
+	\label{tab:coefficients}
+\end{table}
+
+Age and item order do not have an effect, nor do formality or part of speech when considered in isolation. The only significant effect is that of the interaction between formality and part of speech: truncated verbs are rated lower than non-truncated verbs, and both truncated and non-truncated nouns.
+
+\subsection{Discussion}
+
+The overall high score given to truncated items is good evidence that both nominal and verbal truncations\is{truncation} appear to be in use in the \ili{French} language. 
+
+The model output validates the descriptive statistics, shows that compared to truncated nouns, truncated verbs have reduced acceptability. Nevertheless, this finding is to be interpreted in the context of overall very high acceptability for all items. The comparative novelty of verbal \isi{truncation} likely explains its lower acceptability compared to nominal \isi{truncation}, but data from the experiment suggests that they are both accepted in informal contexts.
+
+While age did not appear to have an effect, the lack of older participants in our sample makes it hard to estimate the true effect of this demographic variable, though anecdotally verbal clippings\is{clipping} are much less frequent and much less accepted in the speech of older \ili{French} speakers. An additional caveat about the generalisability of our results comes from the fact that our sample was entirely composed of speakers of hexagonal \ili{French} -- other varieties of \ili{French} might show different patterns of \isi{clipping}, and different levels of acceptability for such formations. A survey of \isi{clipping} in other varieties of \ili{French} constitutes a potentially fruitful avenue for future research on the phenomenon.
+
+\section{General discussion}\label{sec:disc}
+Combined, the two studies above show that speakers are familiar with truncated verbs, and that they are used in speech as well as in writing. Examining the outputs of the automatic \isi{truncation} extraction method\is{automatic detection} allows us to make inferences about the process of verbal \isi{truncation} in \ili{French}, its relation to uninflectability, and its place relative to other known \isi{truncation} processes in the language.
+
+When discussing uninflectedness, it is common to focus on the causal role of the phonology of the stem, a theme exemplified in the introduction by \ili{Czech} uninflectability, a phenomenon often reconduced to the ill-suitedness of the phonological form of certain borrowed words to serve as the citation form. The case of \ili{French} verbal \isi{clipping} highlights the variety of motivations that can lead to a word being uninflected. In most of the examples discussed in this chapter, there is no factor in the grammar that motivates the lack of inflectional endings on these forms: any consonant-final stem word is a good candidate for serving as the stem of an inflected verb. For vowel-final truncations\is{truncation}, such as clipped forms in \emph{-o} like \emph{déco}, \emph{reco} (\ref{ex:dialogue}), there is a credible analogical path for innovating inflected forms: conversion of vowel final lexemes to verbs typically involves epenthesis of a stem-final \emph{t}, as in  \emph{noyau}  ‘core’ vs. \emph{noyauter}  ‘to core’, \emph{flou}  ‘blurry’ vs. \emph{flouter}  ‘to blur’, \emph{blabla} ‘blather’ vs. \emph{blablater} ‘to blather’, etc.). Examples such as  \emph{péchoter} discussed above in (\ref{ex:pecho}), or \emph{psychoter} ‘worry disproportionately’, from \emph{psychose} ‘psychosis’, suggest that \emph{t} epenthesis is easily mobilised as a repair strategy for adapting a stem that is a poor fit for verbal inflection. Yet we do not find \emph{décoter}, \emph{recoter} as inflected infinitives for clipped versions of \emph{déconnecter, reconnecter}. It hence appears that \ili{French} verbal uninflectedness is not motivated  by a grammatical impossibility, and thus is conventionalized. We speculate that it may have started as language play introducing variation within the morphological system, persisting in the language thanks to the social meaning it has taken on, which would be a lot less visible with regular inflections.
+
+In the sample extracted by our method, we observe a number of interesting phenomena about \isi{clipping}. We note that there is no biuniqueness requirement for \isi{clipping}, no constraint for a one-to-one correspondence between the clipped form and its full form. There are clipped forms that may correspond to different full forms depending on the context: we found \textit{supp} as the clipped form of both \textit{supposer} `to suppose' and of \textit{supporter} `to give support to'. Conversely, the same verb may have more than one clipped form: \textit{modifier} `to modify' was found to be clipped as both \textit{mod} and \textit{modif}. 
+
+Perhaps the most interesting finding is the interaction between \isi{clipping} and stem allomorphy. All verbal inflection is suffixal in \ili{French}, and as \isi{clipping} in \ili{French} verbs operates on the right edge, most instances of \isi{clipping} amount to uninflectedness. However, some \ili{French} verbs take on a different stem depending on which paradigm cell they realise, so when they undergo \isi{clipping}, they lose suffixal inflectional markers but not the information signaled by the stem change. Such an example is the verb \textsc{vouloir} `to want', which has the stem \textit{voul-} in the \textsc{1pl} and \textsc{2pl} of the present indicative, but \textit{voudr-} in the future. In our corpus, we found clippings\is{clipping} of \textsc{vouloir} in both the present and the future, with the forms \textit{voul} and \textit{voudr} respectively. In these cases, the process of \isi{clipping} preserves information about TAM marking as well as about subject agreement. This data point is an interesting addition to the discussion about the domain of \isi{clipping}. The forms above suggest that the grammar first generates the full inflected form, and \isi{clipping} is a low-level process that happens at the interface between morphology and phonology. This situation contrasts with the nominal, adjectival, and adverbial \isi{clipping} discussed in Section \ref{sec:background}, showing that \isi{clipping} can be taken as the input of word formation, and that it is therefore a more high-level process. Taken together, these observations suggest that \isi{clipping} is not a single process in \ili{French}, but instead a family of operations, each with their own domain of application.
+ 
+ 
+%\section*{Abbreviations}
+%\begin{tabularx}{.45\textwidth}{lQ}
+%... & \\
+%... & \\
+%\end{tabularx}
+%\begin{tabularx}{.45\textwidth}{lQ}
+%... & \\
+%... & \\
+%\end{tabularx}
+%
+\section*{Acknowledgements}
+We would like to thank Marie Candito, Firas Chalali and Thomas Gaudry for their contribution to the evaluation of the accuracy of the automatic detection method. We also thank Alice Pellet and Cindy Pereira, who together with Arno Watiez, contributed to the implementation of the experiment. Lastly, we thank the participants of the workshop on uniflectedness at the DGfS meeting, as well as anonymous reviewers, for their feedback. This work was partially supported by a public grant overseen by the French National Research Agency (ANR) as part of the “Investissements d’Avenir” program (reference: ANR-10-LABX-0083), and by a British Academy International Fellowship (reference: IF24\textbackslash100591).
+
+\section*{Contributions}
+The research reported here was conducted while Maria Copot was a PhD student, and Ninoh Agostinho Da Silva, Ahmed Beji and Arno Watiez were Master's students, at Université Paris Cité. Olivier Bonami's main contribution was to write Section 2, while the rest of the paper was written by Maria Copot and reports on joint work with the other authors under Maria's supervision.
+
+
+{\sloppy\printbibliography[heading=subbibliography,notkeyword=this]}
+\end{document}

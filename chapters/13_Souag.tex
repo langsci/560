@@ -1,0 +1,1750 @@
+\documentclass[output=paper]{langscibook}
+\author{Authorname\orcid{}\affiliation{}}
+\title{Title}
+\abstract{Abstract}
+\IfFileExists{../localcommands.tex}{
+  \addbibresource{../localbibliography.bib}
+  \input{../localpackages}
+  \input{../localcommands} 
+  \input{../localhyphenation} 
+  \togglepaper[1]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle 
+%\shorttitlerunninghead{}%%use this for an abridged title in the page headers
+% ATTENTION: Diacritics on the following phonetic characters might have been lost during conversion: {'ə'}
+
+\title{The diachronic stability of uninflectability in Berber}
+
+\begin{styleStandarduser}
+Lameen Souag
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+\textit{Most Berber varieties, an Afroasiatic language family from northern Africa, feature a robust system where nouns inflect for "state." This typically involves two forms: the citation form ("free state") and a marked form (misleadingly called the "construct state"), used mainly for postverbal nominatives and objects of prepositions. The system has been analyzed as either a marked-nominative case system or a typologically unique phenomenon. However, state inflection only applies to nouns with a gender-marked prefix, leaving a substantial minority of nouns uninflected. This includes many borrowed Arabic or Romance nouns, as well as some inherited terms like kinship words, which can be traced back to proto-Berber. While there are instances of state marking extending to previously uninflected nouns, it has never been fully generalized to all nouns. Comparative data suggests that selective uninflectedness has remained stable over a period of two millennia.}
+\end{styleStandarduser}
+
+\section{Introduction} %1. /
+\begin{styleStandarduser}
+If a lexeme is not marked for a morphological feature for which other members of its class are marked, it is \textit{uninflectable} \citep{Spencer2020}, or \textit{uninflected} (Baerman, \citealt{BrownCorbett2005}: 30). The former term will be adopted here to avoid ambiguity, as the latter is used by Spencer in a different sense. Thus, for instance, English nouns inflect for number, but \textit{sheep} is uninflectable.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+In most of the Berber (Amazigh) languages of North Africa, most nouns are inflected for a feature conventionally termed “state” (arguably case; explained below), as well as for number. Thus, for instance, ‘man’ in Kabyle is \textit{argaz} in the free state, but \textit{wərgaz} in the annexed state. However, a significant proportion of nouns are uninflectable for state; Kabyle ‘thirst’, for instance, is \textit{fad} in both free and annexed state. In this article, it is shown that uninflectability in Berber is both synchronically widespread and diachronically stable over a millennium or more.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+Such a result is surprising a priori. It appears reasonable to expect some kind of relationship between the frequency of uninflectability for a feature and the likelihood of the morphology continuing to mark that feature. After all, at the extremes, a feature for which all words are uninflectable is not a feature relevant to inflectional morphology at all. One for which all potentially inflectable items are inflectable can potentially carry a high functional load; one for which, say, half are uninflectable must perforce have a rather low one, making it much easier to dispense with. Such arguments tend to suggest that a high lexical frequency of uninflectability for a given feature should be diachronically unstable. Berber thus provides an important data point for the study of how uninflectability relates to linguistic change.
+\end{styleStandarduser}
+
+\subsection{Background} %1.1 /
+\begin{styleStandarduser}
+Berber, or Amazigh, constitutes a family of closely related languages within the Afroasiatic phylum, spoken by tens of millions of people across North Africa. The family is primarily concentrated in Morocco and Algeria, but extends from Mauritania to western Egypt, and as far south into the Sahel as northern Burkina Faso. Some of its best known members include Tashlhiyt (Shilha) in southern Morocco, Kabyle in northern Algeria, and Tamajeq (Tuareg) in Niger.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+In all Berber varieties, the prototypical noun (including most high-frequency nouns and almost all inherited nouns) starts with a prefix explicitly marked for masculine or feminine gender and for singular or plural number; values other than masculine singular are usually additionally marked by a suffix or by stem-internal alternations. Both features are relevant to agreement – of the verb with the subject, of pronouns (bound or free) with their referents, of adjectives with nouns… In most varieties, the nominal prefix is also marked for a non-agreement feature traditionally termed “state” (\textit{état} in French, \textit{addad} in Kabyle), which can take two values: “free” or “absolute” (\textit{libre, ilelli}; henceforth glossed \textsc{fs}) and “annexed” or “dependent” (\textit{d’annexion, amaruz}; glossed \textsc{as}). The latter is often misleadingly called “construct state”, a term best reserved for head marking rather than dependent marking \citep{Creissels2009a}. To a rough first approximation, these terms correspond to the absolutive and nominative respectively in a marked-nominative case system; however, such an analysis is problematic for certain Berber varieties and obscures some of the functions of these states, as discussed in more detail in 1.3 below. The paradigms given in \tabref{tab:key:1} are representative.
+\end{styleStandarduser}
+
+\begin{styleLangsciTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{Paradigm of ‘old person’  in Kabyle and Tamasheq.}
+\label{tab:key:1}
+\end{table}\end{styleLangsciTableHeading}
+
+
+\begin{tabularx}{\textwidth}{XXX}
+
+\lsptoprule
+
+Kabyle: & free & annexed\\
+m.sg. & \textit{a-mɣar} & \textit{wə-mɣaṛ}\\
+m.pl. & \textit{i-mɣaṛ-ən} & \textit{yə-mɣaṛ-ən}\\
+f.sg. & \textit{ta-mɣaṛ-t} & \textit{tə-mɣaṛ-t}\\
+f.pl. & \textit{ti-mɣaṛ-in} & \textit{tə-mɣaṛ-in}\\
+&  & \\
+Tamasheq: & free & annexed\\
+m.sg. & \textit{a-mɣar} & \textit{ă-mɣar}\\
+m.pl. & \textit{i-mɣar-ăn} & \textit{ə-mɣar-ăn}\\
+f.sg. & \textit{ta-mɣar-t} & \textit{tă-mɣar-t}\\
+f.pl. & \textit{ti-mɣar-en} & \textit{tə-mɣar-en}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+Every Berber variety that retains state marking has a substantial number of nouns which are uninflectable for state. A rough estimate of their type frequency may be gathered by picking a set of pages at random from a Berber dictionary ordered by roots and counting nouns. For Tamazight \citep{Taïfi1991}, such a procedure applied to ten pages suggests that about 39\% (37/95) of nouns are uninflectable for state. For Tamajeq (Prasse, \citealt{AlojalyMohamed1998}), applied to five pages, it yielded 29\% (34/116). By token frequency, a quick count suggests that uninflectable nouns (excluding personal pronouns and numerals) account for about 37\% of the first two pages of the Kabyle folk tale “The Orphan’s Cow” (\citealt{Allioui2017}: 79–80); in more loanword-friendly genres, the figure would likely be higher. Figures like these are a far cry from the marginality of uninflectable nouns in languages like Russian or Polish. To understand the high frequency of state-uninflectable nouns across Berber, we must examine the factors conditioning state-uninflectability and their history. Before doing so, some background on Berber subclassification and on the nature of “state” is necessary.
+\end{styleStandarduser}
+
+\subsection{1.2 Berber-internal relationships}
+\begin{styleStandarduser}
+To interpret the predominantly synchronic Berber data from a historical perspective, it is necessary to consider its family tree. Berber fits no better into a pure tree model than, say, Romance; the influence of Berber languages on other Berber languages remained substantial until a few centuries ago, and continues in some areas \citep{Souag2017}. Nevertheless, some splits within the family are evidently much deeper than others. The varieties that likely split off earliest – Zenaga and Tetserret in the southwest, Awjili and to some extent Ghadamsi in the far east – have lost state marking, and will therefore not concern us here. Most of the remaining varieties fall naturally into four subgroups:
+\end{styleStandarduser}
+
+\begin{enumerate}
+\item Tuareg across the central Sahara and Sahel: Tamahaq in Algeria and Libya, Tamasheq in Mali, Tamajeq in Niger
+\item 
+Zenati from eastern Morocco to southern Tunisia, notably including Tarifiyt (eastern Morocco) and Chaoui (eastern Algeria), along with numerous smaller varieties such as Figuig (eastern Morocco), Bissa (west-central Algeria), Tumzabt (south-central Algeria)
+\item 
+Kabyle in north-central Algeria
+\item 
+Atlas varieties in most of Morocco, especially Tamazight (southeast) and Tashlhiyt (southwest), but also a couple of smaller varieties, such as Senhaja, in the north.
+\end{enumerate}
+\begin{styleStandarduser}
+It remains debatable whether any of these four can be subgrouped together more closely, but 2-4 share some phonological innovations, and can be classed together areally as “northern Berber”.
+\end{styleStandarduser}
+
+\subsection{1.3 “State” in Berber}
+\begin{styleStandarduser}
+Most Berber varieties continue to mark nouns for state, although some peripheral varieties, such as Siwi \citep{Souag2013}, Awjili (van \citealt{Putten2013}), or Tetserret \citep{Lux2013}, have lost the annexed state, and hence no longer have state marking. The formal marking of “state” is relatively uniform across Berber, with the exception of Tuareg. As illustrated above in \tabref{tab:key:1}, in Tamasheq, and Tuareg more generally, the annexed state can be given a unitary morphophonological analysis as the result of vowel reduction from the free state, taking peripheral \textit{a, e,} \textit{i} to central \textit{ă, ă,} \textit{ə} with subsequent lower-level phonological adjustments \citep[147]{Heath2005a}. For other Berber varieties, in which \textit{*ă > ə,} such an analysis might appear tempting for the feminine forms; it is, however, ruled out, at least synchronically, by the semivowels that appear in the masculine forms. These semivowels, moreover, are clearly original rather than innovative; some Tuareg varieties preserve relict traces of them in poetry and in placenames \citep{Brugnatelli1997}, as does Zenaga in placenames \citep{Taine-Cheikh2005}.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+The function of “state” differs in detail across Berber varieties. However, a few generalizations appear to be exceptionless across those varieties that have retained this category. State is never an agreement feature: when a noun is followed by a nominal adjective\footnote{Like nouns (of which they constitute a subclass), nominal adjectives usually start with a nominal prefix. They can be used as the head of a noun phrase without any further marking; thus for instance \textit{a-zəggʷaɣ} ‘red (m.sg.)’ can also be ‘(the/a) red one (m.sg.)’. In such a case, they are marked for state like any other noun.} or by another noun in apposition to it, the latter is always in the free state irrespective of the state of the preceding noun. The free state is always the citation form of the noun, used in contexts that minimally include preposed topics (including preverbal subjects) and in situ direct objects. The annexed state is always conditioned by material preceding (usually directly preceding) the noun on which it appears. In every variety that has retained state marking at all, the annexed state appears in at least the following three contexts:
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+A) complements of some prepositions, such as genitive \textit{n}, dative \textit{i}, instrumental \textit{s}, etc. - but not of all prepositions (the specific list varies from language to language); contrast example 1 with 2.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+\ea%1
+    \label{ex:key:1}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          Kabyle (\citealt{MettouchiFrajzyngier2013}: 24)
+\end{styleStandarduser}
+
+
+\begin{tabularx}{\textwidth}{XXX}
+
+\lsptoprule
+a. & \textit{ɣər} & \textbf{\textit{wə}}\textit{{}-drar}\\
+& at & \textbf{\textsc{msg.as}}{}-mountain\\
+& \multicolumn{2}{c}{‘at the mountain’}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+vs.
+\end{styleStandarduser}
+
+
+\begin{tabularx}{\textwidth}{XXX}
+
+\lsptoprule
+b. & \textit{s} & \textbf{\textit{a}}\textit{{}-drar}\\
+& to & \textbf{\textsc{msg.fs}}{}-mountain\\
+& \multicolumn{2}{c}{‘to the mountain’}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+B) the dependent noun in tight compounds following certain heads, as in example 2.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+\ea%2
+    \label{ex:key:2}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          Tashlhiyt (El \citealt{Moujahid1997}: 116)
+\end{styleStandarduser}
+
+
+\begin{tabularx}{\textwidth}{XXX}
+ & \textit{ayt} & \textbf{\textit{u}}\textit{{}-zaɣar}\\
+\lsptoprule
+& sons.of & \textbf{\textsc{msg.as}}{}-plain\\
+& \multicolumn{2}{c}{‘plainsmen’}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+C) a noun governed by a preceding numeral or similar quantifier, as in examples 3-4. (Not all numerals do this in any one language; on the variation in numeral-noun syntax across different varieties, see \citet[212]{Galand2002}.)
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+\ea%3
+    \label{ex:key:3}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          Bissa \citep[67]{Genevois1973}
+\end{styleStandarduser}
+
+
+\begin{tabularx}{\textwidth}{XXX}
+ & \textit{yiğ} & \textbf{\textit{wə}}\textit{{}-ryaz}\\
+\lsptoprule
+& one.\textsc{m} & \textbf{\textsc{msg.as}}{}-man\\
+& \multicolumn{2}{c}{‘one man’}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+\ea%4
+    \label{ex:key:4}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          Tumzabt (\citealt{AbdessalamAbdessalam1996}: 95)
+\end{styleStandarduser}
+
+
+\begin{tabularx}{\textwidth}{XXX}
+ & \textit{səmms-ət} & \textbf{\textit{t}}\textit{{}-sədnan}\\
+\lsptoprule
+& one.\textsc{m} & \textbf{\textsc{fpl.as}}{}-women\\
+& \multicolumn{2}{c}{‘five women’}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+In all these contexts, the state assigner must directly precede the noun to which it assigns the annexed state; \citet[148]{Heath2005a} notes that, in Tamasheq, even a pause after the preceding preposition is enough to force its complement to appear in the free state.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+In some peripheral varieties, such as Senhaja (\citealt{Gutova2021}: 362, 407) or Ouargla (\citealt{DelheureOchoa2019}: 79, 113), A-C are apparently the only contexts where annexed state appears. Across most varieties, however, e.g. Tashlhiyt (El \citealt{Moujahid1997}: 114–116), Tamasheq (\citealt{Heath2005a}: 147, 247), Tamahaq \citep[25]{Cortade1969}, and Figuig (\citealt{Kossmann2016,Kossmann1997}: 88–89), the annexed state is also assigned to:
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+D) a postverbal subject – but never a preverbal one, nor a right dislocated one; contrast example 5a to 5b.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+\ea%5
+    \label{ex:key:5}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          Chaoui \citep[135]{Djarallah1993}
+\end{styleStandarduser}
+
+
+\begin{tabularx}{\textwidth}{XXX}
+
+\lsptoprule
+a. & \textit{h-ənna=as} & \textbf{\textit{h}}\textit{{}-gəʕʕuṣ-t}\\
+& \textsc{3fsg}{}-say.\textsc{pfv}=\textsc{3sg.dat} & \textbf{\textsc{fsg.as}}{}-goat-\textsc{fsg}\\
+& \multicolumn{2}{c}{‘the goat told him’}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+versus
+\end{styleStandarduser}
+
+
+\begin{tabularx}{\textwidth}{XXXXX}
+
+\lsptoprule
+b. & \textbf{\textit{ha}}\textit{{}-gəʕʕuṣ-t} & \textit{a=y} & \textit{t-uš} & \textit{ta-žəɣɣim-t}\\
+& \textbf{\textsc{fsg.fs}}\textsc{{}-}goat\textsc{{}-fsg} & \textsc{irr=1sg.dat} & \textsc{3fsg}.give & \textsc{fsg.fs-}gulp\textsc{{}-fsg}\\
+& \multicolumn{4}{c}{‘the goat will give me some milk’}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+Unlike A-C, condition D does not typically require strict adjacency. \citet[573]{Heath2005a} reports that Tamasheq requires the subject to be immediately postverbal unless fronted, but this does not hold true even in other Tuareg varieties.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+While “state” is not traditionally identified with case, these four categories strongly suggest an analysis of “state” as a marked-nominative case system (\citealt{König2008}; \citealt{Sasse1984}). \citet[1]{Blake1994} defines case as “marking dependent nouns for the type of relationship they bear to their heads”. Conditions 1-3 fit unproblematically into such a definition. Since most Berber varieties have VSO basic word order, Condition 4 can be understood as the application of case marking to in situ subjects; preverbal subjects are rather to be analysed as topics, assigned default case. The analysis of state as case has accordingly also been widely adopted in generativist work on Berber (\citealt{Guerssel1992}; \citealt{Felice2020}). On this analysis, “free state” should properly be called the absolutive, and “annexed state” the nominative.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+To these four conditions, however, Kabyle (\citealt{MettouchiFrajzyngier2013}), Tumzabt (\citealt{AbdessalamAbdessalam1996}: 96), and at least to some extent Tarifiyt (\citealt{Lafkioui2000}; \citealt{MourighKossmann2020}: 39, 132) add a fifth – apparently not applicable in other varieties examined, such as Tashlhiyt (\citealt{MettouchiFleisch2010}) – which complicates such an analysis:
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+E) a right dislocated noun other than the subject of a verb: i.e. a subject following the predicate of a non-verbal sentence, or a non-subject co-referential with a preceding pronominal clitic. Both are illustrated in example 6.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+\ea%6
+    \label{ex:key:6}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          Tumzabt (\citealt{AbdessalamAbdessalam1996}: 96)
+\end{styleStandarduser}
+
+
+\begin{tabularx}{\textwidth}{XXXXXX}
+
+\lsptoprule
+a. & \textit{d} & \textit{a-ssṛa} & \textit{n} & \textit{w-urəɣ} & \textbf{\textit{tə}}\textit{{}-yẓiwt}\\
+& \textsc{cop} & \textsc{msg.fs}{}-necklace & \textsc{gen} & \textbf{\textsc{msg.as}}{}-gold & \textsc{fsg.as}{}-girl.\\
+& \multicolumn{5}{c}{She’s (as beautiful as) a golden necklace [lit. a necklace of gold], the girl.}\\
+\lspbottomrule
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{XXXX}
+
+\lsptoprule
+b. & \textit{ğği-n=as} & \textit{ta-yətti} & \textbf{\textit{u}}\textit{{}-bəṛhuš}\\
+& do.\textsc{pfv-3mpl=3sg.dat} & \textsc{fsg.fs}{}-care & \textbf{\textsc{msg.as}}{}-dog\\
+& \textit{y-rəwl=asən} &  & \\
+& \textsc{3msg}{}-flee.\textsc{pfv=3pl.dat} &  & \\
+& \multicolumn{3}{c}{‘They took care of him, the ungrateful dog, and he ran away from them.’}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+The analysis of state in such varieties – especially in Kabyle – is accordingly controversial. Building upon the work of \citet{Galand1969}, \citet{MettouchiFrajzyngier2013} reject a case analysis, observing that any of subjects, objects, and objects of prepositions can occur in either state, and consider state as a previously unrecognised typological category “provid[ing] the value (in the logical sense) for the variable of the function grammaticalized in a preceding constituent” (p. 13), i.e., for a function such as subject, object, or number, specifying the noun phrase fulfilling or being quantified by that function. \citet{Arkadiev2015}, on the other hand, argues that Kabyle “state” fits well into the cross-linguistic typology of marked-nominative case systems, and is best analysed as such, as in \citet{Creissels2009b}. Under any analysis, Kabyle “state” marking cannot be accounted for in terms of argument structure alone, but interacts strikingly with information structure.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+The question of where state marking fits into broader cross-linguistic comparative categories, however, is not our primary concern here. State marking is evidently a morphological feature of the noun; \tabref{tab:key:2} illustrates that it shows allomorphy that is not synchronically predictable from the stem alone nor from the free state alone. For example, stems sharing the shape CiCəC differ in their free state marker (\textit{a-} vs. \textit{i-}) – likewise stems sharing the shape CaC (Ø vs. \textit{a-} vs. \textit{l-}) – and nouns sharing the same shape aCaC in the free state show different forms in the annexed state (uCaC vs. waCaC). State marking is equally clearly conditioned by syntax. Nouns which fail to mark it are therefore, by definition, uninflectable for state: such nouns are “insensitive to distinctions which are still syntactically relevant” (Baerman, \citealt{BrownCorbett2005}: 30).
+\end{styleStandarduser}
+
+\begin{styleLangsciTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{Examples of allomorphy in state marking in Kabyle (cf. \citealt{Dallet1982})}
+\label{tab:key:2}
+\end{table}\end{styleLangsciTableHeading}
+
+
+\begin{tabularx}{\textwidth}{XXX}
+ & free & annexed\\
+\lsptoprule
+warming oneself & \textit{a-ẓiẓən} & \textit{u-ẓiẓən}\\
+rope & \textit{i-zikər} & \textit{i-zikər}\\
+&  & \\
+hunger & \textit{fad} & \textit{fad}\\
+finger & \textit{a-ḍad} & \textit{u-ḍad}\\
+land & \textit{akal} & \textit{w-akal}\\
+omen & \textit{l-fal} & \textit{l-fal}\\
+\lspbottomrule
+\end{tabularx}
+\section{2 Uninflectability for state}
+\begin{styleStandarduser}
+All Berber varieties have a substantial number of nouns which are uninflectable for state. These arise for several reasons: phonological, morphological, and to a lesser extent even semantic.
+\end{styleStandarduser}
+
+\subsection{Phonologically motivated} %2.1 /
+\subsubsection{2.1.1 Vowel-initial stems}
+\begin{styleStandarduser}
+As implied by the segmentation in \tabref{tab:key:2}, contrasts like \textit{aḍad – uḍad} ‘finger’ vs. \textit{akal – wakal} ‘land’ are most conveniently analysed as reflecting a difference in the form of the stem – consonant-initial vs. vowel-initial – rather than of the prefix (\citealt{Prasse1964}; \citealt{Penchoen1973}). While consonant-initial noun stems are rather more numerous, all Berber varieties with state marking also have a certain number of vowel-initial ones. Such stems can often – arguably always (\citealt{Prasse1969,Prasse2011}) – be reconstructed as resulting from the loss of a former initial laryngeal, but that is of no synchronic relevance. No Berber variety allows a surface sequence of two successive vowels word-internally; in this context, the vowel of the nominal prefix is regularly deleted (\textit{akal} ‘land’ rather than *\textit{aakal}; Tamasheq \textit{taɣma} ‘thigh’, uninflectable for state, rather than free *\textit{taaɣma} and annexed \textit{*tăaɣma}).
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+This results in systematic uninflectability in situations where the vowel of the nominal prefix would otherwise be the only distinctive marker of state. As discussed in \sectref{sec:key:1}, the annexed state is formed by vowel reduction for feminine nouns in northern Berber and across the board in Tuareg. As a result, feminine vowel-initial stems across northern Berber, and all vowel-initial stems in Tuareg, are systematically uninflectable, as illustrated in \tabref{tab:key:3}.
+\end{styleStandarduser}
+
+\begin{styleLangsciTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{Vowel-initial stems contrasted across Kabyle and Tamasheq}
+\label{tab:key:3}
+\end{table}\end{styleLangsciTableHeading}
+
+
+\begin{tabularx}{\textwidth}{XXXXX}
+ & sg. free & sg. annexed & pl. free & pl. annexed\\
+\lsptoprule
+Kabyle \citep{Dallet1982} &  &  &  & \\
+wind & \textit{aḍu} & \textit{w-aḍu} & \textit{{}-} & \textit{{}-}\\
+heart & \textit{ul} & \textit{w-ul} & \textit{ul-awən} & \textit{w-ul-awən}\\
+lung & \textit{t-ur-ətt} & \textit{t-ur-ətt} & \textit{t-ur-in} & \textit{t-ur-in}\\
+thigh & \textit{t-aɣma} & \textit{t-aɣma} & \textit{t-aɣm-iwin} & \textit{t-aɣm-iwin}\\
+sweat & \textit{t-idi} & \textit{t-idi} & \textit{t-id-iwin} & \textit{t-id-iwin}\\
+&  &  &  & \\
+Tamasheq \citep{Heath2006} &  &  &  & \\
+wind & \textit{aḍu} & \textit{aḍu} & \textit{aḍu-tăn} & \textit{aḍu-tăn}\\
+heart & \textit{ulh} & \textit{ulh} & \textit{ulh-awăn} & \textit{ulh-awăn}\\
+lung & \textit{t-orr} & \textit{t-orr} & \textit{t-orr-awen} & \textit{t-orr-awen}\\
+thigh & \textit{t-aɣma} & \textit{t-aɣma} & \textit{t-aɣm-iwen} & \textit{t-aɣm-iwen}\\
+sweat & \textit{t-ide} & \textit{t-ide} & \textit{t-ad-iwen} & \textit{t-ad-iwen}\\
+\lspbottomrule
+\end{tabularx}
+\subsubsection{2.1.2 i-/y- neutralisation}
+\begin{styleStandarduser}
+In proto-Berber, the prefix vowel *a- regularly shifted to *e- in certain contexts, notably before *ă (van \citealt{Putten2016,Putten2018}). With the merger of *ă > \textit{ə} and *e > \textit{i} in almost all of Northern Berber, the conditioning factor was lost, and this allomorphy went from being phonetically conditioned to being lexically conditioned. Almost all Northern Berber varieties thus have a minority class of nouns taking the prefix vowel \textit{i} in the singular, alongside the more numerous ones in \textit{a}.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+For feminine nouns, this merger neutralised number marking within the prefix but poses no difficulties for state marking: free *te- > \textit{ti-}, whereas annexed *tă- > \textit{tə}{}-. For masculine nouns, free *e- > \textit{i-} as expected; for the annexed state, however, we find \textit{yə-} rather than \textit{**}wə-, posing some difficulties for reconstruction (cf. \citealt{Prasse1974}: 15) and also for inflectability. Northern Berber (with minor exceptions in Tunisia) never allows schwa to occur in an open syllable (cf. \citealt{Kossmann1995}), and does not contrast \textit{i-} with \textit{y-} before a consonant: \textit{yə > i} / \_CV, as independently motivated for example by the behaviour of the 3m.sg. subject marker. As a result, CV-initial masculine stems which lexically happen to take \textit{i-} are also systematically uninflectable for state, as seen in \tabref{tab:key:4}. In some varieties this is taken further. Notably, in Tamazight and Tashlhiyt, schwa is no longer phonemic, irrespective of syllable structure (\citealt{DellElmedlaoui1985}; \citealt{Ridouane2008}). Accordingly, \textit{i-}prefix nouns are normally uninflectable for state there even before CC-initial stems (El \citealt{Moujahid1982}: 51).
+\end{styleStandarduser}
+
+\begin{styleLangsciTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{\textit{i}{}-prefixed stems contrasted with \textit{a}{}-prefixed ones in Kabyle and Tamazight}
+\label{tab:key:4}
+\end{table}\end{styleLangsciTableHeading}
+
+
+\begin{tabularx}{\textwidth}{XXXXX}
+ & sg. free & sg. annexed & pl. free & pl. annexed\\
+\lsptoprule
+Kabyle \citep{Dallet1982} &  &  &  & \\
+share & \textit{a-mur} & \textit{u-mur} & \textit{i-mur-ən} & \textit{i-mur-ən}\\
+eagle & \textit{i-gidər} & \textit{i-gidər} & \textit{i-gudar} & \textit{i-gudar}\\
+cave & \textit{i-fri} & \textit{yə-fri} & \textit{i-fr-an} & \textit{yə-fr-an}\\
+&  &  &  & \\
+Tamazight \citep{Taïfi1991} &  &  &  & \\
+share & \textit{a-mur} & \textit{u-mur} & \textit{i-mur-n} & \textit{i-mur-n}\\
+eagle & \textit{i-gidr} & \textit{i-gidr} & \textit{i-gidr-n} & \textit{i-gidr-n}\\
+cave & \textit{i-fri} & \textit{i-fri} & \textit{i-fr-an} & \textit{i-fr-an}\\
+\lspbottomrule
+\end{tabularx}
+\subsubsection{2.1.3 Prefix vowel reduction}
+\begin{styleStandarduser}
+Early in its history, both Tuareg and Zenati underwent a sound change reducing the vowel of the singular free state prefix to *ă preceding certain stems of the form CV… (in particular CVC, Ca…, or Cu...a…), where V represents a full vowel rather than a reduced one (\citealt{Prasse1974}: 19–21; \citealt{Kossmann1999}: 31; \citealt{Brugnatelli2006}: 60). This *ă was retained as such in Tuareg (or in some contexts changed by vowel harmony to \textit{ə}), but ended up as Ø in most of Zenati, since (with some exceptions in Tunisia) the latter does not allow reduced vowels in open syllables. Subsequent changes and loanwords have since made the distribution of reduced free prefixes more opaque in Zenati.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+In contexts where state is marked only by vowel reduction – as it is for all state-marked nouns in Tuareg and for all feminine ones in Zenati – words with reduced free prefixes are accordingly systematically uninflectable for state in the singular. In the rare cases where they also happen to be unpluralisable, this results in full uninflectability for state, as in \tabref{tab:key:5}.
+\end{styleStandarduser}
+
+\begin{styleLangsciTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{Nouns uninflectable due to originally phonologically conditioned prefix vowel reduction}
+\label{tab:key:5}
+\end{table}\end{styleLangsciTableHeading}
+
+
+\begin{tabularx}{\textwidth}{XXX}
+ & free & annexed\\
+\lsptoprule
+Tamasheq \citep{Heath2006} &  & \\
+pubic hair & \textit{ă-šinšăḍ} & \textit{ă-šinšăḍ}\\
+health & \textit{tă-ssoxe-t} & \textit{tă-ssoxe-t}\\
+&  & \\
+Beni Snous \citep{Destaing1914} &  & \\
+butter & \textit{t-lussi} & \textit{t-lussi}\\
+sun & \textit{t-fuy-t} & \textit{t-fuy-t}\\
+&  & \\
+Cp. Tashlhiyt \citep{Destaing1920} &  & \\
+butter & \textit{ta-lussi} & \textit{t-lussi}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+At least one Zenati variety, Ouargli (\citealt{DelheureOchoa2019}: 79), has lost the prefix even in the construct state of words with reduced free prefixes, making words like \textit{fus} ‘hand’ uninflectable. This change, however, cannot be accounted for through regular sound change alone; it rather constitutes a reanalysis of such words as prefixless nominals (see 2.2.1 below), generalising the principle that nouns with no prefix vowel in the free state are uninflectable.
+\end{styleStandarduser}
+
+\subsection{Morphologically motivated} %2.2 /
+\begin{styleStandarduser}
+As seen in the introduction, canonical nouns across Berber start with a nominal prefix capable of being marked for gender, number, and state. Many nouns, however, are not canonical in this respect. Some lack a prefix altogether. Others start with an invariable prefix, for reasons that are purely historical and lexical rather than being explained by phonological developments. In either case, state marking is unavailable.
+\end{styleStandarduser}
+
+\subsubsection{2.2.1 Nominals with no prefix}
+\begin{styleStandarduser}
+The presence of a nominal prefix is a necessary – though not sufficient – condition for a noun to be marked for state. But, across the entire family, all personal pronouns, most numerals, and a variable set of core kinship terms take no nominal prefix. Certain types of verbal nouns are also normally prefixless, especially \textit{fad} ‘thirst’ and \textit{laẓ} ‘hunger’, along with some baby talk forms and loanwords, and certain types of compound noun \citep[58]{Brugnatelli2006}. Many such forms are also uninflectable, or only suppletively inflectable, for number. \tabref{tab:key:6} illustrates the range of such forms in Kabyle.
+\end{styleStandarduser}
+
+\begin{styleLangsciTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{Some prefixless nominals in Kabyle \citep{Dallet1982}}
+\label{tab:key:6}
+\end{table}\end{styleLangsciTableHeading}
+
+
+\begin{tabularx}{\textwidth}{XXXXX}
+ & sg. free & sg. annexed & pl. free & pl. annexed\\
+\lsptoprule
+daughter & \textit{yəlli} & \textit{yəlli} & \textit{yəssi} & \textit{yəssi}\\
+one (m.) & \textit{yiwən} & \textit{yiwən} & \textit{{}-} & \textit{{}-}\\
+two (m.) & \textit{{}-} & \textit{{}-} & \textit{sin} & \textit{sin}\\
+he & \textit{nətt\textsuperscript{s}}\textit{a} & \textit{nətt\textsuperscript{s}}\textit{a} & \textit{nutni} & \textit{nutni}\\
+you (m.) & \textit{kəčč} & \textit{kəčč} & \textit{kunwi} & \textit{kunwi}\\
+thirst & \textit{fad} & \textit{fad} & \textit{{}-} & \textit{{}-}\\
+owie & \textit{diddi} & \textit{diddi} & \textit{{}-} & \textit{{}-}\\
+pennyroyal & \textit{fləggu} & \textit{fləggu} & \textit{{}-} & \textit{{}-}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+Within the inherited vocabulary, such forms are few and limited in productivity despite their high frequency. However, loanwords from languages such as Hausa, Songhay, and Bambara (cf. \citealt{Heath2005a}: 164), or Spanish \citep{Kossmann2009}, are regularly borrowed without a prefix, making this an unambiguously open class in languages like Tamasheq or Tarifiyt, as illustrated in \tabref{tab:key:7}.
+\end{styleStandarduser}
+
+\begin{styleLangsciTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{Some prefixless loanwords in Tarifiyt (< Spanish) and Tamasheq (< Songhay)}
+\label{tab:key:7}
+\end{table}\end{styleLangsciTableHeading}
+
+
+\begin{tabularx}{\textwidth}{XXXXX}
+ & sg. free & sg. annexed & pl. free & pl. annexed\\
+\lsptoprule
+Tarifiyt (\citealt{MourighKossmann2020}) &  &  &  & \\
+cheese & \textit{kisu} & \textit{kisu} & \textit{{}-} & \textit{{}-}\\
+mechanic & \textit{mikaniku} & \textit{mikaniku} & \textit{mikaniku-ṯ} & \textit{mikaniku-ṯ}\\
+seagull & \textit{ɣaḇyuṭ-a} & \textit{ɣaḇyuṭ-a} & \textit{ɣaḇyuṭ-aṯ} & \textit{ɣaḇyuṭ-aṯ}\\
+&  &  &  & \\
+Tamasheq \citep{Heath2006} &  &  &  & \\
+stalk & \textit{koɣəri} & \textit{koɣəri} & \textit{koɣəri-t-ăn} & \textit{koɣəri-t-ăn}\\
+frog sp. & \textit{mbăla} & \textit{mbăla} & \textit{{}-} & \textit{{}-}\\
+ladle & \textit{zăɣto} & \textit{zăɣto} & \textit{zăɣto-t-ăn} & \textit{zăɣto-t-ăn}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+Not all loanwords from these languages are borrowed without the prefix; contrast, for instance, Tarifiyt \textit{a-kwaḏrun} ‘doorpost’, \textit{ṯ-kuppa-ṯ} ‘cup’ (< Spanish \textit{cuadro} ‘frame’, \textit{copa}), Tamasheq \textit{ă-karfu} ‘rope’, \textit{tă-kăŋkani-t-t} ‘watermelon’ (< Timbuktu Songhay \textit{karfo}, \textit{kaŋkani}). In Tarifiyt, however, Mourigh and Kossmann’s data indicate that almost all Spanish nouns are borrowed without the prefix, suggesting that this has become the default strategy. The factors determining whether or not a loanword takes the prefix in such cases have yet to be studied.
+\end{styleStandarduser}
+
+\subsubsection{Nouns with inherently uninflectable prefixes} %2.2.2 /
+\begin{styleStandarduser}
+All Berber languages have borrowed extensively from Arabic. Many Arabic nouns are given Berber prefixes, e.g. Kabyle \textit{a-bənnay} ‘builder’ < \textit{bannāy} (Classical \textit{bannāʔ}). However, a very common strategy is to borrow them together with the Arabic definite article \textit{l-/əl-/ăl-}, whose \textit{l-} assimilates to a following coronal consonant (cf. \citealt{Kossmann2013}: 208). This is then treated as an invariant prefix with no semantic interpretation (glossed here as \textsc{n}), although both its extremely high frequency and its behaviour in morphological derivations indicate that it is nevertheless treated as segmentable. Very occasionally this prefix even gets extended to an inherited Berber noun, as in Siwi \textit{l-əgʷrazən} ‘dogs’ < \textit{a-gʷərzni} ‘dog’ \citep[76]{Souag2013}. As a result, a rather large proportion of nouns in any given Berber language start with an inherently uninflectable prefix \textit{(ə)l-} (Tuareg \textit{ăl-}). \tabref{tab:key:7} gives a small sample.
+\end{styleStandarduser}
+
+\begin{styleLangsciTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{Some loans with the Arabic article}
+\label{tab:key:7}
+\end{table}\end{styleLangsciTableHeading}
+
+
+\begin{tabularx}{\textwidth}{XXXXX}
+ & sg. free & sg. annexed & pl. free & pl. annexed\\
+\lsptoprule
+Kabyle &  &  &  & \\
+calculation & \textit{l-ḥisab} & \textit{l-ḥisab} & \textit{l-ḥisab-at} & \textit{l-ḥisab-at}\\
+carrion & \textit{l-ğif-a} & \textit{l-ğif-a} & \textit{l-ğif-at} & \textit{l-ğif-a}\\
+&  &  &  & \\
+Tamasheq &  &  &  & \\
+family & \textit{ăl-ʕăyal} & \textit{ăl-ʕăyal} & \textit{ăl-ʕăyal-ăn} & \textit{ăl-ʕăyal-ăn}\\
+usefulness & \textit{ăl-fayd-a} & \textit{ăl-fayd-a} & \textit{ăl-fayd-at-ăn} & \textit{ăl-fayd-at-ăn}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+This issue does not just arise with loanwords; some Berber varieties also use an inherited uninflectable masculine prefix \textit{wa-} with a small set of nouns, typically names of flora and fauna \citep{Brugnatelli1998}. The prefixal status of this \textit{wa-} is sometimes debatable, but is often confirmed by other members of the same word family: thus Kabyle \textit{wa-zduz} ‘broomrape (\textit{Orobanche} sp.)’ is presumably so-called for its shoots’ resemblance to a pestle (\textit{a-zduz}). Language-internal variation leads to similar conclusions; for ‘goosefoot (\textit{Chenopodium})’, Kabyle variously has \textit{wa-ktun} or \textit{a-ktun} (\citealt{Zidat2016}; \citealt{Dallet1982}). The form of this prefix recalls the m.sg. element \textit{wa} used in the formation of demonstrative pronouns. Its history is poorly understood, but it has been argued to be a relict from a previous stage of the nominal prefix system in Berber \citep{Brugnatelli1997}. Like \textit{l-}, this prefix is inherently uninflectable; in most cases it also seems to be unpluralisable. A few derivational prefixes with more specific meanings are also uninflectable for state: privative \textit{war-} (m.) / \textit{tar-} (f.), evaluative prefixes like Kabyle \textit{yir-} ‘bad’, etc.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+Some demonstrative/relative/support pronouns are marked for case, as highlighted by \citet{Brugnatelli2006}, though most are not. Both types can be analysed as starting with (or consisting of) an element comparable to the nominal prefix, as illustrated in \tabref{tab:key:8}.
+\end{styleStandarduser}
+
+\begin{styleLangsciTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{Selected demonstrative/relative/support pronouns in Kabyle \citep{Dallet1982}}
+\label{tab:key:8}
+\end{table}\end{styleLangsciTableHeading}
+
+
+\begin{tabularx}{\textwidth}{XXXXX}
+ & sg. free & sg. annexed & pl. free & pl. annexed\\
+\lsptoprule
+this, already & \textit{ay-a} & \textit{w-ay-a} & \textit{{}-} & \textit{{}-}\\
+this, what, whatever & \textit{ay-ən} & \textit{w-ay-ən} & \textit{{}-} & \textit{{}-}\\
+this (m.) & \textit{wa-gi} & \textit{wa-gi} & \textit{wi-gi} & \textit{wi-gi}\\
+this (f.) & \textit{ta-gi} & \textit{ta-gi} & \textit{ti-gi} & \textit{ti-gi}\\
+\lspbottomrule
+\end{tabularx}
+\subsection{Semantically motivated} %2.3 /
+\begin{styleStandarduser}
+Semantically motivated variation in state marking in Berber, and indeed language-internal variation in state marking more generally, has yet to be seriously explored. However, state marking can be affected by sematic factors in at least one context.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+Proper nouns, like common nouns, can be inflectable for state if they start with an appropriate prefix; thus in Tamasheq, for instance, the annexed state of the place name \textit{a-măjon} “Amajon” is \textit{ă-măjon}, and occurs where one would expect it to \citep[40]{Heath2005b}. It has recently been observed by Nacira \citet{Abrous2023}, however, that in Kabyle, at least, proper nouns may variably be treated as uninflectable even when the prefix is present, appearing in the expected free state in contexts which normally require the annexed state. Examination of Kabyle written texts confirms this observation in seemingly identical syntactic contexts within the same document, as in examples 7a-d.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+\ea%7
+    \label{ex:key:7}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          Kabyle (\citealt{SadiLandri2020})
+\end{styleStandarduser}
+
+
+\begin{tabularx}{\textwidth}{XXXXX}
+
+\lsptoprule
+a. & \textit{yə-qqim} & \textbf{\textit{A}}\textit{{}-rəzqi} & \textit{di} & \textit{l-ḥəbs}\\
+& \textsc{3msg}{}-stay.\textsc{pfv} & \textbf{\textsc{msg.fs}}{}-Rezki & in & \textsc{n}{}-jail\\
+& \multicolumn{4}{c}{‘Arezki stayed in jail.’ (p. 26)
+
+(cf. condition D)}\\
+\lspbottomrule
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{XXXX}
+
+\lsptoprule
+b. & \textit{yə-sla} & \textbf{\textit{U}}\textit{{}-rəzqi} & \textit{bəlli...}\\
+& \textsc{3msg}{}-hear.\textsc{pfv} & \textbf{\textsc{msg.as}}{}-Rezki & \textsc{comp}…\\
+& \multicolumn{3}{c}{‘Arezki heard that…’ (p. 27)
+
+(cf. condition D)}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+c.  (p. 27)
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+  \textit{L-yaqut  tə-nna=as  i} \textbf{\textit{A}}\textit{{}-rəzqi}
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+  “Yakout said to Arezki” (p. 27)
+\end{styleStandarduser}
+
+
+\begin{tabularx}{\textwidth}{XXXXX}
+
+\lsptoprule
+c. & \textit{L-yaqut} & \textit{tə-nna=as} & \textit{i} & \textbf{\textit{A}}\textit{{}-rəzqi}\\
+& \textsc{n}{}-Yakout & \textsc{3fsg}{}-say.\textsc{pfv=3sg.dat} & to & \textbf{\textsc{msg.fs}}{}-Rezki\\
+& \multicolumn{4}{c}{‘Yakout said to Arezki’ (p. 27)
+
+(prepositions \textit{n} and \textit{i} assign the annexed state \textit{–} condition A)}\\
+\lspbottomrule
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{XXXX}
+
+\lsptoprule
+d. & \textit{l-əhduṛ}  & \textit{n} & \textbf{\textit{U}}\textit{{}-rəzqi}\\
+& \textsc{n}{}-speech & \textsc{gen} & \textbf{\textsc{msg.as}}{}-Rezki\\
+& \multicolumn{3}{c}{“Arezki’s speech” (p. 25)
+
+(cf. condition A)}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+Comparable examples can be found with feminine proper nouns, as in examples 8a-b.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+\ea%8
+    \label{ex:key:8}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          Kabyle \citep[18]{Hamadouche2007}
+\end{styleStandarduser}
+
+
+\begin{tabularx}{\textwidth}{XXXX}
+
+\lsptoprule
+a. & \textit{i} & \textit{d=bədd-ən} & \textbf{\textit{Ta}}\textit{{}-saʕdi-t}\\
+& \textsc{rel} & \textsc{centrip}=stand.\textsc{pfv-3mpl} & \textbf{\textsc{fsg.fs}}{}-fortunate-\textsc{fsg}\\
+& \textit{d} & \textit{tə-rbaʕ-t=is} & \\
+& with & \textsc{fsg.as}{}-group-\textsc{fsg=3sg.gen} & \\
+& \multicolumn{3}{c}{‘where Tasadit and her group stood’
+
+(cf. condition D)}\\
+\lspbottomrule
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{XXXXXX}
+
+\lsptoprule
+b. & \textit{yiw-ət} & \textit{n} & \textit{tə-lwəs-t} & \textit{n} & \textbf{\textit{T}}\textit{{}-saʕdi-t}\\
+& one-\textsc{f} & \textsc{gen} & \textsc{fsg.as}{}-sister.in.law-\textsc{fsg} & \textsc{gen} & \textbf{\textsc{fsg.as}}{}-fortunate-\textsc{fsg}\\
+& \multicolumn{5}{c}{“a sister-in-law of Tasadit’s”
+
+  (cf. condition A)}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+Personal names that can be marked for state at all are strikingly rare in Kabyle – in a list of some two hundred traditional personal names, Dallet (1982: 1027–1035) includes only nine, all either identical with or transparently connected to common nouns or adjectives: \textit{akli} [lit. ‘slave’], \textit{a-məqʷṛan} [lit. ‘big’], \textit{a-məẓyan} [lit. ‘little’], \textit{a-ṛəzqi} [based on \textit{əṛṛəzq} ‘lot, property’], \textit{ta-saʕdi-t} [lit. ‘fortunate’], \textit{ta-wəṛduš-t} [a hypochoristic based on \textit{ta-wəṛdi-t} ‘pink’], \textit{a-zwaw} [lit. ‘Zwawi, Kabyle’], \textit{aʕṛab} [lit. ‘Arab’]\textit{, ta-məʕzuz-t} [lit. ‘darling’]. It is thus not surprising that this variation has so far received little attention. Much further work, ideally examining large text corpora, will be required before it can be determined whether this situation is representative or is just a peculiarity of (21\textsuperscript{st} century?) Kabyle. For the moment, it constitutes the only clear evidence for semantically motivated variation in state marking in Berber.
+\end{styleStandarduser}
+
+\section{3 The diachrony of state uninflectability}
+\begin{styleStandarduser}
+In contemporary Berber varieties, state uninflectability is a prominent phenomenon affecting much of the lexicon. Does this reflect an unstable intermediate situation on the way towards the loss of state inflection – an outcome attested in some peripheral varieties? To test this hypothesis, it is necessary to examine its history. Premodern records of Berber are rather sparse and often difficult to interpret, but span a period of more than two millennia. The internal diversity of Berber is sufficient to allow considerable progress to be made in reconstruction, despite the persistent difficulty of distinguishing common inheritance from family-internal contact. Combining both sources of data makes it possible to estimate roughly how long different categories of nouns have been uninflectable.
+\end{styleStandarduser}
+
+\subsection{Written attestations} %3.1 /
+\begin{styleStandarduser}
+The earliest attestations of Berber – Libyco-Berber inscriptions from the pre-Roman period – do not transcribe vowels, except to some extent word-finally. Even allowing for that limitation, they provide no evidence for state marking through nominal prefixes. In the few cases of genitive constructions with a masculine singular possessor where a modern speaker would expect the annexed state to be marked by \textit{w-} even in a consonantal text, no such marker is found: thus the bilingual text RIL 1 (\citealt{Chabot1940}: 1–2), dating probably to the 2\textsuperscript{nd} century BC, has \textit{nbbn n-š?rh} “cutters of wood” and \textit{nb░n n-zlh} “founders of iron” (cf. Kabyle \textit{a-sɣaṛ} a.s. \textit{wə-sɣaṛ} ‘wood’, \textit{uzzal} a.s. \textit{w-uzzal} ‘iron’). The orthographic \textit{{}-h} in such cases appears to be a suffix, fitting into a broader spectrum of evidence that suffixation could mark a wider range of functions on Libyco-Berber nouns than it does in any modern Berber variety \citep{Putten2017}. It is possible that \textit{-h} was used to mark the genitive in some circumstances, but the evidence is too limited to allow any firm conclusions about case or state marking – nor, \textit{a fortiori}, about uninflectability for either.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+Similarly, common nouns of Berber origin recorded in African Roman texts usually do not display the characteristic nominal prefixes found throughout Berber today. As late as the 5\textsuperscript{th} century, we find Latin \textit{gemio(n-)} in the Albertini Tablets corresponding to modern \textit{a-gəmmun} “irrigated square of land”, and \textit{gelela(m)} in Cassius Felix for modern \textit{ta-găll-ăt} (etc.) “colocynth” (Múrcia Sànchez 2011). If the nominal prefix were already an obligatory part of the citation form of such nouns, one would expect them to remain so when borrowed into Latin, which has no phonological constraints on word-initial vowels. It thus seems likely that the modern pan-Berber system of state marking had not yet reached Roman Africa or Numidia, though it might already have taken shape somewhere outside the empire’s borders. Even as late as the 9\textsuperscript{th} century, Ibn Quraysh’s lexical comparisons between a west Algerian Zenati variety and Hebrew include unexpectedly prefixless forms such as \textit{kəmmus} ‘parcel’ or \textit{šəfay} ‘milk’ alongside regularly prefixed ones such as \textit{a-səkkum} ‘asparagus’ \citep{Cohen1972}; cp. Tarifiyt \textit{a-ḵəmmus, a-šəffay, a-səkkum} \citep{Abarrou2023}. A possible relic of this stage today could be the very sporadic attestations in Kabyle proverbs and riddles of prefixless versions of m.sg. nouns that would normally require the prefix \citep[58]{Brugnatelli2006}.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+The earliest unambiguous direct evidence for obligatory prefixal state marking in Berber dates to the second millennium. By the 11\textsuperscript{th} century (\citealt{Chaker1981}; van den \citealt{Boogert1997}: 113), even sources without vowel marking attest to m.sg. free \textit{a-} (the citation form) vs. construct \textit{w-} (attested primarily in genitives), alongside m. pl. free \textit{i-} vs. construct \textit{y-}. By the 12\textsuperscript{th} century, the Arabic-Berber glossary of Ibn Tunart confirms a state system basically similar to today’s (although the evidence must be interpreted carefully, since surviving copies are late); more importantly, it provides examples relevant to uninflectability. As in modern Berber, a significant minority of nouns are prefixless, e.g. \textit{ḍukkuk} ‘(the star) Alcor’, \textit{miḍrus} ‘cadaver’, \textit{mṭṭiḍ-ulli} ‘Schneider’s skink’ (lit. ‘sucker(of)-goats’), while others start with \textit{wa-}, e.g. \textit{wa-biba} ‘mosquito’, \textit{wa-yləllu} ‘henbane’ (van den \citealt{Boogert1997}: 106, 119; \citealt{Amennou2021}). In most such cases, the noun is only attested in citation form. However, in \textit{tibi n Mṣr} ‘mallow of Egypt’, the prefixless proper noun \textit{Mṣr}, from Arabic \textit{Miṣr}, appears in a context where the annexed state is expected, suggesting that prefixless forms were indeed uninflectable then as now.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+The uninflectability of vowel-initial feminine stems is confirmed for the 12\textsuperscript{th} century by al-Bayḏaq, who records both \textit{<ā tūmart īnaw> a t-umər-t inəw} ‘oh my joy!’, with \textit{t-umər-t} in the free state, and \textit{Ibn Tūmart} “Ibn Tumart” (named after the former exclamation), where \textit{t-umər-t} must be in the annexed state (condition B), judging by comparable forms in the same source such as \textit{Ibn Wə-mɣar} ‘son of the chief’ (van den \citealt{Boogert1997}: 109–112; \citealt{Marcy1932}). Further examples are to be found in Al-Kutāmī’s 13\textsuperscript{th} century commentary on Dioscorides’ \textit{Pharmacopoea}, which provides a number of plant names written plene (with vowels indicated by letters), including many genitive compounds showing the expected state marking. Among these, we find instances of vowel-initial stems in the annexed state (condition A), showing apparently uninflectable forms: thus \textit{t-aɣaṭ} ‘goat’, \textit{t-ili} ‘ewe’ in \textit{ta-mar-t ən t-aɣaṭ} ‘goat’s beard’, \textit{ta-məzzuɣ-t ən t-ili} ‘ewe’s ear’ (van den \citealt{Boogert1997}: 121). If such forms reflect the loss of an original stem-initial consonant, a suggestion discussed above, then it appears that this consonant had already been lost 900 years ago.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+The so-called Leiden fragment, tentatively dated to the 14\textsuperscript{th} century\footnote{I am grateful to Evgeniya Gutova for allowing me to view a scan of this manuscript.}, attests a high concentration of Arabic nouns borrowed with \textit{əl-}, as illustrated in example 9.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+\ea%9
+    \label{ex:key:9}
+    \gll \\
+         \\
+    \glt
+    \z % you might need an extra \z if this is the last of several subexamples
+
+          Medieval Moroccan Berber
+\end{styleStandarduser}
+
+
+\begin{tabularx}{\textwidth}{XXXX}
+ & \multicolumn{3}{c}{<dāyās yatārā rabba ’lʕalamyn alājr nālššahyd>}\\
+\lsptoprule
+& *\textit{da-yas} & \textit{yə-tara} & \textit{ṛəbb-əl-ʕalamin}\\
+& \textsc{prog-3sg.dat} & \textsc{3msg}{}-write.\textsc{impf} & lord-\textsc{n}{}-worlds\\
+\lspbottomrule
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{XXXX}
+ & \textit{əl-ajr} & \textit{n} & \textit{əš-šahid}\\
+\lsptoprule
+& \textsc{n}{}-reward & \textsc{gen} & \textsc{n}{}-martyr\\
+& \multicolumn{3}{c}{‘The Lord of the Worlds decrees for him the reward of a martyr.’ (Leiden Ms Or.23.306v)}\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+The first letter – always written as \textit{alif} – is normally left entirely unvocalised when preceded by an orthographically separate word (including prepositions such as <kaɣ> \textit{gəɣ} ‘in’); sentence-initially, however, it is written as <’a>, and when preceded by an orthographically proclitic preposition (such as genitive <n-> \textit{n}) appears as <ā>, due to the preservation of the letter \textit{alif.} This pattern of variation is evidently not conditioned by state marking, and can be explained as purely orthographic. It thus appears that the modern Berber pattern of making Arabic loanword in \textit{əl-} uninflectable for state already applied 700 years ago.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+So far, our medieval examples have derived from Moroccan sources, reflecting an Atlas variety relatively close to modern Tashlhiyt. Further east, however, scattered Ibadi sources provide data from a similarly early period, despite some difficulties in dating. A late copy of a chronicle probably dating to the 12\textsuperscript{th} century shows the expected inflection patterns for inflectable nouns, e.g. \textit{am-an} ‘water’ but (cf. condition A) \textit{əs w-am-an} ‘with water’ (\citealt{Lewicki1934}: 288–289). At the same time, it confirms the uninflectability of pronouns, with examples like \textit{ɣas šək} ‘only you’ (where free state is expected) alongside (with a preposition expected to assign annexed state, cf. condition A) \textit{am šək} ‘like you’ (\citealt{Lewicki1934}: 280–281). It also attests to the existence of prefixless \textit{fad} ‘thirst’ (\textit{ibid}:283), \textit{middən} ‘people’ (\textit{ibid}:295) as well as \textit{əl-}prefixed Arabic loans like \textit{əl-məruwwət} ‘bravery’, \textit{əd-din} ‘religion’ (\textit{ibid:}286). The unprefixed noun \textit{Yuš} ‘God’ occurs as the object of prepositions (cf. condition A) in forms like \textit{tamazyida ən Yuš} ‘mosque of God’ (\textit{ibid:}288), \textit{ɣəf Yuš} ‘on God’ (\textit{ibid:}282), with no sign of state marking. Ongoing work on a book of religious law suspected to date from the same period paints a similar picture, though also revealing relics of a third unprefixed “state” used only in numeral+noun combinations \citep{Brugnatelli2011}. In this work (\citealt{Calassanti-Motylinski1905}: 75–77), we find the prefixless noun \textit{šra} ‘(any)thing’ both in the free state context of a postverbal direct object (\textit{wəl yə-li} \textbf{\textit{šra}} ‘he does not have anything’) and in the annexed state context of a postverbal subject (\textit{i-d yə-qqim} \textbf{\textit{šra}} ‘if anything remains’, cf. condition D), providing direct confirmation that it was uninflectable as expected.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+In modern Berber, while canonical nouns are inflectable for state, a large number of nouns are uninflectable for state due to having no prefix, the wrong prefix, or a stem whose beginning is phonologically incompatible with the relevant prefix distinctions. A priori, this might appear to be an unstable state, in which a child acquiring the language might readily be tempted to overgeneralise one class or the other, and in which an overgeneralisation of uninflectability can hardly lead to any semantic misunderstandings. Yet all the available written evidence, as examined here, suggests that this situation has remained stable in most varieties for about a millennium.
+\end{styleStandarduser}
+
+\subsection{Reconstruction} %3.2 /
+\begin{styleStandarduser}
+A noun prefix system with state marking can reliably be reconstructed for proto-Berber based on comparison of existing systems. A recent proposal which appears convincing is given in \tabref{tab:key:9} (van \citealt{Putten2015}).
+\end{styleStandarduser}
+
+\begin{styleLangsciTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{Proto-Berber nominal prefixes.}
+\label{tab:key:9}
+\end{table}\end{styleLangsciTableHeading}
+
+
+\begin{tabularx}{\textwidth}{XXX}
+ & free & annexed\\
+\lsptoprule
+m.sg. & *a- & *wă-\\
+m.pl. & *i- & *yə-\\
+f.sg. & *ta- & *tă-\\
+f.pl. & *tə- (> *ti-) & *tə-\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+The reconstruction of f.pl. free *tə-, however, depends crucially on the evidence from eastern Berber varieties which have lost state marking. All varieties that have actually retained state marking reflect a proto-system in which the f.pl. free prefix was *ti-, not *tə-, apparently reflecting analogy with the masculine forms; such a system should probably be reconstructed for a lower-level proto-language dating to a period after some eastern Berber varieties had already split off. The *y in the m.pl. annexed forms may plausibly be derived from pre-proto-Berber *w, as in Prasse (1974: 14–16); doing so allows greater symmetry between m.sg. and m.pl.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+Most proposals for the internal reconstruction of the prefix system draw upon its striking similarities to various demonstrative/relative/support pronoun series, e.g. Kabyle definite m.sg. \textit{wa}, f.sg. \textit{ta}, m.pl. \textit{wi}, f.pl. \textit{ti} “this”. The best-known cross-linguistic grammaticalisation process that could account for these similarities is what \citet{Greenberg1978} baptised the Demonstrative Cycle: demonstrative > definite article > non-generic article > class affix. Brugnatelli (1997; 2006), following \citet{Vycichl1957}, argues for this model’s applicability to Berber, and explains the state distinctions as having emerged secondarily through stress shifts and the loss of initial semivowels in certain contexts (though neither change appears regular). Prasse (1974: 12; 2002), on the other hand, sees the free state forms as deriving from a different pronoun series than the annexed state ones, comparing the former to Tamahaq neutral relative heads like \textit{a} and the latter to definite ones like \textit{wa}. In his scenario, the intermediate stage would have reflected a usage of such heads to mark predication and possession/attribution respectively.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+Neither of these models has yet produced a fully satisfactory account for the proto-Berber forms or the syntactic distribution of state marking. Nevertheless, the Demonstrative Cycle hypothesis has important implications for the history of uninflectability in Berber. There is considerable cross-linguistic variation in which nominal elements require or permit articles and under which circumstances; in English, for instance, we note that pronouns and demonstratives can never take them (*\textit{the you, *the that}), while generic nouns and certain kinship terms do not require them (\textit{hunger}, \textit{thirst}, \textit{Mom, Grandpa}), and toponyms typically exclude them (\textit{London}/\textit{*The London}) but occasionally require them (\textit{The Hague/*Hague}). The Definiteness Hierarchy \citep{Aissen2003} is useful in plotting much of this variation:
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+  Personal pronoun > Proper name > Definite > Indefinite specific > Non-specific
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+Personal pronouns and proper names (and by extension inalienable kinship terms) are inherently definite, and as such typically require no article; as expected assuming the Demonstrative Cycle, they obligatorily or typically take no nominal prefix throughout Berber. As \citet{Greenberg1978} demonstrates, generic (or non-specific) nominals (including typical uses of numerals) are frequently left unmarked even in languages that require definites and specific indefinites to be marked overtly by an article. Nominals which usually or always occur at the extreme ends of the Definiteness Hierarchy are accordingly more likely than others to escape the effects of the Demonstrative Cycle, and thus to end up without a class prefix.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+As seen in 2.2.1, all Berber varieties have a significant class of prefixless nouns, and show no nominal prefixes in personal pronouns and most numerals and demonstratives. This situation can be reconstructed for proto-Berber, as illustrated in \tabref{tab:key:10}. (For the reconstruction of prefixless kinship terms, see also Souag (fc); on the development of ‘thing’ into an indefinite pronoun, see \citet{Souag2018}.)  If the nominal prefix system originated through the Demonstrative Cycle as generally assumed, then this situation must primarily reflect retention from pre-proto-Berber, rather than any kind of prefix loss.
+\end{styleStandarduser}
+
+\begin{styleLangsciTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{Some nouns which are reconstructible for proto-Berber with no prefix.}
+\label{tab:key:10}
+\end{table}\end{styleLangsciTableHeading}
+
+
+\begin{tabularx}{\textwidth}{XXXXXXXX}
+ & Zenaga & Tashlhiyt & Figuig & Kabyle & Tamahaq & Awjila & proto-Berber\\
+\lsptoprule
+& \citep{Taine-Cheikh2008} & \citep{Destaing1920} & \citep{Kossmann1997} & \citep{Dallet1982} & \citep{Prasse2010} & (van \citealt{Putten2013}) & \\
+hunger & \textit{{}-} & \textit{ḷaẓ} & \textit{laẓ} & \textit{laẓ} & \textit{laẓ} & \textit{tə-laz-at} & *laẓ\\
+thirst & \textit{fäđ} & \textit{fad} & \textit{fad} & \textit{fad} & \textit{fad} & \textit{tə-fad-at} & *fad\\
+sister & \textit{yäđmäh} & \textit{ultma} & \textit{wətna} & \textit{wəltma} & \textit{wălătma} & \textit{wərtna} & *wălăt-ma\\
+– pl. & \textit{t\textsuperscript{y}}\textit{šäđmäh} & \textit{istma} & \textit{yəssma} & \textit{yəssətma} & \textit{šetma} & \textit{sətma} & *ysăt-ma\\
+daughter & \textit{{}-} & \textit{illi} & \textit{yəlli} & \textit{yəlli} & \textit{yăll} & \textit{wəlli} & *yăwle\\
+– pl. & \textit{{}-} & \textit{isti} & \textit{yəssi} & \textit{yəssi} & \textit{ešš} & \textit{{}-} & *yăste\\
+(some) thing & \textit{kāräh} & \textit{kra} & \textit{šṛa} & \textit{kra} & \textit{(hărăt)} & \textit{kəra} & *kăra\\
+\lspbottomrule
+\end{tabularx}
+\begin{styleStandarduser}
+Other types of morphologically motivated state uninflectability are also likely to go back to proto-Berber, but are supported by a narrower and less secure range of attestations. The uninflectable prefix *wa- was probably present in proto-Berber, as argued by \citet{Brugnatelli1998}, but it seems impossible to securely reconstruct any specific noun as having had this prefix, if only because so many varieties have lost it; it likely had a more specific function than *a- did. Among uninflectable derivational prefixes, a pejorative is widely attested – Kabyle \textit{yir-}, Tamasheq \textit{erk-}, Zenaga \textit{ä-gär- –} but the sound correspondences appear irregular, making its reconstruction challenging.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+Nevertheless, proto-Berber clearly had a narrower range of uninflectable nouns than its modern descendants. Most of the phonologically motivated cases of state uninflectability discussed above can be reconstructed as originally inflectable, as made clear in 2.1. It is likely that proto-Berber already had some vowel-initial noun stems, but even for this category Prasse plausibly reconstructs an unattested laryngeal *h\textsubscript{1} in most cases (\citealt{Prasse1969,Prasse2011}). Semantically motivated state uninflectability is so far attested only in one variety, and therefore cannot be reconstructed back at any depth, although this might change as more data becomes available. Even among morphologically motivated cases, it is implausible a priori that proto-Berber, presumably spoken before contact with Arabic began, could have had a nominal prefix *ăl-, uninflectable or otherwise – and Arabic loanwords are now numerous even in basic vocabulary. The Proto-Berber lexicon would thus have had a rather lower proportion of uninflectable nouns than any major modern Berber variety.
+\end{styleStandarduser}
+
+\section{4 Conclusions}
+\begin{styleStandarduser}
+State uninflectability in Berber is synchronically mostly predictable from the citation form of a noun alone, with a few exceptions; it is conditioned primarily by morphological and secondarily by phonological factors. Semantic factors seem to play only a very marginal role based on available data, although further work is needed.
+\end{styleStandarduser}
+
+\begin{styleStandarduser}
+State uninflectability can be reconstructed as diachronically stable in Berber over a time span that must amount to millennia for a significant number of core prefixless terms, including kin terms and some verbal nouns as well as pronouns and numerals. It has observably remained stable for at least a millennium or so in such cases, while coming to be extended to a wider range of phonologically and morphologically motivated categories of uninflectability nouns. This illustrates that partial uninflectability need neither be a transitional stage, as in Old French, nor a phenomenon limited to the margins of the lexicon, as in Russian or Polish. Any challenges it may pose for learnability are evidently far from insuperable.
+\end{styleStandarduser}
+\begin{verbatim}%%move bib entries to  localbibliography.bib
+\begin{styleBibliographyi}
+@book{Abarrou2023,
+	address = {Paris},
+	author = {Abarrou, Jamâl},
+	publisher = {L’Harmattan},
+	sortname = {Abarrou, Jamal},
+	title = {\textit{Dictionnaire rifain-français illustré / Amawal arif : {{L}}e parler d’Ayt Weryaghel (Rif central), Maroc}},
+	year = {2023}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{AbdessalamAbdessalam1996,
+	address = {Ghardaia},
+	author = {Abdessalam, Brahim and Bekir Abdessalam},
+	publisher = {al-Maṭba{\textasciigrave}ah al-{\textasciigrave}Arabiyyah},
+	title = {\textit{al-Wajīz fī Qawā{\textasciigrave}id al-Kitābah wa-n-Naħw li-l-Luɣah al-’Amāzīɣiyyah “al-Mẓābiyyah” - al-Juz’ al-’Awwal}},
+	year = {1996}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Abrous2023,
+	address = {L’état d’annexion },
+	author = {Abrous, Nacira},
+	note = {Presented at the Berber \citealt{LanguagesLinguistics2023}, Nantes.},
+	publisher = {considérations morpho-syntaxiques et normativisation},
+	year = {2023}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Aissen2003,
+	author = {Aissen, Judith},
+	journal = {Economy. \textit{Natural Language and Linguistic Theory}},
+	pages = {435–483},
+	title = {Differential Object Marking: {{I}}conicity vs},
+	volume = {21},
+	year = {2003}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Allioui2017,
+	address = {Paris},
+	author = {Allioui, Youcef},
+	publisher = {L’Harmattan},
+	title = {\textit{{La} vache des orphelins / Tafunast (n) Igujilen : {{L}}e conte kabyle aux mille et une versions / Timucuha n Tmawya / Bilingue français-berbère}},
+	year = {2017}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Amennou2021,
+	author = {Amennou, Abdallah},
+	journal = {\textit{Etudes et Documents Berberes}},
+	number = {1},
+	pages = {59–87},
+	title = {Lexicon of ibn Tūnart: {{R}}eflections on an arabic-amazigh manuscript from the Middle Ages},
+	volume = {4546},
+	year = {2021}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Arkadiev2015,
+	author = {Arkadiev, Peter},
+	journal = {\textit{Linguistic Typology}. De Gruyter Mouton},
+	note = {. https://doi.org/10.1515/lingty-2015-0003.},
+	number = {1},
+	pages = {87–110},
+	title = {The {Berber} “state” distinction: {{D}}ependent marking after all? {{A}} commentary on \citet{{MettouchiF}rajzyngier2013}},
+	volume = {19},
+	year = {2015}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{BaermanBaerman2005,
+	address = {Cambridge},
+	author = {Baerman, Matthew, Dunstan Brown and Greville G. Corbett},
+	note = {https://doi.org/10.1017/CBO9234.},
+	publisher = {Cambridge University Press},
+	title = {\textit{The Syntax-Morphology Interface: {{A}} Study of Syncretism} ({Cambridge} Studies in Linguistics)},
+	urldate = {780511486},
+	year = {2005}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Blake1994,
+	address = {Cambridge},
+	author = {Blake, Barry},
+	publisher = {Cambridge University Press},
+	title = {\textit{Case}},
+	year = {1994}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Boogert1997,
+	address = {1749)}. Leiden},
+	author = {Boogert, Nico van den},
+	publisher = {Nederlands Institut voor het Nabije Osten},
+	title = {\textit{The {Berber} Literary Tradition of the Sous: {{W}}ith an edition and translation of “The Ocean of Tears” by Muḥammad Awzal (d},
+	year = {1997}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Brugnatelli1997,
+	address = {In \textit{Afroasiatica Neapolitana. Contributi presentati all’8° Incontro di Linguistica Afroasiatica (Camito-Semitica) - Napoli 25-26 \citealt{Gennaio1996}}, 139–150. Naples},
+	author = {Brugnatelli, Vermondo},
+	publisher = {Istituto Universitario Orientale},
+	title = {L’état d’annexion en diachronie},
+	year = {1997}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@incollection{Brugnatelli1998,
+	address = {Fès},
+	author = {Brugnatelli, Vermondo},
+	booktitle = {\textit{Actes du Premier Congrès Chamito-Sémitique de {Fès} (12-13 mars 1997)}},
+	editor = {Mohamed Elmedlaoui, Saâd Gafati and Fouad Saa},
+	pages = {51–67},
+	publisher = {Publications de la Faculté des Lettres et des Sciences Humaines},
+	title = {{La} morphologie des noms berbères en w- : {{C}}onsidérations diachroniques},
+	year = {1998}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@incollection{Brugnatelli2006,
+	address = {Köln},
+	author = {Brugnatelli, Vermondo},
+	booktitle = {\textit{Etudes berbères {III}: {{L}}e nom, le pronom et autres articles : {{A}}ctes du “3. {{B}}ayreuth-Frankfurter {Kolloquium} zur Berberologie”, 1-3 juillet 2004}},
+	editor = {Dymitr Ibriszimow, Rainer Vossen and Harry Stroomer},
+	pages = {55–70},
+	publisher = {Rüdiger Köppe},
+	title = {L’ancien “article” et quelques phénomènes phonétiques en berbère},
+	year = {2006}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@incollection{Brugnatelli2011,
+	address = {Milano},
+	author = {Brugnatelli, Vermondo},
+	booktitle = {\textit{Studies on Language and {African} Linguistics in Honour of Marcello Lamberti}},
+	editor = {Luca Busetto},
+	note = {A.S.A.R. http://unimib.academia.edu/VermondoBrugnatelli/Papers/1304580/Some\_grammatical\_features\_of\_Ancient\_Eastern\_Berber\_the\_language\_of\_the\_Mudawwana\_. (27 February, 2012).},
+	pages = {29–40},
+	publisher = {Qu},
+	title = {Some grammatical features of Ancient {Eastern} {Berber} (the language of the Mudawwana)},
+	year = {2011}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Calassanti-Motylinski1905,
+	address = {Rebillet },
+	author = {Calassanti-Motylinski, Gustave Adolphe de},
+	note = {In \textit{Actes du XVIe Congrès des Orientalistes \citep{Alger1905}}, vol. II, 69–78. Paris.},
+	publisher = {Notice sommaire et extraits},
+	title = {{Le} Manuscrit arabo-berbère de Zouagha découvert par M},
+	year = {1905}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Chabot1940,
+	address = {Paris},
+	author = {Chabot, J. B.},
+	publisher = {Imprimerie Nationale de France},
+	title = {\textit{Recueil des Inscriptions Libyques}},
+	year = {1940}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Chaker1981,
+	author = {Chaker, Salem},
+	journal = {\textit{Revue des mondes musulmans et de la Méditerranée}. Persée - Portail des revues scientifiques en SHS},
+	note = {. https://doi.org/10.3406/remmm..},
+	number = {1},
+	pages = {31–46},
+	title = {Données sur la langue berbère à travers les textes anciens},
+	urldate = {1981.1902},
+	volume = {31},
+	year = {1981}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@misc{Cohen1972,
+	author = {Cohen, David},
+	note = {\textit{Comptes rendus du Groupe Linguistique d’Etudes Chamito-Sémitiques} XVI. 121–127.},
+	title = {Sur quelques mots berbères dans un écrit du {IX}e-Xe siècle},
+	year = {1972}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Cortade1969,
+	address = {\textit{Essai de grammaire touareg (dialecte de l’Ahaggar).} [Alger]},
+	author = {Cortade, Jean Marie},
+	publisher = {Université d’Alger, Institut de recherches sahariennes},
+	year = {1969}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@incollection{Creissels2009a,
+	address = {London},
+	author = {Creissels, Denis},
+	booktitle = {{\textit{Proceedings of Conference on Language Documentation \& Linguistic Theory 2}}},
+	editor = {Peter K. Austin, Oliver Bond, Monik Charette, David Nathan and Peter Sells},
+	pages = {73–82},
+	publisher = {SOAS},
+	title = {Construct forms of nouns in {African} languages},
+	year = {2009}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Creissels2009b,
+	author = {Creissels, Denis},
+	journal = {\textit{Lingua}},
+	note = {. https://doi.org/10.1016/j.lingua.2008.09.007.},
+	number = {3},
+	pages = {445–459},
+	title = {Uncommon patterns of core term marking and case terminology},
+	volume = {119},
+	year = {2009}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Dallet1982,
+	address = {Paris},
+	author = {Dallet, J. -M},
+	number = {1},
+	publisher = {Société d’études linguistiques et anthropologiques de France},
+	series = {Etudes Ethno-Linguistiques Maghreb-Sahara},
+	title = {\textit{Dictionnaire kabyle-français: {{P}}arler des At Mangellat, Algérie}},
+	year = {1982}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{DelheureDelheure2019,
+	author = {Delheure, Jean and Juan Antonio Ochoa},
+	journal = {\textit{Études et Documents Berbères}. Paris: La Boite à Documents},
+	note = {. https://doi.org/10.3917/edb.042.0045.},
+	number = {2},
+	pages = {45–142},
+	title = {Grammaire de la teggargrent (berbère parlé à Ouargla)},
+	volume = {42},
+	year = {2019}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{DellDell1985,
+	author = {Dell, François and Mohamed Elmedlaoui},
+	journal = {\textit{Journal of African Languages and Linguistics}},
+	pages = {105–130},
+	sortname = {Dell, Francois and Mohamed Elmedlaoui},
+	title = {Syllabic consonants and syllabification in Imdlawn Tashelhiyt {Berber}},
+	volume = {7},
+	year = {1985}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Destaing1914,
+	address = {Paris},
+	author = {Destaing, Edmond},
+	number = {49},
+	publisher = {Ernest Leroux},
+	series = {Publications de La Faculté Des Lettres d’Alger},
+	title = {\textit{Dictionnaire français-berbère: {{D}}ialecte des Beni-Snous}},
+	year = {1914}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Destaing1920,
+	address = {Vol. I: Vocabulaire français-berbère}. Paris},
+	author = {Destaing, Edmond},
+	publisher = {Ernest Leroux},
+	title = {\textit{Etude sur la Tachelḥît du Sous},
+	year = {1920}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Djarallah1993,
+	author = {Djarallah, Abdallah},
+	journal = {Agzin d nanna-s (le chiot et sa tante). (Trans.) Paulette Galand-Pernet. \textit{Études et Documents Berbères}. Paris: La Boite à Documents},
+	note = {. https://doi.org/10.3917/edb.010.0135.},
+	number = {1},
+	pages = {135–138},
+	title = {Une randonnée dans le parler des harakta de Aïn-Beïda},
+	volume = {10},
+	year = {1993}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{ElMoujahid1982,
+	author = {El Moujahid, El Houssaïn},
+	journal = {\textit{Langues et littératures (Faculté des Lettres, Rabat)}},
+	pages = {47–62},
+	sortname = {El Moujahid, El Houssain},
+	title = {Un aspect morphologique du nom en tamazight: {{L}}’état d’annexion},
+	volume = {2},
+	year = {1982}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{ElMoujahid1997,
+	address = {Casablanca},
+	author = {El Moujahid, El Houssaïn},
+	publisher = {Faculté des Lettres et des Sciences Humaines de Rabat},
+	sortname = {El Moujahid, El Houssain},
+	title = {\textit{Grammaire générative du berbère : {{M}}orphologie et syntaxe du nom en tachelhit}},
+	year = {1997}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Felice2020,
+	author = {Felice, Lydia},
+	journal = {\textit{McGill Working Papers in Linguistics}},
+	number = {1},
+	pages = {1–21},
+	title = {On the Case System of Kabyle},
+	volume = {26},
+	year = {2020}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Galand1969,
+	author = {Galand, Lionel},
+	journal = {\textit{Cahiers Ferdinand de Saussure}},
+	pages = {83–100},
+	title = {Types d’expansion nominale en berbère},
+	volume = {25},
+	year = {1969}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Galand2002,
+	address = {Leuven},
+	author = {Galand, Lionel},
+	publisher = {Peeters},
+	title = {\textit{Études de linguistique berbère}},
+	year = {2002}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Genevois1973,
+	address = {Alger},
+	author = {Genevois, Henri},
+	publisher = {Fichier périodique},
+	title = {\textit{Djebel Bissa: {{P}}rospections à travers un parler encore inexploré du Nord-Chélif}},
+	year = {1973}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Greenberg1978,
+	address = {Volume 3: Word Structure}, 47–82. Stanford},
+	author = {Greenberg, Joseph H.},
+	publisher = {Stanford University Press},
+	title = {How Does a Language Acquire Gender Markers? {{I}}n \textit{Universals of Human Language},
+	year = {1978}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Guerssel1992,
+	author = {Guerssel, Mohand},
+	journal = {\textit{Canadian Journal of Linguistics/Revue canadienne de linguistique}. Cambridge University Press},
+	note = {. https://doi.org/10.1017/S0021940.},
+	number = {2},
+	pages = {175–196},
+	title = {On the Case System of {Berber}},
+	urldate = {000841310},
+	volume = {37},
+	year = {1992}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Gutova2021,
+	address = {Paris},
+	author = {Gutova, Evgeniya},
+	note = {D. thesis.},
+	publisher = {Université Sorbonne Nouvelle Ph},
+	title = {\textit{Senhaja {Berber} Varieties: {{P}}honology, Morphology, and {Morphosyntax}}},
+	year = {2021}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Hamadouche2007,
+	address = {Algiers},
+	author = {Hamadouche, Ahmed},
+	publisher = {Asqamu Unnig n Timmuzɣa},
+	title = {\textit{Inzan, tiqṣidin}},
+	year = {2007}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Heath2005a,
+	address = {Berlin},
+	author = {Heath, Jeffrey},
+	number = {35},
+	publisher = {Mouton de Gruyter},
+	series = {Mouton Grammar Library},
+	title = {\textit{A Grammar of Tamashek ({Tuareg} of {Mali})}},
+	year = {2005}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Heath2005b,
+	address = {Köln},
+	author = {Heath, Jeffrey},
+	publisher = {Rüdiger Köppe},
+	title = {\textit{Tamashek texts from {Timbuktu} and Kidal ({Mali})}},
+	year = {2005}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Heath2006,
+	address = {Paris},
+	author = {Heath, Jeffrey},
+	publisher = {Karthala},
+	title = {\textit{Dictionnaire Touareg du {Mali}: {{T}}amachek-anglais-français}},
+	year = {2006}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{König2008,
+	address = {Oxford},
+	author = {König, Christa},
+	publisher = {Oxford University Press},
+	sortname = {Konig, Christa},
+	title = {\textit{Case in {Africa}}},
+	year = {2008}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Kossmann1995,
+	author = {Kossmann, Maarten},
+	journal = {\textit{Journal of African Languages and Linguistics}},
+	pages = {71–82},
+	title = {{Schwa} en berbère},
+	volume = {16},
+	year = {1995}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Kossmann1997,
+	address = {Paris},
+	author = {Kossmann, Maarten},
+	publisher = {Peeters},
+	title = {\textit{Grammaire du parler berbère de Figuig (Maroc oriental)}},
+	year = {1997}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Kossmann1999,
+	address = {Köln},
+	author = {Kossmann, Maarten},
+	publisher = {Rüdiger Köppe},
+	title = {\textit{Essai sur la phonologie du proto-berbère}},
+	year = {1999}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@incollection{Kossmann2009,
+	address = {Berlin},
+	author = {Kossmann, Maarten},
+	booktitle = {\textit{Loanwords in the World’s Languages: {{A}} Comparative Handbook}},
+	editor = {Martin Haspelmath and Uri Tadmor},
+	pages = {191–214},
+	publisher = {de Gruyter},
+	title = {Loanwords in Tarifiyt},
+	year = {2009}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Kossmann2013,
+	address = {Leiden},
+	author = {Kossmann, Maarten},
+	publisher = {Brill},
+	title = {\textit{The {Arabic} Influence on {Northern} {Berber}}},
+	year = {2013}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Kossmann2016,
+	author = {Kossmann, Maarten},
+	journal = {\textit{Wiener Zeitschrift für die Kunde des Morgenlandes}. Department of Oriental Studies, University of Vienna},
+	pages = {115–146},
+	title = {On Word Order in Figuig {Berber} Narratives: {{T}}he Uses of Pre- and Postverbal Lexical Subjects},
+	volume = {106},
+	year = {2016}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Lafkioui2000,
+	address = {Syntaxe intégrée de l’énoncé non-verbal rifain },
+	author = {Lafkioui, Mena B.},
+	note = {\textit{Comptes rendus du Groupe Linguistique d’Etudes Chamito-Sémitiques (G.L.E.C.S.)}. GLECS/EPHE (XXXIII). 165–187.},
+	publisher = {l’énoncé à auxiliaire de prédication spécifique},
+	year = {2000}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Lewicki1934,
+	author = {Lewicki, Tadeusz},
+	journal = {\textit{Revue des Etudes Islamiques}},
+	pages = {275–305},
+	title = {Quelques textes inedits en vieux berbere provenant d’une chronique ibadite anonyme},
+	volume = {3},
+	year = {1934}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Lux2013,
+	address = {Köln},
+	author = {Lux, Cécile},
+	number = {38},
+	publisher = {Rüdiger Köppe},
+	series = {Berber Studies},
+	sortname = {Lux, Cecile},
+	title = {\textit{{Le} tetserrét, langue berbère du {Niger} : {{D}}escription phonétique, phonologique et morphologique, dans une perspective comparative}},
+	year = {2013}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Marcy1932,
+	author = {Marcy, Georges},
+	journal = {\textit{Hespéris}},
+	pages = {61–77},
+	title = {Les phrases berbères des Documents inédits d’histoire almohade},
+	volume = {14},
+	year = {1932}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+Mettouchi, Amina \& Axel Fleisch. 2010. \textit{Topic-focus articulation in Taqbaylit and Tashelhit Berber} (Typological Studies in Language). (Ed.) Ines Fiedler \& Anne Schwarz. \textit{The Expression of Information Structure: A documentation of its diversity across Africa} (Typological Studies in Language). John Benjamins Publishing Company. https://doi.org/10.1075/tsl.91.08met.
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{MettouchiMettouchi2013,
+	author = {Mettouchi, Amina and Zygmunt Frajzyngier},
+	journal = {\textit{Linguistic Typology}},
+	note = {. https://doi.org/10.1515/lity-2013-0001.},
+	number = {1},
+	pages = {1–20},
+	title = {A previously unrecognized typological category: {{T}}he state distinction in Kabyle ({Berber})},
+	volume = {17},
+	year = {2013}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{MourighMourigh2020,
+	address = {Berlin},
+	author = {Mourigh, Khalid and Maarten Kossmann},
+	publisher = {Ugarit},
+	title = {\textit{An Introduction to Tarifiyt {Berber} (Nador, {Morocco})}},
+	year = {2020}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+Múrcia Sànchez, Carles. 2011. Que sait-on de la langue des Maures? Distribution géographique et situation sociolinguistique des langues en Afrique Proconsulaire. In C. Ruiz Darasse \& E. R. Luján (eds.), \textit{Contacts linguistiques dans l’Occident méditerranéen antique}, 103–126. Madrid.
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Penchoen1973,
+	address = {Vol. 1. Los Angeles},
+	author = {Penchoen, Thomas G.},
+	publisher = {Undena Publications},
+	title = {\textit{Tamazight of the Ayt Ndhir} ({Afroasiatic} Dialects)},
+	year = {1973}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Prasse1964,
+	address = {In trans. C. L. Patterson \& Terence F Mitchell, \textit{Papers of the International Congress of Africanists \citep{Accra1962}}, 97–104. London},
+	author = {Prasse, Karl-G},
+	publisher = {Longman},
+	title = {The origin of {Berber} noun-prefixes},
+	year = {1964}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Prasse1969,
+	address = {Copenhagen},
+	author = {Prasse, Karl-G},
+	publisher = {Muskgaard},
+	title = {\textit{À propos de l’origine de {{H}} touareg (tahăggart)}},
+	year = {1969}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Prasse1974,
+	address = {IV-V Nom.} Copenhagen},
+	author = {Prasse, Karl-G},
+	publisher = {Akademisk Forlag},
+	title = {\textit{Manuel de grammaire touaregue (tahăggart)},
+	year = {1974}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Prasse2002,
+	address = {In \textit{Articles de linguistique berbère. Mémorial Werner Vycichl}, 373–390. Paris},
+	author = {Prasse, Karl-G},
+	publisher = {L’Harmattan},
+	title = {L’origine des préfixes d’état en berbère},
+	year = {2002}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Prasse2010,
+	address = {Köln},
+	author = {Prasse, Karl-G},
+	publisher = {Rüdiger Köppe},
+	title = {\textit{{Tuareg} Elementary Course (Tahăggart)}},
+	year = {2010}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@incollection{Prasse2011,
+	address = {Köln},
+	author = {Prasse, Karl-G},
+	booktitle = {\textit{« Parcours berbères » : {{M}}élanges offerts à Paulette Galand-Pernet et Lionel Galand pour leur 90e anniversaire} ({Berber} Studies 33)},
+	editor = {Amina Mettouchi},
+	pages = {85–96},
+	publisher = {Rüdiger Köppe},
+	title = {Bilan sur les laryngales du proto-berbère},
+	year = {2011}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{PrassePrasse1998,
+	address = {Copenhagen},
+	author = {Prasse, Karl-G., Ghoubeïd Alojaly and Ghabdouane Mohamed},
+	publisher = {Museum Tusculanum},
+	sortname = {Prasse, Karl-G., Ghoubeid Alojaly and Ghabdouane Mohamed},
+	title = {\textit{Lexique touareg-français : {{D}}euxième édition revue et augmentée}},
+	year = {1998}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Putten2013,
+	address = {Leiden},
+	author = {Putten, Marijn van},
+	publisher = {University of Leiden PhD thesis},
+	title = {\textit{A Grammar of Awjila {Berber} ({Libya}) Based on Umberto Paradisi’s Material}},
+	year = {2013}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Putten2015,
+	author = {Putten, Marijn van},
+	journal = {\textit{Rivista degli Studi Orientali}},
+	pages = {11–37},
+	title = {Noun prefixes in {Eastern} {Berber}},
+	volume = {86},
+	year = {2015}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Putten2016,
+	author = {Putten, Marijn van},
+	journal = {\textit{Zeitschrift der Deutschen Morgenländischen Gesellschaft}},
+	number = {1},
+	pages = {11–39},
+	title = {The origin of the front vowel nominal prefixes in {Berber}},
+	volume = {166},
+	year = {2016}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@misc{Putten2017,
+	author = {Putten, Marijn van},
+	note = {Brill. https://doi.org/10.1163/9789004357617\_019.},
+	title = {Are Libyco-{Berber} Horizontal ṯ and Vertical h the Same Sign? {{I}}n \textit{{To} the Madbar and Back Again}, 346–357},
+	year = {2017}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Putten2018,
+	author = {Putten, Marijn van},
+	journal = {\textit{Nordic Journal of African Studies}},
+	number = {3},
+	pages = {1–32},
+	title = {Proto-{Berber} Mid Vowel Harmony},
+	volume = {27},
+	year = {2018}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@article{Ridouane2008,
+	author = {Ridouane, Rachid},
+	journal = {\textit{Phonology}},
+	number = {2},
+	pages = {321–359},
+	title = {Syllables without Vowels: {{P}}honetic and Phonological Evidence from {Tashlhiyt} {Berber}},
+	volume = {25},
+	year = {2008}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@misc{SadiSadi2020,
+	author = {Sadi, Nesrin and Ranya Landri},
+	note = {University of Bouira Master’s thesis.},
+	title = {\textit{Tifukkas n tsuqqilt n ungal « Taguni n win iɣezzan » n « Djamel {LACEB} »}},
+	year = {2020}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@incollection{Sasse1984,
+	address = {Amsterdam},
+	author = {Sasse, Hans-Jürgen},
+	booktitle = {\textit{Current Progress in {Afro-Asiatic} Linguistics: {{P}}apers of the Third International Hamito-{Semitic} Congress}},
+	editor = {James Bynon},
+	pages = {111–126},
+	publisher = {J. Benjamins},
+	sortname = {Sasse, Hans-Jurgen},
+	title = {Case in {Cushitic}, {Semitic} and {Berber}},
+	year = {1984}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Souag2013,
+	address = {Köln},
+	author = {Souag, Lameen},
+	number = {37},
+	publisher = {Rüdiger Köppe},
+	series = {Berber Studies},
+	title = {\textit{{Berber} and {Arabic} in Siwa ({Egypt}): {{A}} Study in Linguistic Contact}},
+	year = {2013}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Souag2017,
+	address = {In \textit{Diffusion: Implantation, Affinités, Convergence} (Mémoires de La Société Linguistique de Paris (Nouvelle Série) 24), 83–107. Louvain},
+	author = {Souag, Lameen},
+	publisher = {Peeters},
+	title = {{La} diffusion en berbère : {{R}}econcilier les modèles},
+	year = {2017}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+Souag, Lameen. 2018. Arabic-Berber-Songhay contact and the grammaticalisation of “thing.” In Stefano Manfredi \& Mauro Tosco (eds.), \textit{Arabic in Contact} (Studies in Arabic Linguistics 6), 54–71. Amsterdam: John Benjamins.
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+Souag, Lameen. fc. Kinship terms in proto-Berber. \textit{Anthropological Linguistics}.
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@incollection{Spencer2020,
+	address = {Cambridge},
+	author = {Spencer, Andrew},
+	booktitle = {\textit{Complex words: {{A}}dvances in morphology}},
+	editor = {Livia Körtvélyessy and Pavel \u{S}tekauer},
+	pages = {142–158},
+	publisher = {Cambridge University Press},
+	title = {{U}ninflectedness: {{{U}}}ninflecting, uninflectable, and uninflected words, or the complexity of the simplex},
+	year = {2020}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Taïfi1991,
+	address = {Paris},
+	author = {Taïfi, Miloud},
+	publisher = {L’Harmattan-Awal},
+	sortname = {Taifi, Miloud},
+	title = {\textit{Dictionnaire tamazight-français (parlers du Maroc central)}},
+	year = {1991}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+Taine-Cheikh, Catherine. 2005. Le rôle des phénomènes d’agglutination dans la morphogenèse de l’arabe et du berbère. In Gilbert Lazard \& Claire Moyse-Faurie (eds.), \textit{Linguistique typologique}, 288–315. Presses du Septentrion. https://shs.hal.science/halshs-00385959. (18 October, 2023).
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Taine-Cheikh2008,
+	address = {Köln},
+	author = {Taine-Cheikh, Catherine},
+	number = {20},
+	publisher = {Rüdiger Köppe},
+	series = {Berber Studies},
+	title = {\textit{Dictionnaire zénaga-francais : {{L}}e berbere de Mauritanie présenté par racines dans une perspective comparative}},
+	year = {2008}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Vycichl1957,
+	address = {In \textit{Mémorial André Basset}, 139–146. Paris},
+	author = {Vycichl, Werner},
+	publisher = {Adrien Maisonneuve},
+	title = {L’article défini du berbère},
+	year = {1957}
+}
+
+\end{styleBibliographyi}
+
+\begin{styleBibliographyi}
+@book{Zidat2016,
+	address = {Luxembourg},
+	author = {Zidat, Saïd},
+	publisher = {Innexsys},
+	sortname = {Zidat, Said},
+	title = {\textit{Imɣan n Tensawt / Plantes de Kabylie}},
+	year = {2016}
+}
+
+\end{styleBibliographyi}
+\end{verbatim}
+\sloppy\printbibliography[heading=subbibliography,notkeyword=this]
+\end{document}

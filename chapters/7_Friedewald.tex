@@ -1,0 +1,770 @@
+\documentclass[output=paper]{langscibook}
+\author{Authorname\orcid{}\affiliation{}}
+\title{Title}
+\abstract{Abstract}
+\IfFileExists{../localcommands.tex}{
+  \addbibresource{../localbibliography.bib}
+  \input{../localpackages}
+  \input{../localcommands} 
+  \input{../localhyphenation} 
+  \togglepaper[1]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle 
+%\shorttitlerunninghead{}%%use this for an abridged title in the page headers
+% ATTENTION: Diacritics on the following phonetic characters might have been lost during conversion: {'ɛ', 'ə'}
+
+\title{French \textit{voilà/voici}: an uninflectable item arising from an inflecting verb}
+
+Katja Friedewald
+
+\textit{The French particle voilà does not inflect, which is surprising given its syntactic behavior. It acts similarly to a verb by taking complements, assigning accusative case, and even appearing as the sole element in a relative clause. Despite these verbal characteristics, voilà remains uninflected. Historically, voilà originated from the imperative form of veoir ('to see') and the locative adverb là ('there'), which was initially a multiword construction resembling what \citet{Spencer2020} calls “constructional uninflectedness. However, in Modern French, the verbal part (voi) no longer functions as an imperative. Over time, this trace of inflection disappeared, as medieval forms like veez la (plural) and vei la (singular) coexisted. Corpus research shows that by the 16th century, the singular imperative form became the dominant one, merging into the particle voilà, which eventually replaced both inflected forms without number restriction.}
+
+\section{Introduction}
+
+The two French lexemes \textit{voilà} and \textit{voici} do not inflect. At the same time, for various reasons mentioned below, it is obvious that they do not fall under traditional Romance non-inflecting word classes such as prepositions or conjunctions. Hence, since scholars began to investigate them more closely in the 20\textsuperscript{th} century, they are often classified under the vague term of “presentational particles” (\citealt{Petit2010}, 152). Considering their syntactic distribution, however, this attribution to a group whose members are by definition not able to build phrases (cf. Bußmann 2008, 509) does not seem to hold, since the various configurations in which they appear show a different picture – namely them constantly taking over the verbal position and therefore behaving like members of an inflecting word class par excellence. In the terms of Spencer (2020, 142), we are thus not facing “uninflecting” items, that is words “that belong to non-inflecting classes”, but well “uninflectable” ones, where “all forms of the paradigm are identical”. 
+
+In recent years, presentative clauses in general began to receive attention in the linguistic literature (f.~ex. \citealt{Julia2018}; \citealt{Zanuttini2017} for Italian; Bonilla \citealt{Carvajal2020} for Latin; Wood/\citealt{Zanuttini2023} for English). Crosslinguistically, they all present characteristics that look exceptional at first glance. Analyzing the French presentative with a focus on one of its most striking particularities, the uninflectability of the presentative element, thus presents a promising approach to the phenomenon of such clauses. At the same time, a detailed case study of a specific lexical element becoming uninflectable in diachrony can contribute to the understanding of the dynamics of the phenomenon of uninflectability in general. 
+
+The fact that \textit{voici} and \textit{voilà} behave verb-like has already been observed by various scholars (first and foremost by \citealt{Moignet1974}; \citealt{Morin1985}). Also \citet{Zanuttini2017} attributes verbal features to the Italian \textit{ecco} and analyzes it as “defective verb that starts out in v” \REF{ex:key:241}. For the French case, the examples below illustrate some of the evidence for treating \textit{voilà} (and the same holds true for the analogous form \textit{voici}) as verbs.
+
+\begin{itemize}
+\item \gll Voilà Marie.\\
+     \textsc{part} Marie\\
+\glt ‘There is/comes Mary.’
+\z % you might need an extra \z if this is the last of several subexamples
+
+\begin{itemize}
+\item \gll a.  Te=voilà.\\
+     you.\textsc{2sg.acc}=\textsc{part}\\
+\glt ‘There you are.’
+\z % you might need an extra \z if this is the last of several subexamples
+\gll b. * Tu=voilà.\\
+     you.\textsc{2sg.nom}=\textsc{part}\\
+\begin{itemize}
+\item \gll La femme que voilà est mon épouse.\\
+     the woman that \textsc{part} is my wife \\
+\glt ‘The woman that you see there (arriving) is my wife.’
+\z % you might need an extra \z if this is the last of several subexamples
+
+The lexeme takes complements like in \REF{ex:key:1} and assigns accusative case to them, which becomes visible at the surface when replacing the noun phrase with a pronoun which displays the accusative form, clitic in nature (see 2a in contrast to 2b). In addition to that, the fact that the so-called particle suffices to constitute a full relative clause introduced by the complementizer \textit{que} like in \REF{ex:key:3} suggests that it has to contain verbal properties. This impression is only reinforced by its ability to introduce subordinate clauses \REF{ex:key:4}, pseudorelatives \REF{ex:key:5} and small clauses \REF{ex:key:6}. 
+
+\begin{itemize}
+\item \gll Voilà pourquoi je voulais te parler.\\
+     \textsc{part} why I wanted you.\textsc{acc} talk\\
+\glt ‘This is why I wanted to talk to you.’
+\z % you might need an extra \z if this is the last of several subexamples
+
+\begin{itemize}
+\item \gll Voilà mon frère qui pleure.\\
+     \textsc{part} my brother who cries\\
+\glt ‘My brother is crying.’
+\z % you might need an extra \z if this is the last of several subexamples
+
+\begin{itemize}
+\item \gll Voilà mon oncle content.\\
+     \textsc{part} my uncle happy\\
+\glt ‘My uncle is happy now.’
+\z % you might need an extra \z if this is the last of several subexamples
+
+Also when it comes to word formation, \textit{voilà} in combination with the common verbal prefix \textit{re}{}- is treated as a verbal element on the morphological level, as can be seen in example \REF{ex:key:7}. 
+
+\begin{itemize}
+\item \gll Me re-voilà.\\
+     me.\textsc{1sg.acc} again-\textsc{part}\\
+\glt ‘Here I am again.’
+\z % you might need an extra \z if this is the last of several subexamples
+
+At the same time, one could hypothesize that rather than as an uninflectable item, \textit{voilà/voici} should be analyzed as a highly defective element where only one cell of the verbal paradigm is filled. However, although in those presentative sentences, the alleged subject of \textit{voilà/voici} is never expressed overtly, cases like (8a-b) suggest that there is no restriction of the addressee to a specific number feature. Since the focus of the paper lies on the morphosyntactic properties linked to uninflectability, the question, though no less intriguing, to know why sentences with \textit{voilà/voici} lack an overt subject, especially in a non-pro-drop language like modern French, will be left aside here and needs to be investigated separately elsewhere. 
+
+\begin{itemize}
+\item \end{itemize}
+\ea\label{ex:key:}
+\langinfo{}{}{a.  Addressee=\textbf{\textsc{2sg}}}\\
+\gll Voilà un monde que \textbf{tu} n’as pas connu.\\
+     \textsc{part} a world that you.\textsc{2sg} \textsc{neg} have \textsc{neg} known\\
+\glt ‘There you have a world that you did not know.’ [A. Jenny, L‘Art Français de la Guerre, 2011, p. 241, via Frantext]
+\z % you might need an extra \z if this is the last of several subexamples
+
+\ea\label{ex:key:}
+\langinfo{}{}{b.   Addressee=\textbf{\textsc{2pl}}}\\
+\gll Voilà pourquoi \textbf{vous} crèverez tous;\\
+     \textsc{part} why you.\textsc{2pl} die.\textsc{2pl.fut} all\\
+\glt ‘This is why you all will die;’ [J. Roubaud, Poésie: Récit, 2000, p. 349, via Frantext]
+\z % you might need an extra \z if this is the last of several subexamples
+
+In sum, what becomes clear considering the distribution of the uninflectable \textit{voilà/voici} is that not only it behaves like a verb, but it also exhibits a high level of (morpho-)syntactic productivity. The predominant question that arises from the observation of this concrete phenomenon is thus the same as the one asked by Spencer (2020, 154) on a more general level: “How can an uninflected stem participate in syntactic relations that are normally the province of inflected word forms and the phrases they project?”. To approach this question, we will concentrate on the part of the lexeme that is of verbal origin, namely the morpheme \textit{voi}{}-, and on the development of its features over time. Whilst there is consensus about the assumption that \textit{voici} and \textit{voilà} etymologically arose from the combination of a form of the Old French verb \textit{veoir} ‘to see’ and a locative adverb, respectively \textit{ci} ‘here’ and \textit{là} ‘there’, the exact nature of the former remains to be determined. One often propagated hypothesis in this regard is the one of a “frozen imperative singular” (\citealt{Burdiant2000}, 243; also stated f. ex. in \citealt{Rabatel2001}, 141; FEW 14, 492), which needs to be tested and corrected, as will become apparent below. In the course of the paper, I will argue that what in Modern French spells out as \textit{voi}{}- originates as \textsc{2pl/hon} and undergoes a process of grammaticalization, involving contraction, univerbation, and reanalysis leading finally to root insertion.
+
+In order to come to a fine-grained analysis, the following questions are addressed: How can the grammaticalization path of the lexemes \textit{voilà} and \textit{voici} be described accurately? Which mechanisms come into play during the transformation process into an uninflectable item? And finally, how does the feature configuration of the \textit{voi}{}-morpheme develop until being solidified in its modern, uninflectable form?
+
+By means of a corpus analysis for French language data from the 12\textsuperscript{th} to the 16\textsuperscript{th} century (see section 2), the study traces back the diachronic development and the different stages of the particular lexical element under discussion. \sectref{sec:key:3} discusses the origins of the source construction and its morphological features, section 4 analyzes the intermediate stages \textit{vez ci/la} and \textit{veci/vela} specifically with regard to the emergence of uninflectability, and section 5 explains the mechanisms that lead to the creation of the final forms \textit{voici} and \textit{voilà}. 
+
+\section{Diachrony of \textit{voilà/voici}: The data}
+\subsection{Methodology}
+
+In order to explain the unusual (morpho-)syntactic behavior of the item under discussion, as a first step its etymology and diachronic evolution are traced back. Therefore, the design of a corresponding corpus research has to consider periods even before \textit{voilà/voici} in its modern form is attested for the first time. Since in our corpus, the first occurrences are detected in the 15\textsuperscript{th} century, and the rise of what can be seen as pre-forms of the particle (namely \textit{vez la/ci}, see below) happens from the 13\textsuperscript{th} century on, the detailed research starts in the 12\textsuperscript{th} and extends to the 16\textsuperscript{th} century. Employed were two already established digital corpora which cover an extensive range of texts and genres of their time and which are both annotated, tagged for parts of speech, and searchable via queries in Corpus Query Language (CQL): The \textit{Base du Français Médiéval} (BFM) for the older language stages and the \textit{Base textuelle Frantext} (Frantext) for data from the 14\textsuperscript{th} century onwards (see section “Sources” for access information). The total amount of data has been separated into subcorpora (as described in \tabref{tab:key:1}) and examined independently from each other. Of course, since the subcorpora vary considerably in size in terms of number of tokens, when comparing the results to one another to gain insights on developments over centuries, the results will have to be normalized. 
+
+
+\begin{tabularx}{\textwidth}{XXXX}
+
+\lsptoprule
+
+{\bfseries corpus} & {\bfseries century} & {\bfseries no. texts} & {\bfseries no. tokens}\\
+\citealt{BFM2019} & 12\textsuperscript{th} & 50 & 1.253.830\\
+\citealt{BFM2022} & 13\textsuperscript{th} & 64 & 1.854.076\\
+Frantext & 14\textsuperscript{th} & 119 & 4.354.407\\
+& 15\textsuperscript{th} & 162 & 4.902.277\\
+& 16\textsuperscript{th} & 188 & 7.189.168\\
+\lspbottomrule
+\end{tabularx}
+%%please move \begin{table} just above \\begin{tabular . 
+\begin{table}
+\caption{Quantitative description of the subcorpora.}
+\label{tab:key:1}
+\end{table}
+
+In order to compare and classify the results obtained by the corpus research, valid categories for comparison are needed that are eligible to picture the different stages of the construction before resulting in the presentational element \textit{voilà/voici}. The first category comprises the regularly inflected Old/Middle French verb for ‘to see’ in combination with the locative adverb \textit{ci} (‘here’) or \textit{la} (‘there’), with its \textsc{2pl} form falling under category 1a and the form for \textsc{2sg} under category 1b (see \tabref{tab:key:2}). The variance within this group is partially due to general language change taking place during the considered period, especially due to the morpho-phonological change on the verb itself from \textit{veoir} to \textit{voir}. However, since the research interest here focuses on the grammatical properties of the \textit{voi}{}-morpheme of the univerbated particle, the pre-particle syntagmas have been classified in terms of verbal features and no distinction has been made regarding the actual realization of the verb. That way, a 12\textsuperscript{th} century \textit{veez ci} and a 16\textsuperscript{th} century \textit{voyez ci} fall in the same analyzing category (1a, see \tabref{tab:key:2}), which is only coherent in view of the research question. 
+
+
+\begin{tabularx}{\textwidth}{XXX}
+
+\lsptoprule
+
+\multicolumn{2}{c}{{\bfseries category}} & {\bfseries considered variants}\\
+\textbf{1a} & veoir.\textsc{2pl} + ci/la & \textit{veez, vees, voiez, voyez, voiés, voyés}\\
+\textbf{1b} & veoir.\textsc{2sg} + ci/la & \textit{veis, veiz, vois, voiz}\\
+\textbf{2} & vez ci/la & \textit{vez, ves}\\
+\textbf{3} & ve(z)ci/ve(z)la & \textit{vezci, vezla, vesci, vesla, vezcy, vescy, veci, vela}\\
+\textbf{4} & voici/voila & \textit{voici, voicy, voila, voyci, voycy, voyla}\\
+\lspbottomrule
+\end{tabularx}
+%%please move \begin{table} just above \\begin{tabular . 
+\begin{table}
+\caption{Categorization of presentative forms applied during the corpus study.}
+\label{tab:key:2}
+\end{table}
+
+During the first overall approaches to the corpus data, one form kept recurring that could not readily be classified and whose specific nature remains to be determined, namely occurrences of \textit{vez ci/la}. The choice has therefore been made to analyze it separately (category 2 in \tabref{tab:key:2}), a choice that turns out to be crucial for the further analysis (see section 4 below). The further categories 3 and 4 contain respectively the univerbated presentational items \textit{ve(z)ci/ve(z)la} and \textit{voici/voilà} still in use today. For the totality of the results, also variants due to graphical reasons were included by considering alternations between <v> and <u> as well as all possible combinations with diacritics; for instance, also a form like <voies> could have been classified under category 1a, but only after checking manually from the context that it does not stand for the plural of the noun \textit{voie} ‘way’, but well for the \textsc{2pl} of the verb ‘to see’. 
+
+\subsection{Results of the corpus study: the overall picture}
+
+Searching inside the corpus for the different categories of presentative forms specified above leads to the quantitative results summarized in \tabref{tab:key:3}. The given relative frequencies are calculated with a basis for normalization of one million tokens. In order to better recognize tendencies and possible dependencies, the results are visualized in a graph in \figref{fig:key:1}. 
+
+
+\begin{tabularx}{\textwidth}{XXXXXX}
+ & {\bfseries 1a (veoir.\textsc{2pl} + ci/la)} & {\bfseries 1b (veoir.\textsc{2sg} + ci/la)} & {\bfseries 2 (vez ci/la)} & {\bfseries 3 (ve(z/s)ci / ve(z/s)la)} & {\bfseries 4 (voici / voila)}\\
+\lsptoprule
+{\bfseries 12\textsuperscript{th} century} & 36,69 \REF{ex:key:46} & 5,48 \REF{ex:key:7} & 10,37 \REF{ex:key:13} & 0 \REF{ex:key:0} & 0 \REF{ex:key:0}\\
+{\bfseries 13\textsuperscript{th} century} & 35,06 \REF{ex:key:65} & 8,63 \REF{ex:key:16} & 42,07 \REF{ex:key:78} & 12,41 \REF{ex:key:23} & 0 \REF{ex:key:0}\\
+{\bfseries 14\textsuperscript{th} century} & 33,07 \REF{ex:key:144} & 9,88 \REF{ex:key:43} & 71,19 \REF{ex:key:310} & 98,52 \REF{ex:key:429} & 0,46 \REF{ex:key:2}\\
+{\bfseries 15\textsuperscript{th} century} & 37,56 \REF{ex:key:161} & 0,7 \REF{ex:key:3} & 6,3 \REF{ex:key:27} & 94,56 \REF{ex:key:405} & 9,11 \REF{ex:key:39}\\
+{\bfseries 16\textsuperscript{th} century} & 10,29 \REF{ex:key:74} & 4,59 \REF{ex:key:33} & 0,14 \REF{ex:key:1} & 23,79 \REF{ex:key:171} & 438,16 (3150)\\
+\lspbottomrule
+\end{tabularx}
+%%please move \begin{table} just above \\begin{tabular . 
+\begin{table}
+\caption{Relative frequencies per million tokens, (absolute frequencies in brackets).}
+\label{tab:key:3}
+\end{table}
+
+Since for one of the categories, namely category 4 (\textit{voici/voila}), we observe an extremely steep rise during the 16\textsuperscript{th} century in terms of frequencies, its values are represented on a separate scale, in order to zoom in onto the evolution of the remaining data points representing the earlier stages. 
+
+  
+%%please move the includegraphics inside the {figure} environment
+%%\includegraphics[width=\textwidth]{figures/a7Friedewaldrevisedversion-img001.png}
+ 
+
+\begin{stylecaption}
+Figure \stepcounter{Figure}{\theFigure}: Relative frequencies of presentative categories per million tokens, right y-axis only valid for category 4.
+\end{stylecaption}
+
+A first observation that can be made is that throughout the 12\textsuperscript{th} to the 15\textsuperscript{th} century, within the syntagma consisting of a conjugated form of the verb ‘to see’ and the locative adverb, the plural form of the verb (category 1a in \figref{fig:key:1}) is significantly more frequent than the singular form (category 1b), until the occurrences of the former decline drastically in the 16\textsuperscript{th} century. Furthermore, we see the numbers of the form \textit{vez} in combination with the locative adverb rise steadily over the 13\textsuperscript{th} and 14\textsuperscript{th} century and fall drastically again in the 15\textsuperscript{th} century (category 2). At the time when the \textit{vez} based presentatives reach their highest peak, another univerbated form is prevailing (\textit{vezci}, \textit{veci}, etc., see category 3), increasing sharply in the 14\textsuperscript{th} century, directly after their first documentation in the corpus. Finally, in the 16\textsuperscript{th} century, all frequencies of the formerly described presentative forms seem to collapse and reach their lowest point (with the exception of the singular syntagma 1b staying constantly low), whilst \textit{voici/voilà} (category 4) increases drastically, with an extremely high rate of growth, from roughly 9 occurrences per million tokens in the 15\textsuperscript{th} century to over 400 in the 16\textsuperscript{th} century. 
+
+In what follows, we will analyze the results going step by step through the different diachronic stages of the presentative constructions, focusing specifically on the nature and features of the verbal morpheme involved that ends up developing into the uninflectable element still in use today. 
+
+\section{Etymological origin}
+\subsection{Fixed formula originating in \textsc{2pl/hon} (\textit{veez ci/la})}
+
+As a first step, it is necessary to determine the still debated etymology of \textit{voici} and \textit{voilà}. The two lexemes are seen here as the result of a grammaticalization process, understanding grammaticalization as “the change whereby in certain linguistic contexts speakers use parts of a construction with a grammatical function. Over time the resulting grammatical item may become more grammatical by acquiring more grammatical functions and expanding its host-classes.” (Brinton/\citealt{Traugott2005}, 145). As will become apparent along the analysis in sections 3-5, this is exactly what we witness for the French presentative element that starts out as a regular syntagma and develops into a verb. In order to determine the starting point of the process accurately, we will have to “focus on strings or constructions rather than lexical items alone” (\citealt{Traugott2003}, 645), following the unanimously assumed hypothesis that \textit{voici} and \textit{voilà} in one way or the other involve the verb \textit{voir} ‘to see’ and the locative adverb \textit{ci} ‘here’ and \textit{là} ‘there’ respectively. 
+
+Looking at the data from the 12\textsuperscript{th} century, one can observe first, that within the considered constructions the combination of an inflected form of the verb ‘to see’ and the locative adverb \textit{ci/la} presents indeed the most frequent option, and second, that the verb is far more often inflected for 2\textsuperscript{nd} person plural than for 2\textsuperscript{nd} person singular (compare categories 1a and 1b in \figref{fig:key:1}). This observation is crucial, since in order to assume a construction to be the source for further diachronic development in terms of grammaticalization, “we need to be able to show that the source constructions exist – and exist in sufficient numbers” (\citealt{Brinton2017}, 284, here with regard to the development of pragmatic markers). The fact that the combination of singular forms with the respective locative adverbs does not yield into significantly elevated numbers of frequencies that would go beyond the predictable cooccurrence of the two items in their regular function makes it indefensible to take the representants of category 1b for possible candidates for a source syntagma of the lexemes in category 3 and 4. On the contrary, for the 2\textsuperscript{nd} person plural form of ‘to see’ in combination with the locatives \textit{ci/la} (category 1a in \figref{fig:key:1}), we have such a case of outstanding frequency in comparison also to the other forms of the paradigm. Furthermore, their quantitative presence in language use seems to be strongly affected, like the other presentative constructions appearing at later stages, by the massive rise of the final presentative form \textit{voici/voila}, which suggests that \textit{veez ci/la} and variants are competing with the new presentative, and thus have to fulfill a similar pragmatic function. By contrast, the elements of category 1b are the only ones in \figref{fig:key:1} not to be affected by the introduction of the novel presentative element, which in turn confirms the assumption that they are not directly involved in the evolutionary pathway of the French presentatives. 
+
+We can thus state that the source construction of the French presentative item is based on the Old French verb \textit{veoir} displaying 2\textsuperscript{nd} person plural morphology. It is important to note that, in Old French as in modern French, the verbal forms for the 2\textsuperscript{nd} person plural are homophonous to those used to express the honorific form, singular and plural. In fact, in situations where the addressee of \textit{veez ci} and variants can be unequivocally identified in the 12\textsuperscript{th} century subcorpus, for example by means of directly preceding vocatives or other clear references from the context, the vast majority of the clauses turns out to be directed to a single person in a polite manner rather than actually addressing a group of people. For the latter case, only four clear examples can be identified, in contrast to 28 for the former. The blurred borders this homophony entails between polite singular and generic plural forms, already beginning to show here, will play a role again in the process analyzed in paragraph 4.2.
+
+By the 12\textsuperscript{th} century, not only the verbal element of the presentative construction is being solidified to a specific form, but also the locative element. Occasional variances in this period still attest to the fact that this stability had just been reached shortly before. For instance, expanded locative expressions like \textit{la sus} ‘up there’ in \REF{ex:key:9a} or \textit{ci desouz} ‘below’ in \REF{ex:key:9b} could still be encountered, although rarely, up to the 13\textsuperscript{th} century, before not being attested any more in the 14\textsuperscript{th} century. Up to this point, by gradually excluding alternatives like in (9a-b), a clear restriction to the binary pair \textit{ci} ‘here’ – \textit{là} ‘there’ as possible candidates for the locative element in the presentative construction has been accomplished. 
+
+\begin{itemize}
+\item \gll \textup{a}. Seingnors, fet il, [...] ces dames que \textbf{veez} \textbf{la} \textbf{sus}, ce sont les filles Adrastus, Deyphilé et Argÿa, [...].\\
+     Sir.\textsc{nom} does he these ladies that see.\textsc{2sg}.hon there up this are the daughters Adrastus.\textsc{gen} D. and A.\\
+\glt ‘Sir, he says, […] these ladies that you see up there are Adrastus’ daughters, D. and A.’ [Anonyme, Roman de Thèbes 2, p. 127, ca. 1150, via \citealt{BFM2019}]
+\z % you might need an extra \z if this is the last of several subexamples
+\gll \textup{b}. Et ce pouez vous prouver par ces .iii. figures que vous \textbf{veez} \textbf{ci} \textbf{desouz}.\\
+     and this can.\textsc{2pl/hon} you.\textsc{2pl/hon} prove by those three figures that you.\textsc{2pl/hon} see.\textsc{2pl/hon} here under\\
+\glt ‘And you can prove this with those three figures that you see below.’ [Gossouin de Metz, Image du monde, ca. 1246, via \citealt{BFM2022}]
+\z % you might need an extra \z if this is the last of several subexamples
+
+All in all, this process thus involves a transformation from free collocation (in this case the combination of any conjugated form of \textit{veoir} with a locative expression) into a fixed formula (displaying \textsc{2pl/hon} morphology and reducing the options to two specific locative adverbs). The terms “free collocation” and “fixed formula” are borrowed from Brinton’s 2001 analysis of English \textit{look}{}-forms, which show clear parallels to the here studied phenomenon. 
+
+Furthermore, in both cases this last step not only entails morphological reduction, but also the involved words “become fixed syntactically” (\citealt{Brinton2001}, 189). In the case of the French presentatives, a consolidation of the internal word order of the construction is witnessed: In general, in Old and Middle French, nothing precludes the placement of the locative adverb in front of the verb as shown in \REF{ex:key:10}.
+
+\begin{itemize}
+\item \gll Sire Willame, un petit m'=atendez. Ices couarz que vus \textbf{ici} \textbf{veez}, Ceste est ma torbe, […].\\
+     Sir W. a little me=await.\textsc{2sg.hon} Those cowards that you.\textsc{2sg.hon} here see.\textsc{2sg.hon} this is my troop\\
+\glt ‘Sir W., wait a bit. Those cowards that you see here, this is my troop, […].’ [Anonyme, Chanson de Guillaume, p. 117, ca. 1140, via \citealt{BFM2019}]
+\z % you might need an extra \z if this is the last of several subexamples
+
+However, this constellation remains the exception in the examined presentative construction, also in later stages, where in general language use \textit{ci} begins to be found mostly in proclitic position and is contrasted with \textit{ici} in this regard (FEW 4, 425): In the 15\textsuperscript{th} century subcorpus, only one instance of proclitic \textit{ci} (\textit{cy veez}) can be observed, and only six occurrences of \textit{veez/voyez} with enclitic \textit{ici}, compared to the 114 cases of the type \textit{veez/voyez ci}. The fact that, in opposition to what is happening in the regular French language system, \textit{ci} continues to be constantly used in enclitic position with \textit{veez/voyez} and does not get replaced by \textit{ici} confirms once more that the whole syntagma had by then evolved into a fixed expression.
+
+\subsection{Indicative or Imperative? Verbal mood of the source construction}
+
+Having identified the person and number features of the source syntagma as \textsc{2pl/hon}, its grammatical mood remains to be determined. Given that the often-stated hypothesis of \textit{voici/voilà} originating from a “frozen imperative singular” (see section 1) already turns out not to be correct with regard to its second part, the question whether the construction involves an imperative still needs to be tested systematically. This undertaking turns out to be more complex than one might expect: First, unlike Modern French, Old French allowed for pro-drop, in imperatives as well as in declarative sentences (cf. \citealt{Adams1987}). In a sentence like \REF{ex:key:11}, which in this form is quite representative of a good number of presentative clauses in the 12\textsuperscript{th} and 13\textsuperscript{th} centuries, it is thus impossible to definitely tell based on pure grammatical arguments whether the sentence is meant to be a command or a declarative statement. To this is added that at this stage, the verb \textit{veoir} just like its Latin etymon \textsc{videre} does not exclude intentionality, unlike Modern French \textit{voir} ‘to see’ in contrast to \textit{regarder} ‘to look’, and could still trigger both semantic readings (\citealt{Iliescu2010}, 212). 
+
+\begin{itemize}
+\item \gll si dist li uns a l'autre: «\textbf{Veez} \textbf{la} le bon chevalier, […]»\\
+     so said the one to the other see.\textsc{2sg.hon} there the good knight\\
+\glt ‘And one said to the other: «(You) see there the valiant knight, […]»’ [Anonyme, Queste del saint Graal, ca. 1225/1230, p. 206d, via \citealt{BFM2022}]
+\z % you might need an extra \z if this is the last of several subexamples
+
+Also, the placement of clitics, which for the early presentatives happens systematically enclitically on the verb according to the pattern \textit{veez le ci/la} cannot give a reliable indication about whether a declarative or an imperative is realized, since at this stage, unlike in modern French, clitic positioning still follows similar rules for both clause types (cf. Hirschbühler/\citealt{Labelle2000}). What can help to shed light onto the question is looking at instances of embedded presentative constructions. In general, imperatives cannot be embedded, or more precisely, only under certain conditions. One of those conditions is the obligatory presence of expressed subjects (\citealt{Platzack2007}, 196), which we see is not met in Old French if we consider for instance example \REF{ex:key:12b} in contrast to \REF{ex:key:12a}. We thus have good reason to assume the relative clauses in (12a-b) to be embedded declaratives rather than imperatives. 
+
+\begin{itemize}
+\item \gll \textup{a.} Donc valt mialz li uns de ces trois javeloz \textbf{que} \textbf{vos} \textbf{veez} ci, […].\\
+     So be-worth.\textsc{3sg} better the one of these three darts that you.\textsc{2pl} see.\textsc{2pl.ind} here\\
+\glt ‘So it is better [to take] one of these three darts that you see here, […].’ [Chrétien de Troyes, Conte du Graal (Perceval), 1181-1185, p. 361, v. 201, via \citealt{BFM2019}]
+\z % you might need an extra \z if this is the last of several subexamples
+\gll \textup{b}. Cez estencelemenz / \textbf{Que} \textbf{veëz} ci dedenz\\
+     these sparkles that see.\textsc{2sg/hon.ind}\textbf{ }here inside\\
+\glt ‘these sparkles that you see in here’ [Philippe de Thaon, Comput, 1113/1119, p. 10, v. 404, via \citealt{BFM2019}]
+\z % you might need an extra \z if this is the last of several subexamples
+
+On the other hand, there are other constellations where an interpretation of the verbal element as imperative seems more appropriate. In particular, this is frequently the case when the presentative construction occurs in coordination with other imperatives like in \REF{ex:key:13a} or right after an imperative forming with it a sequence of exclamatives as in \REF{ex:key:13b}. In those cases, although once again from a morphological and syntactic point of view the presence of indicative mood cannot be excluded formally, the discourse context strongly suggests an imperative reading. 
+
+\begin{itemize}
+\item \gll \textup{a.} […] si comencierent a dire: «Tornez vos, veez ci la reïne.»\\
+     so started.\textsc{3pl} to say turn.\textsc{2pl.imp} you.\textsc{refl} see.\textsc{2pl.imp} here the queen\\
+\glt ‘[…] and they started to say: «Turn around, see here the queen.»’ [Anonyme, Queste del saint Graal, ca. 1225/1230, p. 162c, via \citealt{BFM2022}]
+\z % you might need an extra \z if this is the last of several subexamples
+\gll \textup{b}. Fuiés, fuiés! Veés ci venir le fol de la fontainne!\\
+     flee.\textsc{2pl.imp} flee.\textsc{2pl.imp} see.\textsc{2pl.imp} here come.\textsc{inf} the madman from the fountain\\
+\glt ‘Flee, flee! Watch out for the madman who is coming from the fountain!’ [Anonyme, Tristan en prose, 13\textsuperscript{th} century, après 1240, p. 253, via \citealt{BFM2022}]
+\z % you might need an extra \z if this is the last of several subexamples
+
+Consequently, these observations result in the fact that the grammatical mood of the etymological source construction for the French presentative cannot be limited to one single clear-cut option. Instead, it originates from, with regard to its modality, a polysemic verbal form that is sometimes used with an indicative reading, sometimes with an imperative one, and where in between these two poles there is space for gradual interpretation depending on discourse contextual factors – and it might even be the case that precisely this polyvalence contributed to this particular syntagma being grammaticalized into a presentative particle via the process described in the following section.
+
+\section{From syntagma to particle} 
+\subsection{Contraction (\textit{vez ci/la})}
+
+During the corpus research, the form \textit{vez} manifests itself by showing a behavior that is not to be equated with the other forms in \figref{fig:key:1}. The presentative construction clearly evolves following a separate curve, rising gradually from the 12\textsuperscript{th} to the 14\textsuperscript{th} century and disappearing abruptly in the 15\textsuperscript{th} century. The observation being made that constructions involving \textit{vez} apparently constitute a distinct stage in the grammaticalization path of the presentative, its specific features need to be examined closely.
+
+One could hypothesize that the form represents a mere variant of an already established verb form. This hypothesis has actually been stated frequently in the literature wherever an attempt to classify the element \textit{vez} is undertaken: Buridant (2000, 311) treats it as “a monosyllabic, contracted form” (translation K.F.) of the imperative plural of the verb \textit{veoir}, and so do Oppermann-Marsaux (2006, 80) and Danino/Wolfsgruber/Joffre (2020, 48). The corpus data, especially the high frequency of the type \textit{veez ci/la} (compare \figref{fig:key:1}) support the assumption of an underlying verb form inflected for \textsc{2pl/hon,} left aside the fact that in view of the situation explained in 3.2. those forms expressing the imperative and the indicative mood are forming an opaque complex from where the grammaticalization process of the presentative is initiated. Speculations like the possibility of a newly created form based on Latin \textsc{vide} \textsc{ecce} (FEW 14, 429) for which there is no evidence found in previous language development, are by this means also ruled out for the time being. Yet, the investigation should not stop at this point. By looking closer at the phenomenon, it becomes clear that one should not consider the changing lexeme in isolation, but rather take into account its frequent cooccurrence with the locative element and regard the fixed formula as described in 3.1. as a whole. In particular, what is special about \textit{vez} is the fact that it is not found in free variation with the 2\textsc{pl/hon} form it is originating from, neither with the imperative nor with the indicative.
+
+
+\begin{tabularx}{\textwidth}{XXXX}
+
+\lsptoprule
+
+{\bfseries \textit{vez ci}} & {\bfseries \textit{vez la}} & {\bfseries \textit{vez} + other loc. adv.} & {\bfseries \textit{vez} without loc. adv.}\\
+283 & 70 & 15 & 11\\
+\multicolumn{3}{c}{ 368} & 11\\
+\lspbottomrule
+\end{tabularx}
+%%please move \begin{table} just above \\begin{tabular . 
+\begin{table}
+\caption{Absolute frequencies of} vez \textit{in the 14\textsuperscript{th}} \textit{century subcorpus.}
+\label{tab:key:4}
+\end{table}
+
+Instead, we see in \tabref{tab:key:4} that \textit{vez} is in the overwhelming majority of cases (353 out of 379) found in combination with the locative adverb \textit{ci} or \textit{la}, that is within the fixed formula that has been developing until then. 15 other instances of the lexeme cooccur directly with further locatives, mostly with the adverb \textit{ça} ‘here’ < Lat. \textsc{hac}, which is formed on the basis of the ablative form of Lat. \textsc{hic} that in turn also serves as etymon for fr. \textit{ci} (FEW 4, 373). On account of this etymological and semantic comparability, also those instances can be treated as cases of the fixed presentative formula, or at least as strongly related forms. That leaves us with 97,1\% \REF{ex:key:368} of the occurrences of \textit{vez} being integrated into the specifically presentative source syntagma, versus with 2,9\% \REF{ex:key:11} only a negligible part being used as variant of \textit{veez}.\textsc{2pl/hon.imp/ind}, most probably graphic in nature. 
+
+The fact that the contraction from \textit{veez} to \textit{vez} only takes place within the context of this specific construction suggests that the change is triggered for prosodic reasons. Once the fixed formula is established, the phrasal accent seems to be shifting from the ultima of the verb to the locative, which in turn enables the contraction of the verbal form in this specific constellation (\textit{veéz ci} > \textit{vez cí}). This process appears plausible also with regard to the “most important” general prosodic change from Old French to Middle French (Gess/Jacobs/\citealt{Laks2020}, 470). This change involves a shift from lexical stress, usually on the ultima of the word, to group stress, i.e., “stress assigned not at the level of the prosodic word, but at the right edge of a higher prosodic constituent” (\citealt{Rainsford2020}, 63–64). At the same time, the fact that the stress has by that means already been shifted towards the end of the construction paves the way for the univerbation process described in 4.3. Altogether, it becomes apparent that \textit{vez} is indeed a form which originates from \textit{veoir} inflected for \textsc{2pl/hon} but which through contraction results into an item that is not congruent with its etymon with regard to its morphosyntactic features, as will be stated in the following. 
+
+\subsection{Developing uninflectability}
+
+The consolidation of the fixed formula and the contraction of the included verbal element into \textit{vez} entails wider consequences on the morphosyntactic level. Although \textit{vez ci/la} in the 13\textsuperscript{th} century subcorpus are still mostly found in contexts where the utterance is addressed to a person in polite manner (49 times) or to a group of people using the 2\textsuperscript{nd} person plural (5 times), instances begin to arise where the contracted form appears surrounded by forms of address clearly marked for 2\textsuperscript{nd} person singular. With 9 such occurrences in 5 out of the 64 texts within the 13\textsuperscript{th} century subcorpus, although not extremely frequent, those do not seem to represent individual cases. Examples for the three different types of addressees described here can be seen in (14a-c). 
+
+%%1st subexample: change \ea\label{...} to \ea\label{...}\ea; remove \z % you might need an extra \z if this is the last of several subexamples  
+%%further subexamples: change \ea to \ex; remove \z % you might need an extra \z if this is the last of several subexamples  
+%%last subexample: change \z % you might need an extra \z if this is the last of several subexamples to \z % you might need an extra \z if this is the last of several subexamples\z % you might need an extra \z if this is the last of several subexamples 
+\langinfo{}{}{a. Addressee=\textsc{hon}}\\
+\gll Pere, fait Aucassins, ves ci \textbf{vostre} anemi […].\\
+     Father, makes A. \textsc{vez} here your.\textsc{hon} enemy\\
+\glt ‘Father, says A., here is your enemy […].’ [Anonyme, Aucassin et Nicolette, beginning 13\textsuperscript{th} century, p. 10, v. 19., via \citealt{BFM2022}]
+\z % you might need an extra \z if this is the last of several subexamples
+\gll \textup{b. Addressee=}\textsc{2pl} \\
+\gll Li rois le moustre \textbf{a} \textbf{ses} \textbf{compaignons} et \textbf{lour} dist : «Ves chi une nef […].»\\
+     The king it shows to his.\textsc{pl.m} companions.\textsc{pl.m} and them.\textsc{dat.pl.m} says \textsc{vez} here a boat\\
+\glt ‘The king shows it to his companions and says to them: «Here comes a boat […].»’ [Anonyme, Suite du roman de Merlin, ca. 1230-1235, p. 314, via \citealt{BFM2022}]
+\z % you might need an extra \z if this is the last of several subexamples
+\gll \textup{c. Addressee=}\textsc{2sg}\\
+\gll Se \textbf{tu} voloies mengier pain, / vez=en la .I. lez cel autel.\\
+     If you.\textsc{2sg} wanted eat bread, / \textsc{vez}=\textsc{partitive} there one next-to this altar\\
+\glt ‘If you want to eat bread, there you have one next to this altar.’ [Anonyme, Roman de Renart, branche XI, beginning 13\textsuperscript{th} century, p. 97, v. 12401, via \citealt{BFM2022}]
+\z % you might need an extra \z if this is the last of several subexamples
+
+Sentences like \REF{ex:key:14c} suggest that the contracted form \textit{vez} can already be regarded as particle developing uninflectability, since their utterance is only perceivable under a certain condition: They can only be produced if what used to be an inflected verbal form, namely the \textsc{2pl/hon} form of the verb ‘to see’, is not perceived any more as such by the authors in those specific cases.
+
+Moreover, another observation in the diachronic data indicates that \textit{vez} is not treated as a simple contracted form, but that a more fundamental change is happening under the surface: From the moment the \textit{vez} particle first appears, overt subjects are immediately and consequently ruled out, even in embedded relative clauses containing \textit{vez ci/la} in the position of the verb. This can be surprising at first glance, knowing that exactly during that time the French language system is losing its pro-drop properties which should normally cause an increase of subject pronouns. Instead, the incompatibility of \textit{vez} with overt subjects indicates what already Bouchard has hypothesized for \textit{voici/voilà}, i.e., that it has “no TNS/AGR” and hence that “nominative Case is not assigned” which in turn “prohibits the presence of a lexical NP” (\citealt{Bouchard1988}, 93). Together with the evidence from cases like \REF{ex:key:14c}, this reinforces the picture of the verbal part of the presentative construction changing at that point from a finite form to a form of non-finiteness. 
+
+Particularly interesting in this context is that the observed process of a plural form being applied to singular addressees fits into a mechanism that is attested crosslinguistically and that Bates/\citet{McKenzie2021} call the “plural-to-singular reanalysis cycle”. This process of number reanalysis is usually initiated when “a common ground disparity exists between the speaker and hearer” (ibid., 7). For example, what is likely to happen in our case, is that the hearer has to accommodate a sentence where it is not only unclear whether it is meant as an imperative or an indicative (see 3.2.), but where also the number feature of the verb requires interpretation. Since \textit{vez ci/la}, initially mostly found in reproduction of direct speech, is beginning in the 13\textsuperscript{th} century to be used also in purely written forms of communication to address for instance the reader, this leaves room for ambiguity. As already mentioned above in section 3.1., the verbal forms for the 2\textsuperscript{nd} person plural are homophonous to those expressing the honorific forms in French. The verbal source morphology could either stand for a polite approach of one single addressee, a polite approach to a group of people, or for the \textsc{2pl} used without conveying honorificity. The reader therefore finds him- or herself as the only addressee present in this communicative situation and has to deduce correctly the type of addressees the writer has in mind. The reader can then either opt for one of the morphologically encoded interpretations, or, in case he/she “considers the required accommodations implausible” and, in order to rescue the processing of the sentence, assume an “interpretative analysis” which triggers then the semantic reanalysis (\citealt{Eckardt2012,Eckardt2688}; Bates/\citealt{McKenzie2021}, 7). When situations that trigger this reinterpretation do not happen only once by accident but are occurring redundantly amongst the language community, regular language change can apply so that “the new entry is permanently adopted” (\citealt{Eckart2012,Eckart2688}). Since such instances of reinterpretation are first sparsely found in the corpus and then begin to increase, this seems to be what is happening to the French presentative \textit{vez ci/la}. 
+
+Actually, it can already be observed during the 12\textsuperscript{th} century that even the fixed formula \textit{veez ci} that is clearly and transparently containing a verb inflected for \textsc{2pl/hon} gets \textsc{2sg} interpretation. The two cases found in the corpus displaying this behavior are specified in (15a–b). 
+
+\begin{itemize}
+\item \gll \textup{a.} \textbf{Veez} ci un val, \textbf{fai} les \textbf{tuens} assembler, E \textbf{pren} \textbf{tes} messages, […].\\
+     see.\textsc{2pl/hon} here a valley, make.\textsc{2sg.imp} the yours gather and get.\textsc{2sg.imp} your messengers\\
+\glt ‘Here you have a valley [suitable for a battle], make your men gather, and get your messengers’ [Anonyme, Chanson de Guillaume,ca. 1140, p.10, v. 177, via \citealt{BFM2019}]
+\z % you might need an extra \z if this is the last of several subexamples
+\gll \textup{b}. Respundi li prestres [à David] : «\textbf{Vééz} ci la spéé Golias le Philistien que \textbf{tu} \textbf{óceïs} […].»\\
+     Replied the priest [to David] see.\textsc{2pl/hon} here the sword Golias.\textsc{gen} le Philistien whom you.2\textsc{sg} killed.\textsc{2sg}\\
+\glt ‘The priest replied to David: «Here you have the sword of Golias le Philistien whom you killed […]»“ [Anonyme, Quatre Livres des Rois, ca. 1190, p. 43, via \citealt{BFM2019}]
+\z % you might need an extra \z if this is the last of several subexamples
+
+Already here, and more frequently once the inflected verb transformed via contraction (as exemplified in 14c), it becomes apparent that at this stage the French presentative construction is losing the specification for plural. On a more general level, this is also what is attested in other language phenomena subjected to plural-to-singular reanalysis: the plural feature of the construction under discussion is dropped and a form which originally carried plural marking becomes number-neutral. If then, which is clearly the case in our study, the number-neutral (former plural) form is more frequently used, the speakers would privilege the latter to resolve the semantic competition with the former singular form which by consequence disappears (Bates/\citealt{McKenzie2021}, 10). This in turn can also explain why at a later stage of the grammaticalization path of the particle (see below, 4.3.), there is only one single instance of a univerbated form based on the \textsc{2sg} of the verb, \textit{voizcy} in this case, and that aside from this one example, the singular is not playing a role any more in the further development of the particle. 
+
+Concerning \textit{vez ci} and \textit{vez la} (and \textit{voici} and \textit{voilà} in the continuity), the plural-to-singular reanalysis cycle stops at this point with the presentative being applicable to plural as well as to singular contexts. In theory, the process could still go one step further. For a number of pronouns for example, it is observed that a new plural form emerges which in turn serves to disambiguate the plural-singular syncretism created in the course of the previous steps of the cycle, and which limits the former plural and then number neutral form finally to the singular (Bates/\citealt{McKenzie2021}, 11–12). Such a continuation of the cycle is not attested for Standard French, where the forms \textit{voici} and \textit{voilà} are consolidated by the end of the 16\textsuperscript{th} century and since then did not change their form. It could still be possible that in other dialects and under other conditions, the particle is evolving in a manner that reminds the disambiguation process decribed above, notably by redeveloping inflectional endings.\footnote{Morin (1985, 810) evokes the possibility to encounter inflected forms of \textit{voilà} in the French of Québec on the basis of data he discovered in novels by Louis Fréchette written around 1900. Here, the presentative particle develops inflectional endings, for instance \textit{nous v’lons} ‘here we are’; \textit{les v’lont} ‘here they are’ (examples \REF{ex:key:77e} and \REF{ex:key:77g} in \citealt{Morin1985}, 811). However, this seems to be a marginal phenomenon that is rarely attested and which Morin classifies as “now obsolete” (ibid., 810), a statement that would need to be targeted via a specific survey in order to be maintained properly.} However, the central condition under which such a continuation of the cycle could happen, is that the proclitic object pronouns attached to \textit{voilà} are reinterpreted as subject pronouns. Conversely, the fact that from the start, overt subjects are ruled out with \textit{vez ci/la} hints at no syntactic subject position being projected and thus the verb being non-inflecting. Taken all those considerations together, we thus have clear indications for the assumption that the presentative formula at this stage is ultimately evolving towards constructional uninflectability. 
+
+\subsection{Univerbation (\textit{veci/vela})}
+
+What has already begun via phonological and morphological contraction continues in the course of the further development of the presentative particle and finally manifests itself also in the graphic representation: \textit{vez ci/la} is being contracted to the extent that the two elements start forming one single item, not only on the prosodic level but from the 13\textsuperscript{th} century onwards also in orthography. The merged writing soon overtakes the separated one in terms of frequencies in the 14\textsuperscript{th} century, as can be seen in \figref{fig:key:1} above. The fusion into one single item that this orthographic change is indicating is not unusual to happen in such grammaticalization processes, where “combinations of words and morphemes that occur together very frequently come to be stored and processed in one chunk” (\citealt{Bybee2003}, 617). 
+
+At this stage of the evolution, one cannot ignore the role the previously established contracted particle \textit{vez} is playing. Whilst the forms \textit{veci} and \textit{vela} are usually mentioned when discussing the origins of \textit{voici} and \textit{voilà}, little has been said about a far more frequent form of the 14\textsuperscript{th} century univerbated presentative form, namely \textit{vezci/vezla}. \figref{fig:key:2} shows that during that period they represent the overwhelming majority of instances for univerbated presentatives (416 in total) and that, on the contrary, the writings omitting the intermediate consonant constitute with only 11 occurrences rather exceptional cases. 
+
+  
+%%please move the includegraphics inside the {figure} environment
+%%\includegraphics[width=\textwidth]{figures/a7Friedewaldrevisedversion-img002.png}
+ 
+
+\begin{stylecaption}
+Figures \stepcounter{Figure}{\theFigure}a + 2b: Absolute frequencies of vez/sci/y + vez/sla vs. of veci + vela in the 14th century subcorpus.
+\end{stylecaption}
+
+In view of the results depicted in \figref{fig:key:2}, one cannot but consider the fact that given the overrepresentation of forms including the full form of the particle \textit{vez/s} described above in 4.1.–4.2., the univerbated form first of all originates from the contracted syntagma \textit{vez ci/la} (or \textit{ves ci/la}) which leads to the form \textit{vezci/vezla} (or \textit{vesci/vesla}) and that it is this construct which afterwards is further reduced into \textit{veci/vela}. This means at the same time that at this stage, the morpheme \textit{ve}{}- still is a relic of the reduced form of the \textsc{2pl/hon} and does not represent, as it has been suggested, the verb stem (“base verbale”, \citealt{Oppermann-Marsaux2007}, 236) of the verb \textit{veoir}, at least not from the start. A reanalysis as such is however possible and likely, as indicates the transformation described below in 5. 
+
+The merging of a former syntactic phrase into a single lexeme entails consequences amongst others with regard to the morphosyntactic behavior of the emerging element. In our case, a mechanism comes into play that is observed similarly for instance with noun-noun compounding: oftentimes lexemes that are integrated into a multiword expression lose their inflectability due to this combination. For example, within the English compound \textit{bicycle lane}, it is impossible for the non-head noun to inflect for plural number (*\textit{bicycles lanes}). In this case, “the construction itself prevents an otherwise inflectable lexeme from inflecting”, a phenomenon dubbed “constructional uninflectability” by Spencer (2020, 148). Even if we have seen that at this point of the evolution of the presentative element, \textit{vez} has already lost, or at least weakened its formerly inherent number feature and is already developing towards uninflectability, it is important to bear in mind that this process only was engaged in combination with the locative adverb \textit{ci} or \textit{la} directly following. What we see for instance in examples \REF{ex:key:14} is to be considered an intermediate stage between the fully inflected \textit{veez}.\textsc{2pl} on one side, and the compound \textit{veci} on the other, with the morpheme \textit{ve}{}- that is prevented from inflecting by a combination of two factors: first by the plural-to-singular reanalysis which is responsible for preventing the creation of an additional, in theory conceivable particle implementing the \textsc{2sg} form of the verb. And second, by the constructional constraints it finds itself in due to the univerbation process. Given that in French, inflection normally occurs at the end of the verb, once the lexeme \textit{veci/vela} created, inflectional endings would have to adjoin to the part of the element that is still well recognizable as an adverb. The formerly inflecting morpheme thus finds itself blocked in a position where the possibility to redevelop inflectional endings in the future is extremely limited, if not impossible. 
+
+\section{Reanalysis and root insertion (\textit{voici/voilà})}
+
+In the 16\textsuperscript{th} century, we witness an extremely steep increase of the use of presentative particles of category 4, namely \textit{voici} and \textit{voilà} compared to the previous century (cf. \tabref{tab:key:3} and \figref{fig:key:1}). They reach a relative frequency of 438,16 per million tokens, which is around 48 times as high as for the century before where they emerged for the first time. The drastic collapse of all the other presentative constructions that this increase goes along with suggests strongly that the two events are linked causally and that it is \textit{voici/voila} that is replacing them directly in the language use. The question thus arises first, by which mechanisms this ultimate form arises and second, which features the \textit{voi}{}- morpheme bear. With regard to the second question, as we will see, there are arguments to assume that those differ in nature from the ones of the deverbal element in \textit{veci/vela}. 
+
+\tabref{tab:key:5} shows that the two forms did not develop in parallel. Whilst the type \textit{veci/vela} has its peak in the 14\textsuperscript{th} century and also continues in the following century to be the most employed presentative form, isolated occurrences of \textit{voici/voila} only begin to be documented for the first time at this stage. Rather than assuming autonomous emergence of the two different forms \textit{veci/vela} and \textit{voici/voila}, the former turns out to be the basis from where the latter evolves in the course of time.
+
+
+\begin{tabularx}{\textwidth}{XXXX}
+
+\lsptoprule
+
+\multicolumn{2}{c}{{\bfseries category 3}} & \multicolumn{2}{c}{{\bfseries category 4}}\\
+{\bfseries ve(z/s)ci} & {\bfseries ve(z/s)la} & {\bfseries voici} & {\bfseries voila}\\
+386 & 41 & 1 & 1\\
+\lspbottomrule
+\end{tabularx}
+%%please move \begin{table} just above \\begin{tabular . 
+\begin{table}
+\caption{Absolute frequencies in the 14}\textit{\textsuperscript{th}} \textit{century subcorpus.}
+\label{tab:key:5}
+\end{table}
+
+Taking into consideration the late Middle French language system in general shows a striking correlation with an ongoing phonological change at that time (also observed by \citealt{Tacke2022}, 358). In fact, due to general sound change mechanisms, the verb ‘to see’ itself changes from \textit{veoir} [vəwɛr] to \textit{voir} [vwar] from the 12\textsuperscript{th} onwards: first, [wɛ] opens to [wa] and by the beginning of the 14\textsuperscript{th} century, the hiatus [ə] is eliminated (\citealt{Andrieux-Reix1995}, 70). This change affected not only the infinitive, but all the forms of the inflectional paradigm, so that the diphthong usually represented by <oi> or <oy> is found in all of its cells. What is interesting here, is that the change from \textit{veci/vela} to \textit{voici/voila} in the 16\textsuperscript{th} century takes place slightly after the process concerning the core paradigm of the verb already being accomplished. It seems thus as if the presentative is aligned to the changing paradigm not out of phonological necessity (which is not given since \textit{veci/vela} would have been pronounceable also within the novel sound inventory), but through reanalysis by the speakers who still identify it as belonging to the verb \textit{voir} and who effect the change on an analytical basis. That in turn suggests that \textit{veci/vela} and subsequently \textit{voici/voila} even after becoming uninflectable and losing the number feature still bear a verbal feature which is even actively recognized as such by the speakers. 
+
+In order to carry out the alignment of the presentative to the verbal paradigm of \textit{voir}, \textit{ve}{}- is replaced by \textit{voi}{}-. This means that the form of \textit{veoir} inflected for \textsc{2pl/hon} which developed into the number neutral form \textit{vez} and finds itself further contracted in \textit{veci} is now replaced by the verb stem. Also here, we see a mechanism coming into play that is crosslinguistically attested: Like in other cases of constructional uninflectability, “we can suppose that the construction itself renders the lexeme locally uninflecting, so that the default reversion-to-the-root has to apply”, assuming that the default realization of any lexeme is always the root form and that in case of uninflectability, this default is not replaced by any more specific statement (\citealt{Spencer2020}, 156; 144). The case of \textit{voici} supports this assumption. As a consequence of the univerbation into \textit{veci} and the situation of constructional uninflectability of the verbal morpheme, it is naturally reinterpreted as verbal root and transformed accordingly, this reinterpretation becoming visible through the morpheme chosen in the process of analytical alignment. 
+
+Alternatively to root insertion, one could hypothesize that the speakers in the 16\textsuperscript{th} century reanalyzed the verbal part of the construction as an imperative singular and replaced it accordingly. However, although of course orthography is not always a reliable factor especially in earlier language states, it is striking that not a single time one of the forms \textit{vo[iy]sc[iy] / vo[iy]sla} or \textit{vo[iy]zc[iy] / vo[iy]zla}, so forms containing the whole imperative singular of the verb \textit{voir} are found in the 16\textsuperscript{th} century subcorpus, compared to 959 occurrences with only \textit{voi}{}- in front of \textit{ci} and 2191 of \textit{voi}{}- preceding \textit{la}. Also, the placement of the clitics in preverbal position does not coincide with what would to be expected with imperatives at this stage. 
+
+Taking a closer look onto clitic positioning also helps determining the overall nature of the lexical entity. Given that the speakers are now dealing with a novel element that is composed of a former phrase with two different parts, a verb and a locative adverb, the question arises as to how they implement this new element into their grammar. We have already seen in the introduction that in Modern French, \textit{voici} and \textit{voilà} occupy the syntactic position of the verb. Investigating on the clitic placement with the presentative construction in diachrony shows that this clear treatment as a verb is accomplished with the passage from \textit{veci} to \textit{voici} in the 16\textsuperscript{th} century. At the time when the presentative construction still contained a clearly inflected form, object clitics were systematically placed enclitically on the verb and by consequence in front of the locative, as can be seen in examples (16a–b). 
+
+\begin{itemize}
+\item \gll \textup{a.} Or \textbf{Veez=mei} \textbf{ci} en vostre curt;\\
+     now see.\textsc{hon}=me.\textsc{acc} here at your court\\
+\glt ‘Now here I am at your court;’ [Jordan Fantosme, Chronique concernant la guerre d'Écosse, ca. 1175, p. 26, v. 334, via \citealt{BFM2019}]
+\z % you might need an extra \z if this is the last of several subexamples
+\gll \textup{b}. Si li dïent: «\textbf{Veez=la} \textbf{la}.»\\
+     so him say.\textsc{3pl} see.\textsc{hon}=her.\textsc{acc} there\\
+\glt ‘So they said to him: «There she is.»’ [Chrétien de Troyes, Chevalier au Lion ou Yvain, 1165-1200, p. 98, v. 4957, via \citealt{BFM2019}]
+\z % you might need an extra \z if this is the last of several subexamples
+
+This changes radically with the univerbation of the construction into \textit{ve(z/s)ci/ve(z/s)la}: In the 14\textsuperscript{th} century, using object clitics in combination with the univerbated form is for most of the authors not an option at all, this combination being found only three times in the entire subcorpus, among which two occurrences are produced by one and the same person. In the 15\textsuperscript{th} century, object clitics with \textit{ve(z/s)ci/ve(zs)la} in preverbal position become more common, 10 out of 162 texts in the subcorpus making use of them in combination with the presentative. This increase indicates that the univerbated construction as a whole bears the potential to be processed as a verb. However, examples like \REF{ex:key:17} show that this evolution does not come without hesitancy. Here, the authors place the clitic in between the two morphemes, maintaining the syntactic configuration of the earlier stage exemplified in \REF{ex:key:16}, which shows that they still perceive the whole construction, although written together, as a verb phrase and not as a single lexical item. Yet overall, those examples are very rare, with only 3 cases being found in the 15\textsuperscript{th} and 16\textsuperscript{th} century subcorpora respectively. Instead, for the majority of the speakers, the transition towards treating the whole item as a verb seems to be fully assumed with the change from \textit{veci/vela} to \textit{voici/voila}. In the 16\textsuperscript{th} century, 310 occurrences like the ones in \REF{ex:key:18} are to be noted, where proclitics of all conceivable person and number feature combinations are adjoined to the presentative element. 
+
+\begin{itemize}
+\item \gll \textup{a.} L'EXECUTEUR / C'est fait. \textbf{Velela} bien pendu.\\
+     Executioner this is done \textsc{ve-}him.\textsc{acc}{}-there well hanged\\
+\glt ‘Executioner: It’s done. Now he truly is hanged’ [Anonyme, Mystère de la procession de Lille, III, 1485, p. 433, via Frantext]
+\z % you might need an extra \z if this is the last of several subexamples
+\gll \textup{b}. Et tout incontinent \textbf{voilecy} qu'il se rameine luymesme […] à l'eglise.\\
+     and all immediately \textsc{voi}{}-him.\textsc{acc}{}-here that he him bring-back himself to the church\\
+\glt ‘And here he is going back […] to the church immediately.’ [Bonaventure des Périers, Novelles récréations et joyeux devis, 1558, p. 199, via Frantext]
+\z % you might need an extra \z if this is the last of several subexamples
+
+\begin{itemize}
+\item \gll \textup{a.} THOMAS. / \textbf{Me=voicy}, Monsieur.\\
+     Thomas me.\textsc{acc}=\textsc{part} Sir\\
+\glt ‘Thomas: Sir, here I am.’ [Pierre de Larivey, Le Laquais : comédie, 1579, p. 194, via Frantext]
+\z % you might need an extra \z if this is the last of several subexamples
+\gll \textup{b}. et maintenant \textbf{le=voila} abbatu sans espoir\\
+     and now him.\textsc{acc}=\textsc{part} destroyed without hope\\
+\glt ‘and now, here he is destroyed without any hope’ [Jacques Yver, Le Printemps, 1572, p. 1188, via Frantext]
+\z % you might need an extra \z if this is the last of several subexamples
+
+The consistency of clitics being placed as in \REF{ex:key:18} indicates that the presentative element is not processed as a verb phrase anymore by the speakers (in contrast to the rare examples in \REF{ex:key:17} which are evidence for a corresponding transition phase). Instead, once the fixed formula univerbated into a single lexical item, the speakers start to interpret it as a verbal head. Apparently, in the case of \textit{vezci} and \textit{vesci,} and even more unequivocally after insertion of the verbal root \textit{voi}{}-, no evidence from the input seems to speak against this option. The process thus results in the reanalysis represented in \REF{ex:key:19}.
+
+\ea\label{ex:key:}
+%%1st subexample: change \ea\label{...} to \ea\label{...}\ea; remove \z % you might need an extra \z if this is the last of several subexamples  
+%%further subexamples: change \ea to \ex; remove \z % you might need an extra \z if this is the last of several subexamples  
+%%last subexample: change \z % you might need an extra \z if this is the last of several subexamples to \z % you might need an extra \z if this is the last of several subexamples\z % you might need an extra \z if this is the last of several subexamples 
+\langinfo{}{}{[\textsc{\textsubscript{vp}} [\textsc{\textsubscript{v°}} veez] [\textsc{\textsubscript{adv}} ci]] > [\textsc{\textsubscript{vp} > \textsc{v°}} ve(z)ci] > [\textsc{\textsubscript{v°}} voici]}\\
+\end{itemize}
+
+This development follows a universally observed scheme. According to van Gelderen (2011, 13), “whenever possible, a word is seen as a head rather than a phrase”, a syntactic mechanism that is referred to as “Head Preference Principle”. Illustrating this principle on the basis of diachronic and synchronic observations, she states that it is preferable for an element to merge and move as a head rather than as a phrase for economy reasons (see also van \citealt{Gelderen2004}). In the case of \textit{voici/voilà} the treatment as verbal head might be coming along with similar advantages in view of language economy. 
+
+Taken all the effects of the mechanisms evolved together, \textit{voici} and \textit{voilà} thus end up being based on the root of the verb \textit{voir} and processed as regular, although uninflectable, verbs. Recent developments however show that the evolutionary path of this specific presentative element has not come to an end yet. In Modern French, \textit{voilà} tends to be used as discourse marker and shows similar behavior to related phenomena, for example to Italian verb-based particles analyzed by \citealt{Cardinaletti2015}. This indicates that the verbal feature is about to disappear in those contexts and that the status as uninflectable verb may not constitute the final stage within the evolutionary path of the element under discussion. 
+
+\section{Conclusions}
+
+The diachronic corpus study has shed light on the details of the grammaticalization path the lexical items \textit{voici} and \textit{voilà} are subjected to between the 12\textsuperscript{th} and the 16\textsuperscript{th} century. It can be summarized as depicted for \textit{voici} in \figref{fig:key:3}, starting out with a regular syntagma that develops into a fixed formula and from there on undergoes a process of contraction and reanalysis. 
+
+  
+%%please move the includegraphics inside the {figure} environment
+%%\includegraphics[width=\textwidth]{figures/a7Friedewaldrevisedversion-img003.png}
+ 
+
+\begin{stylecaption}
+Figure \stepcounter{Figure}{\theFigure}: Grammaticalization Path of \textup{voici}.
+\end{stylecaption}
+
+The mechanisms that come into play during this process are determined by an interplay of different factors: semantic reanalysis, constructional restrictions, and syntactic principles become visible at different stages as the grammaticalization process goes on. Finally, the results explain the unusual behavior the uninflectable \textit{voici} and \textit{voilà} display: despite their first morpheme having lost its number feature and due to reinterpretation as verbal root also displaying empoverished person features, the verbal feature itself still continues to be present and prevailing when it comes to the syntactic implementation of the item. 
+
+What in a next step is interesting to do is to extend the research and to pursue the current evolution of \textit{voilà}, away from its verbal use and in direction of a discourse marker, to complete the picture of its cyclical change. To go beyond the case study of one single language, also the comparison with presentative constructions in other languages can be fruitful to find out about eventual crosslinguistical tendencies regarding the evolution of presentative clauses in general. For instance, the English particles \textit{lookee} or \textit{lookahere} investigated by \citealt{Brinton2001}, show striking similarities to the French case, and also Italian \textit{ecco} continues to raise questions, less with regard to its etymology, but also with regard to its syntactic behavior. A question that emerges recursively when it comes to analyzing presentative clauses syntactically is centered around the nature of their subject, which is therefore to be approached in the first place in order to gain a larger picture of presentative clauses, regardless of whether they dispose or not of a separate presentative element like French. 
+
+\section{Sources}
+
+\citealt{BFM2019} = ENS de Lyon/Laboratoire IHRIM, \textit{Base de Français Médiéval}, Lyon, 2019 (170 texts in total), <txm.bfm-corpus.org> (28.08.2023).
+
+\citealt{BFM2022} = ENS de Lyon/Laboratoire IHRIM, \textit{Base de Français Médiéval}, Lyon, 2022 (219 texts in total), <txm.bfm-corpus.org> (28.08.2023).
+
+Frantext = ATILF, \textit{Base textuelle Frantext}, ATILF-CNRS/Université de Lorraine, 1998–2023, <https://www.frantext.fr/> (28.08.2023).
+\begin{verbatim}%%move bib entries to  localbibliography.bib
+@article{Adams1987,
+	author = {Adams, Marianne},
+	journal = {\textit{Natural Language and Linguistic Theory}},
+	pages = {1–32},
+	title = {From {Old French} to the theory of pro-drop},
+	volume = {5},
+	year = {1987}
+}
+
+
+@book{Andrieux-Reix1995,
+	address = {Exercices de phonétique}. Paris},
+	author = {Andrieux-Reix, Nelly},
+	publisher = {Presses universitaires de France},
+	title = {\textit{Ancien et Moyen Français},
+	year = {1995}
+}
+
+
+@article{BatesBates2021,
+	author = {Bates, Jonah and Andrew McKenzie},
+	journal = {\textit{Journal of Historical Syntax}},
+	pages = {1–26},
+	title = {A plural-to-singular reanalysis cycle},
+	volume = {5},
+	year = {2021}
+}
+
+
+@article{BonillaCarvajal2020,
+	author = {Bonilla Carvajal, Camilo Andrés},
+	journal = {\textit{Journal of Latin Linguistics}},
+	pages = {27–57},
+	sortname = {Bonilla Carvajal, Camilo Andres},
+	title = {The syntax of the {Latin} presentative adverb \textit{ecce}: {{R}}elation to focus phrase},
+	volume = {19},
+	year = {2020}
+}
+
+
+@article{Bouchard1988,
+	author = {Bouchard, Denis},
+	journal = {\textit{Language}},
+	pages = {89–100},
+	title = {{French} \textit{voici/voilà} and the analysis of pro-drop},
+	volume = {64},
+	year = {1988}
+}
+
+
+@book{Brinton2017,
+	address = {Pathways of Change}. Cambridge},
+	author = {Brinton, Laurel},
+	publisher = {Cambridge University Press},
+	title = {\textit{The Evolution of Pragmatic Markers in {English}},
+	year = {2017}
+}
+
+
+@article{Brinton2001,
+	author = {Brinton, Laurel},
+	journal = {The history of \textit{look}{}-forms. \textit{Journal of Historical Pragmatics}},
+	pages = {177–199},
+	title = {From matrix clause to pragmatic marker},
+	volume = {2},
+	year = {2001}
+}
+
+
+@book{BrintonBrinton2005,
+	address = {Cambridge},
+	author = {Brinton, Laurel and Elisabeth C. Traugott},
+	publisher = {Cambridge University Press},
+	title = {\textit{Lexicalization and Language Change}},
+	year = {2005}
+}
+
+
+@book{Buridant2000,
+	address = {Paris},
+	author = {Buridant, Claude},
+	publisher = {Sedes},
+	title = {\textit{Grammaire nouvelle de l'ancien français}},
+	year = {2000}
+}
+
+
+Bußmann, Hadumod (ed.). \textsuperscript{4}2008. \textit{Lexikon der Sprachwissenschaft}. Stuttgart: Kröner.
+
+@incollection{Bybee2003,
+	address = {Malden (MA)},
+	author = {Bybee, Joan},
+	booktitle = {\textit{The Handbook of Historical Linguistics}},
+	editor = {Brian D. Jospeph and Richard D. Janda},
+	pages = {602–623},
+	publisher = {Blackwell},
+	title = {Mechanisms of Change in Grammaticalization: {{T}}he Role of Frequency},
+	year = {2003}
+}
+
+
+@incollection{Cardinaletti2015,
+	address = {Amsterdam},
+	author = {Cardinaletti, Anna},
+	booktitle = {\textit{Discourse-oriented Syntax}},
+	editor = {Josef Bayer, Roland Hinterhölzl and Andreas Trotzke},
+	pages = {71–92},
+	publisher = {John Benjamins},
+	title = {{Italian} verb-based discourse particles in a comparative perspective},
+	year = {2015}
+}
+
+
+@incollection{DaninoDanino2020,
+	address = {Berlin \& Boston},
+	author = {Danino, Charlotte, Anne C. Wolfsgruber and Marie-Dominique Joffre},
+	booktitle = {\textit{Polysémie, usages et fonctions de “voilà”}},
+	editor = {Gilles Col, Charlotte Danino and Stéphane Bikialo},
+	pages = {33–80},
+	publisher = {De Gruyter},
+	title = {\textit{Voilà} en diachronie: {{P}}erception, énonciation et courbe en S},
+	year = {2020}
+}
+
+
+@incollection{Eckardt2012,
+	address = {Berlin \& Boston},
+	author = {Eckardt, Regine},
+	booktitle = {\textit{Semantics. {{A}}n international handbook of natural language meaning}},
+	editor = {Claudia Maienborn, Klaus von Heusinger and Paul Portner},
+	pages = {2675–2702},
+	publisher = {De Gruyter Mouton},
+	title = {Grammaticalization and semantic reanalysis},
+	volume = {3},
+	year = {2012}
+}
+
+
+@book{FEW=Wartburg1922,
+	address = {\textit{Französisches Etymologisches Wörterbuch}, 25 vol. Basel},
+	author = {FEW = Wartburg, Walther von},
+	publisher = {Zbinden},
+	sortname = {FEW = Wartburg, Walther von},
+	title = {–2002},
+	year = {1922}
+}
+
+
+@book{Gelderen2011,
+	address = {Language change and the language faculty}. New York},
+	author = {Gelderen, Elly van},
+	publisher = {Oxford University Press},
+	title = {\textit{The linguistic cycle},
+	year = {2011}
+}
+
+
+@book{Gelderen2004,
+	address = {Amsterdam \& Philadelphia},
+	author = {Gelderen, Elly van},
+	publisher = {John Benjamins},
+	title = {\textit{Grammaticalization as Economy}},
+	year = {2004}
+}
+
+
+@incollection{GessGess2020,
+	address = {Berlin – Boston},
+	author = {Gess, Randall, Heike Jacobs and Bernd Laks},
+	booktitle = {\textit{{Grande} Grammaire Historique du Français}},
+	editor = {Christiane Marchello-Nizia, Bernard Combettes, Sophie Prévost and Tobias Scheer},
+	pages = {450–489},
+	publisher = {De Gruyter Mouton},
+	title = {Phonétique historique. Évolution depuis l'ancien français},
+	year = {2020}
+}
+
+
+Hirschbühler, Paul \& Marie Labelle. 2000. Evolving Tobler-Mussafia effects in the placements of French clitics. In Steven N. Dworkin \& Dieter Wanner (ed.), \textit{New Approaches to Old Problems. Issues in Romance Historical Linguistics,} 165–182. Amsterdam: John Benjamins.
+
+@incollection{Iliescu2010,
+	address = {Münster},
+	author = {Iliescu, Maria},
+	booktitle = {\textit{Wenn Deiktika nicht zeigen. {{Z}}eigende und nichtzeigende Funktionen deiktischer Formen in den romanischen {Sprachen}}},
+	editor = {Christiane Maaß and Angela Schrott},
+	pages = {205–222},
+	publisher = {LIT},
+	title = {Observations sur les présentatifs français \textit{voici} et \textit{voilà} et leurs correspondants roumains},
+	year = {2010}
+}
+
+
+@book{Julia2018,
+	address = {Beau Bassin},
+	author = {Julia, Marie-Ange},
+	publisher = {Éditions universitaires européennes},
+	title = {\textit{Les présentatifs dans les langues anciennes et modernes}},
+	year = {2018}
+}
+
+
+Moignet, Gérard. 1974. Le verbe VOICI-VOILA, In Gérard Moignet (ed.), \textit{Études de psycho-systématique française}, 45–58. Paris: Klincksieck.
+
+@article{Morin1985,
+	author = {Morin, Yves-Charles},
+	journal = {\textit{Language}},
+	pages = {777–820},
+	title = {On the two {French} subjectless verbs \textit{voici} and \textit{voilà}},
+	volume = {61},
+	year = {1985}
+}
+
+
+@incollection{Oppermann-Marsaux2007,
+	address = {Nancy},
+	author = {Oppermann-Marsaux, Evelyne},
+	booktitle = {\textit{Etudes sur le changement linguistique en français}},
+	editor = {Bernard Combettes},
+	pages = {235–254},
+	publisher = {Presses Universitaires de Nancy},
+	title = {L’évolution du présentatif \textit{veez ci/la} en français médiéval ({XI}\textsuperscript{e}{}-{XV}\textsuperscript{e} siècles)},
+	year = {2007}
+}
+
+
+@article{Oppermann-Marsaux2006,
+	author = {Oppermann-Marsaux, Evelyne},
+	journal = {\textit{Langue Française}},
+	pages = {77–91},
+	title = {Les origines du présentatif \textit{voici/voilà} et son évolution jusqu'à la fin du {XVI}e siècle},
+	volume = {149},
+	year = {2006}
+}
+
+
+@incollection{Petit2010,
+	address = {Vilnius},
+	author = {Petit, Daniel},
+	booktitle = {\textit{Particles and connectives in {Baltic}}},
+	editor = {Nicole Nau and Norbert Ostrowski},
+	pages = {151–170},
+	publisher = {Vilniaus Universitetas},
+	title = {On presentative particles in the {Baltic} Languages},
+	year = {2010}
+}
+
+
+@incollection{Platzack2007,
+	address = {Amsterdam \& Philadelphia},
+	author = {Platzack, Christer},
+	booktitle = {\textit{Imperative Clauses in Generative Grammar. {{S}}tudies in honour of Frits Beukema}},
+	editor = {Wim van der Wurff},
+	pages = {181–203},
+	publisher = {John Benjamins},
+	title = {Embedded imperatives},
+	year = {2007}
+}
+
+
+@article{Rabatel2001,
+	author = {Rabatel, Alain},
+	journal = {\textit{Revue de Sémantique et Pragmatique}},
+	pages = {111–144},
+	title = {Valeurs énonciative et représentative des 'présentatif' \textit{c'est, il y a, voici/voilà}: {{{E}}}ffet point de vue et argumentativité indirecte du récit},
+	volume = {9},
+	year = {2001}
+}
+
+
+@article{Rainsford2020,
+	author = {Rainsford, Thomas M.},
+	journal = {\textit{Papers in Historical Phonology}},
+	pages = {63–89},
+	title = {Syllable structure and prosodic words in Early {Old French}},
+	volume = {5},
+	year = {2020}
+}
+
+
+@incollection{Spencer2020,
+	address = {Cambridge},
+	author = {Spencer, Andrew},
+	booktitle = {\textit{Complex words: {{A}}dvances in morphology}},
+	editor = {Lívia Körtvélyessy and Pavel Štekauer},
+	pages = {142–158},
+	publisher = {Cambridge University Press},
+	title = {{U}ninflectedness. {{{U}}}ninflecting, uninflectable and uninflected words, or the complexity of the simplex},
+	year = {2020}
+}
+
+
+@book{Tacke2022,
+	address = {Bonn},
+	author = {Tacke, Felix},
+	publisher = {Klostermann},
+	title = {\textit{Sprachliche Aufmerksamkeitslenkung: {{H}}istorische Syntax und {Pragmatik} romanischer Zeigeaktkonstruktionen}},
+	year = {2022}
+}
+
+
+Traugott, Elisabeth C. 2003. Constructions in Grammaticalization, In Brian D. Jospeph \& Richard D. Janda (ed.), \textit{The Handbook of Historical Linguistics}, 624–647. Malden (MA): Blackwell.
+
+@misc{WoodWood2023,
+	author = {Wood, Jim and Raffaella Zanuttini},
+	note = {To appear in \textit{Language}. (https://lingbuzz.net/lingbuzz/007159) (\citealt{Accessed2024}-05-31).},
+	title = {The Syntax of {English} Presentatives},
+	year = {2023}
+}
+
+
+@incollection{Zanuttini2017,
+	address = {Boston \& Berlin},
+	author = {Zanuttini, Raffaella},
+	booktitle = {\textit{Elements of comparative syntax: {{T}}heory and description}},
+	editor = {Enoch Aboh, Eric Haeberli, Genoveva Puskás and Manuela Schönenberger},
+	pages = {221–256},
+	publisher = {De Gruyter Mouton},
+	title = {Presentatives and the syntactic encoding of contextual information},
+	year = {2017}
+}
+
+
+\end{verbatim}
+\sloppy\printbibliography[heading=subbibliography,notkeyword=this]
+\end{document}
